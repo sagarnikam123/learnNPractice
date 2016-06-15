@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Local Storage</title>
+	<meta charset="utf-8">
+	<script src="javascript/modernizr-latest.js" ></script>
+</head>
+
+<body>
+	<script src="javascript/jquery-1.11.3.js" ></script>
+	<script>
+		(function(){
+			//alert('Ho ho');
+
+			if(localStorage.info){
+				console.log( JSON.parse(localStorage.info) );
+			}
+
+			var o = {
+				first :  'Jeffrey',
+				middle : 'Jordan',
+				last : 'Way'
+			};
+
+			Modernizr.logcalstorage && (localStorage.info = JSON.stringify(o) ) ;
+
+		})();
+
+
+	</script>
+
+</body>
+
+
+</html>

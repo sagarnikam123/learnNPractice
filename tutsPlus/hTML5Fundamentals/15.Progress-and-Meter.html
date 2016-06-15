@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Progress bar</title>
+		
+		<script>			
+			var p = document.querySelector('progress');
+			
+			setInterval( function(){
+				p.value +=1;
+			}, 50);
+		
+		</script>
+		
+		<style>
+			meter {
+				width : 300px;
+				height : 60px;
+				
+				}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<progress min="0" max="100" value="20"></progress>
+			<meter min="0" max="100" value="50"></meter>
+		</form>
+	</body>
+
+</html>

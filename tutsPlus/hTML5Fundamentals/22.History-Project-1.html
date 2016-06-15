@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> History API project</title>
+</head>
+
+<body>
+
+<ul>
+	<li> <a href="http://d2o0t5pnwv4c1.cloudfront.net/1100_html5History/html5.jpg" title="HTML5 Rocks" data-url="html5"> HTML5</a></li>
+
+	<li> <a href="http://d2o0t5pnwv4c1.cloudfront.net/1100_wpPlugins/wpplugincourse.jpg" title="WordPress is Great" data-url="wp"> WordPress</a></li>
+
+	<li> <a href="http://tutsplus.s3.amazonaws.com/bestof/bestoftuts.jpg" title="Best of Tuts+" data-url="tuts" > Best of Tuts+</a></li>
+
+</ul>
+
+<div class="result">
+	<script id="template" type="template">
+		<h2> {{title}} </h2>
+		<img src="{{imgSrc}}" alt="{{title}}">
+	</script>
+</div>
+
+<script src="javascript/jquery-1.11.3.js"></script>
+
+<script>
+;function(){
+	var Viewer = {
+		init : function(){
+			//alert('hello ')
+			template : #('#template').html(),
+
+			$('ul').on('click','a', function(e){
+				Viewer
+					.applyTemplate(this)
+					.updateHistory(this);
+
+				e.preventDefault();
+			});
+		},
+		applyTemplate : function(data){
+			//console.log(this.template);
+			var template = this.template.replace(/{{title}}/g,data.title)
+										.replace(/{{imgSrc}}/g,data.href);
+										//console.log(template);
+
+			$('result')
+				.children()
+					.remove()
+					.end()
+				.append(template);
+
+				return this;
+		},
+
+		updateHistory : function(data){
+
+			var dataToSave = {
+				title: data.title,
+				href: data.href,
+				url: data.dataset.url
+			};
+
+			history.pushState(
+			//data
+			//title
+			//url
+			dataToSave,
+			data.title,
+			data.dataset.url
+
+			);
+		}
+
+	};
+	Viewer.init();
+
+})();
+
+</script>
+
+<script>
+	window.addEventListener('popstate', function(e){
+		console.log(e);
+	});
+</script>
+
+</body>
+
+</html>
