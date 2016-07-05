@@ -3,7 +3,7 @@
 ################################################################################
 
 docker build -t helloworld:0.1 .
-docker history <imageId>
+docker history eb451a282325
 
 # running latest image
 docker run helloworld:0.1
