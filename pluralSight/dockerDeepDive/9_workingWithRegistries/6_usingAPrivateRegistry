@@ -1,0 +1,11 @@
+# tagging the image
+docker tag 5a3024d885c8 localhost:5000/priv-test
+
+# pushing the image
+docker push localhost:5000/priv-test
+
+# http://localhost:5000/v1/repositories/priv-test/tags/latest
+# Edit docker registry URL
+DOCKER_OPTS="--insecure-registry localhost:5000"
+
+docker run -d localhost:5000/priv-test
