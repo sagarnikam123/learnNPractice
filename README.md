@@ -24,6 +24,7 @@
   * [Lynda](http://lynda.com)
   * [Pluralsight](http://pluralsight.com)
   * [Udacity](http://udacity.com)
+  * [Udemy](http://udemy.com)
   * [TutsPlus](https://tutsplus.com/)
 
 ---
