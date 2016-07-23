@@ -7,7 +7,7 @@
 
 ### Define variables
 
-$SubscriptionName = 'Free Trial'
+$SubscriptionName = 'Grav-640-Eng-ECO(Converted to EA)'
 $Location = 'West US' ### Use "Get-AzureLocation | Where-Object Name -eq 'ResourceGroup' | Format-Table Name, LocationsString -Wrap" in ARM mode to find locations which support Resource Groups
 $GroupName = 'chef-lab'
 $DeploymentName = 'chef-server-deployment'
@@ -25,7 +25,7 @@ if (Get-AzureSubscription){
     Get-AzureSubscription -SubscriptionName $SubscriptionName | Select-AzureSubscription -Verbose
     }
 
-# Switch-AzureMode AzureResourceManager -Verbose
+Switch-AzureMode AzureResourceManager -Verbose
 
 ### Create Resource Group ###
 
