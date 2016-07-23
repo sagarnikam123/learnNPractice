@@ -1,0 +1,33 @@
+<DOCTYPE html>
+	<html lang="en" class="no-js">
+
+	<head>
+		<title> Modernizr </title>
+		<meta charset="utf-8">
+		<style>
+			.no-flexbox.container{
+				/* float layout */
+			}
+		</style>
+		<!-- After stylesheets -->
+		<!-- script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script -->
+		<script src="javascript/modernizr.latest.js"></script>
+	</head>
+
+	<body>
+		
+		<script>
+			if( !Modernizr.localstorage ){
+				// have fun
+			}
+
+			if (!Modernizr.geolocation) {
+				// lets celebrate
+			};
+
+		</script>
+
+		
+	</body>
+
+</html>

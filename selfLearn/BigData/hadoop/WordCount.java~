@@ -1,0 +1,28 @@
+package pune.Panter;
+
+
+import java.io.Exception;
+
+
+// Apache Hadoop
+import org.apache.hadoop.FS.Path;
+import org.apache.hadoop.io.*;
+
+import org.apache.hadoop.mapreduce.*;
+import org.apache.hadoop.mapreduce.lib.TextInputFormat;
+import org.apache.hadoop.mapreduce.lib.TextOutputFormat;
+
+
+
+public class Map extends Mapper<> throws IOException, InterruptedException{
+
+	public static final IntWritable one = new IntWritable(1);
+	public Text word = new Text();
+
+
+
+
+
+
+
+}

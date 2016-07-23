@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Modernizr - Load </title>
+	<!--script src="http://www.modernizr.com/downloads/modernizr-latest.js"> </script-->
+	<script src="javascript/modernizr.custom.js"></script>
+</head>
+
+<body>
+
+	<script >
+		Modernizr.load({
+			test : !Modernizr.localstorage,
+			nope : 'javascript/localstorage.js',
+			complete: function(){
+				//alert('do something')
+				localStorage.setItem('key','value'); 
+			}
+		})
+
+
+	</script>
+</body>
+
+
+
+
+</html>

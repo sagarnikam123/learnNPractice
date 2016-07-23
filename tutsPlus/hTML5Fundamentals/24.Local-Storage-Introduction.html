@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title> local storage </title>
+	<script> src="javascript/modernizr-latest.js"</script>
+</head>
+
+<body>
+
+<h2></h2>
+<script>
+	if(localStorage.getItem('name')){
+		document.querySelector('h2').innerHTML = localStorage.getItem('name');		
+	}
+	//localStorage.setItem('name', 'Jeffrey Way');
+</script>
+</body>
+
+
+</html>

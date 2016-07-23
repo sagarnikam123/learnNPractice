@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Feature detection</title>
+	</head>
+	
+	<body>
+		<input type="text" placeholder="John Doe">
+		<input type="email">
+		
+		<script>
+			if( !'placeholder' in document.createElement('input') ){
+				// a polyfill
+			}
+			
+			function testSupport(type){
+			var i = document.createElement('input');
+			i.setAttribute('type',type);
+			return i.type == type;
+			}
+			
+			if( testSupport('email') ){
+				// provide fallback
+			}
+
+			if( !!document.createElement('canvas').getContext ){
+				// browser supports canvas
+			}
+
+			if( !!document.createElement('audio').canPlayType ){
+				// browser supports audio
+			}
+
+			if( !!document.createElement('Video').canPlayType ){
+				// browser supports Video
+			}
+
+			function supportsStorage(){
+				try{
+					return 'localStorage' in window && window.localStorage !=null;
+				}catch(e){
+					return false;
+				}
+			}
+			
+			if ( !!navigator.geolocation) {
+				alert('track me!');
+			};
+
+			</script>
+	
+	</body>
+</html>

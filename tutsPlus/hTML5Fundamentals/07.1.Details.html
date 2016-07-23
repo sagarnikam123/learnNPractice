@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Details </title>
+	<meta charset="utf-8">
+	<style> h3 {cursor: pointer;} </style>
+</head>
+
+<body>
+
+	<ul>
+		<li>
+			<h3> Who Goes to College </h3>
+			<p> Your mom. </p>
+		</li>
+
+		<li>
+			<h3> Who Goes to College </h3>
+			<p> Your mom. </p>
+		</li>
+
+		<li>
+			<h3> Who Goes to College </h3>
+			<p> Your mom. </p>
+		</li>
+	</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script>
+	$('h3')
+		.next('p')
+			.hide()
+		.end()
+		.click( function(){
+			$(this).next('p').toggle();
+		} );
+</script>
+
+</body>
+
+</html>

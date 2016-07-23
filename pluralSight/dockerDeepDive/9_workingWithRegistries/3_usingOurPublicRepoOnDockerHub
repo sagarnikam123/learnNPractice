@@ -1,0 +1,21 @@
+# using our pulic repo on dockerhub
+
+################################################################################
+docker images
+docker tag eb451a282325 sagarnikam123/helloworld:1.0
+docker images
+docker push sagarnikam123/helloworld:1.0
+
+# remove all docker containers
+docker rm --force `docker ps -qa`
+
+# removing unnecessary docker images
+docker rmi fd19b4670f61 d1b55fd07600 81a15e44edd9 19be29911e3e 7d90612445f0 507cb13a2160 d93e998fad14
+
+# remove all docker images
+docker rmi `docker images -q`
+
+# pulling newly created & uploadied build
+docker pull sagarnikam123/helloworld:1.0
+
+################################################################################

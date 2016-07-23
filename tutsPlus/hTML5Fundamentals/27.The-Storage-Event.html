@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="uftf-8">
+	<title>Local Storage</title>
+	<script src="javascript/modernizr-latest.js"></script>
+	<style>
+		label,input[type=submit]{ display : block;}
+
+	</style>
+</head>
+
+<body>
+	<form>
+		<label for="comment">Name: </label>
+		<input type="text" id="name" name="name"> </input>
+
+	</form>
+
+	<script src="javascript/jquery-1.11.3.js"></script>
+
+	<script>
+		(function(){
+			if(Modernizr.localstorage){
+				var name = document.getElementById('name');
+				name.value = localStorage.name || '';
+
+				name.addEventListener('blur', function(){
+					if(this.value) localStorage.setItem('name',this.value);
+				},false);
+			}
+
+		})(true);
+
+
+		window.addEventListener('storage', function(e){
+			//console.log('UPDATED');
+			name.value = localStorage.name;
+		},false);
+
+	</script>
+
+
+</body>
+
+</html>

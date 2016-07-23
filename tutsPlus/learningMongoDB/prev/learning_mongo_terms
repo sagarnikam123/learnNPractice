@@ -1,0 +1,13 @@
+//learning mongoDb terms
+
+mongoimport
+mongoexport
+mongodump
+mongorestore
+bsondump
+
+bson
+Databases
+Collections
+Documents
+cursor object
