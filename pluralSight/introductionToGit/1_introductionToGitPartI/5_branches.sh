@@ -1,6 +1,6 @@
 # open project in gitk
 sudo apt-get install gitk
-cd tryGit/
+cd time_travel/
 gitk --all
 # opening in background
 gitk --all &
@@ -57,7 +57,7 @@ git rebase master
 # checking the changes in two branches
 git diff master human
 # merging
-git merger human
+git merge human
 
 # reverting to one step past
 git reset --hard ORIG_HEAD
