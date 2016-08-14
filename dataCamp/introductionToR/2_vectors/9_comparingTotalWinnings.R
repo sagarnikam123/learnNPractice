@@ -1,14 +1,14 @@
 # Comparing total winnings
 
 #########################################################################################################
-#																										#
-#	Oops, it seems like you are losing money. Time to rethink and adapt your strategy! 					#
-#	This will require some deeper analysis…																#
-#																										#
-#	After a short brainstorm in your hotel's jacuzzi, you realize that a possible explanation might be	#
-#	that your skills in roulette are not as well developed as your skills in poker.						#
-#	So maybe your total gains in poker are higher (or > ) than in roulette.								#
-#																										#
+#																										
+#	Oops, it seems like you are losing money. Time to rethink and adapt your strategy! 					
+#	This will require some deeper analysis…																
+#																										
+#	After a short brainstorm in your hotel's jacuzzi, you realize that a possible explanation might be	
+#	that your skills in roulette are not as well developed as your skills in poker.						
+#	So maybe your total gains in poker are higher (or > ) than in roulette.								
+#																										
 #########################################################################################################
 
 # Poker winnings from Monday to Friday

@@ -1,17 +1,17 @@
 # A little arithmetic with matrices (2)
 
 #############################################################################################################
-#																											#
-#	Just like 2*my_matrix multiplied every element of my_matrix by two, my_matrix1 * my_matrix2 creates 	#
-#	a matrix where each element is the product of the corresponding elements in my_matrix1 and my_matrix2.	#
-#																											#
-#	After looking at the result of the previous exercise, big boss Lucas points out that the ticket prices	#
-#	went up over time with one dollar per movie. He asks to redo the analysis based on the prices 			#
-#	you can find in ticket_prices_matrix (source: imagination).												#
-#																											#
-#	Those who are familiar with matrices should note that this is not the standard matrix multiplication	#
-#	for which you should use %*% in R.																		#
-#																											#
+#																											
+#	Just like 2*my_matrix multiplied every element of my_matrix by two, my_matrix1 * my_matrix2 creates 	
+#	a matrix where each element is the product of the corresponding elements in my_matrix1 and my_matrix2.	
+#																											
+#	After looking at the result of the previous exercise, big boss Lucas points out that the ticket prices	
+#	went up over time with one dollar per movie. He asks to redo the analysis based on the prices 			
+#	you can find in ticket_prices_matrix (source: imagination).												
+#																											
+#	Those who are familiar with matrices should note that this is not the standard matrix multiplication	
+#	for which you should use %*% in R.																		
+#																											
 #############################################################################################################
 
 # Box office Star Wars: In Millions (!) 

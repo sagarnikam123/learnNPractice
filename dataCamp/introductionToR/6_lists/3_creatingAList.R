@@ -1,14 +1,14 @@
 # Creating a list
 
 #####################################################################################
-#																					#
-#	Let us create our first list! To construct a list you use the function list():	#
-#																					#
-#	my_list <- list(component1, component2 ...)										#
-#																					#
-#	The arguments to the list function are the list components. Remember,			#
-#	these components can be a collection of matrices, vectors…						#
-#																					#
+#																					
+#	Let us create our first list! To construct a list you use the function list():	
+#																					
+#	my_list <- list(component1, component2 ...)										
+#																					
+#	The arguments to the list function are the list components. Remember,			
+#	these components can be a collection of matrices, vectors…						
+#																					
 #####################################################################################
 
 # Vector with numerics from 1 up to 10

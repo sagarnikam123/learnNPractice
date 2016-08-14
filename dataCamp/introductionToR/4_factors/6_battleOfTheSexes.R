@@ -1,12 +1,12 @@
 # Battle of the sexes
 
 #############################################################################################################
-#																											#
-#	"All animals are equal, but some animals are more equal than others." – George Orwell					#
-#																											#
-#	In factor_survey_vector we have a factor with two levels: Male and Female. But how does R value these	#
-#	relatively to each other? In other words, who does R think is better, males or females?					#
-#																											#
+#																											
+#	"All animals are equal, but some animals are more equal than others." – George Orwell					
+#																											
+#	In factor_survey_vector we have a factor with two levels: Male and Female. But how does R value these	
+#	relatively to each other? In other words, who does R think is better, males or females?					
+#																											
 #############################################################################################################
 
 survey_vector <- c("M", "F", "F", "M", "M")

@@ -1,18 +1,18 @@
 # Calculating the worldwide box office
 
 #################################################################################################
-#																								#
-#	The single most important thing for a movie in order to become an instant legend 			#
-#	in Tinseltown is its worldwide box office figures.											#
-#																								#
-#	To calculate the total box office revenue for the three Star Wars movies, 					#
-#	you have to take the sum of the US revenue column and the non-US revenue column.			#
-#																								#
-#	In R, the function rowSums() conveniently calculates the totals for each row of a matrix.	#
-#	This function creates a new vector:															#
-#																								#		
-#	sum_of_rows_vector <- rowSums(my_matrix)													#
-#																								#
+#																								
+#	The single most important thing for a movie in order to become an instant legend 			
+#	in Tinseltown is its worldwide box office figures.											
+#																								
+#	To calculate the total box office revenue for the three Star Wars movies, 					
+#	you have to take the sum of the US revenue column and the non-US revenue column.			
+#																								
+#	In R, the function rowSums() conveniently calculates the totals for each row of a matrix.	
+#	This function creates a new vector:															
+#																										
+#	sum_of_rows_vector <- rowSums(my_matrix)													
+#																								
 #################################################################################################
 
 # Box office Star Wars: In Millions (!) 

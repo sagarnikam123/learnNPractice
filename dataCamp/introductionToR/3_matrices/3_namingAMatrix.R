@@ -1,16 +1,16 @@
 # Naming a matrix
 
 #################################################################################################################
-#																												#
-#	To help you remember what is stored in star_wars_matrix,													#
-#	you would like to add the names of the movies for the rows. Not only does this help you to read the data,	#
-#	but it is also useful to select certain elements from the matrix later.										#
-#																												#
-#	Similar to vectors, you can add names for the rows and the columns of a matrix								#
-#																												#
-#	rownames(my_matrix) <- row_names_vector																		#
-#	colnames(my_matrix) <- col_names_vector																		#
-#																												#
+#																												
+#	To help you remember what is stored in star_wars_matrix,													
+#	you would like to add the names of the movies for the rows. Not only does this help you to read the data,	
+#	but it is also useful to select certain elements from the matrix later.										
+#																												
+#	Similar to vectors, you can add names for the rows and the columns of a matrix								
+#																												
+#	rownames(my_matrix) <- row_names_vector																		
+#	colnames(my_matrix) <- col_names_vector																		
+#																												
 #################################################################################################################
 
 # Box office Star Wars: In Millions (!) 

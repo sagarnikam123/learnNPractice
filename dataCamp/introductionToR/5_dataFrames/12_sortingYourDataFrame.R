@@ -1,11 +1,11 @@
 # Sorting your data frame
 
 #############################################################################################################
-#																											#
-#	Alright, now that you understand the order() function, let us do something useful with it.				#
-#	You would like to rearrange your data frame such that it starts with the largest planet and ends with	# 
-#	the smallest one. A sort on the diameter column, as you will.											#
-#																											#	
+#																											
+#	Alright, now that you understand the order() function, let us do something useful with it.				
+#	You would like to rearrange your data frame such that it starts with the largest planet and ends with	 
+#	the smallest one. A sort on the diameter column, as you will.											
+#																												
 #############################################################################################################
 
 # 'planets_df' is pre-loaded in your workspace

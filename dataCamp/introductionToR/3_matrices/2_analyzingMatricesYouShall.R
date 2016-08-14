@@ -1,13 +1,13 @@
 # Analyzing matrices, you shall
 
 #########################################################################################################
-#																										#
-#	It is now time to get your hands dirty. In the following exercises you will analyze 				#
-#	the box office numbers of the Star Wars franchise. May the force be with you!						#
-#	In the editor, three vectors are defined. Each one represents the box office numbers from the 		#
-#	first three Star Wars movies. The first element of each vector indicates the US box office revenue,	#
-#	the second element refers to the Non-US box office (source: Wikipedia).								#
-#																										#
+#																										
+#	It is now time to get your hands dirty. In the following exercises you will analyze 				
+#	the box office numbers of the Star Wars franchise. May the force be with you!						
+#	In the editor, three vectors are defined. Each one represents the box office numbers from the 		
+#	first three Star Wars movies. The first element of each vector indicates the US box office revenue,	
+#	the second element refers to the Non-US box office (source: Wikipedia).								
+#																										
 #########################################################################################################
 
 # Box office Star Wars: In Millions!

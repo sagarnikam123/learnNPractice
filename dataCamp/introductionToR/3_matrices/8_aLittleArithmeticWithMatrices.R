@@ -1,19 +1,19 @@
 # A little arithmetic with matrices
 
 #################################################################################################################
-#																												#
-#	Similar to what you have learned with vectors, the standard operators										#
-#	like +, -, /, *, etc. work in an element-wise way on matrices in R.											#
-#																												#
-#	For example: 2 * my_matrix multiplies each element of my_matrix by two. Again,								#
-#	R recycles the value 2 behind the scenes, building a matrix containing only 2s with the same dimensions 	#
-#	as my_matrix. Then, R carries out the element-wise operation.												#
-#																												#
-#	As a newly-hired data analyst for Lucasfilm, it is your job is to find out how many visitors went 			#
-#	to each movie for each geographical area. You already have the total revenue figures in star_wars_matrix.	#
-#	Assume that the price of a ticket was 5 dollars. Note that box office numbers divided 						#
-#	by the ticket price gives you the number of visitors.														#
-#																												#
+#																												
+#	Similar to what you have learned with vectors, the standard operators										
+#	like +, -, /, *, etc. work in an element-wise way on matrices in R.											
+#																												
+#	For example: 2 * my_matrix multiplies each element of my_matrix by two. Again,								
+#	R recycles the value 2 behind the scenes, building a matrix containing only 2s with the same dimensions 	
+#	as my_matrix. Then, R carries out the element-wise operation.												
+#																												
+#	As a newly-hired data analyst for Lucasfilm, it is your job is to find out how many visitors went 			
+#	to each movie for each geographical area. You already have the total revenue figures in star_wars_matrix.	
+#	Assume that the price of a ticket was 5 dollars. Note that box office numbers divided 						
+#	by the ticket price gives you the number of visitors.														
+#																												
 #################################################################################################################
 
 # Box office Star Wars: In Millions (!) 

@@ -1,19 +1,19 @@
 # Vector selection: the good times (4)
 
 #####################################################################################################
-#																									#
-#	Another way to tackle the previous exercise is by using the names of the vector elements 		#
-#	(Monday, Tuesday, …) instead of their numeric positions. For example,							#
-#																									#
-#	poker_vector["Monday"]																			#
-#																									#
-#	will select the first element of poker_vector since "Monday" is the name of that first element.	#
-#																									#
-#	Just like you did in the previous exercise with numerics, 										#
-#	you can also use the element names to select multiple elements, for example:					#
-#																									#
-#	poker_vector[c("Monday","Tuesday")]																#
-#																									#
+#																									
+#	Another way to tackle the previous exercise is by using the names of the vector elements 		
+#	(Monday, Tuesday, …) instead of their numeric positions. For example,							
+#																									
+#	poker_vector["Monday"]																			
+#																									
+#	will select the first element of poker_vector since "Monday" is the name of that first element.	
+#																									
+#	Just like you did in the previous exercise with numerics, 										
+#	you can also use the element names to select multiple elements, for example:					
+#																									
+#	poker_vector[c("Monday","Tuesday")]																
+#																									
 #####################################################################################################
 
 # Poker winnings from Monday to Friday
