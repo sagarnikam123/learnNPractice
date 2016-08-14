@@ -1,13 +1,13 @@
 # & and | (2)
 
 #########################################################################################################
-#																										#
-#	Just as relational operators, logical operators work perfectly fine with vectors and matrices.		#
-#																										#
-#	Both the vectors linkedin and facebook are available again. Also a matrix views has been defined;	#
-#	the first and second rows correspond to the linkedin and facebook vectors, respectively.			#
-#	Ready for some advanced queries to gain more insights in your social outreach?						#
-#																										#
+#																										
+#	Just as relational operators, logical operators work perfectly fine with vectors and matrices.		
+#																										
+#	Both the vectors linkedin and facebook are available again. Also a matrix views has been defined;	
+#	the first and second rows correspond to the linkedin and facebook vectors, respectively.			
+#	Ready for some advanced queries to gain more insights in your social outreach?						
+#																										
 #########################################################################################################
 
 # The social data (linkedin, facebook, views) has been created for you

@@ -1,19 +1,19 @@
 # & and |
 
 #####################################################################################################################
-#																													#
-#	Before you work your way through the next exercises, have a look at the following R expressions;				#
-#	all of them will evaluate to TRUE:																				#
-#																													#
-#	TRUE & TRUE																										#
-#	FALSE | TRUE																									#
-#	5 <= 5 & 2 < 3																									#
-#	3 < 4 | 7 < 6																									#
-#																													#
-#	In this exercise, you'll be working with the last variable. This variable equals the last value of the linkedin	#
-#	vector that you've worked with. The linkedin vector represents the number of LinkedIn views your profile had 	#
-#	in the last seven days, remember? Both the variables linkedin and last are already defined in the editor.		#
-#																													#
+#																													
+#	Before you work your way through the next exercises, have a look at the following R expressions;				
+#	all of them will evaluate to TRUE:																				
+#																													
+#	TRUE & TRUE																										
+#	FALSE | TRUE																									
+#	5 <= 5 & 2 < 3																									
+#	3 < 4 | 7 < 6																									
+#																													
+#	In this exercise, you'll be working with the last variable. This variable equals the last value of the linkedin	
+#	vector that you've worked with. The linkedin vector represents the number of LinkedIn views your profile had 	
+#	in the last seven days, remember? Both the variables linkedin and last are already defined in the editor.		
+#																													
 #####################################################################################################################
 
 # The linkedin and last variable are already defined for you
