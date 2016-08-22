@@ -14,4 +14,4 @@
 #	In this lab you'll take a look at the atheism survey and explore what's at play when making inference about 
 #	population proportions using categorical data.
 #		
-######################################################################################################################
+#######################################################################################################################
