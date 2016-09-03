@@ -1,5 +1,5 @@
 package inheritanceNComposition;
-
+// Not working
 public class PaperTray {
 
 	int pages = 0;
