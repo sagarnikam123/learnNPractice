@@ -33,7 +33,6 @@ inheritedHouse = castle(doors = 5)
 print(inheritedHouse.doors)
 print(inheritedHouse.fireCannons(8))
 
-# p
 landlordsProperties = [castle(), apartment()]
 for house in landlordsProperties:
     house.payMortage()
