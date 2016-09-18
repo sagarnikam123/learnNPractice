@@ -25,3 +25,5 @@
 #   You can use the print function inside a map(). Can you write a 1 line code to solve the problem above?
 #
 #######################################################################################################################
+
+map(print,range(int(input().strip())) )
