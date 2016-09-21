@@ -39,19 +39,26 @@
 #   n > 20 and n is even, so it isn't weird. Thus, we print Not Weird.
 #
 #######################################################################################################################
+#
+#   #otherTestCases
+#
+#   input1
+#   18
+#   output1
+#   Weird
+#
+#   input 2
+#   20
+#   ouput 2
+#   Weird
+#
+#######################################################################################################################
 
 import sys
 
 n = int(input().strip())
 
-if n % 2 == 0:
-    numberIsOdd = False
-    print("even")
-else:
-    numberIsOdd = True
-    print("odd")
-
-if  (numberIsOdd == True) or (numberIsOdd == False & (n >= 6 & n <=20) ):
-    print("Weird")
-elif numberIsOdd == False or (n >=2 & n <= 5):
+if (n % 2 !=0 ) or (n >= 6 and n <= 20):
+    print("Weird")  # odd
+elif (n >=2 and n <=5) or (n > 20):
     print("Not Weird")
