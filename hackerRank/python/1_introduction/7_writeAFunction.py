@@ -36,14 +36,22 @@
 #   1990 is not a multiple of 4 hence it's not a leap year.
 #
 #######################################################################################################################
+#
+#   #otherTestCases
+#
+#   input 1
+#   1992
+#
+#   ouput 1
+#   True
+#
+#######################################################################################################################
 
 def is_leap(year):
     leap = False
     # Write your logic here
-    if year % 4 == 0 :
-        if (year % 100 == 0) & (year % 400 == 0):
-                leap = True
-
+    if (year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0):
+        leap = True
     return leap
 
 year = int(input().strip())
