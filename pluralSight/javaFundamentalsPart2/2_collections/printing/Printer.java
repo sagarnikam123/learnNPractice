@@ -57,11 +57,6 @@ public class Printer<T> implements IMachine
 			System.out.println("Load more paper!");
 	}
 
-	private void checkCopies(int copies) {
-		if(copies < 0)
-			throw new IllegalArgumentException("Can't print less than 0 copies.");
-	}
-	
 	public void printColors()
 	{
 		String[] colors = new String[] { "Red", "Blue", "Green", "Yellow", "Orange" };
@@ -74,11 +69,6 @@ public class Printer<T> implements IMachine
 			System.out.println(currentColor);
 		}
 		
-	}
-	
-	private void print(String text)
-	{
-		System.out.println(text);
 	}
 	
 	public String getModelNumber()
