@@ -1,12 +1,7 @@
 package runner;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import printing.ColorCartridge;
 import printing.ContinuousPrinter;
-import printing.Printer;
-import printing.PrintingDevice;
 
 public class CreatingAThread {
 

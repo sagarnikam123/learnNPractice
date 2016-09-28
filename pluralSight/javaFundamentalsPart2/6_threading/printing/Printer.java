@@ -43,6 +43,7 @@ public class Printer<T extends ICartridge> implements IMachine
 	
 	public void print(int copies)
 	{		
+		@SuppressWarnings("unused")
 		String onStatus = "";
 		if(machine.isOn())
 			onStatus = " is On!";
@@ -152,11 +153,6 @@ public class Printer<T extends ICartridge> implements IMachine
 			System.out.println(currentColor);
 		}
 		
-	}
-	
-	private void print(String text)
-	{
-		System.out.println(text);
 	}
 	
 	public String getModelNumber()
