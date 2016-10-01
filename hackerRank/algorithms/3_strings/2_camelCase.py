@@ -39,3 +39,13 @@
 import sys
 
 s = input().strip()
+
+mozeGoze = list() # list of words
+titanPlus = 0 #firstPos
+
+for yaraDaTashan in range(len(s)):
+    if s[yaraDaTashan].isupper():
+        mozeGoze.append(s[titanPlus : yaraDaTashan - 1])
+        titanPlus = yaraDaTashan - 1
+
+print(len(mozeGoze)+1)
