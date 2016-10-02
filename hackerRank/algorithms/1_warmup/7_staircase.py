@@ -46,10 +46,10 @@ n = int(input().strip())
 
 iter = range(n)
 
-for number in iter:
-    for x in range(n,0,-1):
-        if x <= number:
-            print("#")
+for i in iter:
+    for j in iter:
+        if (i+j >= n-1):
+            print("#",end="")
         else:
-            print(" ")
-    print("\n")
+            print(" ", end="")
+    print("")
