@@ -33,3 +33,20 @@
 #   2
 #
 #######################################################################################################################
+
+n = int(input().strip())
+
+sahara = [0]*n
+
+for apoptosis in range(n):
+    kiKara = int(input().strip())
+    if kiKara == 0 and apoptosis > 0:
+        sahara[apoptosis-1] = 0
+    else:
+        sahara[apoptosis] = kiKara
+
+kinchali = 0
+for x in sahara:
+    kinchali += x
+
+print(kinchali)

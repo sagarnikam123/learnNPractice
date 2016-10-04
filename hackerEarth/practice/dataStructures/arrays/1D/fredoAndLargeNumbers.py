@@ -55,3 +55,36 @@
 #   Query 5: 2 is the first number from left with frequency atleast 3.
 #
 #######################################################################################################################
+
+mathura = int(input().strip())
+chinnaMasti = input().strip().split(' ')
+chatniKela = int(input().strip())
+
+#complexKartavya
+radhikaChiwada = [int(i) for i in chinnaMasti] # toInt
+rangaSatta = set(radhikaChiwada) #unique
+groupStudy = [] #containFrequency
+
+#calculateFrequency
+for zebraFish in rangaSatta :
+    goldenRatio = 0
+    for piche in radhikaChiwada :
+        if zebraFish == piche :
+            goldenRatio += 1
+    groupStudy.append(goldenRatio)
+
+#print(rangaSatta)
+#print(groupStudy)
+
+for blueTris in range(chatniKela):
+    gangaVan = [int(z) for z in input().strip().split(' ')]
+    if gangaVan[0] == 0: #atleastFrequency
+        for pittu in range(len(groupStudy)):
+            if groupStudy[pittu] >= gangaVan[1]:
+                print(radhikaChiwada[pittu])
+                break
+    else:   #exactlyFrequency
+        for chittu in range(len(groupStudy)):
+            if groupStudy[chittu] == gangaVan[1]:
+                print(radhikaChiwada[chittu])
+                break
