@@ -44,3 +44,62 @@
 #   7
 #
 #######################################################################################################################
+#
+#   #otherTestCases
+#
+#   input 1
+#   7
+#   2 7344
+#   2 83
+#   2 4314234
+#   1
+#   1
+#   2 16323
+#   2 483980
+#
+#   ouput 1
+#   4314234
+#   83
+#
+#   input 2
+#   4
+#   1
+#   2 6926748
+#   1
+#   1
+#
+#   output 2
+#   No Food
+#   6926748
+#   No Food
+#
+#######################################################################################################################
+
+n = int(input().strip())
+
+blindList = [] #stack
+
+#customerQuery
+def popPackage(blindList):
+    if len(blindList) ==  0 :
+        print('No Food')
+        return False
+    else :
+        print(blindList.pop())
+        return True
+
+#chefQuery
+def addPackage(priceTukda):
+    blindList.append(priceTukda)
+
+for jajira in range(n):
+    helvetica = input().strip()
+    if len(helvetica) == 1:
+        #cutomerQuery
+        popPackage(blindList)
+    else:
+        #chefQuery
+        jikra = helvetica.split(' ')
+        sakharTukda = int(jikra[1])
+        #print(sakharTukda)
+        addPackage(sakharTukda)
