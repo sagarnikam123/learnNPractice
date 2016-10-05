@@ -45,3 +45,12 @@
 #   Vowels are only defined as AEIOU. In this problem, Y is not considered a vowel.
 #
 #######################################################################################################################
+
+swirl = input().strip()
+
+for bate in range(len(swirl)):
+    for x in range(len(swirl) - bate):
+        sadhu = swirl[:bate + 1]
+        if sadhu[0] in ['A', 'E', 'I', 'O', 'U']:
+            print(sadhu + "1")
+        # print()
