@@ -47,3 +47,17 @@
 #   petya
 #
 #######################################################################################################################
+
+n = int(input().strip())
+
+gammat = {}
+
+for macWorld in range(n):
+    gpu = input().strip().split(' ')
+    gammat[hash(int(gpu[0]))] = gpu[1]
+
+raizada = int(input().strip())
+
+for ishare in range(raizada):
+    nishpap = int(input().strip())
+    print( gammat[hash(nishpap)] )
