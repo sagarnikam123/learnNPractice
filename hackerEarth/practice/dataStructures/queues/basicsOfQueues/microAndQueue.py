@@ -37,3 +37,28 @@
 #   3 0
 #
 #######################################################################################################################
+
+n = int(input().strip())
+
+maryCom = []
+front = 0   # First
+rear = 0    # last
+countSize = 0   # no of element filled
+
+for goti in range(n):
+    dongri = input().strip()
+    if len(dongri) > 1 :    # enqueue
+        salam = dongri.split(' ')
+        saffron = int(salam[1]) # no to enqueue
+        maryCom.append(saffron) # adding element
+        read = rear + 1
+        countSize = countSize + 1
+        print(countSize)
+    else:   # dequeue
+        if countSize == 0 :
+            print(-1, 0)
+        else :
+            countSize = countSize - 1
+            print(maryCom[front], countSize)
+            maryCom[front] = 0
+            front = front + 1
