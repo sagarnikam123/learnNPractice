@@ -178,3 +178,111 @@ name = 'a'; age = 12
 
 print(name, "is", age, "years old.")
 print("%s is %d years old." %(name, age))
+
+price = 24
+item = "banana"
+print("The %s costs %d cents" % (item, price) )
+print("The %+10s costs %5.2f cents" %(item, price) )
+print("The %+10s costs %10.2f cents"%(item,price) )
+item_dict = {"item": "banana", "cost" : 24}
+print("The %(item)s costs %(cost)7.1f cents"%item_dict)
+
+# 1.4.3 Control Structures
+counter = 1
+while counter <= 5:
+    print("Hello, world")
+    counter = counter + 1
+
+for item in [1,3,6,2,5]:
+    print(item)
+
+for item in range(5):
+    print(item ** 2)
+
+word_list = ["cat","dog","rabbit"]
+letter_list = []
+
+for a_word in word_list:
+    for a_letter in a_word:
+        letter_list.append(a_letter)
+
+print(letter_list)
+
+n = 4
+if n < 0:
+    print("Sorry, value is negative")
+else:
+    print(math.sqrt(n))
+
+score = 70
+if score >= 90:
+    print('A')
+else:
+    if score >= 80:
+        print('B')
+    else:
+        if score >= 70:
+            print('C')
+        else:
+            if score >= 60:
+                print('D')
+            else:
+                print('F')
+
+n = -8
+if n < 0:
+    n = abs(n)
+
+print(math.sqrt(n))
+
+ sq_list = []
+ for x in range(1,11):
+     sq_list.append(x * x)
+
+ sq_list
+ sq_list = [x * x for x in range(1,11)]
+ sq_list
+
+sq_list = [x*x for x in range(1,11) if x %2 !=0]
+sq_list
+
+[ch.upper() for ch in 'comprehension' if ch not in 'aeiou']
+
+# Self Check
+# 1
+word_list = ['cat','dog','rabbit']
+letter_list = []
+for a_word in word_list:
+    for a_letter in a_word:
+        if a_letter not in letter_list:
+            letter_list.append(a_letter)
+
+print(letter_list)
+
+# 2
+# not working
+[ch for a_word in word_list for ch in a_word ]
+
+letter_list = []
+[letter_list.append(ch) for a_word in word_list for ch in a_word if ch not in letter_list ]
+letter_list
+
+# 1.4.4 Exception Handling
+a_number = int(input('Please enter an integer '))
+# ValueError: math domain error
+print(math.sqrt(a_number))
+
+try:
+    print(math.sqrt(a_number))
+except:
+    print("Bad Value for square root")
+    print("Using absolute value instead")
+    print(math.sqrt(abs(a_number)))
+
+# RuntimeError: You can't use a negative number
+if a_number < 0:
+    raise RuntimeError("You can't use a negative number")
+else:
+    print(math.sqrt(a_number))
+
+# 1.4.5 Defining Functions
