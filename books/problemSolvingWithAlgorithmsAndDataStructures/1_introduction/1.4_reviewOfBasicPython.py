@@ -286,3 +286,18 @@ else:
     print(math.sqrt(a_number))
 
 # 1.4.5 Defining Functions
+def square(n):
+    return n ** 2
+
+square(2)
+square(square(3))
+
+def sqaure_root(n):
+    root = n /2 # initial guess will be 1/2 of n
+    for k in range(20):
+            root = (1/2) * (root + (n/root))
+
+    return root
+
+sqaure_root(9)
+sqaure_root(4563)
