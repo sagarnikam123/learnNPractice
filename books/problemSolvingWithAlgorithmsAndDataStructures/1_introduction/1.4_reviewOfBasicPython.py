@@ -301,3 +301,24 @@ def sqaure_root(n):
 
 sqaure_root(9)
 sqaure_root(4563)
+
+my_f = Fraction(3,5)
+my_f.show()
+
+print('Object - ',my_f)
+print('I ate ', my_f, 'of the pizza')
+my_f.__str__()
+str(my_f)
+
+f1 = Fraction(1,4)
+f2 = Fraction(1,2)
+# TypeError: unsupported operand type(s) for +: 'Fraction' and 'Fraction'
+f1 + f2
+f3 = f1 + f2
+print('F3 - ',f3)
+
+from fraction import Fraction
+x = Fraction(1,2)
+y = Fraction(2,3)
+print(x + y)
+print(x == y)
