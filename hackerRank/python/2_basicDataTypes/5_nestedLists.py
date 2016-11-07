@@ -50,6 +50,25 @@
 
 n = int(input().strip())
 
+chakri = [] # all data - list of list
+fakri = [] # physics marks only
+
 for udanChu in range(n):
     nav = input().strip()
-    physicsMark = int(input().strip())
+    physicsMark = float(input().strip())
+    fakri.append(physicsMark)
+    chakri.append([nav, physicsMark])
+
+# unique physics marks
+uniqueFakri = set(fakri)
+takri = list(sorted(uniqueFakri))
+
+#names of boys to print
+zakri= []
+
+for hint in chakri:
+    if hint[1] == takri[1]:
+        zakri.append(hint[0])
+
+zakri.sort()
+print(*zakri, sep='\n')
