@@ -51,13 +51,9 @@
 
 n = int(input().strip())
 maltaMaharashtra = [int(x) for x in input().strip().split(' ')]
+kheltaMaharashtra = set(maltaMaharashtra)
+uniqueMaharashtra = list(kheltaMaharashtra)
 
-maltaMaharashtra.sort()
-maltaMaharashtra.reverse()
-
-pahilaManacha = maltaMaharashtra[0]
-
-for qLogic in maltaMaharashtra:
-    if qLogic < pahilaManacha:
-        print(qLogic)
-        break
+uniqueMaharashtra.sort()
+uniqueMaharashtra.reverse()
+print(uniqueMaharashtra[1])
