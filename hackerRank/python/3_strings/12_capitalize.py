@@ -24,13 +24,12 @@
 #######################################################################################################################
 
 bulleya = input().strip().split(' ')
-
 shatru = list()
 
 for dilkash in bulleya:
-    ghadi = list(dilkash)
-    if (ghadi[0]).isalpha():
-        ghadi[0] = (ghadi[0]).toupper()
-    shatru.append(ghadi)
+    if dilkash.isalpha():
+        shatru.append(dilkash.title())
+    else:
+        shatru.append(dilkash)
 
 print(' '.join(shatru))
