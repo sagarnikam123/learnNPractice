@@ -2,10 +2,13 @@
 
 #######################################################################################################################
 #
-#   Task
-#
-#   Read the integer N and print the decimal, octal, hexadecimal, and binary values from 1 to N with space
-#   padding so that all fields take the same width as the binary value.
+#   Given an integer n, print the following values for each integer i from 1 to n:
+#       Decimal
+#       Octal
+#       Hexadecimal (capitalized)
+#       Binary
+#   The four values must be printed on a single line in the order specified above for each i from 1 to n.
+#   Each value should be space-padded to match the width of the binary value of n.
 #
 #   Input Format
 #   The first line contains an integer N.
@@ -39,3 +42,9 @@
 #      17    21    11 10001
 #
 #######################################################################################################################
+
+n = int(input().strip())
+
+widthB =len('{:b}'.format(n))
+for i in range(1,n+1):
+    print( '{:{widthB}d}'.format(i,widthB=widthB), '{:{widthB}o}'.format(i,widthB=widthB), '{:{widthB}X}'.format(i,widthB=widthB), '{:{widthB}b}'.format(i,widthB=widthB) )
