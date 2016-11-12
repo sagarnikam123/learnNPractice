@@ -23,7 +23,7 @@ class ShippingContainer4:
 
     @classmethod
     def create_with_items(cls, owner_code, items):
-        return cls(owner_code, contents = list(tiems))
+        return cls(owner_code, contents = list(items))
 
     def __init__(self, owner_code, contents):
         self.owner_code = owner_code
