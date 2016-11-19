@@ -43,3 +43,30 @@
 #   Max absolute change of speed for Brian = 2
 #
 #######################################################################################################################
+
+n = int(input().strip())
+dom = [int(x) for x in input().strip().split()]
+brian = [int(x) for x in input().strip().split()]
+
+domHigh = 0
+brianHigh = 0
+
+i = 0
+while i < len(dom) - 1:
+    tempDom = abs(dom[i] - dom[i+1])
+    tempBrian = abs(brian[i] - brian[i+1])
+    if tempDom > domHigh:
+        domHigh = tempDom
+    if tempBrian > brianHigh:
+        brianHigh = tempBrian
+    i += 1
+
+if domHigh == brianHigh:
+    print("Tie")
+    print(domHigh)
+elif domHigh > brianHigh:
+    print('Dom')
+    print(domHigh)
+else:
+    print('Brian')
+    print(brianHigh)
