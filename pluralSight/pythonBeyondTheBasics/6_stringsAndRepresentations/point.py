@@ -10,3 +10,9 @@ class Point2D:
 
     def __repr__(self):
         return 'Point2D(x={}, y={})'.format(self.x, self.y)
+
+    def __format__(self, f):
+        if f == 'r':
+            return '{}, {}'.format(self.y, self.x)
+        else:
+            return '[Formatted point: {}, {}, {}]'.format(self.x, self.y, f)
