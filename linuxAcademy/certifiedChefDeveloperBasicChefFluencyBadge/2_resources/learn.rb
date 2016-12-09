@@ -16,3 +16,23 @@ file '/var/www/html/index.html' do
 	owner 'root'
 	group 'apache'
 end
+
+#file '/etc/motd' do
+#	content 'Welcome to my server !'
+#end
+
+#execute 'command-test' do
+#	command 'echo blah >> /etc/motd'
+#	only_if 'test -r /etc/motd'
+#end
+
+# using ruby classes
+execute 'command-test' do
+	command 'echo blah >> /etc/motd'
+	only_if { File.exists?('/etc/motd') }
+end
+
+execute 'command-test' do
+	command 'echo blah >> /etc/motd'
+    not_if 'test -r /etc/motd'
+end
