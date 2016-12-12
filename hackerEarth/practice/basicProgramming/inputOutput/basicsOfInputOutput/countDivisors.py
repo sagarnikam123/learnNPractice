@@ -22,3 +22,12 @@
 #   10
 #
 #######################################################################################################################
+
+l, r, k = [int(x) for x in input().strip().split()]
+
+nachLenDe = 0
+for farFar in range(l, r+1):
+    if farFar % k == 0:
+        nachLenDe += 1
+
+print(nachLenDe)
