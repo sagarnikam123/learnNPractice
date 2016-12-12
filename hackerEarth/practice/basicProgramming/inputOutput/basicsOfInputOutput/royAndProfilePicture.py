@@ -46,3 +46,17 @@
 #   ACCEPTED
 #
 #######################################################################################################################
+
+l = int(input().strip())
+n = int(input().strip())
+
+for jina in range(n):
+    w,h = [int(x) for x in input().strip().split()]
+    # print(w,h)
+    if w < l or h < l :
+        print('UPLOAD ANOTHER')
+    elif w >= l and h >= l:
+        if w == h:
+            print('ACCEPTED')
+        else:
+            print('CROP IT')
