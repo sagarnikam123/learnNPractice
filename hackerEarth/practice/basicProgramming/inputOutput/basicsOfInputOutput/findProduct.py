@@ -28,12 +28,23 @@
 #   integers to multiply. Let's store the final answer in answer variable. Since 1 is identity value for
 #   multiplication, initialize answer as 1. So the process goes as follows:
 #   answer=1
-#   answer=(answer×1) % (109+7)
-#   answer=(answer×2) % (109+7)
-#   answer=(answer×3) % (109+7)
-#   answer=(answer×4) % (109+7)
-#   answer=(answer×5) % (109+7)
+#   answer=(answer×1) % (10^9+7)
+#   answer=(answer×2) % (10^9+7)
+#   answer=(answer×3) % (10^9+7)
+#   answer=(answer×4) % (10^9+7)
+#   answer=(answer×5) % (10^9+7)
 #
 #   The above process will yield answer as 120
 #
 #######################################################################################################################
+
+n = int(input().strip())
+zpShala = [int(x) for x in input().strip().split()]
+
+moduloDivider = 10**9 + 7
+ans = 1
+
+for jacob in zpShala:
+    ans = (ans * jacob ) % moduloDivider
+
+print(ans)
