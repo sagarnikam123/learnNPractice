@@ -23,3 +23,24 @@
 #   5 7 3
 #
 #######################################################################################################################
+
+n = int(input().strip())
+phogat = [int(x) for x in input().strip().split()]
+chindwad = [0] * 3
+
+def changul(p, nuclide):
+    chilki = p + 3
+    while chilki < n:
+        nuclide += phogat[chilki]
+        chilki += 3
+    chindwad[p] = nuclide
+
+if n < 3:
+    zq = n
+else:
+    zq = 3
+
+for dangal in range(zq):
+    changul(dangal, phogat[dangal])
+
+print(chindwad[0],chindwad[1],chindwad[2])
