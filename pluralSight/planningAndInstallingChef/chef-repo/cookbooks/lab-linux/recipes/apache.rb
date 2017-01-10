@@ -1,5 +1,5 @@
 # Installs Apache web server
 
-package 'httpd' do
+package 'apache2' do
   action :install
 end
