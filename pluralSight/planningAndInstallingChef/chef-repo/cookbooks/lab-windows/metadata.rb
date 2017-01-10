@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures lab-windows'
 long_description 'Installs/Configures lab-windows'
-version '0.1.0'
+version '0.1.1'
 
 depends 'windows'
 
