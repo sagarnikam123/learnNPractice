@@ -17,3 +17,8 @@ class SortedSet:
 
     def __getitem__(self, index):
         return self._items[index]
+
+    def __repr__(self):
+        return "SortedSet({})".format(
+            repr(self._items) if self._items else ''
+        )
