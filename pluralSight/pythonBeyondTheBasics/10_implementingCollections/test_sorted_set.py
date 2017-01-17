@@ -143,6 +143,14 @@ class TestSequenceProtocol(unittest.TestCase):
         with self.assertRaises(ValueError):
             s.index(15)
 
+    def test_count_zero(self):
+        s = SortedSet([1, 5, 7, 9])
+        self.assertEqual(s.count(11), 0)
+
+    def test_count_one(self):
+        s = SortedSet([1, 5, 7, 9])
+        self.assertEqual(s.count(7), 1)
+
 class TestReprProtocol(unittest.TestCase):
 
     def test_repr_empty(self):
