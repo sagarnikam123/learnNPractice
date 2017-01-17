@@ -109,6 +109,32 @@ class TestSequenceProtocol(unittest.TestCase):
         with self.assertRaises(IndexError):
             self.s[-6]
 
+    def test_slice_from_start(self):
+        self.assertEqual(self.s[:3], SortedSet([1, 4, 9]))
+
+    def test_slice_to_end(self):
+        self.assertEqual(self.s[3:], SortedSet([13, 15]))
+
+    def test_slice_empty(self):
+        self.assertEqual(self.s[10:], SortedSet())
+
+    def test_slice_arbitrary(self):
+        self.assertEqual(self.s[2:4], SortedSet([9, 13]))
+
+    def test_slice_full(self):
+        self.assertEqual(self.s[:], self.s)
+
+    def test_reversed(self):
+        s = SortedSet([1, 3, 5, 7])
+        r = reversed(s)
+        self.assertEqual(next(r), 7)
+        self.assertEqual(next(r), 5)
+        self.assertEqual(next(r), 3)
+        self.assertEqual(next(r), 1)
+        with self.assertRaises(StopIteration):
+            next(r)
+
+
 class TestReprProtocol(unittest.TestCase):
 
     def test_repr_empty(self):
