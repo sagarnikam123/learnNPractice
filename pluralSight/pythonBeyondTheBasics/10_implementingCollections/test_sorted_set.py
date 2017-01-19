@@ -1,7 +1,7 @@
 # test_sorted_set
 
 import unittest
-
+from collections.abc import (Container, Sized, Iterable, Sequence)
 from sorted_set import SortedSet
 
 class TestConstruction(unittest.TestCase):
@@ -44,6 +44,8 @@ class TestContainerProtocol(unittest.TestCase):
     def test_negative_not_contained(self):
         self.assertFalse(9 not in self.s)
 
+    def test_protocol(self):
+        self.assertTrue(issubclass(SortedSet, Container))
 
 class TestSizedProtocol(unittest.TestCase):
 
@@ -62,6 +64,9 @@ class TestSizedProtocol(unittest.TestCase):
     def test_with_duplicates(self):
         s = SortedSet([5, 5, 5])
         self.assertEqual(len(s), 1)
+
+    def test_protocol(self):
+        self.assertTrue(issubclass(SortedSet, Sized))
 
 class TestIterableProtocol(unittest.TestCase):
 
@@ -83,6 +88,8 @@ class TestIterableProtocol(unittest.TestCase):
             self.assertEqual(item, expected[index])
             index += 1
 
+    def test_protocol(self):
+        self.assertTrue(issubclass(SortedSet, Iterable))
 
 class TestSequenceProtocol(unittest.TestCase):
 
@@ -150,6 +157,9 @@ class TestSequenceProtocol(unittest.TestCase):
     def test_count_one(self):
         s = SortedSet([1, 5, 7, 9])
         self.assertEqual(s.count(7), 1)
+
+    def test_protocol(self):
+        self.assertTrue(issubclass(SortedSet, Sequence))
 
 class TestReprProtocol(unittest.TestCase):
 
