@@ -1,6 +1,7 @@
 # sorted_set
 from collections.abc import Sequence
 from bisect import bisect_left
+from itertools import chain
 
 class SortedSet(Sequence):
 
@@ -48,3 +49,12 @@ class SortedSet(Sequence):
 
     def count(self, item):
         return int(item in self)
+
+    def __add__(self, rhs):
+        return SortedSet(chain(self._items, rhs._items))
+
+    def __mul__(self, rhs):
+        return self if rhs > 0 else SortedSet()
+
+    def __rmul__(self, lhs):
+        return self * lhs
