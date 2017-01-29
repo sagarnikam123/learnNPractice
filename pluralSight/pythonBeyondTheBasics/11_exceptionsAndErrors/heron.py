@@ -1,4 +1,6 @@
 import math
+import sys
+import io
 
 class TriangleError(Exception):
 
@@ -23,3 +25,18 @@ def triangle_area(a, b, c):
     p = (a + b + c) / 2
     a = math.sqrt(p *(p -a) * (p -b) * (p -c))
     return a
+
+def main():
+    try:
+        a = triangle_area(3, 4, 10)
+        print(a)
+    except TriangleError as e:
+        try:
+            print(e, file=sys.stdin)
+        except io.UnsupportedOperation as f:
+            print(e)
+            print(f)
+            print(f.__context__ is e)
+
+if __name__ == '__main__':
+    main()
