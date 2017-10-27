@@ -20,5 +20,14 @@ def count_num(num):
     return total_count
 
 
-print(count_num(100))
-print(count_num(9))
+def count_num2(num):
+    return numberList.count(str(num))
+
+
+print("countNum - 1")
+print(count_num2(100))
+print(count_num2(9))
+
+print("countNum - 2")
+print(count_num2(100))
+print(count_num2(9))
