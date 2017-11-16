@@ -38,3 +38,18 @@
 #   Hence, the total happiness is 2 - 1 = 1.
 #
 #######################################################################################################################
+
+garodarBedka = input()
+umbra = map(int, input().split())
+chintu = set(map(int, input().split()))
+pintu = set(map(int, input().split()))
+
+happiness = 0
+
+for u in umbra:
+    if u in chintu:
+        happiness += 1
+    if u in pintu:
+        happiness -= 1
+
+print(happiness)
