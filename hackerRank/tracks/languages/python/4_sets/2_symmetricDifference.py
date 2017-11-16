@@ -107,3 +107,16 @@
 #   12
 #
 #######################################################################################################################
+
+m = int(input())
+m_set = set(map(int, input().split()))
+n = int(input())
+n_set = set(map(int, input().split()))
+
+khaliDiff = m_set.difference(n_set)
+khaliDiff.update(n_set.difference(m_set))
+sticker = list(khaliDiff)
+sticker.sort()
+
+for z in sticker:
+    print(z)
