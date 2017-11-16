@@ -95,3 +95,15 @@
 
 n = int(input())
 s = set(map(int, input().split()))
+cmd = int(input())
+
+for genNext in range(cmd):
+    joker = input().split()
+    if joker[0] == 'pop':
+        s.pop()
+    if joker[0] == 'remove':
+        s.remove(int(joker[1]))
+    if joker[0] == 'discard':
+        s.discard(int(joker[1]))
+
+print(sum(s))
