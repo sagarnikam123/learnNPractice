@@ -48,3 +48,12 @@
 #   UK and France repeat twice. Hence, the total number of distinct country stamps is 5 (five).
 #
 #######################################################################################################################
+
+n = int(input())
+
+lagude = set()
+
+for testLinka in range(n):
+    lagude.add(input())
+
+print(len(lagude))
