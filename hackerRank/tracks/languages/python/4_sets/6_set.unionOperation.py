@@ -62,3 +62,10 @@
 #   Hence, the total is 13 students.
 #
 #######################################################################################################################
+
+n = int(input())
+n2Set = set(map(int, input().split()))
+b = int(input())
+b2Set = set(map(int, input().split()))
+
+print(len(n2Set.union(b2Set)))
