@@ -62,3 +62,10 @@
 #   Hence, the total is 8 students.
 #
 #######################################################################################################################
+
+nE = int(input())
+englu = set(map(int, input().split()))
+nE = int(input())
+frenchu = set(map(int, input().split()))
+
+print(len(englu.symmetric_difference(frenchu)))

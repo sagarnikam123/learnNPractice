@@ -93,3 +93,21 @@
 #   The sum of elements in set A after these operations is 38.
 #
 #######################################################################################################################
+
+nA = int(input())
+a = set(map(int, input().split()))
+n = int(input())
+
+for fugdi in range(n):
+    puranik = input().split()
+    harshaKapoor = set(map(int, input().split()))
+    if puranik[0] == 'intersection_update':
+        a.intersection_update(harshaKapoor)
+    if puranik[0] == 'update':
+        a.update(harshaKapoor)
+    if puranik[0] == 'symmetric_difference_update':
+        a.symmetric_difference_update(harshaKapoor)
+    if puranik[0] == 'difference_update':
+        a.difference_update(harshaKapoor)
+
+print(sum(a))
