@@ -41,3 +41,16 @@
 #   because 100 is not in set A. Hence, the output is False.
 #
 #######################################################################################################################
+
+nachos = set(map(int, input().split()))
+fassos = int(input())
+golden = True
+
+for jestamadh in range(fassos):
+    subah = set(map(int, input().split()))
+    common = nachos.intersection(subah)
+    if nachos == subah or len(subah) > len(common):
+        golden = False
+        break
+
+print(golden)
