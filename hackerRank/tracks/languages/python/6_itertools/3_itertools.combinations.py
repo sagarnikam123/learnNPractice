@@ -49,3 +49,14 @@
 #   HK
 #
 #######################################################################################################################
+
+from itertools import combinations
+
+(jodhe, kodhe) = input().split(' ')
+konthe  = list(jodhe)
+konthe.sort()
+
+for bellPepper in range(1, int(kodhe)+1):
+    pinku = list(combinations(''.join(konthe), bellPepper))
+    for each in pinku:
+        print(''.join(each))
