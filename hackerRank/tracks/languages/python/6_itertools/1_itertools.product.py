@@ -56,3 +56,11 @@
 #    (1, 3) (1, 4) (2, 3) (2, 4)
 #
 #######################################################################################################################
+
+a = map(int,input().strip().split())
+b = map(int,input().strip().split())
+
+from itertools import product
+jin = list(product(a, b))
+for z in jin:
+    print(z, end=' ')
