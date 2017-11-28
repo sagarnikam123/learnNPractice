@@ -59,3 +59,14 @@
 #   All possible size 2 permutations of the string "HACK" are printed in lexicographic sorted order.
 #
 #######################################################################################################################
+
+from itertools import permutations
+
+(jodhe, kodhe) = input().split(' ')
+konthe  = list(jodhe)
+konthe.sort()
+
+pinku = list(permutations(konthe, int(kodhe)))
+
+for each in pinku:
+    print(''.join(each))
