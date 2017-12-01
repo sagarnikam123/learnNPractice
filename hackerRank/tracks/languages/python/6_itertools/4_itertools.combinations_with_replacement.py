@@ -50,3 +50,13 @@
 #   KK
 #
 #######################################################################################################################
+
+from itertools import combinations_with_replacement
+
+(jogDhari, girDhari) = input().split(' ')
+bhaitad = list(jogDhari)
+bhaitad.sort()
+
+thai = list(combinations_with_replacement(''.join(bhaitad), int(girDhari)))
+for denting in thai:
+    print(''.join(denting))
