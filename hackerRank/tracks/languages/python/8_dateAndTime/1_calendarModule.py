@@ -72,3 +72,21 @@
 #   The day on August 5th 2015 was WEDNESDAY.
 #
 #######################################################################################################################
+
+import calendar
+
+sare = list(map(int, input().split(' ')))
+golmal = calendar.weekday(sare[2], sare[0], sare[1])
+
+def apnaDay(x):
+    return {
+        0 : 'MONDAY',
+        1 : 'TUESDAY',
+        2 : 'WEDNESDAY',
+        3 : 'THURSDAY',
+        4 : 'FRIDAY',
+        5 : 'SATURDAY',
+        6 : 'SUNDAY'
+    }.get(x)
+
+print(apnaDay(golmal))
