@@ -52,7 +52,7 @@ sudo su
 mysql -u root
 create database bugs;
 CREATE USER 'quanta'@'localhost' IDENTIFIED BY '';
-GRANT ALL ON bugs.*TO quanta@localhost;
+GRANT ALL ON bugs.* TO quanta@localhost;
 FLUSH PRIVILEGES;
 exit
 
@@ -81,6 +81,7 @@ sudo a2enmod cgi headers expires
 sudo a2enmod rewrite
 sudo service apache2 restart
 
+# Note :- .htaccess may or may not be available
 #  rename the .htaccess file in asset and data folder of bugzilla :
 cd /var/www/html/bugzilla/data/
 mv .htaccess .htaccess-old
@@ -90,3 +91,6 @@ mv .htaccess .htaccess-old
 
 # restart apache2
 sudo service apache2 restart
+
+# go to browser
+# http://localhost/bugzilla
