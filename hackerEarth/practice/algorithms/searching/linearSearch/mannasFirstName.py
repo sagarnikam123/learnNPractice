@@ -31,3 +31,13 @@
 #   SUVO = 1, SUVOJIT = 1
 #
 #######################################################################################################################
+
+n = int(input().strip())
+
+for fikir in range(n):
+    jindaDil = input().strip()
+    suvo = 0
+    suvojit = 0
+
+    if len(jindaDil) < 4:
+        print( "SUVO= {suvo}, SUVOJIT = {suvojit}".format(suvo = suvo,suvojit=suvojit ) )
