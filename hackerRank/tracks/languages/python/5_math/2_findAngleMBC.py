@@ -39,3 +39,8 @@
 #   NOTE: Python 3 is disabled for this challenge.
 #
 #######################################################################################################################
+
+ab = int(input().strip())
+bc = int(input().strip())
+
+print()
