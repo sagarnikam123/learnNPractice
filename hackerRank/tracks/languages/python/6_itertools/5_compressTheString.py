@@ -32,3 +32,11 @@
 #   Also, note the single space within each compression and between the compressions.
 #
 #######################################################################################################################
+
+from itertools import groupby
+
+data  = input().strip()
+data = sorted(data)
+
+for k , g in groupby(data):
+    print( (len(list(g)), k), end=' ' )
