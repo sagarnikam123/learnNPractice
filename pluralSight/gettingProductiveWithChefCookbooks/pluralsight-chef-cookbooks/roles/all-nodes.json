@@ -1,0 +1,13 @@
+{
+    "name": "all-nodes",
+    "description": "Role to configure all Chef nodes",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+        "recipe[all-nodes]"
+    ]
+}
