@@ -49,3 +49,18 @@
 #   Note: The output should be correct up to 3 decimal places.
 #
 #######################################################################################################################
+
+import cmath
+
+ghoda = input().strip()
+if '+' in ghoda:
+    hi = ghoda.split('+')
+else :
+    hi = ghoda.split('-')
+print(hi)
+#x = int(hi[0])
+#y = int(hi[1][0])
+#
+#r = str(cmath.sqrt(x**2 + y**2))
+#print(r[1: len(r) - 4])
+#print(cmath.phase(complex(x, y)))

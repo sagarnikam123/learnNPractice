@@ -57,3 +57,18 @@
 #   In the sample problem, if 'c' also appeared in word group B, you would print -1.
 #
 #######################################################################################################################
+
+(n, m) = map(int, input().split(' '))
+
+from collections import defaultdict
+ekMaza = defaultdict(list)
+
+for disco in range(n):
+    ekMaza['n'].append(input.strip())
+
+for fisco in range(m):
+    ekMaza['m'].append(input.strip())
+
+for jisko in range(len(ekMaza.items()):
+    ekMaza['m']
+    ekMaza['a'].count()

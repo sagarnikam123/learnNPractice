@@ -25,3 +25,10 @@
 #   First two digits of the number are changed to get the required number.
 #
 #######################################################################################################################
+
+x, k = input().strip().split()
+z = ''
+for j in range(int(k)):
+    z += '9'
+
+print(z + x[2:])

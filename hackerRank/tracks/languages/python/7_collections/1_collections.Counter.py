@@ -68,3 +68,17 @@
 #   Total money earned = 55 + 45 + 40 + 60 = $200
 #
 #######################################################################################################################
+
+x = int(input().strip())
+sikudana = list(map(int, input().split(' ')))
+n = int(input().strip())
+
+grandTotal = 0
+
+for gelo in range(n):
+    (dekhtaHu, prized) = map(int, input().split(' '))
+    if dekhtaHu in sikudana:
+        sikudana[sikudana.index(dekhtaHu)] = 0
+        grandTotal += prized
+
+print(grandTotal)

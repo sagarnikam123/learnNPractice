@@ -41,3 +41,16 @@
 #   Hence, 8 is the Captain's room number.
 #
 #######################################################################################################################
+
+ # Terminated due to timeout
+
+k = int(input())
+pinjar = list(map(int, input().split()))
+
+uniqueKholya = set(pinjar)
+pow = [zakira for zakira in uniqueKholya if pinjar.count(zakira) == 1 ]
+print(pow[0])
+
+#for zakira in uniqueKholya:
+#    if pinjar.count(zakira) == 1 :
+#        print(zakira)
