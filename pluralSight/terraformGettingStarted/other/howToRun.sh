@@ -18,6 +18,7 @@ terraform apply -var-file='../secure/terraform.tfvars'
 
 # destroy
 terraform destroy -var-file='../secure/terraform.tfvars'
+terraform destroy -var-file='../secure/terraform.tfvars' --force
 
 ################################################################################
 #
