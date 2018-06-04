@@ -1,6 +1,7 @@
 
 youtube-dl --format mp4 --yes-playlist --download-archive 'FILE' 'URL'
 
+youtube-dl --format mp4 --yes-playlist --ignore-errors --download-archive 'FILE' 'URL'
 ################################################################################
 # Go in 5 Minutes
 youtube-dl --format mp4 --yes-playlist --download-archive '/home/quanta/Dropbox/downloadArchive/uTubeDownloadArchive/goIn5Minutes' \
