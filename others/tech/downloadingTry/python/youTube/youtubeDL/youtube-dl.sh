@@ -20,3 +20,9 @@ youtube-dl --get-id https://www.youtube.com/channel/UC4urAVbaOZmI5YSqbA_mntw/vid
 
 # downloading a playlist
 youtube-dl --format mp4 --yes-playlist https://www.youtube.com/playlist?list=PLQVvvaa0QuDeF3hP0wQoSxpkqgRcgxMqX
+
+# Download YouTube playlist videos in separate directory indexed by video order in a playlist
+youtube-dl --format mp4 -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://www.youtube.com/playlist?list=PLwiyx1dc3P2JR9N8gQaQN_BCvlSlap7re
+
+# Download Udemy course keeping each chapter in separate directory under MyVideos directory in your home
+youtube-dl -u user -p password -o './%(playlist)s/%(chapter_number)s - %(chapter)s/%(title)s.%(ext)s' https://www.udemy.com/principles-of-sustainable-design
