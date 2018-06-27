@@ -17,3 +17,6 @@ youtube-dl --get-id https://www.youtube.com/user/neilvkpatel/videos >> neilPatel
 youtube-dl --format mp4 https://www.youtube.com/user/neilvkpatel/videos
 youtube-dl --format mp4  --encoding utf-8 https://www.youtube.com/channel/UC4urAVbaOZmI5YSqbA_mntw/videos
 youtube-dl --get-id https://www.youtube.com/channel/UC4urAVbaOZmI5YSqbA_mntw/videos >> sanketMarathi
+
+# downloading a playlist
+youtube-dl --format mp4 --yes-playlist https://www.youtube.com/playlist?list=PLQVvvaa0QuDeF3hP0wQoSxpkqgRcgxMqX
