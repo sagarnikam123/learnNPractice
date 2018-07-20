@@ -1,6 +1,8 @@
 # Class attribute - common to instance of a class
 #                   i.e. for every object u create for a particular class
-#                   the value remains same
+#                   the value remains same (creted using className.attributeName)
+# instance attribute - specific to a instance of an object
+#                   created using objectName.attributeName
 
 class Employee:
     numberOfWorkingHours = 40
