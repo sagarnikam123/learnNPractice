@@ -1,0 +1,12 @@
+# Explore R Markdown
+
+#######################################################################################################################
+#
+# The document to the right is a template R Markdown document.
+# It includes the most familiar parts of an R Markdown document:
+#
+#    A YAML header that contains some metadata
+#    Narrative text written in Markdown
+#    R code chunks surrounded by ```{r} and ```; a syntax that comes from the knitr package
+#
+######################################################################################################################
