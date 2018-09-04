@@ -1,0 +1,32 @@
+# Lists in R Markdown
+
+#######################################################################################################################
+#
+# To make a bulleted list in Markdown, place each item on a new line after an asterisk and a space, like this:
+#
+# * item 1
+# * item 2
+# * item 3
+#
+# You can make an ordered list by placing each item on a new line after a number followed by
+# a period followed by a space, #  like this
+#
+# 1. item 1
+# 2. item 2
+# 3. item 3
+#
+# In each case, you need to place a blank line between the list and any paragraphs that come before it.
+#
+######################################################################################################################
+
+## Data
+
+The `atmos` data set resides in the `nasaweather` package of the *R* programming language. It contains a collection of atmospheric variables measured between 1995 and 2000 on a grid of 576 coordinates in the western hemisphere. The data set comes from the [2006 ASA Data Expo](http://stat-computing.org/dataexpo/2006/).
+
+Some of the variables in the `atmos` data set are:
+
+* **temp** - The mean monthly air temperature near the surface of the Earth (measured in kelvins (*K*))
+
+* **pressure** - The mean monthly air pressure at the surface of the Earth (measured in millibars (*mb*))
+
+* **ozone** - The mean monthly abundance of atmospheric ozone (measured in Dobson units (*DU*))
