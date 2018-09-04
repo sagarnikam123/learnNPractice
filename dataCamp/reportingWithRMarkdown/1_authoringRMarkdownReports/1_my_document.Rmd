@@ -1,0 +1,32 @@
+---
+title: "Hello R Markdown"
+output:
+  html_document:
+    css: faded.css
+---
+
+## Data
+
+The `atmos` data set resides in the `nasaweather` package of the *R* programming language. It contains a collection of atmospheric variables measured between 1995 and 2000 on a grid of 576 coordinates in the western hemisphere. The data set comes from the [2006 ASA Data Expo](http://stat-computing.org/dataexpo/2006/).
+
+Some of the variables in the `atmos` data set are:
+
+* **temp** - The mean monthly air temperature near the surface of the Earth (measured in kelvins (*K*))
+
+* **pressure** - The mean monthly air pressure at the surface of the Earth (measured in millibars (*mb*))
+
+* **ozone** - The mean monthly abundance of atmospheric ozone (measured in Dobson units (*DU*))
+
+You can convert the temperature unit from Kelvin to Celsius with the formula
+
+$$ celsius = kelvin - 273.15 $$
+
+And you can convert the result to Fahrenheit with the formula
+
+$$ fahrenheit = celsius \times \frac{9}{5} + 32 $$
+
+```{r, echo = FALSE, results = 'hide'}
+example_kelvin <- 282.15
+```
+
+For example, `r example_kelvin` degrees Kelvin corresponds to `r example_kelvin - 273.15` degrees Celsius.

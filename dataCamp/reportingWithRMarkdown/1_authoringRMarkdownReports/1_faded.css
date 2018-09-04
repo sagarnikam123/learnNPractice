@@ -1,0 +1,15 @@
+
+h1{
+  color: white;
+  padding: 10px;
+  background-color: #3399ff
+}
+
+ul {
+  list-style-type: square;
+}
+
+.MathJax_Display {
+  padding: 0.5em;
+  background-color: #eaeff3
+}
