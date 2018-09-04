@@ -1,0 +1,28 @@
+# Styling narrative sections
+
+#######################################################################################################################
+#
+#	You can use Markdown to embed formatting instructions into your text. For example, you can make a word
+# italicized by surrounding it in asterisks, bold by surrounding it in two asterisks, and monospaced (like code)
+# by surrounding it in backticks:
+#
+# *italics*
+# **bold**
+# `code`
+#
+# You can turn a word into a link by surrounding it in hard brackets and then placing the link behind it in
+# parentheses, like this:
+#
+# [RStudio](www.rstudio.com)
+#
+# To create titles and headers, use leading hastags. The number of hashtags determines the header's level:
+#
+# # First level header
+# ## Second level header
+# ### Third level header
+#
+######################################################################################################################
+
+## Data
+
+The `atmos` data set resides in the `nasaweather` package of the *R* programming language. It contains a collection of atmospheric variables measured between 1995 and 2000 on a grid of 576 coordinates in the western hemisphere. The data set comes from the [2006 ASA Data Expo](http://stat-computing.org/dataexpo/2006/).
