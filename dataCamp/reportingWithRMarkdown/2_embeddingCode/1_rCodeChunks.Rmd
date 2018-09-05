@@ -1,0 +1,36 @@
+# R code chunks
+
+#######################################################################################################################
+#
+# You can embed R code into your R Markdown report with the knitr syntax. To do this, surround your code with
+# two lines: one that contains ```{r} and one that contains ```. The result is a code chunk that looks like this:
+#
+# ```{r}
+# # some code
+# ```
+#
+# When you render the report, R will execute the code. If the code returns any results, R will add them to your report.
+#
+######################################################################################################################
+
+## Cleaning
+
+For the remainder of the report, we will look only at data from the year 1995. We aggregate our data by location, using the *R* code below.
+
+```{r}
+library(nasaweather)
+library(dplyr)
+
+year <- 1995
+
+means <- atmos %>%
+  filter(year == year) %>%
+  group_by(long, lat) %>%
+  summarize(temp = mean(temp, na.rm = TRUE),
+         pressure = mean(pressure, na.rm = TRUE),
+         ozone = mean(ozone, na.rm = TRUE),
+         cloudlow = mean(cloudlow, na.rm = TRUE),
+         cloudmid = mean(cloudmid, na.rm = TRUE),
+         cloudhigh = mean(cloudhigh, na.rm = TRUE)) %>%
+  ungroup()
+```
