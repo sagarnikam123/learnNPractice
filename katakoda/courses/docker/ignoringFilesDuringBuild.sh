@@ -13,6 +13,6 @@ docker run nopassword ls /app
 docker build -t large-file-context .
 ################################################################################
 # Step 3 - Optimised Build
- echo big-temp-file.img >> .dockerignore
-  docker build -t no-large-file-context .
+echo big-temp-file.img >> .dockerignore
+docker build -t no-large-file-context .
 ################################################################################
