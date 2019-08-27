@@ -13,3 +13,8 @@ go test -cover
 # Visualizing Coverage
 go test -coverprofile=coverage.out
 go tool cover -html=coverage.out
+
+# Differentiate your Unit and Integration Tests
+# run integration test
+cd others/language/go/tutorialEdge/testingInGo/otherTest
+go test -tags=integration
