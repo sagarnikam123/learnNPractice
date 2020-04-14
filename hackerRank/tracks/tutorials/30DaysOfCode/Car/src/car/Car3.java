@@ -1,7 +1,5 @@
 package car;
 
-import sun.nio.cs.ext.ISCII91;
-
 public class Car3 {
 
 	int maxSpeed = 100;
@@ -19,10 +17,6 @@ public class Car3 {
 	
 	int numberOfPeopleInCar = 1;
 	int maxNumberOfPeopleInCar = 6;
-	
-	// f(x, y, z) = x + 1/z - y;
-	// Say x = 5;
-	// f(5) = 5 + 1 = 6;
 	
 	public Car3() {
 		
