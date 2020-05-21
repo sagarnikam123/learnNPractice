@@ -1,0 +1,21 @@
+# How can I check the state of a repository?
+
+##############################################################################
+
+When you are using Git, you will frequently want to check the status of your 
+repository. To do this, run the command git status, which displays a list 
+of the files that have been modified since the last time changes were saved.
+
+##############################################################################
+
+You have been put in the dental repository. Use git status to discover which 
+file(s) have been changed since the last save. Which file(s) are listed?
+
+    data/summer.csv.
+    report.txt.
+    Neither of the above.
+    Both of the above.
+
+    Ans --> report.txt (git status)
+
+##############################################################################
