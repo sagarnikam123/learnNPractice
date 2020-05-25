@@ -1,0 +1,45 @@
+# How can I view a specific commit?
+
+##############################################################################
+
+To view the details of a specific commit, you use the command git show with 
+the first few characters of the commit's hash. For example, the command git 
+show 0da2f7 produces this:
+
+commit 0da2f7ad11664ca9ed933c1ccd1f3cd24d481e42
+Author: Rep Loop <repl@datacamp.com>
+Date:   Wed Sep 5 15:39:18 2018 +0000
+
+    Added year to report title.
+
+diff --git a/report.txt b/report.txt
+index e713b17..4c0742a 100644
+--- a/report.txt
++++ b/report.txt
+@@ -1,4 +1,4 @@
+-# Seasonal Dental Surgeries 2017-18
++# Seasonal Dental Surgeries (2017) 2017-18
+
+ TODO: write executive summary.
+
+The first part is the same as the log entry shown by git log. The second 
+part shows the changes; as with git diff, lines that the change removed are 
+prefixed with -, while lines that it added are prefixed with +.
+
+##############################################################################
+
+You have been put in the dental directory. Use git log to see the hashes of 
+recent commits, and then git show with the first few digits of a hash to 
+look at the most recent commit. How many files did it change?
+
+Reminder: press the space bar to page down through git log's output and q 
+to quit the paged display.
+
+    None.
+    1.
+    2.
+    4.
+
+Ans --> 1
+
+##############################################################################
