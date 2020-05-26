@@ -1,0 +1,27 @@
+# How can I see what changed between two commits?
+
+##############################################################################
+
+git show with a commit ID shows the changes made in a particular commit. 
+To see the changes between two commits, you can use git diff ID1..ID2, where 
+ID1 and ID2 identify the two commits you're interested in, and the connector .. 
+is a pair of dots. For example, git diff abc123..def456 shows the differences 
+between the commits abc123 and def456, while git diff HEAD~1..HEAD~3 shows 
+the differences between the state of the repository one commit in the past 
+and its state three commits in the past.
+
+##############################################################################
+
+You are in the dental repository. Use git diff to view the differences 
+between its current state and its state two commits previously. Which of 
+the following files have changed?
+
+data/western.csv.
+report.txt.
+data/southern.csv.
+report.txt and data/western.csv.
+report.txt and data/southern.csv.
+
+Ans --> report.txt and data/western.csv. (git diff HEAD..HEAD~2)
+
+##############################################################################
