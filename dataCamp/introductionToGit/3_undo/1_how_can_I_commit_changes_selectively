@@ -1,0 +1,29 @@
+# How can I commit changes selectively?
+
+##############################################################################
+
+You don't have to put all of the changes you have made recently into the 
+staging area at once. For example, suppose you are adding a feature to 
+analysis.R and spot a bug in cleanup.R. After you have fixed it, you want 
+to save your work. Since the changes to cleanup.R aren't directly related 
+to the work you're doing in analysis.R, you should save your work 
+in two separate commits.
+
+The syntax for staging a single file is git add path/to/file.
+
+If you make a mistake and accidentally stage a file you shouldn't have, 
+you can unstage the additions with git reset HEAD and try again.
+
+##############################################################################
+
+From the output of git status on the right, you'll see that two files were 
+changed; data/northern.csv and data/eastern.csv. 
+Stage only the changes made to data/northern.csv.
+
+git add data/northern.csv
+
+Commit those changes with the message "Adding data from northern region."
+
+git commit -m 'Adding data from northern region.' data/northern.csv
+
+##############################################################################
