@@ -26,6 +26,6 @@ first four characters of the hash of the most recent commit?
     2e95
     None of the above
 
-Ans --> None of the above
+Ans --> None of the above (git log)
 
 ##############################################################################
