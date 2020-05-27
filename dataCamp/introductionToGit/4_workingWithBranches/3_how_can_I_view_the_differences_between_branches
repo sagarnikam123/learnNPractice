@@ -1,0 +1,23 @@
+# How can I view the differences between branches?
+
+##############################################################################
+
+Branches and revisions are closely connected, and commands that work on the 
+latter usually work on the former. For example, just as 
+git diff revision-1..revision-2 shows the difference between two versions 
+of a repository, git diff branch-1..branch-2 
+shows the difference between two branches.
+
+##############################################################################
+
+You are in the dental repository. How many files in the summary-statistics 
+branch are different from their equivalents in the master branch?
+
+None.
+1.
+3.
+8.
+
+Ans --> 3 (git diff summary-statistics..master)
+
+##############################################################################

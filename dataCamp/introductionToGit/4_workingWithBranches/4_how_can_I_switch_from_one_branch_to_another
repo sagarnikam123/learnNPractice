@@ -1,0 +1,46 @@
+# How can I switch from one branch to another?
+
+##############################################################################
+
+You previously used git checkout with a commit hash to switch the repository 
+state to that hash. You can also use git checkout with the name of a 
+branch to switch to that branch.
+
+Two notes:
+
+When you run git branch, it puts a * beside the name of the branch 
+you are currently in.
+Git will only let you do this if all of your changes have been committed. 
+You can get around this, but it is outside the scope of this course.
+In this exercise, you'll also make use of git rm. This removes the file 
+(just like the shell command rm) then stages the removal of that file 
+with git add, all in one step.
+
+##############################################################################
+
+You are in the master branch of the dental repository. 
+Switch to the summary-statistics branch.
+
+git checkout summary-statistics
+
+Use git rm to delete report.txt.
+
+git rm report.txt
+
+Commit your change with `-m "Removing report" as a message.
+
+git commit -m 'Removing report'
+
+Use ls to check that it's gone.
+
+ls
+
+Switch back to the master branch.
+
+git checkout master
+
+Use ls to ensure that report.txt is still there.
+
+ls
+
+##############################################################################

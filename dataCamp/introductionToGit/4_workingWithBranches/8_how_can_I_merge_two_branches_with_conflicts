@@ -1,0 +1,49 @@
+# How can I merge two branches with conflicts?
+
+##############################################################################
+
+When there is a conflict during a merge, Git tells you that there's a problem, 
+and running git status after the merge reminds you which files have conflicts 
+that you need to resolve by printing both modified: beside the files' names.
+
+Inside the file, Git leaves markers that look like this to tell 
+you where the conflicts occurred:
+
+<<<<<<< destination-branch-name
+...changes from the destination branch...
+=======
+...changes from the source branch...
+>>>>>>> source-branch-name
+In many cases, the destination branch name will be HEAD because you will 
+be merging into the current branch. To resolve the conflict, edit the file 
+to remove the markers and make whatever other changes are needed to reconcile 
+the changes, then commit those changes.
+
+##############################################################################
+
+You are in the master branch of the dental repository. Merge the changes 
+from the alter-report-title branch (the source) 
+into the master branch (the destination).
+
+git merge alter-report-title master
+
+Use git status to see which file has conflicts.
+
+git status
+
+It turns out that report.txt has some conflicts. Use nano report.txt to open 
+it and remove some lines so that only the second title is kept. 
+Save your work with Ctrl+O and Enter, and then leave the editor with Ctrl+X. 
+You can easily remove entire lines with Ctrl+K.
+
+nano report.txt
+
+Add the merged file to the staging area.
+
+git add report.txt
+
+Commit your changes with a log message.
+
+git commit -m "resolve merge conflicts"
+
+##############################################################################
