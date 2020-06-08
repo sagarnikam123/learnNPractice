@@ -1,0 +1,32 @@
+# What happens if my push conflicts with someone else's work?
+
+##############################################################################
+
+Overwriting your own work by accident is bad; overwriting someone else's is worse.
+
+To prevent this happening, Git does not allow you to push changes to a remote 
+repository unless you have merged the contents of the remote repository 
+into your own work.
+
+In this exercise, you have made and committed changes to the dental 
+repository locally and want to push your changes to a remote repository.
+
+##############################################################################
+
+Use git push to push those changes to the remote repository origin, 
+specifying the master branch.
+
+git push origin master
+
+In order to prevent you overwriting remote work, Git has refused to execute 
+your push. Use git pull to bring your repository up to date with origin. 
+It will open up an editor that you can exit with Ctrl+X.
+
+git pull origin master
+
+Now that you have merged the remote repository's state 
+into your local repository, try the push again.
+
+git push origin master
+
+##############################################################################
