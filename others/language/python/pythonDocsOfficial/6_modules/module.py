@@ -63,7 +63,7 @@ dir(builtins)
 
 # 6.4. Packages
 import sys
-sys.path.append('/home/ad.msystechnologies.com/sagar.nikam/Documents/git/learnNPractice/others/language/python/pythonDocsOfficial/6_modules')
+sys.path.append('/home/tetra/Documents/git/learnNPractice/others/language/python/pythonDocsOfficial/6_modules')
 import sound.effects.echo
 output=0
 sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
