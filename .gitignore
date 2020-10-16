@@ -5,3 +5,7 @@
 .gitignore
 .idea
 .vscode/*
+META-INF
+*.iml
+out
+.settings
