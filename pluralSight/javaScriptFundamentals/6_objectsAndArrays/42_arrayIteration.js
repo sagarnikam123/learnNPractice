@@ -25,3 +25,9 @@ let vanIds = [
 ];
 let vanResult = vanIds.every(van => van.vanId > 0);
 console.log(vanResult);
+
+let findResult = carIds.find(car.carId > 500);
+console.log(findResult);
+
+let findResult = carIds.find(car => car.carId > 500);
+console.log(findResult);
