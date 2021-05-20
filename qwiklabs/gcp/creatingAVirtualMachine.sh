@@ -1,16 +1,17 @@
 # Creating a Virtual Machine-GSP001
 
+# Task 1: Create a new instance from the Cloud Console
 gcloud auth list
 gcloud config list project
 
-# Install a NGINX web server
+# Task 2: Install an NGINX web server
 sudo su -
 apt-get update
 
 apt-get install nginx -y
 ps auwx | grep nginx
 
-# Create a new instance with gcloud
+# Task 3: Create a new instance with gcloud
 gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone asia-south1-c
 
 # SSH to VM
