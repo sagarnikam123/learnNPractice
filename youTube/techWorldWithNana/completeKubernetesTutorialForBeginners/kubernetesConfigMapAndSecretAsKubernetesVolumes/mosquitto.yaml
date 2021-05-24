@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto
+  labels:
+    app: mosquitto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mosquitto
+  template:
+    metadata:
+      labels:
+        app: mosquitto
+    spec:
+      containers:
+        - name: mosquitto
+          image: eclipse-mosquitto
+          ports:
+            - containerPort: 1883
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 250Mi
+              cpu: "0.2"
+          volumeMounts:
+            - name: mosquitto-config
+              mountPath: /mosquitto/config
+            - name: mosquitto-secret
+              mountPath: /mosquitto/secret
+              readOnly: true
+      volumes:
+        - name: mosquitto-config
+          configMap:
+            name: mosquitto-config-file
+        - name: mosquitto-secret
+          secret:
+            secretName: mosquitto-secret-file
