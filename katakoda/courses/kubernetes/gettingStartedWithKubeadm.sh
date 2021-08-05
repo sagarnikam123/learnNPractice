@@ -1,5 +1,7 @@
 # Getting Started With Kubeadm
+# Launch a multi-node cluster using Kubeadm
 
+# Learn - how to bootstrap a Kubernetes cluster using Kubeadm.
 # Kubeadm solves the problem of handling TLS encryption configuration,
 # deploying the core Kubernetes components and ensuring that additional
 # nodes can easily join the cluster. The resulting cluster is
@@ -22,10 +24,12 @@ export KUBECONFIG=$HOME/admin.conf
 kubeadm join --discovery-token-unsafe-skip-ca-verification --token=102952.1a7dd4cc8d1f4cc5 172.17.0.71:6443
 ################################################################################
 # Step 3 - View Nodes
+
 # command below will return the two nodes in our cluster.
 kubectl get nodes
 ################################################################################
 # Step 4 - Deploy Container Networking Interface (CNI)
+
 # deployment definition can be viewed at
 cat /opt/weave-kube
 # applying CNI
@@ -36,6 +40,7 @@ kubectl apply -f /opt/weave-kube
 kubectl get pod -n kube-system
 ################################################################################
 # Step 5 - Deploy Pod
+
 # create a Pod based on the Docker Image katacoda/docker-http-server.
 kubectl run http --image=katacoda/docker-http-server:latest --replicas=1
 # status of the Pod creation
@@ -44,6 +49,7 @@ kubectl get pods
 docker ps | grep docker-http-server
 ################################################################################
 # Step 6 - Deploy Dashboard
+
 # Deploy the dashboard yaml with the command
 kubectl apply -f dashboard.yaml
 # dashboard is deployed into the kube-system namespace. View the status
@@ -75,3 +81,4 @@ EOF
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
 #  https://2886795369-8443-frugo01.environments.katacoda.com/
 # For production, instead of externalIPs, it's recommended to use kubectl proxy
+################################################################################
