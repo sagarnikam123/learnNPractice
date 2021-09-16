@@ -1,0 +1,23 @@
+project.task("Task0")
+task taskA doLast { {println "performing task A"} }
+task taskB doLast { {println "performing task B"} }
+task taskC doLast { {println "performing task C"} }
+task taskD doLast { {println "performing task D"} }
+task taskE doLast { {println "performing task E"} }
+
+taskA.dependsOn taskB
+taskA.dependsOn taskC, taskD
+
+taskC.dependsOn taskE
+taskD.dependsOn taskE
+
+taskA.dependsOn taskE
+
+task taskG {
+    dependsOn taskE
+    doLast{
+        println "finally performing taskG"
+    }
+}
+
+taskA.dependsOn taskG
