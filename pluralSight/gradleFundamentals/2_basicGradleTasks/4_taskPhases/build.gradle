@@ -1,0 +1,27 @@
+project.task("Task1")
+task("Task2")
+task "Task3"
+task Task4
+
+Task4.description = "Task4 description The last task"
+Task4.doLast{
+    println "This is Task4 - performing at last"
+}
+
+Task3.doLast{ println "Task3-left shift operator is deprecated, using .doLast{}" }
+task Task5 { doLast{ println "this is task 5" } }
+Task5.doLast { println "Another closure." }
+
+task Task6 {
+    description "This is task 6"
+    doFirst{
+        println "This is doFirst from Task-6"
+    }
+    doLast {
+        println "This is doLast from Task-6"
+    }
+}
+
+Task6.doFirst{
+    println "This is another doFirst task from Task-6"
+}
