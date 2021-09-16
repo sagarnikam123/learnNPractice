@@ -9,4 +9,4 @@ META-INF
 *.iml
 out
 .settings
-.project
+.gradle/
