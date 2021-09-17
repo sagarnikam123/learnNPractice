@@ -1,0 +1,17 @@
+def contentSpec = copySpec {
+    exclude "*.doc", "Screenshot from 2021-05-25 18-21-50.png"
+    exclude { it.file.name.startsWith("Screenshot")}
+    from "src"
+}
+
+task copyImages2 (type: Copy){
+    with contentSpec
+    into 'dest'
+}
+
+task copyImages (type: Copy) {
+    description "copies files from /src to /dest directory"
+    exclude "*.jpeg", "Screenshot from 2021-05-25 18-21-50.png"
+    from "src"
+    into "dest"
+}
