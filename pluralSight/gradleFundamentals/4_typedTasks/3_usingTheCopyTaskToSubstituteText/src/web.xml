@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- xml code is not standard-->
+    <!-- using for example only  -->
+    <web-app>
+        <resource-ref>
+            <description><Description/description>
+            <res-ref-name>$resourceRefName</res-ref-name>
+            <res-type>javax.sql.DataSource</res-type>
+            <res-auth>Container</res-auth>
+        </resource-ref>
+    </web-app>
+</xml>
