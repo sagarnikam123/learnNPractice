@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Example</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            let companies = [
+                {
+                    "name" : "Big Corporation",
+                    "numberOffEmployees" : 10000,
+                    "ceo" : "Mary",
+                    "rating" : 3.6
+                },
+                {
+                    "name" : "Small Startup",
+                    "numberOffEmployees" : 3,
+                    "ceo" : null,
+                    "rating" : 4.3
+                }
+            ]
+            
+            let users = `{
+                "name" : "Kyle",
+                "favouriteNumber" : 3,
+                "isProgrammer" : true,
+                "hobbies" : ["weight lifting", "bowling"],
+                "friends" : [{
+                    "name" : "Joey",
+                    "favouriteNumber" : 100,
+                    "isProgrammer" : false,
+                    "friends" : ["Kevin", "John"]
+                }, {
+                    "name" : "Harley",
+                    "favouriteNumber" : 7,
+                    "isProgrammer" : true,
+                    "friends" : ["Peter", "Sunny"]
+                }]
+            }` // as a string
+
+            console.log("Companies as JSON object")
+            console.log(companies)
+            console.log("Companies as String")
+            console.log(JSON.stringify(companies))
+            
+            console.log("---")
+            console.log("Users as String")
+            console.log(users)
+            console.log("Users as JSON object")
+            console.log(JSON.parse(users))
+            console.log("Parsing users object:")
+            console.log((JSON.parse(users)).name)
+        </script>
+    </body>
+    
+</html>
