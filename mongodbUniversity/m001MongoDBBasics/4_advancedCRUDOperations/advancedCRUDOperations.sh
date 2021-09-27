@@ -2,7 +2,7 @@
 
 # connect
 mongosh "mongodb+srv://sandbox.xxxxx.mongodb.net/sample_restaurants" --username m001-student
-mongosh "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.ygc3r.mongodb.net"
+mongosh "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.xxxxx.mongodb.net"
 ###############################################################################
 # Query Operators - Comparison
 
