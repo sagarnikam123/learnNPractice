@@ -1,7 +1,6 @@
 package com.monotonic.testing.m2;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static com.monotonic.testing.m2.CoffeeType.Espresso;
 import static com.monotonic.testing.m2.CoffeeType.Latte;
@@ -12,14 +11,46 @@ public class CafeTest {
     public static final int NO_MILK = 0;
     public static final int NO_BEANS = 0;
 
+    private Cafe cafe;
+
+    /*
+    // new object created before every test runs
+    public CafeTest(){
+        System.out.println("Constructor");
+    }
+
+    @BeforeAll
+    public static void beforeClass() {
+        System.out.println("before class");
+    }
+
+    @AfterAll
+    public static void afterClass() {
+        System.out.println("after class");
+    }
+    */
+
+    @BeforeEach
+    public void before() {
+        //System.out.println("before each test");
+        cafe = new Cafe();
+    }
+
+    /*
+    @AfterEach
+    public void after() {
+        System.out.println("after each test");
+    }*/
+
     @Test
     public void canBrewEspresso() {
         //System.out.println("Hello World!");
         // given
-        Cafe cafe = cafeWithBeans7();
+        withBeans();
         // when
         Coffee coffee = cafe.brew(Espresso);
         // then
+
         Assertions.assertEquals(Espresso, coffee.getType(), "Wrong coffee type");
         // Expected :1 Actual   :0
         //Assertions.assertEquals(1, coffee.getMilk());
@@ -29,7 +60,7 @@ public class CafeTest {
 
     @Test
     public void brewingEspressoConsumeBeans() {
-        Cafe cafe = cafeWithBeans7();
+        withBeans();
         cafe.brew(Espresso);
 
         Assertions.assertEquals(NO_BEANS, cafe.getBeansInStock());
@@ -37,7 +68,7 @@ public class CafeTest {
 
     @Test
     public void canBrewLatte() {
-        Cafe cafe = cafeWithBeans7();
+        withBeans();
         cafe.restockMilk(Latte.getRequiredMilk());
 
         Coffee coffee = cafe.brew(CoffeeType.Latte);
@@ -46,25 +77,22 @@ public class CafeTest {
 
     @Test
     public void mustRestockMilk() {
-        Cafe cafe = new Cafe();
         Assertions.assertThrows(IllegalArgumentException.class, () -> cafe.restockMilk(NO_MILK));
     }
 
     @Test
     public void mustRestockBeans() {
-        Cafe cafe = new Cafe();
         Assertions.assertThrows(IllegalArgumentException.class, () -> cafe.restockBeans(NO_BEANS));
     }
 
     @Test
     public void latteRequiresMilk() {
-        Cafe cafe = cafeWithBeans7();
+        withBeans();
         Assertions.assertThrows(IllegalStateException.class, () -> cafe.brew(CoffeeType.Latte));
     }
 
     @Test
     public void printFilterCoffeeIngredients() {
-        Cafe cafe = new Cafe();
         cafe.restockBeans(Latte.getRequiredBeans());
         cafe.restockMilk(Latte.getRequiredMilk());
 
@@ -72,9 +100,7 @@ public class CafeTest {
         System.out.println(coffee);
     }
 
-    private Cafe cafeWithBeans7() {
-        Cafe cafe = new Cafe();
+    private void withBeans() {
         cafe.restockBeans(ESPRESSO_BEANS);
-        return cafe;
     }
 }
