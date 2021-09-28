@@ -31,13 +31,25 @@ public class CafeTest {
     }
 
     @Test
-    public void printFilterCoffeeIngredients() {
+    public void canBrewLatte() {
         Cafe cafe = new Cafe();
-        cafe.restockBeans(10);
-        cafe.restockMilk(10);
+        cafe.restockBeans(7);
+        cafe.restockMilk(227);
 
-        Coffee coffee = cafe.brew(CoffeeType.FilterCoffee);
-        System.out.println(coffee);
+        Coffee coffee = cafe.brew(CoffeeType.Latte);
+        Assertions.assertEquals(CoffeeType.Latte, coffee.getType());
+    }
+
+    @Test
+    public void mustRestockMilk() {
+        Cafe cafe = new Cafe();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> cafe.restockMilk(0));
+    }
+
+    @Test
+    public void mustRestockBeans() {
+        Cafe cafe = new Cafe();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> cafe.restockBeans(0));
     }
 
     @Test
@@ -45,5 +57,15 @@ public class CafeTest {
         Cafe cafe = new Cafe();
         cafe.restockBeans(7);
         Assertions.assertThrows(IllegalStateException.class, () -> cafe.brew(CoffeeType.Latte));
+    }
+
+    @Test
+    public void printFilterCoffeeIngredients() {
+        Cafe cafe = new Cafe();
+        cafe.restockBeans(10);
+        cafe.restockMilk(10);
+
+        Coffee coffee = cafe.brew(CoffeeType.FilterCoffee);
+        System.out.println(coffee);
     }
 }
