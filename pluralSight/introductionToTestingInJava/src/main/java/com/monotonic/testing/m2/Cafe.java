@@ -24,6 +24,8 @@ public final class Cafe {
         beansInStock -= requiredBeans;
         milkInStock -= requiredMilk;
         return new Coffee(coffeeType, requiredBeans, requiredMilk);
+        // org.opentest4j.AssertionFailedError: Wrong coffee type
+        //return new Coffee(null, 1 + requiredBeans, 1 + requiredMilk);
     }
 
     public void restockBeans(int weightInGrams) {
