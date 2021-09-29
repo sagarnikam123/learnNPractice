@@ -1,5 +1,7 @@
 package com.monotonic.testing.m2;
 
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.*;
 
 import static com.monotonic.testing.m2.CoffeeType.Espresso;
@@ -51,6 +53,7 @@ public class CafeTest {
         Coffee coffee = cafe.brew(Espresso);
         // then
 
+        MatcherAssert.assertThat(coffee, Matchers.hasProperty("beans", Matchers.equalTo(ESPRESSO_BEANS)));
         Assertions.assertEquals(Espresso, coffee.getType(), "Wrong coffee type");
         // Expected :1 Actual   :0
         //Assertions.assertEquals(1, coffee.getMilk());
