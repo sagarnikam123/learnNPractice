@@ -1,0 +1,39 @@
+microservice: # object by indentation
+  # key-value pairs
+  app: user-authentication
+  port: 9000 # number
+  version: 1.7 # float
+  verified: true # boolean-true-false
+  deployed: on # on-off
+
+# list
+contra:
+  - contraChip:
+    name: 'Contra Chip' # single quote
+    location: USA
+  - contraDell:
+    name: "Contra Indie" # double quote
+    location: [INDIA, CHINA, SHRI-LANKA] # list
+
+# multiline
+multilineString: |
+  this is a single line string,
+  that should be all on one line.
+  some other stuff.
+
+anotherMultiline: > # other multiline syntax
+  kaun hai tu Harshad Mehta
+  kaun hain
+  Jiya main khul ke
+
+# env variables
+command:
+  - "/bin/sh"
+  - -ec
+  - >-
+    mysql -h 127.0.0.1 -u root -p$MY_SQL_ROOT_PASSWORD -e 'SELECT 1'
+
+--- # three hashtags for another file
+pict:
+  name: Luthra
+  type: drama
