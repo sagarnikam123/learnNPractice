@@ -11,3 +11,4 @@ out
 .settings
 .gradle/
 target
+.terraform
