@@ -14,7 +14,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3" # ubuntu-precise-12.04
+  #ami           = "ami-830c94e3" # ubuntu-precise-12.04
+  ami           = "ami-08d70e59c07c61a3a" # ubuntu-xenial-16.04-amd64-server-20200814
   instance_type = "t2.micro"
   tags = {
     Name = "ExampleAppServerInstance"
