@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "sagarnikam123"
+    workspaces {
+      name = "terraform-aws-store-remote-state"
+    }
+  }
   required_providers {
     aws = {
       source = "hashicorp/aws"
