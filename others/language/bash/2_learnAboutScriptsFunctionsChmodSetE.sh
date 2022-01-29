@@ -1,5 +1,6 @@
 # Learn about scripts, functions, chmod and set -e
 
+################################################################################
 # make tests.sh which contains unit, integration & e2e tests
 touch tests.sh
 ################################################################################
