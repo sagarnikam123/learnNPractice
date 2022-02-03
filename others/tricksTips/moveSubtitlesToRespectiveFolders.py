@@ -1,4 +1,4 @@
-# moves subtitles files (.srt) to respective folders
+# moves subtitles files (.srt or .vtt) to respective folders
 
 import glob
 import os
@@ -6,7 +6,7 @@ import shutil
 
 #settings
 courseName ='/home/tetra/Desktop/course1'
-subtitleExt = 'srt'
+subtitleExt = 'srt' # 'vtt'
 subtitleDepositDir='subtitles'
 
 # change directory to given course
