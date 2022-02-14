@@ -16,6 +16,9 @@ eksctl get cluster firstEKSCluster
 
 # view cluster nodes
 kubectl get nodes -o wide
+
+# destroy cluster
+eksctl delete cluster firstEKSCluster
 ################################################################################
 # 2022-02-14 12:52:16 [✖]  AWS::EKS::Nodegroup/ManagedNodeGroup: CREATE_FAILED – 
 # "Resource handler returned message: \"Your requested instance type (t2.micro) 
