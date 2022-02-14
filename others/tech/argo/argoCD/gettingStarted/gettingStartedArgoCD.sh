@@ -4,6 +4,10 @@
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
+# view all services & pods
+kubectl get all -n argocd
+kubectl describe svc argocd-server -n argocd
+
 # 2. Download Argo CD CLI
 sudo curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
 sudo chmod +x /usr/local/bin/argocd
