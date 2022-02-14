@@ -21,6 +21,9 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 # Service Type Load Balancer - not worked in minikube
 # kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 
+# edit service type as ClusterIP -> NodePort
+kubectl -n argocd edit svc argocd-server
+
 # 4. Login Using The CLI
 # initial password for the admin account is auto-generated and stored as clear text in the  field 
 # password in a secret named argocd-initial-admin-secret in your Argo CD installation namespace.
