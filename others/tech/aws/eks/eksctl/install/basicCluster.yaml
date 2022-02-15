@@ -1,0 +1,25 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: firstEKSCluster
+  region: ap-south-1
+
+availabilityZones:
+- ap-south-1a
+- ap-south-1b
+
+managedNodeGroups:
+  - name: ng-firsteks
+    labels:
+      alpha.eksctl.io/cluster-name: firstEKSCluster
+      alpha.eksctl.io/nodegroup-name: ng-firsteks
+    tags:
+      alpha.eksctl.io/nodegroup-name: ng-firsteks
+      alpha.eksctl.io/nodegroup-type: managed
+    instanceType: t2.small
+    volumeSize: 20
+    instancePrefix: eksfirst
+    ssh:
+      allow: true # will use ~/.ssh/id_rsa.pub as the default ssh key
+      #publicKeyPath: ~/.ssh/ec2_id_rsa.pub
