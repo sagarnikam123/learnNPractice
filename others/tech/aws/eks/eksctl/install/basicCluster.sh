@@ -10,7 +10,7 @@ eksctl create cluster --name=firstEKSCluster --nodes=2 \
 --node-volume-size=30 \
 --zones=ap-south-1a,ap-south-1b \
 --dry-run
-#--kubeconfig=.kube/config.eks.yaml
+#--kubeconfig=$HOME/.kube/config.eks.yaml
 
 # check cluster details
 eksctl get cluster firstEKSCluster
@@ -23,13 +23,13 @@ eksctl delete cluster firstEKSCluster
 ################################################################################
 # using cluster config file
 eksctl create cluster --name development --dry-run >> basicCluster.yaml
-eksctl create cluster --config-file=basicCluster.yaml --kubeconfig=.kube/config.eks.yaml
+eksctl create cluster --config-file=basicCluster.yaml --kubeconfig=$HOME/.kube/config.eks.yaml
 
 # check
-kubectl --kubeconfig=.kube/config.eks.yaml get nodes
+kubectl --kubeconfig=$HOME/.kube/config.eks.yaml get nodes
 
 # getting kubeconfig file for given cluster
-eksctl utils write-kubeconfig --cluster firstEKSCluster --kubeconfig=.kube/config.eks.yaml
+eksctl utils write-kubeconfig --cluster firstEKSCluster --kubeconfig=$HOME/.kube/config.eks.yaml
 ################################################################################
 # Amazon EKS recommended maximum Pods for each Amazon EC2 instance type
 # https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt
