@@ -30,6 +30,9 @@ kubectl --kubeconfig=$HOME/.kube/config.eks.yaml get nodes
 
 # getting kubeconfig file for given cluster
 eksctl utils write-kubeconfig --cluster firstEKSCluster --kubeconfig=$HOME/.kube/config.eks.yaml
+
+# delete cluster
+eksctl delete cluster -f basicCluster.yaml
 ################################################################################
 # Amazon EKS recommended maximum Pods for each Amazon EC2 instance type
 # https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt
