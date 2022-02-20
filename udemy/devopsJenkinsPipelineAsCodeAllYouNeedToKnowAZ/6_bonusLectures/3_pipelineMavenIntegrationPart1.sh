@@ -1,8 +1,10 @@
 # Pipeline Maven Integration (Part 1)
+
+################################################################################
 # required Pipeline Meven Integration plugin
 # Jenkins dashboard -> Manage Jenkins -> Global Tool Configuration -> Maven
 # https://github.com/pipelineascodecourse/simple_java_project
-
+################################################################################
 # withMaven_simple_java_project
 node{
   stage('Build'){
@@ -32,10 +34,10 @@ node{
 }
 ################################################################################
 # withMaven_simple_java_project-mavenSettingsConfig
-# Jenkins dashboard -> Manage Files -> Config File Management -> Add a new Config -> Maven settings.xml
+# Jenkins dashboard -> Manage Files -> Config File Management -> Add a new Config
+# -> Maven settings.xml
 # change -> <localRepository>$HOME/.m2/config_file_maven_repo</localRepository>
 # paste ID below
-
 node{
   stage('Build'){
     cleanWs()
