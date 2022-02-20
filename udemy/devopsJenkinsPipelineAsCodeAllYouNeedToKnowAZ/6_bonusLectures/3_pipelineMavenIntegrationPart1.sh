@@ -18,7 +18,7 @@ node{
 }
 ################################################################################
 # withMaven_simple_java_project-mavenLocalRepo
-# $HOME/.m2/local_maven_repo - should be blank
+# /home/tetra/.m2/local_maven_repo - should be blank
 node{
   stage('Build'){
     cleanWs()
@@ -26,7 +26,7 @@ node{
 
     withMaven(
       maven: 'apache-maven-3.8.2',
-      mavenLocalRepo: '$HOME/.m2/local_maven_repo'
+      mavenLocalRepo: '/home/tetra/.m2/local_maven_repo'
       ){
       sh 'mvn -X clean install' // debug msg, which repo is being used
     }
@@ -36,7 +36,7 @@ node{
 # withMaven_simple_java_project-mavenSettingsConfig
 # Jenkins dashboard -> Manage Files -> Config File Management -> Add a new Config
 # -> Maven settings.xml
-# change -> <localRepository>$HOME/.m2/config_file_maven_repo</localRepository>
+# change -> <localRepository>/home/tetra/.m2/config_file_maven_repo</localRepository>
 # paste ID below
 node{
   stage('Build'){
