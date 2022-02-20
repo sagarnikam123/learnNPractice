@@ -1,0 +1,21 @@
+pipeline {
+  agent any
+  stages {
+    stage('Scan') {
+      steps {
+        git url : 'https://github.com/SonarSource/sonar-scanning-examples.git'
+        dir('sonarqube-scanner-maven/maven-basic'){
+          withMaven(
+            maven: 'apache-maven-3.8.2',
+            mavenSettingsConfig: 'd0b2c611-85e5-458e-9e1e-f224c9e5ce0d',
+            mavenLocalRepo: '/home/tetra/.m2/sonarqube_maven_repo'
+          ){
+            withSonarQubeEnv(installationName: 'sonarQubeDockerServer') {
+              sh 'mvn -X org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+            } // SonarQube
+          } // Maven
+        } // dir
+      }
+    }
+  }
+}
