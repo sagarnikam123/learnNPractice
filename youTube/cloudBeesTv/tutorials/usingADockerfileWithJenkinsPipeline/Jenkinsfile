@@ -1,0 +1,17 @@
+# pipeline-dockerfile-sample
+
+pipeline{
+  agent{
+    dockerfile {
+      filename '/home/tetra/Documents/git/learnNPractice/youTube/cloudBeesTv/tutorials/usingADockerfileWithJenkinsPipeline/Dockerfile'
+    }
+  }
+  stages{
+    stage('Dockering echo...'){
+      steps{
+        echo "Hello World!"
+        sh 'echo myCustomEnvVar = $myCustomEnvVar'
+      }
+    }
+  }
+}
