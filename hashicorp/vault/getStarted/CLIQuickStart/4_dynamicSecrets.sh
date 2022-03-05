@@ -49,7 +49,7 @@ vault write aws/roles/my-role \
 EOF
 
 # Generate the secret
-# Each time you read from aws/creds/:name, 
+# Each time you read from aws/creds/:name,
 # Vault will connect to AWS and generate a new IAM user and key pair
 vault read aws/creds/my-role
 # Copy the full path of this lease_id value

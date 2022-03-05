@@ -1,10 +1,10 @@
 # Login to Azure Account
 Login-AzureRmAccount
 
-# Get azure subscription 
+# Get azure subscription
 Get-AzureRmSubscription
 
-# Get all azure resources 
+# Get all azure resources
 Get-AzureRmResource
 
 # GEt all Azure resource group
@@ -28,7 +28,7 @@ $appNamePrefix = 'pluralsight'
 $appServicePlanName = $appNamePrefix + $randomString
 $webAppName = $appNamePrefix + $randomString
 
-# Check 
+# Check
 $resourceGroupName
 $webAppName
 
@@ -37,7 +37,7 @@ New-AzureRmResourceGroup `
     -Name $resourceGroupName `
     -Location $resourceGroupLocation `
     -Verbose -Force
-# check 
+# check
 Get-AzureRmResourceGroup | Select-Object ResourceGroupName
 
 ### Create App Service Plan
@@ -49,7 +49,7 @@ $appServicePlan = New-AzureRmAppServicePlan `
     -WorkerSize Small `
     -Verbose
 
-#check 
+#check
 $appServicePlan
 
 ### Create Web App
@@ -61,4 +61,4 @@ New-AzureRmWebApp `
     -Verbose
 
 # Go to Azure portal & check the URL of WebApp, found in HostNames
-# e.g. http://pluralsightpyhdl5nro.azurewebsites.net/    
+# e.g. http://pluralsightpyhdl5nro.azurewebsites.net/

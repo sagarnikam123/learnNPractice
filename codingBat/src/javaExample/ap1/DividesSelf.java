@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     dividesSelf - solved
-    
-    We'll say that a positive int divides itself if every digit in the number divides into the 
+
+    We'll say that a positive int divides itself if every digit in the number divides into the
     number evenly. So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly.
     We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself.
     Note: use % to get the rightmost digit, and / to discard the rightmost digit.
@@ -28,12 +28,12 @@ public class DividesSelf
     {
     	System.out.println(dividesSelf(162));
     }
-    
+
     public static boolean dividesSelf(int n) {
     	int localN = n;
-    	
+
         if(n==1) return true;
-        
+
         while(localN !=0){
         	int pyas [] = new int[2];
         	pyas = divideRemaining(localN); //
@@ -42,14 +42,14 @@ public class DividesSelf
         	if(remainder ==0) return false;
         	if(n%remainder!=0) return false;
     	}
-    	
+
         return true;
     }
-    
+
     public static int[] divideRemaining(int n){
     	int throughOut [] = new int[2];
     	//returns bhagakar & remaining
-    	
+
     	throughOut[0] = n/10; // bhagakar
     	throughOut[1] = n%10; // remaining
     	return throughOut;

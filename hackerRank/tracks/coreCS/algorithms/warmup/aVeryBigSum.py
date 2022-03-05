@@ -41,4 +41,4 @@ sum = 0
 for number in arr:
     sum += number
 
-print(sum)    
+print(sum)

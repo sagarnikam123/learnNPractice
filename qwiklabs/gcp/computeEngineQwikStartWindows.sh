@@ -8,13 +8,13 @@
     - Machine configuration-> Machine family-> Genral Purpose -> Series - N1 ->
         machine type-> n1-standard-1
     - Boot disk - Windows Server 2012 R2 Datacenter
-    - Identity & API access -> Service account - > Compute Engine default service account -> 
+    - Identity & API access -> Service account - > Compute Engine default service account ->
         Access Scopes - Allow default access
     - Create
 ###############################################################################
 # Activate Cloud Shell
 
-# list the active account name 
+# list the active account name
 gcloud auth list
 
 # list the project ID
@@ -43,6 +43,6 @@ gcloud compute reset-windows-password instance-1 --zone us-central1-a --user adm
 
 # Copy and pasting with the RDP client
 ip_address: 104.154.231.111
-password:   
+password:
 username:   admin
 ###############################################################################

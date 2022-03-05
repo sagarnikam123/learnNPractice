@@ -2,7 +2,7 @@
 # Pig - coreServlets
 
 
-# starging 
+# starging
  bin/pig -x local
 
 # view local file
@@ -16,12 +16,12 @@ cat a.txt
 limitRecords =limit records 3;
 dump limitRecords;
 
-# 
+#
  # display bag structure
  describe limitRecords;
  # explain execution plan
  explain records;
- # Illustrate how pig engine transforms data 
+ # Illustrate how pig engine transforms data
  illustrate records;
 
 # Grouping

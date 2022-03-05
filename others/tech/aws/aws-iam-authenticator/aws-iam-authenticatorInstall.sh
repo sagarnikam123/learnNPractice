@@ -9,7 +9,7 @@ curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.21
 # Apply execute permissions to the binary
 chmod +x ./aws-iam-authenticator
 
-# Copy the binary to a folder in your $PATH. 
+# Copy the binary to a folder in your $PATH.
 # We recommend creating a $HOME/bin/aws-iam-authenticator and ensuring that $HOME/bin comes first in your $PATH
 mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin
 

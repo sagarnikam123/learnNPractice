@@ -16,7 +16,7 @@ listener "tcp" {
     tls_disable = "true"
 }
 
-# disable_mlock = true # to disable mlock 
+# disable_mlock = true # to disable mlock
 api_addr = "http://127.0.0.1:8200"
 cluster_addr = "https://127.0.0.1:8201"
 ui = true
@@ -33,7 +33,7 @@ vault server -config=config.hcl
 
 # Initializing the Vault
 
-# During initialization, the encryption keys are generated, unseal keys are created, 
+# During initialization, the encryption keys are generated, unseal keys are created,
 # and the initial root token is created.
 # save keys some where - unseal keys and initial root token
 
@@ -42,8 +42,8 @@ export VAULT_ADDR='http://127.0.0.1:8200'
 vault operator init
 
 # Seal/Unseal
-# From the configuration, Vault can access the physical storage, but it can't read any of it 
-# because it doesn't know how to decrypt it. 
+# From the configuration, Vault can access the physical storage, but it can't read any of it
+# because it doesn't know how to decrypt it.
 # The process of teaching Vault how to decrypt the data is known as unsealing the Vault.
 # threshold number of unseal keys.
 

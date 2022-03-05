@@ -42,11 +42,11 @@ var3 = var1+var2
 	multiline string "
 	print multiline
 
-	multilie = """this is also 
+	multilie = """this is also
 	a
 	multiline string"""
 	print multiline
- 
+
 # comments
 	#fsdfsdf
 
@@ -59,7 +59,7 @@ var3 = var1+var2
 	var3[-1]
 	var3[-27]
 	var3[-27] == var3[0]
-# slicing	
+# slicing
 	var3[1:4]
 	var3[1:-6]
 	var3[10:]
@@ -74,7 +74,7 @@ var3 = var1+var2
 		var3[-8:]
 		# no error
 		var3[31:]
-	
+
 #################################
 #	03_lists-tuples.mov	- 10.33	#
 #################################
@@ -172,8 +172,8 @@ elif len(name) == 5 :
 	print "Your name has exactly 5 characters"
 	if name == 'Jesse':
 		print "Hey Jesse !"
-else : print "Your name has greater than 5 characters"	
-	
+else : print "Your name has greater than 5 characters"
+
 # 2 - condition
 language = raw_input('Please enter a programming language : ')
 if language in ['C++','Python','Java','']:
@@ -195,7 +195,7 @@ languages = ['python','java','c++','php']
 
 for language in languages :
 	print language , "rocks !"
-	
+
 dict = { "name":"Jesse","location":"Denver","favorite":"tutsplus"}
 
 for key in dict :
@@ -209,7 +209,7 @@ count = 0
 while count < 10 :
 	print count," is less than 10"
 	count +=1
-	
+
 for i in range(10):
 	print "i = ", i
 	if i ==5 :
@@ -220,16 +220,16 @@ for i in range(2):
 	print "this is before continue"
 	continue
 	print "this is after the countinue statement "
-	
+
 #################################
 #	07_functions.mov - 10.48	#
 #################################
 
 def madlib(adjective ='thirsty',name = 'adam'):
 	print "the %s %s ate all the pizza" %(adjective,name)
-madlib() 
+madlib()
 madlib(adjective='hungry',name = 'adam')
-	
+
 def shoppingCart(itemName, *avgPrices):
 	for price in avgPrices :
 		print "price: ", price
@@ -239,7 +239,7 @@ def shoppingCart(itemName, **avgPrices):
 	for price in avgPrices :
 		print price , 'price : ', avgPrices[price]
 shoppingCart('computer',amazon = 100,ebay = 120,bestBuy = 34)
-	
+
 def dbLookup() :
 	dict = {}
 	dict['amazon'] = 100
@@ -261,20 +261,20 @@ shoppingCart('computer',dbLookup())
 variable = 'tutsplus'
 
 def scopeInvestigator():
-	global variable 
+	global variable
 	variable = 'envato'
 	print "the variable inside the function is", variable
-	
+
 scopeInvestigator()
 print 'the variable outside the function is',variable
 
 # recursion
 def factorial(number):
 	if number == 1:
-		return 1		
+		return 1
 	else :
 		return number*factorial(number-1)
-	
+
 print 'factorial is ',factorial(5)
 
 #############################################
@@ -322,7 +322,7 @@ print re.findall('\w+@\w+\.com','email1 is jesseshal@gmail.com and email2 is bob
 # madlib.py - module
 def madlib1(adjective, name):
 	print 'The %s %s ate all the pizza' % (adjective, name)
-	
+
 def madlib2(adjective='cool',name='jesse'):
 	print 'The %s %s ate all the pizza' % (adjective, name)
 
@@ -349,7 +349,7 @@ cp ~/Desktop/learn/python/files/madlib.py ~/python
 	cd ~
 	python
 	import sys
-	sys.path 
+	sys.path
 	import madlib
 	madlib.madlib1('kutra','harami')
 

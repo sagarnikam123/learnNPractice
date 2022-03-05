@@ -5,12 +5,12 @@
 #    Return true if the given string contains between 1 and 3 'e' chars.
 #
 #######################################################################################################################
-#   
+#
 #   stringE("Hello") → true
 #   stringE("Heelle") → true
 #   stringE("Heelele") → false
-#   stringE("Hll") → false	false 
-#   stringE("e") → true	true	    
-#   stringE("") → false	false	
-#   
+#   stringE("Hll") → false	false
+#   stringE("e") → true	true
+#   stringE("") → false	false
+#
 #######################################################################################################################

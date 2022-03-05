@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     no23 - solved
-    
-    Given an int array length 2, return true if it does not contain a 2 or 3. 
+
+    Given an int array length 2, return true if it does not contain a 2 or 3.
 ***************************************************************************************************
 no23({4, 5}) → true
 no23({4, 2}) → false
@@ -26,7 +26,7 @@ public class No23
     	int rajpakshe [] = {4,2};
     	System.out.println(no23(rajpakshe));
     }
-    
+
     public static boolean no23(int[] nums) {
         if(nums[0]==2 || nums[0]==3 || nums[1]==2 || nums[1]==3){
         	return false;

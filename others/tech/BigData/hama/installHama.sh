@@ -33,10 +33,10 @@ sh
 	export HAMA_LOG_DIR=${HAMA_HOME}/logs
 
 	# Tell Hama whether it should manage it's own instance of Zookeeper or not.
-	export HAMA_MANAGES_ZK=true 
+	export HAMA_MANAGES_ZK=true
 
 * hama-site.xml
-	
+
 	<property>
       <name>bsp.master.address</name>
       <value>localhost:40000</value>
@@ -63,13 +63,13 @@ sh
       list of ZooKeeper quorum servers. If HAMA_MANAGES_ZK is set in hama-env.sh
       this is the list of servers which we will start/stop zookeeper on.
       </description>
-    </property>	
-   
+    </property>
+
 
 # Starting Hama Cluster
 export HAMA_HOME=/home/trendwise/apache/hama-0.6.2
 cd $HAMA_HOME
-bin/start-bspd.sh # will starts a BSPMaster, GroomServers and Zookeeper 
+bin/start-bspd.sh # will starts a BSPMaster, GroomServers and Zookeeper
 
 
 # Stopping Hama Cluster
@@ -101,22 +101,19 @@ bin/hama jar hama-examples-0.6.2.jar
 
 
 # Running PageRank example
-	
+
 	# generate a symmetric adjacency matrix using the gen command
 	#create a graph with 100 nodes and 1K edges and store 2 partitions on HDFS as the sequence file
 	cd $HAMA_HOME
 	bin/hama jar hama-examples-0.6.2.jar gen symmetric 100 10 randomgraph 2
-	
+
 	# view generated seq files
 	$HADOOP_HOME/bin/hadoop fs -ls /user/trendwise/randomgraph
-	
+
 	# run PageRank
 	bin/hama jar hama-examples-0.6.2.jar pagerank randomgraph pagerankresult 3
-	
+
 	#view results
 	bin/hadoop fs -ls /user/trendwise/pagerankresult/
 	bin/hadoop fs -cat /user/trendwise/pagerankresult/part-00000
 	bin/hadoop fs -cat /user/trendwise/pagerankresult/part-00001
-
-	
-

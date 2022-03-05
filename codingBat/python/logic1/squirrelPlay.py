@@ -8,7 +8,7 @@
 #    return true if the squirrels play and false otherwise.
 #
 #######################################################################################################################
-#   
+#
 #   squirrelPlay(70, false) → true
 #   squirrelPlay(95, false) → false
 #   squirrelPlay(95, true) → true
@@ -22,5 +22,5 @@
 #   squirrelPlay(59, false) → false
 #   squirrelPlay(59, true) → false
 #   squirrelPlay(60, false) → true
-#   
+#
 #######################################################################################################################

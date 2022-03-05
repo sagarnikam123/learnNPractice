@@ -3,12 +3,12 @@
 	Andrew and the Strings
 
 	Andrew likes strings very much.
-	He has two strings A and B of N lower alphabet letters. We denote S[i, j] as 
+	He has two strings A and B of N lower alphabet letters. We denote S[i, j] as
 	the substring from ith to jth characters of string S.
-	Andrew is interested in the number of such fours of integers (LA, RA, LB, RB), 
-	where 1 ≤ LA ≤ RA ≤ N, 1 ≤ LB ≤ RB ≤ N, and RA − LA = RB − LB, such that 
+	Andrew is interested in the number of such fours of integers (LA, RA, LB, RB),
+	where 1 ≤ LA ≤ RA ≤ N, 1 ≤ LB ≤ RB ≤ N, and RA − LA = RB − LB, such that
 	the Hamming distance between substrings A[LA, RA] and B[LB, RB] is not greater than K.
-	Here the Hamming distance between two strings of the same length is 
+	Here the Hamming distance between two strings of the same length is
 	the number of unequal characters on the same positions of strings. Help him and find this number.
 
 	Input
@@ -18,9 +18,9 @@
 	The second line contains string A, and the third line contains string B.
 
 	Output
-	For each test case, output an integer, denoting the number of fours (LA, RA, LB, RB) 
+	For each test case, output an integer, denoting the number of fours (LA, RA, LB, RB)
 	satisfying the conditions described in the problem statements.
-	
+
 	Constraints
 	    1 ≤ T ≤ 10
 	    1 ≤ N ≤ 1000
@@ -64,7 +64,7 @@ Example case 1: There are 14 fours as following:
 (1, 3, 1, 3) : dist(A[1, 3], B[1, 3]) = dist(aba, abb) = 1 ≤ 2
 
 Example case 2: The four (1, 3, 1, 3) no longer satisfies the conditions, because
-(1, 3, 1, 3) : dist(A[1, 3], B[1, 3]) = dist(abc, def) = 3 > 2	
+(1, 3, 1, 3) : dist(A[1, 3], B[1, 3]) = dist(abc, def) = 3 > 2
 
 **********************************************************************************************************************/
 package medium.unsolved;

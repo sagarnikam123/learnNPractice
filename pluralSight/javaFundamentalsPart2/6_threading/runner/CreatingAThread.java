@@ -9,16 +9,16 @@ public class CreatingAThread {
 	{
 		ContinuousPrinter cp = new ContinuousPrinter();
 		cp.start();
-		
-		
+
+
 		ContinuousPrinter cp2 = new ContinuousPrinter();
 		cp2.start();
-		
-		
+
+
 		for(int i=0;i<100;i++){
 			System.out.println("Main thread " + i);
 		}
 	}
-	
-	
+
+
 }

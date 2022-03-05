@@ -6,7 +6,7 @@
 #    However, with the exception that if "bOk" is true, b does not need to be greater than a.
 #
 #######################################################################################################################
-#   
+#
 #   inOrder(1, 2, 4, false) → true
 #   inOrder(1, 2, 1, false) → false
 #   inOrder(1, 1, 2, true) → true
@@ -19,5 +19,5 @@
 #   inOrder(7, 9, 10, false) → true
 #   inOrder(7, 5, 6, true) → true
 #   inOrder(7, 5, 4, true) → false
-#   
+#
 #######################################################################################################################

@@ -8,7 +8,7 @@
 #    (Note: Character.isLetter(char) tests if a char is a letter.)
 #
 #######################################################################################################################
-#   
+#
 #   notReplace("is test") → "is not test"
 #   notReplace("is-is") → "is not-is not"
 #   notReplace("This is right") → "This is not right"
@@ -20,5 +20,5 @@
 #   notReplace("is his") → "is not his"
 #   notReplace("xis yis") → "xis yis"
 #   notReplace("AAAis is") → "AAAis is not"
-#   
+#
 #######################################################################################################################

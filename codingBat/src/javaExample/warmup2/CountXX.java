@@ -1,9 +1,9 @@
 /**************************************************************************************************
-    
+
     countXX - solved
-    
+
     Count the number of "xx" in the given string.
-    We'll say that overlapping is allowed, so "xxx" contains 2 "xx". 
+    We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
 ***************************************************************************************************
 countXX("abcxx") → 1
 countXX("xxx") → 2
@@ -26,7 +26,7 @@ public class CountXX
     	System.out.println(countXX("xxx"));
     	System.out.println(countXX("xxxx"));
     }
-    
+
     private static int countXX(String pilia){
     	int noOfxx = 0;
     	for(int i=0;i< pilia.length()-1;i++){

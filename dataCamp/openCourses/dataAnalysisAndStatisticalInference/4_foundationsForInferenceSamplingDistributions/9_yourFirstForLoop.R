@@ -1,13 +1,13 @@
 # Your first for loop
 
 #######################################################################################################################
-#	
+#
 #	To make sure you fully understand what you've just done, let's try running a smaller version.
-#	
+#
 #	To help you remember the syntax, initialization was done with the rep() function: rep(NA, n).
-#	
+#
 #	And this is how you do a for loop: for (i in 1:n) { ... }
-#	
+#
 #######################################################################################################################
 
 # Initialize the vector to store the means in:

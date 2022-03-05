@@ -8,7 +8,7 @@ def main():
 
     # get the result code & print it
     print "result code : " + str(webUrl.getcode())
-    print 
+    print
 
     # read the data from the URL and print it
     data = webUrl.read()

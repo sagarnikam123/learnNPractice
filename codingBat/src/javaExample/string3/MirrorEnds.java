@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     mirrorEnds - solved
-    
-    Given a string, look for a mirror image (backwards) string at both the beginning and end of 
+
+    Given a string, look for a mirror image (backwards) string at both the beginning and end of
     the given string. In other words, zero or more characters at the very begining of the given string,
     and at the very end of the string in reverse order (possibly overlapping).
-    For example, the string "abXYZba" has the mirror end "ab". 
+    For example, the string "abXYZba" has the mirror end "ab".
 ***************************************************************************************************
 mirrorEnds("abXYZba") â†’ "ab"
 mirrorEnds("abca") â†’ "a"
@@ -28,9 +28,9 @@ public class MirrorEnds
     {
     	System.out.println(mirrorEnds("aba"));
     }
-    
+
     public static String mirrorEnds(String str) {
-        
+
     	String mirrorStarts = "";
     	for(int i=0,j=str.length()-1;i<str.length();i++,j--){
     		if(str.charAt(i)==str.charAt(j)){
@@ -39,7 +39,7 @@ public class MirrorEnds
     			i=str.length();
     		}
     	}
-    	
+
     	return mirrorStarts;
     }
 

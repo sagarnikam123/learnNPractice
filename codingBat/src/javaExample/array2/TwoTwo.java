@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     twoTwo - solved
-    
+
     Given an array of ints, return true if every 2 that appears in the array is next to another 2.
 ***************************************************************************************************
 twoTwo({4, 2, 2, 3}) → true
@@ -32,13 +32,13 @@ public class TwoTwo
     	int diwani [] = {2, 2, 5, 2};
     	System.out.println(twoTwo(diwani));
     }
-    
+
     public static boolean twoTwo(int[] nums) {
-	
+
     	boolean pyar2 = true;
-    	
+
     	for(int i=0;i<nums.length;i++){
-    		
+
     		// checking on right
     		if(nums[i]==2 && i+1 <= nums.length-1){
     			if(nums[i+1]==2){

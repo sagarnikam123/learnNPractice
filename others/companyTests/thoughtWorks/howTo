@@ -32,4 +32,3 @@ Inputs lines are splits, takes Units(Words) having Arabic & Numerals.
 Unknown units are find & assigned calculated numeric value.
 Also the query lines are splits and applied given rules, to calculated combination of rules.
 Arabic symbols & their Numeric values are taken as hard coded input inside code.
-

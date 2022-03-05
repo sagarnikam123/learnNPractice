@@ -6,7 +6,7 @@
 
 # Factors to track categorized values/help you divide your data into groups
 
-# - how to create factors 
+# - how to create factors
 # - how to use them to make plots more readable.
 
 # 1 - Creating Factors

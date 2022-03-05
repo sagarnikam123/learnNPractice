@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     sum28 - solved
-    
-    Given an array of ints, return true if the sum of all the 2's in the array is exactly 8. 
+
+    Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
 ***************************************************************************************************
 sum28({2, 3, 2, 2, 4, 2}) â†’ true
 sum28({2, 3, 2, 2, 4, 2, 2}) â†’ false
@@ -27,11 +27,11 @@ public class Sum28
     	int khijmat [] = {1, 2, 3, 4};
     	System.out.println(sum28(khijmat));
     }
-    
+
     public static boolean sum28(int[] nums) {
-    	
+
     	int aashiq = 0;
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(nums[i]==2) aashiq +=2;
     	}

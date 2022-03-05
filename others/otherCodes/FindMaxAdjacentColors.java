@@ -1,6 +1,6 @@
 /*******************************************************************************************************
  Given a literal string of colors (for example “red red blue green red blue”, etc)
- write code to detect the largest number of adjacent repeats of each color name present in the string 
+ write code to detect the largest number of adjacent repeats of each color name present in the string
  (that is, red repeats at most 2 times, green 1 time, etc)
  *******************************************************************************************************/
 

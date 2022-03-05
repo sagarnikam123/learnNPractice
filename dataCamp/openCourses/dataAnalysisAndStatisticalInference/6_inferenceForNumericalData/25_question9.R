@@ -1,10 +1,10 @@
 # Question 9
 
 #######################################################################################################################
-#	
-#	Which of the following methods is appropriate for testing for a difference between the average vocabulary test 
+#
+#	Which of the following methods is appropriate for testing for a difference between the average vocabulary test
 #	scores among the various classes?
-#	
+#
 #######################################################################################################################
 
 1	Z test

@@ -2,13 +2,13 @@
 
 	Chef and The Colored Grid
 
-	The Chef wants to color a 3xN grid and he has N different types of colors to do that. Each cell of the grid has 
+	The Chef wants to color a 3xN grid and he has N different types of colors to do that. Each cell of the grid has
 	to be colored with exactly one color. A coloring of the grid is considered beautiful if no two cells of the same
-	row or same column have the same color.	The cells of first two rows are already colored and they don’t violate 
+	row or same column have the same color.	The cells of first two rows are already colored and they don’t violate
 	the beautiful condition (one color doesn’t appear more than once on the same row or on the same column).
-	Find how many different ways he can color the 3rd row such that the resulting grid is beautiful. Two ways of 
+	Find how many different ways he can color the 3rd row such that the resulting grid is beautiful. Two ways of
 	coloring are considered different if there is at least one cell which is colored with different color.
-	
+
 	Input
 	The first line of the input contains an integer T denoting the number of test cases.
 	    The first line of each test
@@ -17,11 +17,11 @@
 	    	is the color of the cell at column i of 1st row.
 	    The next line contains N integers B1, B2, ..., BN, where Bi(1 ≤ i ≤ N)
 	    	is the color of the cell at column i of 2nd row.
-	
+
 	Output
-	For each test case, output the number of ways to color the 3rd row such that the resulting 
+	For each test case, output the number of ways to color the 3rd row such that the resulting
 	grid is beautiful. Output the result modulo 1000000007.
-	
+
 	Constraints
 	    1 ≤ T ≤ 20
 	    3 ≤ N ≤ 1000

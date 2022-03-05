@@ -4,7 +4,7 @@
 # install pre-requisite
 sudo apt-get install python-software-properties
 
-# Download Apache Hadoop (0.20x or 1.x) 
+# Download Apache Hadoop (0.20x or 1.x)
 http://hadoop.apache.org/
 
 # Download JDK-7
@@ -12,7 +12,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 # installing & configuring SSH
  sudo apt-get install openssh-server openssh-client
- 
+
  # configuration
  ssh-keygen
  cd  .ssh
@@ -20,9 +20,9 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
  ssh-copy-id -i id_rsa.pub localhost
  ssh localhost
  exit
- 
-# Disabling IVP6 
-sudo gedit /etc/sysctl.conf 
+
+# Disabling IVP6
+sudo gedit /etc/sysctl.conf
 
 	# disable ipv6
 	net.ipv6.conf.all.disable_ipv6 = 1
@@ -35,7 +35,7 @@ tar -xvf hadoop-1.0.4.tar.gz
 
 # editing $HADOOP_HOME/conf
 
-sudo gedit hadoop-env.sh 
+sudo gedit hadoop-env.sh
 #hadoop-env.sh
 	export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
 	export JAVA_HOME=/home/hadoop/apache/jdk1.7.0_25
@@ -70,8 +70,8 @@ sudo gedit hdfs-site.xml
 	  The default is used if replication is not specified in create time.
 	  </description>
 	</property>
-    
-sudo gedit mapred-site.xml    
+
+sudo gedit mapred-site.xml
 #mapred-site.xml
 	<property>
 	  <name>mapred.job.tracker</name>
@@ -80,7 +80,7 @@ sudo gedit mapred-site.xml
 	  at.  If "local", then jobs are run in-process as a single map
 	  and reduce task.
 	  </description>
-	</property>   
+	</property>
 
 # Formatting NameNode
 bin/hadoop namenode -format
@@ -91,7 +91,7 @@ bin/start-all.sh
 
 # Open in web-browser
 NameNode- http://localhost:50070
-JobTracker- http://localhost:50030 
+JobTracker- http://localhost:50030
 TaskTracker- http://localhost:50060
 
 #Hadoop report

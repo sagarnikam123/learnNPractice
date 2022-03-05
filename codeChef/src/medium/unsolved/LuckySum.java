@@ -1,8 +1,8 @@
 /**
 
 	Lucky Sum
-	
-	Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers 
+
+	Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers
 	whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and
 	5, 17, 467 are not.
 	Chef also use term "lucky sum". Lucky sum is an operation between two integers.
@@ -13,15 +13,15 @@
 	Chef has an array W of integers. Find a number of non-empty subsequences of W such that
 	the lucky sum of integers in that subsequences is a lucky number.
 	Subsequence of W is created by erasing some number (probably zero) elements from W.
-	
+
 	Input
-	First line contains one number T, number of test cases. Each test is formed as follows: 
+	First line contains one number T, number of test cases. Each test is formed as follows:
 	first line contains integer n - number of integers in W, next line contains n integers -
 	array W for corresponding test.
-	
+
 	Output
 	For each T test cases print one integer - result for the corresponding test.
-	
+
 	Constraints
 	1 <= T <= 10
 	1 <= n <= 50
@@ -39,7 +39,7 @@ Input:
 Output:
 3
 2
-	
+
 **********************************************************************************************************************/
 
 package medium.unsolved;

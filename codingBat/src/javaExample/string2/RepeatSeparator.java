@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     repeatSeparator - solved
-    
+
     Given two strings, word and a separator, return a big string made of count occurences
-    of the word, separated by the separator string. 
+    of the word, separated by the separator string.
 ***************************************************************************************************
 repeatSeparator("Word", "X", 3) → "WordXWordXWord"
 repeatSeparator("This", "And", 2) → "ThisAndThis"
@@ -26,15 +26,15 @@ public class RepeatSeparator
     {
     	System.out.println(repeatSeparator("This", "And", 1));
     }
-    
+
     public static String repeatSeparator(String word, String sep, int count) {
-        
+
     	String throwala = "";
     	for(int i =0,j=count-1;i<count;i++,j--){
     		throwala += word;
     		if(j> 0) throwala+=sep;
     	}
-    	
+
     	return throwala;
     }
 

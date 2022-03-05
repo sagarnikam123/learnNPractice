@@ -7,7 +7,7 @@
 #    One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.
 #
 #######################################################################################################################
-#   
+#
 #   xyBalance("aaxbby") â†’ true
 #   xyBalance("aaxbb") â†’ false
 #   xyBalance("yaaxbb") â†’ false
@@ -26,5 +26,5 @@
 #   xyBalance("yxyxyxyx") → false-
 #   xyBalance("yxyxyxyxy") → true
 #   xyBalance("12xabxxydxyxyzz") → true
-#   
+#
 #######################################################################################################################

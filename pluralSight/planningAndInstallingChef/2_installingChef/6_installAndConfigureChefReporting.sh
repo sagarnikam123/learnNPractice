@@ -17,7 +17,7 @@ sudo opscode-reporting-ctl reconfigure
 #[2017-01-06T00:51:20-08:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
 #[2017-01-06T00:51:20-08:00] ERROR: execute[initctl status private-chef-runsvdir] (enterprise::runit_upstart line 28) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
 #---- Begin output of initctl status private-chef-runsvdir ----
-#STDOUT: 
+#STDOUT:
 #STDERR: initctl: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused
 #---- End output of initctl status private-chef-runsvdir ----
 #Ran initctl status private-chef-runsvdir returned 1

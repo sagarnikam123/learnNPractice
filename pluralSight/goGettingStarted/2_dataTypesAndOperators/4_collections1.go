@@ -9,5 +9,5 @@ func main(){
   myArray[2] = 99
 
   fmt.Println(myArray)
-  
+
 }

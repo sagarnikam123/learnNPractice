@@ -18,7 +18,7 @@ print f;
 print "string type " + str(123)
 
 ########################################################################
-# Global vs. Local variables in functions 
+# Global vs. Local variables in functions
 def someFunction():
 	# global f
 	f = "def"
@@ -33,8 +33,8 @@ print f+ " - This is Global value without keyword";
 def printGlobalValue():
 	global f
 	print f;
-	
-printGlobalValue()	
+
+printGlobalValue()
 
 ########################################################################
 #deleting variable

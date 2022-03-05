@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     endOther -solved
-    
-    Given two strings, return true if either of the strings appears at the very end of the other 
-    string, ignoring upper/lower case differences (in other words, the computation should not be 
-    "case sensitive"). Note: str.toLowerCase() returns the lowercase version of a string. 
+
+    Given two strings, return true if either of the strings appears at the very end of the other
+    string, ignoring upper/lower case differences (in other words, the computation should not be
+    "case sensitive"). Note: str.toLowerCase() returns the lowercase version of a string.
 ***************************************************************************************************
 endOther("Hiabc", "abc") → true
 endOther("AbC", "HiaBc") → true
@@ -30,20 +30,20 @@ public class EndOther
     {
     	System.out.println(endOther("abc", "abXabc"));
     }
-    
+
     public static boolean endOther(String a, String b) {
         if(a.length() ==0 || b.length()==0){
         	return false;
         }
-    	
+
     	if(a.length() > b.length() && b.toLowerCase().equals(a.substring(a.length()-b.length(), a.length()).toLowerCase())){
     		return true;
     	}else if (b.length() > a.length() && a.toLowerCase().equals(b.substring(b.length()-a.length(),b.length()).toLowerCase())){
     		return true;
     	}else if(a.toLowerCase() == b.toLowerCase()){
     		return true;
-    	} 
-    	return false; 
+    	}
+    	return false;
     }
 
 

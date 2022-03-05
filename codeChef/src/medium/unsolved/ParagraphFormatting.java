@@ -3,8 +3,8 @@
 	Paragraph Formatting
 
 	Johnny is developing some word processing software. Right now, he has to deal with the problem of formatting a
-	paragraph. Johnny has formulated the problem as follows. There are N words in a paragraph, in which the ith word 
-	has ai characters. Each line of the paragraph can hold at most M characters. For simplicity, we assume that every 
+	paragraph. Johnny has formulated the problem as follows. There are N words in a paragraph, in which the ith word
+	has ai characters. Each line of the paragraph can hold at most M characters. For simplicity, we assume that every
 	two consecutive words in a line are separated by exactly one whitespace and we disregard punctuation marks.
 	The text editor always uses a simple greedy algorithm to break the paragraph into lines. The algorithm puts as
 	many words in a line as possible, then moving on to the next line to do the same until there are no more words left
@@ -12,11 +12,11 @@
 	process the following two operations:
 	    Return the line number of a specified word
 	    Replace one word with another one
-	Since the number of words in a paragraph can be huge, Johnny needs to find an efficient algorithm to process 
+	Since the number of words in a paragraph can be huge, Johnny needs to find an efficient algorithm to process
 	the above queries. Please help him!
-	
+
 	Input
-	The first line contains t, the number of test cases (about 50). Then t test cases follow. 
+	The first line contains t, the number of test cases (about 50). Then t test cases follow.
 	Each test case has the following form:
 	    The first line contains a number M, the maximum number of characters that can be put in a line.
 	    The second line contains a number N, the number of words in the given paragraph.

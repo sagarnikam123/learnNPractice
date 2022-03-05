@@ -6,7 +6,7 @@
 #    to the number of appearances of "not" anywhere in the string (case sensitive).
 #
 #######################################################################################################################
-#   
+#
 #   equalIsNot("This is not") → false
 #   equalIsNot("This is notnot") → true
 #   equalIsNot("noisxxnotyynotxisi") → true
@@ -17,5 +17,5 @@
 #   equalIsNot("isisnotno7Not") → false
 #   equalIsNot("isnotis") → false
 #   equalIsNot("mis3notpotbotis") → false
-#   
+#
 #######################################################################################################################

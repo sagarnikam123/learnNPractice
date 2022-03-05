@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	If in fact there has been no change in the atheism index in the countries listed in Table 4, in how many of those 
+#	If in fact there has been no change in the atheism index in the countries listed in Table 4, in how many of those
 #	countries would you expect to detect a change (at a significance level of 0.05) simply by chance?
 #
 #######################################################################################################################

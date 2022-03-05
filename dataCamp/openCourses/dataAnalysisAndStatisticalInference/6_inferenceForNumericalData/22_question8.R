@@ -1,11 +1,11 @@
 # Question 8
 
 #######################################################################################################################
-#	
+#
 #	Now, a non-inference task: Determine the age cutoff for younger and mature mothers. Use a method of your choice.
-#	
+#
 #	What is the maximum age of a younger mom and the minimum age of a mature mom, according to the data?
-#	
+#
 ######################################################################################################################
 
 1	The maximum age of younger moms is 32 and minimum age of mature moms is 33

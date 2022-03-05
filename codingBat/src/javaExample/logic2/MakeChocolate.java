@@ -1,10 +1,10 @@
 /***************************************************************************************************
 
-    makeChocolate 
-    
+    makeChocolate
+
     We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars
-    (5 kilos each). Return the number of small bars to use, assuming we always use big bars before 
-    small bars. Return -1 if it can't be done. 
+    (5 kilos each). Return the number of small bars to use, assuming we always use big bars before
+    small bars. Return -1 if it can't be done.
 ****************************************************************************************************
 makeChocolate(4, 1, 9) → 4
 makeChocolate(4, 1, 10) → -1
@@ -40,27 +40,27 @@ public class MakeChocolate
     {
     	System.out.println(makeChocolate(7, 2, 13));
     }
-    
+
     public static int makeChocolate(int small, int big, int goal) {
-        
+
     	int cal = 0;
     	int remaining = 0;
     	int smallBarsToUsed = 0;
-    	
+
     	if(goal >= 5){
-    		
+
     		for(int i=1;i<=big;i++){
         		cal = i * 5;
         		remaining = goal - cal;
         		if( (remaining) < 5)
         			break;
         	}
-    		
+
     	}else{
     		remaining =  goal;
     	}
-    	
-    	
+
+
     	if(remaining <  small) // negative
     		return remaining ;
     	if(remaining == small)
@@ -68,7 +68,7 @@ public class MakeChocolate
     	if(remaining > small)
     		return -1;
     	smallBarsToUsed = small - remaining;
-    	
+
     	return smallBarsToUsed;
     }
 

@@ -1,17 +1,17 @@
 /**
 
 	SudokuX
-	
-	SudokuX is a variation of the popular game Sudoku. Similar to standard Sudoku, in SudokuX, we have to enter the 
-	numbers 1 - 9 once in each row, column and 3 x 3 square within the 9x9 puzzle grid. In addition to standard Sudoku, 
-	the numbers must only occur once in each of the two diagonals. Johnny is very interested in playing SudokuX. 
+
+	SudokuX is a variation of the popular game Sudoku. Similar to standard Sudoku, in SudokuX, we have to enter the
+	numbers 1 - 9 once in each row, column and 3 x 3 square within the 9x9 puzzle grid. In addition to standard Sudoku,
+	the numbers must only occur once in each of the two diagonals. Johnny is very interested in playing SudokuX.
 	He believes that this game is so challenging that even the best computer programs could not solve it efficiently.
 	Let's show Johnny the power of computers by writing a program
 	to solve even the hardest SudokuX puzzles within seconds!
-	
+
 	Input
 	The first line contains t, the number of test cases (about 10). Then t test cases follow.
-	Each test case consists of 9 lines. 
+	Each test case consists of 9 lines.
 	Each line contains 9 characters '.' (blank grid), or '1'..'9' representing a SudokuX puzzle.
 	Each test case is separated by a blank line.You are guaranteed that each given SudokuX puzzle has a unique solution.
 
@@ -62,7 +62,7 @@ Output
 531824976
 476953812
 982176543
-	
+
 **********************************************************************************************************************/
 
 package medium.unsolved;

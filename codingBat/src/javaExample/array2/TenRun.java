@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     tenRun - solved
-    
-    For each multiple of 10 in the given array, change all the values following it to be that 
+
+    For each multiple of 10 in the given array, change all the values following it to be that
     multiple of 10, until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5}
-    yields {2, 10, 10, 10, 20, 20}. 
+    yields {2, 10, 10, 10, 20, 20}.
 ***************************************************************************************************
 tenRun({2, 10, 3, 4, 20, 5}) â†’ {2, 10, 10, 10, 20, 20}
 tenRun({10, 1, 20, 2}) â†’ {10, 10, 20, 20}
@@ -32,13 +32,13 @@ public class TenRun
     		System.out.println(principle);
     	}
     }
-    
+
     public static int[] tenRun(int[] nums) {
-    	
+
     	int jbossGalati [] = new int[nums.length];
     	boolean farebi = false;
     	int nadani = 0;
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(nums[i] % 10==0){
     			nadani = nums[i];
@@ -50,7 +50,7 @@ public class TenRun
     			jbossGalati [i] = nums[i];
     		}
     	}
-    	
+
         return jbossGalati;
     }
 

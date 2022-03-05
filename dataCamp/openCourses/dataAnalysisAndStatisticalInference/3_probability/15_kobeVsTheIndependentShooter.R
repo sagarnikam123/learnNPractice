@@ -1,14 +1,14 @@
 # Kobe vs. the Independent Shooter
 
 #######################################################################################################################
-#	
-#	With the results of the simulation saved as sim_basket, you have the data you need to compare Kobe to your 
+#
+#	With the results of the simulation saved as sim_basket, you have the data you need to compare Kobe to your
 #	independent shooter. We can look at Kobe's data alongside our simulated data: kobe$basket vs. sim_basket.
-#	
-#	Both data sets represent the results of 133 shot attempts, each with the same shooting percentage of 45%. 
-#	We know that our simulated data is from a shooter that has independent shots. 
+#
+#	Both data sets represent the results of 133 shot attempts, each with the same shooting percentage of 45%.
+#	We know that our simulated data is from a shooter that has independent shots.
 #	That is, we know the simulated shooter does not have a hot hand.
-#	
+#
 #######################################################################################################################
 
 calc_streak = function(x){

@@ -1,8 +1,8 @@
 /**
- 
+
  	Tautology
- 	
-Write a program that checks if the given logical expression is a tautology. 
+
+Write a program that checks if the given logical expression is a tautology.
 The logical expression is a tautology if it is always true, regardless of logical value of its variables.
 
 Input
@@ -10,7 +10,7 @@ On the first line there is the number of expressions to check (at most 35).
 The expression is in a prefix notation, that means that operator precedes its arguments.
 The following logical operators will be used:
 
-C - and 
+C - and
 D - or
 I - implies
 E - if, and only if
@@ -43,7 +43,7 @@ NO
 YES
 YES
 YES
-	
+
 **********************************************************************************************************************/
 
 package medium.unsolved;

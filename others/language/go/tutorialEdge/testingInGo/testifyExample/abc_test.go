@@ -17,5 +17,5 @@ func TestCalculate(t *testing.T){
 */
 
 func TestCalculate(t *testing.T){
-  
+
 }

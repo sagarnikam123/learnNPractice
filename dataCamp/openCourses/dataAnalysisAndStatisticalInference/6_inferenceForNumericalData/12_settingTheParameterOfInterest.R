@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	To create an interval for the median instead of the mean, you can change the est argument of 
+#	To create an interval for the median instead of the mean, you can change the est argument of
 #	the inference() function.
 #
 ######################################################################################################################

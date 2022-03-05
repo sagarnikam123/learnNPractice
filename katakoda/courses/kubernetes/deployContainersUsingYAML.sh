@@ -29,7 +29,7 @@ spec:
  # get list of all deployment objects
  kubectl get deployment
  # details of individual deployment
- kubectl describe deployment webapp1       
+ kubectl describe deployment webapp1
 ###############################################################################
 # Step 2 - Create Service
 
@@ -68,7 +68,7 @@ kubectl apply -f deployment.yml
 kubectl get deployment
 kubectl get pods
 
-# As all the Pods have the same label selector, 
+# As all the Pods have the same label selector,
 # they'll be load balanced behind the Service NodePort deployed.
 curl host01:30080
 ###############################################################################

@@ -9,7 +9,7 @@ public class CreditCardTest {
 
 	private CreditCard card1;
 	private CreditCard card2;
-	
+
 	@Before
 	public void setUp() throws Exception {
 		card1 = new CreditCard("Andrew Perkins");
@@ -35,7 +35,7 @@ public class CreditCardTest {
 		card1.makePurchase(45);
 		assertEquals(45, card1.getBalance() );
 	}
-	
+
 	@Test
 	public void testMakePurchaseWithFee() {
 		card1.makePurchase(700);
@@ -49,12 +49,12 @@ public class CreditCardTest {
 		card2.makePayments(25);
 		assertEquals(75,card2.getBalance() );
 	}
-	
+
 	@Test
 	public void testCalculateRewardPoints() {
 		card2.makePurchase(100);
 		card2.makePurchase(100);
-		card2.makePurchase(100);	
+		card2.makePurchase(100);
 		card2.makePurchase(100);
 		assertEquals(400,card2.calculateRewardPoints() );
 	}

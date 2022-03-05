@@ -6,7 +6,7 @@
 #    so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
 #
 #######################################################################################################################
-#   
+#
 #   lastChars("last", "chars") → "ls"
 #   lastChars("yo", "java") → "ya"
 #   lastChars("hi", "") → "h@"
@@ -16,5 +16,5 @@
 #   lastChars("k", "zip") → "kp"
 #   lastChars("kitten", "") → "k@"
 #   lastChars("kitten", "zip") → "kp"
-#   
+#
 #######################################################################################################################

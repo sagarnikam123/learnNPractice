@@ -1,11 +1,11 @@
 # Question 9
 
 #######################################################################################################################
-#			
+#
 #	Which of the following is the correct interpretation of the coefficient associated with the ethnicity variable.
-#	
+#
 #	Non-minority professors are expected on average to score...
-#	
+#
 #######################################################################################################################
 
 

@@ -2,20 +2,20 @@
 
 ##############################################################################
 
-You might expect that you would use git branch to create a branch, and indeed 
-this is possible. However, the most common thing you want to do is to create 
+You might expect that you would use git branch to create a branch, and indeed
+this is possible. However, the most common thing you want to do is to create
 a branch then switch to that branch.
 
-In the previous exercise, you used git checkout branch-name to switch to 
-a branch. To create a branch then switch to it in one step, you add a -b flag, 
+In the previous exercise, you used git checkout branch-name to switch to
+a branch. To create a branch then switch to it in one step, you add a -b flag,
 calling git checkout -b branch-name,
 
-The contents of the new branch are initially identical to the contents of the 
+The contents of the new branch are initially identical to the contents of the
 original. Once you start making changes, they only affect the new branch.
 
 ##############################################################################
 
-You are in the master branch of the dental repository. Create a new branch 
+You are in the master branch of the dental repository. Create a new branch
 called deleting-report.
 
 git checkout -b deleting-report
@@ -28,7 +28,7 @@ Commit your changes with a log message.
 
 git commit -m 'removed report.txt'
 
-Use git diff with appropriate arguments to compare the master branch with 
+Use git diff with appropriate arguments to compare the master branch with
 the new state of the deleting-report branch.
 
 git diff deleting-report..master

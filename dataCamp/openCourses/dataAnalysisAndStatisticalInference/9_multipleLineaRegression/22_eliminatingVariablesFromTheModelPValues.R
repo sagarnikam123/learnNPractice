@@ -1,9 +1,9 @@
 # Eliminating variables from the model - p-value selection
 
 #######################################################################################################################
-#			
+#
 #	Now you will create a new model, where you will drop the variable with the highest p-value in the m_full model.
-#	
+#
 #######################################################################################################################
 
 # The full model:

@@ -7,7 +7,7 @@
 # Matrix- a 2-dimensional array
 
 # - how to create matrices from scratch,
-# - how to re-shape a vector into a matrix. 
+# - how to re-shape a vector into a matrix.
 # - how to access values within a matrix one-by-one, or in groups
 # - how to visualize a matrix's data
 
@@ -24,7 +24,7 @@
 
 	# ReShaping vector into Matrix
 	matVector <- 1:20
-	# "dim" function sets dimensions for a matrix. 
+	# "dim" function sets dimensions for a matrix.
 	# It accepts a vector with the number of rows and the number of columns to assign.
 	dim(matVector)<-c(4,5) # 2 rows and 4 columns
 	class(matVector) # class of an object (numeric, matrix, data frame, etc)
@@ -43,7 +43,7 @@
 	matVector[,1:3]
 	# Setting single value in matrix
 	matVector[1,3] <-55
-	print(matVector)  
+	print(matVector)
 
 
 # 3 - Matrix Plotting
@@ -53,13 +53,13 @@
 	persp(elevation) #  3D perspective plot with the persp function:
 	# looks odd because persp automatically expands the view so that your highest value (the beach surface) is at the very top.
 	persp(elevation, expand=0.2)
-	# including R inbuild databset an 87x61 matrix 
+	# including R inbuild databset an 87x61 matrix
 	contour(volcano)
 	# Try now persp function
 	persp(volcano, expand=0.2)
 	image(volcano) # create heat map
- 
- 
+
+
 # 4 - Installing packages
 
 	# from CRAN (http://cran.r-project.org/)
@@ -85,9 +85,9 @@
 
 	#--------------------------------------------------------------------------------------------
 
-	# Omegahat (http://www.omegahat.org/) 
+	# Omegahat (http://www.omegahat.org/)
 	install.packages("RCurl", repos = "http://www.omegahat.org/R")
-	# For some packages, there are binaries for Windows. For most others, 
+	# For some packages, there are binaries for Windows. For most others,
 	# you will need to specify to download the source package:
 	install.packages(packageName, repos = "http://www.omegahat.org/R", type = "source")
 
@@ -104,7 +104,4 @@
 	#--------------------------------------------------------------------------------------------
 
 	#RForge
-	 install.packages("audio",repos="http://rforge.net") 
-	 
-	 
-
+	 install.packages("audio",repos="http://rforge.net")

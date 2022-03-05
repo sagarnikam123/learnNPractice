@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     without2 - solved
-    
+
     Given a string, if a length 2 substring appears at both its beginning and end,
-    return a string without the substring at the beginning, so "HelloHe" yields "lloHe". 
-    The substring may overlap with itself, so "Hi" yields "". 
-    Otherwise, return the original string unchanged. 
+    return a string without the substring at the beginning, so "HelloHe" yields "lloHe".
+    The substring may overlap with itself, so "Hi" yields "".
+    Otherwise, return the original string unchanged.
 ***************************************************************************************************
 without2("HelloHe") → "lloHe"
 without2("HelloHi") → "HelloHi"
@@ -31,11 +31,11 @@ public class Without2
     	System.out.println(without2("x"));
     }
     public static String without2(String dhanteras){
-    	
+
     	int leh = dhanteras.length();
     	String fekaliya = "";
     	if(leh >= 3){
-    	
+
     		if(dhanteras.substring(0, 1).equalsIgnoreCase(dhanteras.substring(leh-1,leh))){
     			fekaliya = dhanteras.substring(2);
     		}else if(dhanteras.substring(0, 2).equalsIgnoreCase(dhanteras.substring(leh-2,leh))){
@@ -47,6 +47,6 @@ public class Without2
     		fekaliya = dhanteras;
     	}
     		return fekaliya;
-    	
+
     }
 }

@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     lastDigit - solved
-    
+
     Given three ints, a b c, return true if two or more of them have the same rightmost digit.
-    The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7. 
+    The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
 ***************************************************************************************************
 lastDigit(23, 19, 13) → true
 lastDigit(23, 19, 12) → false
@@ -28,10 +28,10 @@ public class LastDigit
     {
     	System.out.println(lastDigit(0,11,0));
     }
-    
+
     public static boolean lastDigit(int a, int b, int c) {
-        
-    	
+
+
     	if(giveRightDigit(a) == giveRightDigit(b)){
     		return true;
     	}else if(giveRightDigit(b) == giveRightDigit(c)){
@@ -39,13 +39,13 @@ public class LastDigit
     	}else if(giveRightDigit(a) == giveRightDigit(c)){
     		return true;
     	}
-    	
+
     	return false;
     }
-    
+
     public static int giveRightDigit(int k){
-    	
-    	k=k%10;	
+
+    	k=k%10;
     	return k;
 
     }

@@ -9,7 +9,7 @@ class AppCrawler:
 		self.depth = depth
 		self.current_depth = 0
 		self.depth_links = []
-		self.apps = [] 
+		self.apps = []
 
 	def crawl(self):
 		app =  self.get_app_from_link(self.starting_url)
@@ -24,7 +24,7 @@ class AppCrawler:
 				self.apps.append(current_app)
 				time.sleep(2)
 			self.current_depth += 1
-			self.depth_links.append(current_links)   
+			self.depth_links.append(current_links)
 
 
 	def get_app_from_link(self,link):
@@ -58,7 +58,7 @@ class App:
 	def __str__(self):
 		return ( "Name: "  + self.name.encode('UTF-8') +
 		"\r\nDeveloper: " + self.developer.encode('UTF-8') +
-		"\r\nPrice: " + self.price.encode('UTF-8') + "\r\n" )	
+		"\r\nPrice: " + self.price.encode('UTF-8') + "\r\n" )
 
 
 crawler = AppCrawler('https://itunes.apple.com/in/app/candy-crush-saga/id553834731' , 2 )

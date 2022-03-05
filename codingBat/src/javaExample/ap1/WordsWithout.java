@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     wordsWithout - solved
-    
-    Given an array of strings, return a new array without the strings that are equal to the target 
-    string. One approach is to count the occurrences of the target string, make a new array of the 
-    correct length, and then copy over the correct strings. 
+
+    Given an array of strings, return a new array without the strings that are equal to the target
+    string. One approach is to count the occurrences of the target string, make a new array of the
+    correct length, and then copy over the correct strings.
 ***************************************************************************************************
 wordsWithout({"a", "b", "c", "a"}, "a") → {"b", "c"}-
 wordsWithout({"a", "b", "c", "a"}, "b") → {"a", "c", "a"}
@@ -28,28 +28,28 @@ public class WordsWithout
     		System.out.println(kaykarnar);
     	}
     }
-    
+
     public static String[] wordsWithout(String[] words, String target) {
-        
+
     	if(target.length()==0) return words;
-    	
+
     	// count the no of targets in Array
     	int returnLength = words.length;
-    	
+
     	for(int i=0,j=0;i<words.length;i++){
     		if(words[i].equals(target))
     			returnLength --;
     	}
-    	
+
     	String saiLeela [] = new String[returnLength];
-    	
+
     	for(int i=0,j=0;i<words.length;i++){
     		if(!words[i].equals(target)){
     			saiLeela[j] = words[i];
     			j++;
     		}
     	}
-    	
+
     	return saiLeela;
     }
 

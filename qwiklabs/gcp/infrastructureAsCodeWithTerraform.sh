@@ -75,7 +75,7 @@ terraform apply
 
 # Destructive Changes
 
-# Edit the boot_disk block inside the vm_instance resource 
+# Edit the boot_disk block inside the vm_instance resource
 boot_disk {
     initialize_params {
         image = "cos-cloud/cos-stable"
@@ -98,7 +98,7 @@ resource "google_compute_address" "vm_static_ip" {
     name = "terraform-static-ip"
 }
 
-# check 
+# check
 terraform plan
 
 # attach the IP address to your instance
@@ -164,7 +164,7 @@ resource "google_compute_instace" "vm_instance" {
     machine_type = "f1-micro"
     tags = ["web", "dev"]
     provisioner "local-exec" {
-        command = "echo ${google_compute_instance.vm_instance.name}: 
+        command = "echo ${google_compute_instance.vm_instance.name}:
         ${google_compute_instance.vm_instace.network_interface[0].access_config[0].nat_ip}
         >> ip_address.txt"
     }
@@ -173,7 +173,7 @@ resource "google_compute_instace" "vm_instance" {
 
 # Run terraform apply
 terraform apply
-# found nothing to do - and if you check, 
+# found nothing to do - and if you check,
 # you'll find that there's no ip_address.txt file on your local machine.
 # rovisioners only run when a resource is created, but adding a provisioner
 # does not force that resource to be destroyed and recreated.

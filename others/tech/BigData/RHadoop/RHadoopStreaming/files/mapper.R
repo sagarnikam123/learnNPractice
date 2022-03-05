@@ -5,7 +5,7 @@
 
 trimWhiteSpace <- function(line) gsub("(^ +)|( +$)", "", line)
 splitIntoWords <- function(line) unlist(strsplit(line, "[[:space:]]+"))
-    
+
 ## **** could wo with a single readLines or in blocks
 con <- file("stdin", open = "r")
 while (length(line <- readLines(con, n = 1, warn = FALSE)) > 0) {
@@ -16,7 +16,3 @@ while (length(line <- readLines(con, n = 1, warn = FALSE)) > 0) {
         cat(w, "\t1\n", sep="")
 }
 close(con)
-
-
-
-

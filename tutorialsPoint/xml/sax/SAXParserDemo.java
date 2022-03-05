@@ -12,14 +12,14 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXParserDemo {
 
 	public static void main(String[] args) {
-		
+
 		try {
 			File inputFile = new File("/home/quanta/git/learnNPractice/tutorialsPoint/xml/files/parseInput.xml");
 			SAXParserFactory factory = SAXParserFactory.newInstance();
 			SAXParser saxParser = factory.newSAXParser();
 			UserHandler userHandler = new UserHandler();
 			saxParser.parse(inputFile, userHandler);
-			
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -28,15 +28,15 @@ public class SAXParserDemo {
 }
 
 class UserHandler extends DefaultHandler{
-	
+
 	boolean bFirstName = false;
 	boolean bLastName = false;
 	boolean bNickName = false;
 	boolean bMarks = false;
-	
+
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException{
-		
+
 		if(qName.equalsIgnoreCase("student")) {
 			String rollNo = attributes.getValue("rollno");
 			System.out.println("Roll No : " + rollNo);
@@ -50,19 +50,19 @@ class UserHandler extends DefaultHandler{
 			bMarks = true;
 		}
 	}
-	
+
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		
+
 		if(qName.equalsIgnoreCase("student")) {
 			System.out.println("End Element : " + qName);
 			System.out.println();
 		}
 	}
-	
+
 	@Override
 	public void characters(char ch[], int start, int length) throws SAXException {
-		
+
 		if(bFirstName) {
 			System.out.println("First Name: " + new String(ch, start, length));
 			bFirstName = false;
@@ -77,5 +77,5 @@ class UserHandler extends DefaultHandler{
 			bMarks = false;
 		}
 	}
-	
+
 }

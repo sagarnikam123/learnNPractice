@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     hasBad - solved
-    
-    Given a string, return true if "bad" appears starting at index 0 or 1 in the string, 
+
+    Given a string, return true if "bad" appears starting at index 0 or 1 in the string,
     such as with "badxxx" or "xbadxx" but not "xxbadxx". The string may be any length, including 0.
-    Note: use .equals() to compare 2 strings. 
+    Note: use .equals() to compare 2 strings.
 ***************************************************************************************************
 hasBad("badxx") → true
 hasBad("xbadxx") → true
@@ -30,9 +30,9 @@ public class HasBad
     	System.out.println(hasBad("xad"));
     	System.out.println(hasBad(""));
     }
-    
+
     public static boolean hasBad(String duniya){
-    	
+
     	if(duniya.length() >= 3 && duniya.startsWith("bad")){
     			return true;
     	}else if (duniya.length() > 3 && duniya.substring(1, 4).equalsIgnoreCase("bad")){
@@ -40,7 +40,7 @@ public class HasBad
    		}
     	return false;
     }
-    
-    
+
+
 
 }

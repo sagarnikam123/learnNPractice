@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     seeColor - solved
-    
+
     Given a string, if the string begins with "red" or "blue" return that color string,
     otherwise return the empty string.
 ***************************************************************************************************
@@ -28,9 +28,9 @@ public class SeeColor
     	System.out.println(seeColor("xxred"));
     	System.out.println(seeColor("blueTimes"));
     }
-    
+
     public static String seeColor(String misrable){
-    	
+
     	if(misrable.startsWith("red")){
     		return "red";
     	}else if(misrable.startsWith("blue")){

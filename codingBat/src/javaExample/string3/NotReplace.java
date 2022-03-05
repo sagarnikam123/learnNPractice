@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     notReplace - solved
-    
-    Given a string, return a string where every appearance of the lowercase word "is" has been 
-    replaced with "is not". The word "is" should not be immediately preceeded or followed by a 
-    letter -- so for example the "is" in "this" does not count. 
-    (Note: Character.isLetter(char) tests if a char is a letter.) 
+
+    Given a string, return a string where every appearance of the lowercase word "is" has been
+    replaced with "is not". The word "is" should not be immediately preceeded or followed by a
+    letter -- so for example the "is" in "this" does not count.
+    (Note: Character.isLetter(char) tests if a char is a letter.)
 ***************************************************************************************************
 notReplace("is test") → "is not test"
 notReplace("is-is") → "is not-is not"
@@ -28,13 +28,13 @@ public class NotReplace
     {
     	System.out.println(notReplace("AAAis is"));
     }
-    
+
     public static String notReplace(String str) {
-        
+
     	if(str.length() <2){
     		return str;
     	}
-    	
+
     	String fek = "";
     	for(int i=0;i<str.length();i++){
     		String temp = "";
@@ -50,16 +50,16 @@ public class NotReplace
         		}
     		}
     		if(temp.equals("is")){
-    			fek += "is not"; 
+    			fek += "is not";
     		}else {
     			fek += temp;
     		}
     		if(!nonCharItem.isEmpty()){
     			fek += nonCharItem;
     		}
-    		
+
     	}
-    	
+
     	return fek;
     }
 

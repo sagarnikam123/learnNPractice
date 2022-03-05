@@ -2,7 +2,7 @@
 
 	Game on a Grid
 
-	
+
  */
 package medium.unsolved;
 

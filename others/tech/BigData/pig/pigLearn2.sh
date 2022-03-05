@@ -27,11 +27,11 @@ $HADOOP_HOME/bin/hadoop fs -copyFromLocal hotel.csv  input/hotel.csv
 7,007,yhamgaon,16,26,36,46
 8,008,uhamgaon,17,27,37,47
 9,009,ihamgaon,18,28,38,48
-                
+
 # step 1, load the csv file
-A = load 'input/hotel.csv' 
-using PigStorage('\t') as 
-(id: int, hid: int, locale: chararray, r1: int, r2: int, r3: int, r4: int); 
+A = load 'input/hotel.csv'
+using PigStorage('\t') as
+(id: int, hid: int, locale: chararray, r1: int, r2: int, r3: int, r4: int);
 
 # step 2 fold each row by computing the average rating for each review
 B = foreach A generate id, hid, (r1 + r2 + r3 + r4)/4 as stats;

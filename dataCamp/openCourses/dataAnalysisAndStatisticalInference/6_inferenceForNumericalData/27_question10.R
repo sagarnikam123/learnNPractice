@@ -1,14 +1,14 @@
 # Question 10
 
 #######################################################################################################################
-#	
+#
 #	Calculate the modified αα (α∗α∗) to be used for these tests.
-#	
+#
 #	You can run the code in the space provided:
-#	
-#	inference(y = gss$wordsum, x = gss$class, est = "mean", 
+#
+#	inference(y = gss$wordsum, x = gss$class, est = "mean",
 #	method = "theoretical", type = "ht", alternative = "greater")
-#		
+#
 ######################################################################################################################
 
 1	α∗=α=0.05

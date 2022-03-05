@@ -1,6 +1,6 @@
 /*
  * Requires your credentials
- * 
+ *
  * */
 
 package problem;
@@ -17,13 +17,13 @@ import twitter4j.auth.AccessToken;
 public class Twitter {
 
 	public static void main(String[] args) {
-		
+
 		Scanner firstLoop = new Scanner(System.in);
 		String queryHashTag = "#"+firstLoop.nextLine();
-		
+
 		//making twitter instance
 	    Twitter twitter = TwitterFactory.getSingleton();
-		
+
 		//credentials
 		AccessToken accessToken = new AccessToken("Your-Access-Token", "Your-Access-Token-Secret");
 	    twitter.setOAuthConsumer("Consumer-Key", "Consumer-Key-Secret");
@@ -36,7 +36,7 @@ public class Twitter {
 	        QueryResult result;
 	        result = twitter.search(query);
 	        List<Status> tweets = result.getTweets();
-	        
+
 	        // printing 20 tweets
 	        for (int i=0;i<20;i++) {
 	            System.out.println("@" + tweets.getUser().getScreenName() + " - " + tweets.getText());
@@ -52,7 +52,7 @@ public class Twitter {
 
 	private void setOAuthConsumer(String string, String string2) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

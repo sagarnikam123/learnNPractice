@@ -1,13 +1,13 @@
 /**
 
 	Help the soldier
-	
-Igor, a famous russian soldier, must go to war. His superiors allowed him to buy his own equipment. 
-He must buy 6 items: a helmet, bulletproof vest, trousers, boots, tunic and firearm. 
+
+Igor, a famous russian soldier, must go to war. His superiors allowed him to buy his own equipment.
+He must buy 6 items: a helmet, bulletproof vest, trousers, boots, tunic and firearm.
 This items are represented with numbers from 1 to 6.
 
-There are N (6 < N < 101) items of these 6 types. 
-Each item is characterized by its price p[i] (in rublas) and is quality q[i]. Igor has a total of T (0 < T < 1001) rublas and 
+There are N (6 < N < 101) items of these 6 types.
+Each item is characterized by its price p[i] (in rublas) and is quality q[i]. Igor has a total of T (0 < T < 1001) rublas and
 he wants to maximize the total quality of his equipment. The total quality is the quality of the item with the lowest quality. Help him.
 
 Input

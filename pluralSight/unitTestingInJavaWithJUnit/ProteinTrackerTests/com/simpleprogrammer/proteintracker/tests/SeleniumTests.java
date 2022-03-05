@@ -16,5 +16,5 @@ public class SeleniumTests {
 		searchBox.sendKeys("Pluralsight");
 		searchBox.submit();
 	}
-	
+
 }

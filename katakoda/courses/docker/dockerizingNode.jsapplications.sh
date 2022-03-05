@@ -28,5 +28,5 @@ curl http://docker:3000
 # Step 5 - Environment Variables
 # environment variables can be defined when you launch the container
 # Using -e option, you can set the name and value as -e NODE_ENV=production
-docker run -d --name my-production-running-app -e NODE_ENV=production -p 3000:3000 my-nodejs-app  
+docker run -d --name my-production-running-app -e NODE_ENV=production -p 3000:3000 my-nodejs-app
 ################################################################################

@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     frontAgain - solved
-    
+
     Given a string, return true if the first 2 chars in the string also appear
     at the end of the string, such as with "edited"
 ***************************************************************************************************
@@ -30,16 +30,16 @@ public class FrontAgain
     	System.out.println(frontAgain("jj"));
     	System.out.println(frontAgain(""));
     }
-    
+
     public static boolean frontAgain(String jayHari){
     	int singhLambi = jayHari.length();
-    	
+
     	if(singhLambi == 2){
     		return true;
     	}else if( singhLambi > 2 && jayHari.substring(0,2).equalsIgnoreCase(jayHari.substring(singhLambi-2,singhLambi)) ){
     		return true;
     	}
-    	
+
     	return false;
     }
 

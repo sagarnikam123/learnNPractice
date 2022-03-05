@@ -7,7 +7,7 @@
 #    is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
 #
 #######################################################################################################################
-#   
+#
 #   withoutString("Hello there", "llo") → "He there"
 #   withoutString("Hello there", "e") → "Hllo thr"
 #   withoutString("Hello there", "x") → "Hello there"
@@ -27,5 +27,5 @@
 #   withoutString("1111", "11") → ""
 #   withoutString("MkjtMkx", "Mk") → "jtx"
 #   withoutString("Hi HoHo", "Ho") → "Hi "
-#   
+#
 #######################################################################################################################

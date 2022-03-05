@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     zeroFront - solved
-    
-    Return an array that contains the exact same numbers as the given array, but rearranged so that 
-    all the zeros are grouped at the start of the array. The order of the non-zero numbers does not 
+
+    Return an array that contains the exact same numbers as the given array, but rearranged so that
+    all the zeros are grouped at the start of the array. The order of the non-zero numbers does not
     matter. So {1, 0, 0, 1} becomes {0 ,0, 1, 1}.
-    You may modify and return the given array or make a new array. 
+    You may modify and return the given array or make a new array.
 ***************************************************************************************************
 zeroFront({1, 0, 0, 1}) â†’ {0, 0, 1, 1}
 zeroFront({0, 1, 1, 0, 1}) â†’ {0, 0, 1, 1, 1}
@@ -33,11 +33,11 @@ public class ZeroFront
     		System.out.println(systemedia);
     	}
     }
-    
+
     public static int[] zeroFront(int[] nums) {
-        
+
     	int beshak [] = new int[nums.length];
-    	
+
     	for(int i=nums.length-1,j=i;i>=0;i--){
     		if(nums[i]!=0){
     			beshak[j] = nums[i];

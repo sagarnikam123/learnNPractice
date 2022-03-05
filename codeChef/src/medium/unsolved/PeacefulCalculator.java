@@ -5,27 +5,27 @@
 	In the 1920's a mad scientist by the name Exor invented a notation for evaluating complex mathematical expressions.
 	This notation popularly goes by the name "Zenfix" notation. In more formal terms, Zenfix expression is an expression
 	which consists of tokens. Each token is either an operation from the list { ! , ^ , / , * , + , - } or an integer.
-	All arithmetic operation here are 32-bit operations. They are defined through auxiliary unary operation 32-bit 
+	All arithmetic operation here are 32-bit operations. They are defined through auxiliary unary operation 32-bit
 	residue as follows (please read this carefully, some definitions are non-standard):
-	    32-bit residue of A is defined as the unique integer X in the range [-231, 231) for which the usual difference 
+	    32-bit residue of A is defined as the unique integer X in the range [-231, 231) for which the usual difference
 	    	of A and X is divisible by 232.
 	    32-bit difference A - B is defined as a 32-bit residue of the usual difference of A and B.
 	    32-bit sum A + B is defined as a 32-bit residue of the usual sum of A and B.
 	    32-bit product A * B is defined as a 32-bit residue of the usual product of A and B.
-	    32-bit quotient A / B is defined as the smallest integer C in the range [-231, 231) such that B * C = A 
-	    	(note the B * C here is a 32-bit product of B and C). If no such integer C exists 
+	    32-bit quotient A / B is defined as the smallest integer C in the range [-231, 231) such that B * C = A
+	    	(note the B * C here is a 32-bit product of B and C). If no such integer C exists
 	    	then result of division is undefined, which means that error occurs during the calculation.
-	    32-bit power A ^ B is defined as follows. For B > 0 we define A ^ B = A * A * ... * A, where A 
+	    32-bit power A ^ B is defined as follows. For B > 0 we define A ^ B = A * A * ... * A, where A
 	    	repeats B times (here * is a 32-bit multiplication). For B = 0 we define A ^ 0 = 1.
-	    	Finally, for B < 0 we define A ^ B = 1 / (A ^ (-B)), where A ^ (-B) is defined above 
-	    	(-B is the usual negation of B) and / is a 32-bit division operation. If result of division 
+	    	Finally, for B < 0 we define A ^ B = 1 / (A ^ (-B)), where A ^ (-B) is defined above
+	    	(-B is the usual negation of B) and / is a 32-bit division operation. If result of division
 	    	here is undefined it means that error occurs during the calculation.
-	    32-bit factorial A! is defined as follows. For A > 0 we define A! = 1 * 2 * 3 * ... * A 
-	    	(here * is a 32-bit multiplication). For A = 0 we define 0! = 1. 
-	    	Finally, for A < 0 we define A! = (-1) * (-2) * (-3) * ... * A 
+	    32-bit factorial A! is defined as follows. For A > 0 we define A! = 1 * 2 * 3 * ... * A
+	    	(here * is a 32-bit multiplication). For A = 0 we define 0! = 1.
+	    	Finally, for A < 0 we define A! = (-1) * (-2) * (-3) * ... * A
 	    	(here again * is a 32-bit multiplication and -X for X = 1, 2, 3, ... means usual negation).
-	
-	Each operation has its own priority defined by its index in this list: 
+
+	Each operation has its own priority defined by its index in this list:
 	the smaller the index the higher the priority.Therefore,
 	    the most priority operation is factorial (!),
 	    the second most priority operation is exponentiation (^),
@@ -33,44 +33,44 @@
 	    the fourth most priority operation is multiplication (*),
 	    the fifth most priority operation is addition (+),
 	    and, finally, the less priority operation is subtraction (-).
-	
-	We could abbreviate the list of operations sorted by priority as FEDMAS (the first letter of the title of each 
+
+	We could abbreviate the list of operations sorted by priority as FEDMAS (the first letter of the title of each
 	operation was chosen). The evaluation of a Zenfix expression goes as follows:
 	    If expression contains a factorial sign (!) followed by an integer then we choose the leftmost such occurrence
-	    and perform the factorial operation which will be defined below. Namely, we replace the integer that follows 
+	    and perform the factorial operation which will be defined below. Namely, we replace the integer that follows
 	    the factorial sign by its factorial value and delete the factorial sign from the expression.
-	    Otherwise, if there exists an operation followed by at least 3 integers we at first choose the first operation 
-	    in EDMAS with this property (that is, among operations followed by at least three integers we choose the 
+	    Otherwise, if there exists an operation followed by at least 3 integers we at first choose the first operation
+	    in EDMAS with this property (that is, among operations followed by at least three integers we choose the
 	    operation with the highest priority). Then we choose the leftmost occurrence of such a case with this operation
-	    and perform calculation. Namely, we replace the operation and two following integers by the result of this 
-	    operation applied to these integers. If error occurs during this calculation then you should stop evaluation 
-	    of expression. Otherwise, if there exists an operation followed by exactly 2 integers we proceed exactly as in 
-	    the previous rule. We repeat the first three steps until we can no longer repeat them or error occurs during 
+	    and perform calculation. Namely, we replace the operation and two following integers by the result of this
+	    operation applied to these integers. If error occurs during this calculation then you should stop evaluation
+	    of expression. Otherwise, if there exists an operation followed by exactly 2 integers we proceed exactly as in
+	    the previous rule. We repeat the first three steps until we can no longer repeat them or error occurs during
 	    some calculation. At the end of this evaluation, if we are left with a single integer, the expression is called
-	    correct, otherwise it is called incorrect. In particular, if error occurs during some calculation, 
+	    correct, otherwise it is called incorrect. In particular, if error occurs during some calculation,
 	    the expression is incorrect.
-	
+
 	Your task is for the given Zenfix expression check whether it is correct or not by modeling process of
 	its evaluation and output each intermediate calculation that occurs.
-	
+
 	Input
 	The first line of the input contains an integer T, denoting the number of test cases. The first line of each test case
-	contains a single integer N, denoting the number of tokens in the expression. The second line contains 
+	contains a single integer N, denoting the number of tokens in the expression. The second line contains
 	the expression as the list of N space-separated tokens.
-	
+
 	Constraints
 	    1 ≤ T ≤ 10000
 	    1 ≤ N ≤ 1000
 	    Each token is either an integer in the range [-231, 231) or a character in the set { ! , ^ , / , * , + , - }
 	    The sum of N over the input does not exceed 10000
-	 
+
 	Output
-	For each test case, output the process of evaluation of the expression. Namely, at each step when successful 
-	calculation is performed output on a separate line I O A B C. Here I is the index of the operation in the 
-	list of tokens of the current expression (tokens are number starting from 1). O is the operation itself 
-	(one of the characters in the set { ! , ^ , / , * , + , - }). A and B are the operands. 
-	In case of a factorial operation (!), output B as -1. C is the result of operation O applied to numbers A and B 
-	(or only to A in case of a factorial operation). After all possible calculations are performed output "OK" 
+	For each test case, output the process of evaluation of the expression. Namely, at each step when successful
+	calculation is performed output on a separate line I O A B C. Here I is the index of the operation in the
+	list of tokens of the current expression (tokens are number starting from 1). O is the operation itself
+	(one of the characters in the set { ! , ^ , / , * , + , - }). A and B are the operands.
+	In case of a factorial operation (!), output B as -1. C is the result of operation O applied to numbers A and B
+	(or only to A in case of a factorial operation). After all possible calculations are performed output "OK"
 	if the expression is correct, and "NOT OK" otherwise.
 ***********************************************************************************************************************
 Example
@@ -177,7 +177,7 @@ Here at first two steps the first rule (with factorials) was applied.
 At the 3rd and the 4th step the 3rd rule was applied.
 Since quotient 272 / 0 is undefined (see the definition) we stop evaluation.
 So the expression is incorrect and we output "NOT OK".
-	
+
 **********************************************************************************************************************/
 
 package medium.unsolved;

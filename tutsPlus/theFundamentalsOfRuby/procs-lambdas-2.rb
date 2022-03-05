@@ -11,4 +11,4 @@ def app
 	run_block proc { print "proc"; return}
 end
 
-app  
+app

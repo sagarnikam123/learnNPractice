@@ -1,15 +1,15 @@
 /**
 
 	The Cursed Room
-	
-	There is a school trip being organized for kids.The hotel the group is staying in can offer them one big room with 
+
+	There is a school trip being organized for kids.The hotel the group is staying in can offer them one big room with
 	enough beds to suit any group of visitors, and several smaller rooms with B beds alltogether.
-	The children have heard many strange and frightening stories about the big room. That's why not even one of them 
+	The children have heard many strange and frightening stories about the big room. That's why not even one of them
 	wants to sleep in the big room.	Furthermore not every kid would like to sleep in any bed.
-	
+
 	Your goal is to assign B beds from the smaller rooms in such a way that the maximal number of children are happy
 	(a child is happy when it gets to sleep in one of the beds it has selected).
-	
+
 	Input
 	The first line contains a positive integer t<=1000 indicating the number of test cases.
 	Each test case is an instance of the problem defined above.

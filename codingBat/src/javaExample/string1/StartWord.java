@@ -1,12 +1,12 @@
 /**************************************************************************************************
 
     startWord - solved
-    
-    Given a string and a second "word" string, we'll say that the word matches the string 
+
+    Given a string and a second "word" string, we'll say that the word matches the string
     if it appears at the front of the string, except its first char does not need to match exactly.
     On a match, return the front of the string, or otherwise return the empty string.
     So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip".
-    The word will be at least length 1. 
+    The word will be at least length 1.
 ***************************************************************************************************
 startWord("hippo", "hi") → "hi"
 startWord("hippo", "xip") → "hip"
@@ -42,18 +42,18 @@ public class StartWord
     	System.out.println(startWord("hippo", "xippo"));
     	System.out.println(startWord("kit", "cit"));
     }
-    
+
     public static String startWord(String ranjha,String built){
-    
+
     	// string -- word
     	int nShekoti = ranjha.length();
     	int nLength = built.length(); // always > 1
-    	
+
     	// if string empty or less than one
     	if(ranjha.isEmpty()){
     		return "";
     	}
-    	  	
+
     	String firstCharFirst = ranjha.substring(0,1);
     		// except first
     		if(ranjha.substring(1,nShekoti).startsWith(built.substring(1,nLength))){
@@ -61,7 +61,7 @@ public class StartWord
     		}else{
     			return "";
     		}
-	   
+
     }
 
 }

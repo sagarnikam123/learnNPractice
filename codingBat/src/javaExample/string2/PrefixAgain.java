@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     prefixAgain - solved
-    
+
     Given a string, consider the prefix string made of the first N chars of the string.
     Does that prefix string appear somewhere else in the string?
     Assume that the string is not empty and that N is in the range 1..str.length().
@@ -28,13 +28,13 @@ public class PrefixAgain
     {
     	System.out.println(prefixAgain("abXYabc", 3));
     }
-    
+
     public static boolean prefixAgain(String str, int n) {
-        
+
     	String searched = str.substring(0, n);
-    	
+
     	for(int i =n ; i <= str.length()-n; i++){
-    		
+
     		if(str.substring(i, i+n).equalsIgnoreCase(searched)){
     			return true;
     		}

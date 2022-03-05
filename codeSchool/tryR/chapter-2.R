@@ -3,8 +3,8 @@
 #################
 
 
-# - basics of manipulating vectors - creating and accessing them, doing math with them, and making sequences. 
-# - how to make bar plots and scatter plots with vectors. 
+# - basics of manipulating vectors - creating and accessing them, doing math with them, and making sequences.
+# - how to make bar plots and scatter plots with vectors.
 # - how R treats vectors where one or more values are not available
 
 
@@ -20,7 +20,7 @@
 	c('a','b','c')
 	a = c(1, 2, 3, 4)
 	# Basic Arithmetic Operations
-	a+5 
+	a+5
 	a - 10
 	a/5
 	b <- a - 10
@@ -32,7 +32,7 @@
 	#Basic Statistics
 	min(a,b)
 	max(a,b)
-	mean(a) 
+	mean(a)
 	median(a)
 	quantile(a)
 	var(a)
@@ -42,7 +42,7 @@
 	# All the values were converted to a single mode (characters) so that the vector can hold them all.
 	> c(22,"Trying ...R",'z')
 	[1] "22"          "Trying ...R" "z"
-	
+
 	#Accessing:- retrieve an individual value within a vector by providing its numeric index in square brackets.
 	> alphaList <- c('a','b','c','d','e','f')
 	> alphaList
@@ -58,34 +58,34 @@
 	> #assign new values within an existing vector
 	> alphaList[1] <- 'FirstElement'
 	> alphaList
-	[1] "FirstElement" "b"            "c"            "d"            "e"           
-	[6] "f"           
-	> alphaList[7] = "Seventh Element"   
+	[1] "FirstElement" "b"            "c"            "d"            "e"
+	[6] "f"
+	> alphaList[7] = "Seventh Element"
 	> alphaList
-	[1] "FirstElement"    "b"               "c"               "d"              
+	[1] "FirstElement"    "b"               "c"               "d"
 	[5] "e"               "f"               "Seventh Element"
 
 	> line= c ('one','two','three','four','five','six')
 	> line
-	[1] "one"   "two"   "three" "four"  "five"  "six"  
+	[1] "one"   "two"   "three" "four"  "five"  "six"
 	> line[2:6] # retrieve ranges of values
-	[1] "two"   "three" "four"  "five"  "six"  
+	[1] "two"   "three" "four"  "five"  "six"
 	> line[c(1,3)]# You can use a vector within the square brackets to access multiple values
 	[1] "one"   "three"
 	> line[5:6] <- c("Fifth-5","Sixth-6") # set ranges of values; just provide the values in a vector.
 	> line
 	[1] "one"     "two"     "three"   "four"    "Fifth-5" "Sixth-6"
-	
-	
-	
+
+
+
 	# Assigning names to a vector's elements (can be used as labels for your data.)
 	# by passing a second vector filled with names to the names assignment function
 	numbers<- c(1,2,3,4,5)
 	names(numbers)<-c('one','two','three','four','five')
 	numbers
 	# You can also use the names to access the vector's values
-	numbers['four']    
-	
+	numbers['four']
+
 
 
 # 2- Sequence Vectors
@@ -94,11 +94,11 @@
 	seq(40,47,by=1)  # using seq function
 	seq(1,4,by =0.5) # you can increments elements in seq other than 1
 	20:15 # reverse vector
-	
-	
-	
+
+
+
 # 3- Plotting One Vector
-	# barplot function draws a bar chart with a vector's values.	
+	# barplot function draws a bar chart with a vector's values.
 	plotValues <- c(4, 5, 1)
 	barplot(plotValues)
 	names(plotValues) <- c("ShriLanka", "Australia", "India")
@@ -141,12 +141,12 @@
 	a <- c(1, 3, NA, 7, 9)
 	is.na(a) # returns FALSE FALSE  TRUE FALSE FALSE
 	sum(a)
-	# We can explicitly tell sum (and many other functions) to remove NA values before they do their calculations, 
+	# We can explicitly tell sum (and many other functions) to remove NA values before they do their calculations,
 	sum(a, na.rm = TRUE)
 	mean(a,na.rm=T)
 	newA = na.omit(a) # Handle Missing Values in Objects
 	na.exclude(a)
-	
+
 
 
 
@@ -164,7 +164,7 @@
 	# (R can output in postscript, PDF, bitmap, PNG, JPEG and more formats)
 	dev.list()      # list graphics devices
 	colours()       # or "colors()" List all available colours
-	?plotmath  
+	?plotmath
 
 	# To create an output file copy of a plot for printing or including in a document etc.
 
@@ -174,7 +174,7 @@
 	body(cat)      # Return main body of function
 	formals(fun)   # Get or set the formal arguments of a function
 	debug(fun); undebug(fun)   # Set or unset the debugging flag on a function
-	
+
 	# 	Create your own function
 	fun <- function(x, a, b, c) (a*x^2) + (b*x^2) + c
 	fun(3, 1, 2, 3)
@@ -191,97 +191,97 @@
 	mad(x)                           # Robustly estimates sd of main sample
 	mean(x)                          # biased
 	median(x)                        # robust
-	
+
 # 10- Simple Graphs
 
 
 	# Dot Plots
 	# Simple Dotplot
 	dotchart(mtcars$mpg,labels=row.names(mtcars),cex=.7,main="Gas Milage for Car Models", xlab="Miles Per Gallon")
-	
+
 	# Dotplot: Grouped Sorted and Colored
-	# Sort by mpg, group and color by cylinder 
+	# Sort by mpg, group and color by cylinder
 	x <- mtcars[order(mtcars$mpg),] # sort by mpg
 	x$cyl <- factor(x$cyl) # it must be a factor
 	x$color[x$cyl==4] <- "red"
 	x$color[x$cyl==6] <- "blue"
-	x$color[x$cyl==8] <- "darkgreen"	
+	x$color[x$cyl==8] <- "darkgreen"
 	dotchart(x$mpg,labels=row.names(x),cex=.7,groups= x$cyl,main="Gas Milage for Car Models\ngrouped by cylinder", xlab="Miles Per Gallon", gcolor="black", color=x$color)
-	
+
 
 	# Bar Plots
-	# Simple Bar Plot 
+	# Simple Bar Plot
 	counts <- table(mtcars$gear)
 	barplot(counts, main="Car Distribution",xlab="Number of Gears")
-	
+
 	# Stacked Bar Plot with Colors and Legend
 	counts <- table(mtcars$vs, mtcars$gear)
 	barplot(counts, main="Car Distribution by Gears and VS", xlab="Number of Gears", col=c("darkblue","red"),legend = rownames(counts))
-	
+
 	# Grouped Bar Plot
 	counts <- table(mtcars$vs, mtcars$gear)
 	barplot(counts, main="Car Distribution by Gears and VS", xlab="Number of Gears", col=c("darkblue","red"),legend = rownames(counts), beside=TRUE)
-	
+
 	# Line Graphs
 	# Define the cars vector with 5 values
 	cars <- c(1, 3, 6, 4, 9) #
 	trucks <- c(2, 5, 4, 5, 12)
 	# Graph the cars vector with all defaults
 	plot(cars)
-	# Graph cars using blue points overlayed by a line 
+	# Graph cars using blue points overlayed by a line
 	plot(cars, type="o", col="blue")
 	# Create a title with a red, bold/italic font
 	title(main="Autos", col.main="red", font.main=4)
 	# Graph trucks with red dashed line and square points
 	lines(trucks, type="o", pch=22, lty=2, col="red")
-	
+
 	# Create a title with a red, bold/italic font
 	title(main="Autos", col.main="red", font.main=4)
 	# Start PNG device driver to save output to figure.png
 	png(filename="LinePlot.png", height=295, width=300,bg="white")
 	#More Advanced Line Graphs
-	x <- c(1:5); y <- x # create some data 
-	par(pch=22, col="red") # plotting symbol and color 
-	par(mfrow=c(2,4)) # all plots on one page 
-	opts = c("p","l","o","b","c","s","S","h") 
-	for(i in 1:length(opts)){ 
-	  heading = paste("type=",opts[i]) 
-	  plot(x, y, type="n", main=heading) 
-	  lines(x, y, type=opts[i]) 
+	x <- c(1:5); y <- x # create some data
+	par(pch=22, col="red") # plotting symbol and color
+	par(mfrow=c(2,4)) # all plots on one page
+	opts = c("p","l","o","b","c","s","S","h")
+	for(i in 1:length(opts)){
+	  heading = paste("type=",opts[i])
+	  plot(x, y, type="n", main=heading)
+	  lines(x, y, type=opts[i])
 	}
-	
+
 
 	#Pie chart
 	# Pie Chart with Percentages
-	slices <- c(10, 12, 4, 16, 8) 
+	slices <- c(10, 12, 4, 16, 8)
 	lbls <- c("US", "UK", "Australia", "Germany", "France")
 	pct <- round(slices/sum(slices)*100)
-	lbls <- paste(lbls, pct) # add percents to labels 
-	lbls <- paste(lbls,"%",sep="") # ad % to labels 
+	lbls <- paste(lbls, pct) # add percents to labels
+	lbls <- paste(lbls,"%",sep="") # ad % to labels
 	pie(slices,labels = lbls, col=rainbow(length(lbls)),main="Pie Chart of Countries")
 
 
 	#Box plots
-	# Boxplots can be created for individual variables or for variables by group. 
-	# Boxplot of MPG by Car Cylinders 
+	# Boxplots can be created for individual variables or for variables by group.
+	# Boxplot of MPG by Car Cylinders
 	boxplot(mpg~cyl,data=mtcars, main="Car Milage Data",xlab="Number of Cylinders", ylab="Miles Per Gallon")
-	
+
 	# Notched Boxplot of Tooth Growth Against 2 Crossed Factors
-	# boxes colored for ease of interpretation 
+	# boxes colored for ease of interpretation
 	boxplot(len~supp*dose, data=ToothGrowth, notch=TRUE, col=(c("gold","darkgreen")),main="Tooth Growth", xlab="Suppliment and Dose")
-	
-	
+
+
 	# Histograms
 	# Colored Histogram with Different Number of Bins
 	hist(mtcars$mpg, breaks=12, col="red")
-	
+
 	# Add a Normal Curve (Thanks to Peter Dalgaard)
-	x <- mtcars$mpg 
-	h<-hist(x, breaks=10, col="red", xlab="Miles Per Gallon", 
-		 main="Histogram with Normal Curve") 
-	xfit<-seq(min(x),max(x),length=40) 
-	yfit<-dnorm(xfit,mean=mean(x),sd=sd(x)) 
-	yfit <- yfit*diff(h$mids[1:2])*length(x) 
+	x <- mtcars$mpg
+	h<-hist(x, breaks=10, col="red", xlab="Miles Per Gallon",
+		 main="Histogram with Normal Curve")
+	xfit<-seq(min(x),max(x),length=40)
+	yfit<-dnorm(xfit,mean=mean(x),sd=sd(x))
+	yfit <- yfit*diff(h$mids[1:2])*length(x)
 	lines(xfit, yfit, col="blue", lwd=2)
 
 	# Scatterplots
@@ -289,6 +289,5 @@
 	attach(mtcars)
 	plot(wt, mpg, main="Scatterplot Example",xlab="Car Weight ", ylab="Miles Per Gallon ", pch=19)
 	# Add fit lines
-	abline(lm(mpg~wt), col="red") # regression line (y~x) 
+	abline(lm(mpg~wt), col="red") # regression line (y~x)
 	lines(lowess(wt,mpg), col="blue") # lowess line (x,y)
-

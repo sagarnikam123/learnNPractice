@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     twoAsOne - solved
-    
+
     Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
 ***************************************************************************************************
 twoAsOne(1, 2, 3) → true
@@ -26,13 +26,13 @@ public class TwoAsOne
     {
     	System.out.println(twoAsOne(3, 2, 2));
     }
-    
+
     public static boolean twoAsOne(int a, int b, int c) {
-        
+
     	if(a+b ==c || a == b+c || b ==a+c){
     		return true;
     	}
-    	
+
     	return false;
     }
 

@@ -47,7 +47,7 @@ db.listingsAndReviews.find( { '$expr' : { '$gt': [{'$size': '$amenities'}, 1]} }
 # 2. Only return documents that list exactly 20 amenities in this field and
 #    contain the amenities of your choosing.
 db.listingsAndReviews.find( {'amenities' : { '$size' : 20, '$all' : [ "Internet", "Wifi",  "Kitchen",
-"Heating", "Family/kid friendly", "Washer", "Dryer", "Essentials", "Shampoo", "Hangers", 
+"Heating", "Family/kid friendly", "Washer", "Dryer", "Essentials", "Shampoo", "Hangers",
 "Hair dryer", "Iron", "Laptop friendly workspace" ] }  } ).count()
 
 ###############################################################################
@@ -57,7 +57,7 @@ db.listingsAndReviews.find( {'amenities' : { '$size' : 20, '$all' : [ "Internet"
 #    amenities which include all the amenities listed in the query array, and display their price and address.
 use sample_airbnb
 db.listingsAndReviews.find({'amenities' : {
-    '$size' : 20, 
+    '$size' : 20,
     '$all' : [ "Internet", "Wifi",  "Kitchen", "Heating","Family/kid friendly", "Washer", "Dryer",
     "Essentials", "Shampoo", "Hangers","Hair dryer", "Iron", "Laptop friendly workspace" ]
     } }, {'price' : 1, 'address' : 1}).pretty()
@@ -98,7 +98,7 @@ db.companies.find({'relationships.0.person.first_name' : 'Mark',
 # 3. Find all documents in the companies collection where people named Mark
 #    used to be in the senior company leadership array, a.k.a the
 #    relationships array, but are no longer with the company.
-db.companies.find({'relationships': {'$elemMatch' : {'is_past': true, 'person.first_name' : 'Mark'}}}, 
+db.companies.find({'relationships': {'$elemMatch' : {'is_past': true, 'person.first_name' : 'Mark'}}},
 {'name': 1}).count()
 
 ###############################################################################
@@ -141,9 +141,9 @@ db.zips.find( {'$nor' : [ {'pop' : {'$gt' : 1000000 }}, {'pop' : {'$lt' : 5000 }
 #    founded in 2004, or in the month of October and either have the social
 #    category_code or web category_code?
 db.companies.find().limit(1)
-db.companies.find({ '$or' : [ 
+db.companies.find({ '$or' : [
     {'founded_year': 2004 ,'$or':[{'category_code' : 'social'}, {'category_code' : 'web'}]},
-    {'founded_month': 10 ,'$or':[{'category_code' : 'social'}, {'category_code' : 'web'}]} 
+    {'founded_month': 10 ,'$or':[{'category_code' : 'social'}, {'category_code' : 'web'}]}
     ]} ).count()
 db.companies.find( {'founded_year': 2004 ,'$or':[{'category_code' : 'social'}, {'category_code' : 'web'}]} ).count()
 

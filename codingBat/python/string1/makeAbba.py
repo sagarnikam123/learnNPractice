@@ -6,7 +6,7 @@
 #    e.g. "Hi" and "Bye" returns "HiByeByeHi".
 #
 #######################################################################################################################
-#   
+#
 #   makeAbba("Hi", "Bye") → "HiByeByeHi"
 #   makeAbba("Yo", "Alice") → "YoAliceAliceYo"
 #   makeAbba("What", "Up") → "WhatUpUpWhat"
@@ -16,5 +16,5 @@
 #   makeAbba("", "y") → "yy"
 #   makeAbba("Bo", "Ya") → "BoYaYaBo"
 #   makeAbba("Ya", "Ya") → "YaYaYaYa"
-#   
+#
 #######################################################################################################################

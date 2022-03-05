@@ -4,7 +4,7 @@
 # Create a function
 
 #To create a cloud function:
-# 1. In the Cloud Shell command line, create a directory for the function code & 
+# 1. In the Cloud Shell command line, create a directory for the function code &
 # Move to the gcf_hello_world directory
 mkdir gcf_hello_world
 cd gcf_hello_world
@@ -17,7 +17,7 @@ gsutil mb -p qwiklabs-gcp-04-3aa5b8b21541 gs://gcp123qwiklabs321
 ###############################################################################
 # Deploy your function
 
-# 1. Deploy the function to a pub/sub topic named hello_world, 
+# 1. Deploy the function to a pub/sub topic named hello_world,
 # replacing [BUCKET_NAME] with the name of your bucket:
 gcloud functions deploy helloWorld \
   --stage-bucket [BUCKET_NAME] \
@@ -28,9 +28,9 @@ gcloud functions deploy helloWorld \
   --stage-bucket gcp123qwiklabs321 \
   --trigger-topic hello_world \
   --runtime nodejs8
-  
+
  # 2. Verify the status of the function
-gcloud functions describe helloWorld 
+gcloud functions describe helloWorld
 ###############################################################################
 # Test the function
 

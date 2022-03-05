@@ -2,21 +2,21 @@
 
 ##############################################################################
 
-People often save their work every few minutes when they're using a desktop 
-text editor. Similarly, it's common to use git add periodically to save 
-the most recent changes to a file to the staging area. This is particularly 
-useful when the changes are experimental and you might want to undo them 
+People often save their work every few minutes when they're using a desktop
+text editor. Similarly, it's common to use git add periodically to save
+the most recent changes to a file to the staging area. This is particularly
+useful when the changes are experimental and you might want to undo them
 without cluttering up the repository's history.
 
 ##############################################################################
 
-You are in the dental repository. 
+You are in the dental repository.
 Use git status to check the status of the repository.
 
 git status
 
-It appears that some changes to data/northern.csv have already been staged, 
-but there are new changes that haven't been staged yet. Use git add to 
+It appears that some changes to data/northern.csv have already been staged,
+but there are new changes that haven't been staged yet. Use git add to
 stage these latest changes to data/northern.csv again.
 
 git add data/northern.csv

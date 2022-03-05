@@ -8,7 +8,7 @@ CREATE TABLE employee(
 	empname varchar(20),
 	salray int (6)
 );
-INSERT INTO employee VALUES 
+INSERT INTO employee VALUES
 (1,'emp1',15000),
 (1,'emp1',15000),
 (2,'emp2',12200),

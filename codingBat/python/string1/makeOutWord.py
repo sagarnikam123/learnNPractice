@@ -7,11 +7,11 @@
 #    to extract the String starting at index i and going up to but not including index j.
 #
 #######################################################################################################################
-#   
+#
 #   makeOutWord("<<>>", "Yay") → "<<Yay>>"
 #   makeOutWord("<<>>", "WooHoo") → "<<WooHoo>>"
 #   makeOutWord("[[]]", "word") → "[[word]]"
 #   makeOutWord("HHoo", "Hello") → "HHHellooo"
 #   makeOutWord("abyz", "YAY") → "abYAYyz"
-#   
+#
 #######################################################################################################################

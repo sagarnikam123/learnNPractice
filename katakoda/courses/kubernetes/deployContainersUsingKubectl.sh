@@ -1,7 +1,7 @@
 # Deploy Containers Using Kubectl
 
-# Learn->how to use Kubectl to create and launch Deployments, Replication 
-# Controllers and expose them via Services without writing yaml definitions. 
+# Learn->how to use Kubectl to create and launch Deployments, Replication
+# Controllers and expose them via Services without writing yaml definitions.
 # This allows you to quickly launch containers onto the cluster.
 ###############################################################################
 # Step 1 - Launch Cluster
@@ -15,7 +15,7 @@ kubectl get nodes
 ###############################################################################
 # Step 2 - Kubectl Run
 
-# launch a deployment called http which will start a container 
+# launch a deployment called http which will start a container
 # format -> kubectl run <name of deployment> <properties>
 # kubectl run http --image=katacoda/docker-http-server:latest --replicas=1 # DEPRECATED
 kubectl run --generator=run-pod/v1 http --image=katacoda/docker-http-server:latest --replicas=1
@@ -39,7 +39,7 @@ curl http://172.17.0.20:8000
 # kubectl run httpexposed --generator=run-pod/v1 --image=katacoda/docker-http-server:latest --replicas=1 --port=80 --hostport=8001
 # access
 curl http://172.17.0.20:8000
-# Under the covers, this exposes the Pod via Docker Port Mapping. 
+# Under the covers, this exposes the Pod via Docker Port Mapping.
 # As a result, you will not see the service listed using
 kubectl get svc
 kubectl get service
@@ -47,7 +47,7 @@ kubectl get service
 # find more
 docker ps | grep httpexposed
 # Pause Containers
-# ports are exposed on the Pod, not the http container itself. 
+# ports are exposed on the Pod, not the http container itself.
 # The Pause container is responsible for defining the network for the Pod.
 ###############################################################################
 # Step 5 - Scale Containers

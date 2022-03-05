@@ -7,7 +7,7 @@
 #     before or after the word, and a char may be included twice if it is between two words.
 #
 #######################################################################################################################
-#   
+#
 #   wordEnds("abcXY123XYijk", "XY") â†’ "c13i"
 #   wordEnds("XY123XY", "XY") â†’ "13"
 #   wordEnds("XY1XY", "XY") â†’ "11"
@@ -21,5 +21,5 @@
 #   wordEnds("abc1xyz1abc", "abc") → "11"
 #   wordEnds("abc1xyz1abc", "b") → "acac"
 #   wordEnds("abc1abc1abc", "abc") → "1111"
-#   
+#
 #######################################################################################################################

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     missingChar - solved
-    
+
     Given a non-empty string and an int n,
-    return a new string where the char at index n has been removed. 
-    The value of n will be a valid index of a char in the original string 
+    return a new string where the char at index n has been removed.
+    The value of n will be a valid index of a char in the original string
     (i.e. n will be in the range 0..str.length()-1 inclusive).
 ***************************************************************************************************
 missingChar("kitten", 1) → "ktten"
@@ -27,12 +27,12 @@ public class MissingChar{
          System.out.println(missingChar("kitten", 1) );
          System.out.println(missingChar("kitten", 0) );
          System.out.println(missingChar("kitten", 4) );
-    
+
     }
-    
+
     public static String missingChar(String str, int n) {
         String front = str.substring(0, n);
-        
+
         // Start this substring at n+1 to omit the char.
         // Can also be shortened to just str.substring(n+1)
         // which goes through the end of the string.
@@ -40,4 +40,3 @@ public class MissingChar{
         return front + back;
       }
 }
-

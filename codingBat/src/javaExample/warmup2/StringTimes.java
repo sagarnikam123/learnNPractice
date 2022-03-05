@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
      stringTimes -solved
-     
-    Given a string and a non-negative int n, 
+
+    Given a string and a non-negative int n,
     return a larger string that is n copies of the original string.
 ***************************************************************************************************
 stringTimes("Hi", 2) → "HiHi"
@@ -27,7 +27,7 @@ public class StringTimes
     	System.out.println(stringTimes("Hi", 3));
     	System.out.println(stringTimes("Hi", 1));
     }
-    
+
     public static String stringTimes(String anjanCity, int mobile){
     	String astu = "";
     	for(int i =0;i<mobile;i++){

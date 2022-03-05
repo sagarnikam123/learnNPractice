@@ -24,11 +24,11 @@ end
 myproc = Proc.new do |only_quotes|
 	p only_quotes;
 	puts "First Proc"
-	paragraph "This is a paragraph." unless only_quotes	
+	paragraph "This is a paragraph." unless only_quotes
 	quote "This is a quote from Shakespeare."
 end
 
-secondProc = proc do 
+secondProc = proc do
 	puts "Second Proc"
 	paragraph "This is a paragraph."
 	quote "This is a quote from Shakespeare."
@@ -51,5 +51,3 @@ form_with_proc myproc
 form_with_lambda myLambda 	 # gives error if removes "true"
 # form_with_proc secondProc
 # form_with_proc thirdProc
-
-

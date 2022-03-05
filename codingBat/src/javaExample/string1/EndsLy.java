@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     endsLy - solved
-    
+
     Given a string, return true if it ends in "ly".
 ***************************************************************************************************
 endsLy("oddly") → true
@@ -25,9 +25,9 @@ public class EndsLy
     	System.out.println(endsLy("y"));
     	System.out.println(endsLy("oddy"));
     }
-    
+
     public static boolean endsLy(String pagali){
-    	
+
     	int hattakatta = pagali.length();
     	if( hattakatta >=2 && pagali.charAt(hattakatta-1)=='y' && pagali.charAt(hattakatta-2)=='l' ){
     		return true;

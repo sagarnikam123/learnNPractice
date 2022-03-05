@@ -62,7 +62,7 @@ spec:
 kubectl create -f redis-master-service.yaml
 # list & describe services
 kubectl get services
-kubectl describe services redis-master 
+kubectl describe services redis-master
 ###############################################################################
 # Step 4 - Replication Slave Pods
 

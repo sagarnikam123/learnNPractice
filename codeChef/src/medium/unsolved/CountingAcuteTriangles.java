@@ -2,14 +2,14 @@
 
 	Counting The Acute Triangles
 
-	A triangle is acute if all its internal angles are acute (< 90o). You are given a set of N points on a 2D plane. 
+	A triangle is acute if all its internal angles are acute (< 90o). You are given a set of N points on a 2D plane.
 	Calculate the number of acute triangles that can be formed using points from the set as vertices.
-	
-	Two triangles are different if the set of three vertices of one triangle is not equal 
+
+	Two triangles are different if the set of three vertices of one triangle is not equal
 	to the set of three vertices of the other triangle.
 
 	Input
-	The first line of the input contains an integer N, the number of points in the set. 
+	The first line of the input contains an integer N, the number of points in the set.
 	Each of the next N lines contains two space separated integers which are the x and y coordinates of points in the set.
 
 	Output
@@ -48,7 +48,7 @@ Output3:
 2
 
 Explanation
-Example case 3. Two acute triangles are {(1, 1), (3, 2), (1, 3)} and {(3, 2), (1, 3), (3, 4)}	
+Example case 3. Two acute triangles are {(1, 1), (3, 2), (1, 3)} and {(3, 2), (1, 3), (3, 4)}
 **********************************************************************************************************************/
 
 package medium.unsolved;

@@ -5,6 +5,6 @@ chmod 400 podcast-keys.pem
 ssh -i podcast-keys.pem ec2-user@ec2-52-66-103-66.ap-south-1.compute.amazonaws.com
 
 # chekcing for ip addresses
-ip a 
+ip a
 
 ifconfig

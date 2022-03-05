@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     firstHalf - solved
-    
-    Given a string of even length, return the first half. So the string "WooHoo" yields "Woo". 
+
+    Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
 ***************************************************************************************************
 firstHalf("WooHoo") → "Woo"
 firstHalf("HelloThere") → "Hello"
@@ -23,9 +23,9 @@ public class FirstHalf
     	System.out.println(firstHalf("HelloThere"));
     	System.out.println(firstHalf("abcdef"));
     }
-    
+
     public static String firstHalf(String karma){
-    	
+
     	return karma.substring(0, karma.length()/2);
     }
 

@@ -1,10 +1,10 @@
 /*
 
 	The Perfect Chocolate Candy
-	
-	The chef is a fan of candies with chocolate and caramel, and has devoted much of his life to finding the perfect 
-	ratio of chocolate to caramel. He recently discovered the perfect ratio, but to his dismay,	none of his favourite 
-	candy shoppes sell candies with exactly that ratio.	So the chef crafted a plan to buy several candies, and melt 
+
+	The chef is a fan of candies with chocolate and caramel, and has devoted much of his life to finding the perfect
+	ratio of chocolate to caramel. He recently discovered the perfect ratio, but to his dismay,	none of his favourite
+	candy shoppes sell candies with exactly that ratio.	So the chef crafted a plan to buy several candies, and melt
 	them together into a larger candy so that the resulting candy will have the perfect ratio.
 	How many candies will he have to buy? The chef may buy multiple candies of the same type.
 
@@ -13,7 +13,7 @@
 	N lines follow, each containing 2 integers Chocolatei and Carameli indicating the grams of chocolate and caramel,
 	respectively, contained in the (i)th candy.	Finally, there is a line containing 2 integers desiredChocolate and
 	desiredCaramel, indicating the chef's desired ratio of chocolate to caramel.
-	
+
 	Output:
 	For each test case, output on a single line the minimum number of candies the chef will have to buy.
 	If it is impossible to produce a candy with the desired ratio, output -1 instead.
@@ -48,7 +48,7 @@ Constraints:
 1 ≤ desiredChocolate ≤ 500
 1 ≤ desiredCaramel ≤ 500
 For all candies, Chocolatei/Carameli ≠ desiredChocolate/desiredCaramel
-No two candies will be identical. 	
+No two candies will be identical.
 **********************************************************************************************************************/
 package medium.unsolved;
 

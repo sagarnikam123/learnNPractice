@@ -2,19 +2,19 @@
 
 ##############################################################################
 
-Git does not track files by default. Instead, it waits until you have used 
+Git does not track files by default. Instead, it waits until you have used
 git add at least once before it starts paying attention to a file.
 
-In the diagram you saw at the start of the chapter, the untracked files 
+In the diagram you saw at the start of the chapter, the untracked files
 won't have a blob, and won't be listed in a tree.
 
-The untracked files won't benefit from version control, so to make sure you 
-don't miss anything, git status will always tell you about files that are 
+The untracked files won't benefit from version control, so to make sure you
+don't miss anything, git status will always tell you about files that are
 in your repository but aren't (yet) being tracked.
 
 ##############################################################################
 
-You are in the dental repository. 
+You are in the dental repository.
 Use git status to find the files that aren't yet being tracked.
 
 git status
@@ -23,7 +23,7 @@ Use git add to add the new file to the staging area.
 
 git add sources.txt
 
-Use git commit to save the staged files 
+Use git commit to save the staged files
 with the message "Starting to track data sources."
 
 git commit -m "Starting to track data sources." sources.txt

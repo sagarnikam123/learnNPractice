@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     comboString - solved
-    
-    Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string 
-    on the outside and the longer string on the inside. The strings will not be the same length, 
+
+    Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string
+    on the outside and the longer string on the inside. The strings will not be the same length,
     but they may be empty (length 0).
 ***************************************************************************************************
 comboString("Hello", "hi") → "hiHellohi"
@@ -29,9 +29,9 @@ public class ComboString
     	System.out.println(comboString("hi", "Hello"));
     	System.out.println(comboString("aaa", "b"));
     }
-    
+
     public static String comboString(String mainkuli,String chainkuli){
-    	
+
     	if(mainkuli.length() > chainkuli.length()){
     		return chainkuli.concat(mainkuli).concat(chainkuli);
     	}else{

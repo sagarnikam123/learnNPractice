@@ -2,51 +2,51 @@
 
 	Chef of The Ancient
 
-	Chef likes to play computer games very much. Recently he played a new game, Dota 2. Chef is thinking to start 
+	Chef likes to play computer games very much. Recently he played a new game, Dota 2. Chef is thinking to start
 	a new game called Cota (Chef of the ancient). There will be two teams in Cota, Radiant and Dire.
-	
+
 	There are 2*N players in Cota and the players are numbered by integers from 0 to 2*N – 1.
 	Each team will have N players. One team will have all the players with even numbers (0, 2, …, 2*N - 2)
 	and other team will have all the odd numbered players (1, 3, …, 2*N – 1).
-	
+
 	Some of the players are friends and the power of their friendship can be expressed by an integer number.
 	If player u and player v are friends, their power of friendship is Pu,v (or Pv,u).
-	
+
 	Chef wants to select some players(at least one) as elite players.
 	An elite player can be a member of Radiant or Dire.
-	But each Radiant member (maybe non-elite) should have odd number of elite friends and each Dire member 
+	But each Radiant member (maybe non-elite) should have odd number of elite friends and each Dire member
 	(maybe non-elite) should have even number of elite friends (possibly zero).
 	So Chef has to break some friendships( possible zero) to make that happen.
 	Chef can break up friendships between any two players but cannot build any new friendship.
-	As Chef can break up any pair of friendships and he is quite rude, so he breaks up all friendships that are 
+	As Chef can break up any pair of friendships and he is quite rude, so he breaks up all friendships that are
 	between a elite and a non-elite player ie. there cannot be a friendship between a elite and a non-elite player at all.
-	
+
 	He will break the other friendships in such a way that the total power of remaining friendships between elite players
 	is minimized and also the restriction above is maintained.
-	
+
 	Chef has not yet decided which team will be Radiant and which one will be Dire. It is your task to assign teams such
 	that the total power of remaining friendships between elite players is minimized.
-	
+
 	Input
 	The first line of the input contains an integer T denoting the number of test cases. The description of T test cases
 	follows. First line contains two space separated integers N and M. Each of the next M lines contain three space
 	separated integers u, v and Pu,v, means u and v are friends and the power of their friendship is Pu,v.
 	No friendship will be mentioned twice in a test case
-	
+
 	Output
 	For each test case print the minimum total power of friendship between elite players after assigning the teams
 	and breaking up the friendships.
-	
+
 	There will always be a valid answer.
 	Constraints
-	
+
 	    1 ≤ T ≤ 50
 	    2 ≤ N ≤ 18
 	    N is divisible by 2
 	    2*N-1 ≤ M ≤ 2*N(2*N-1)/2
 	    0 ≤ u, v ≤ 2*N-1 and u ≠ v
 	    1 ≤ Pu,v ≤ 106
-	    For each player u and v (u≠v) , there is a sequence x0, x1, ... xk, where x0 = u and xk = v and player xi and 
+	    For each player u and v (u≠v) , there is a sequence x0, x1, ... xk, where x0 = u and xk = v and player xi and
 	    xi+1 (0≤i<k) are friends of each other.
 ***********************************************************************************************************************
 Example
@@ -77,15 +77,15 @@ Output:
 9
 
 Explanation
-Example case 1. If the odd numbered players are assigned as Radiant and even numbered players as Dire, and Chef assigns 
+Example case 1. If the odd numbered players are assigned as Radiant and even numbered players as Dire, and Chef assigns
 		players {0, 1, 3} as elite players and keeps only the friendships between (0, 1) and (0, 3) and breaks up any other
-		pair of friendships. So the total power of friendship is 1 + 4 = 5. Elite player 1 and 3 have friendship with 
-		only elite player 0. So each Radiant player has odd number of elite friends. Similarly player 0 has friendship 
+		pair of friendships. So the total power of friendship is 1 + 4 = 5. Elite player 1 and 3 have friendship with
+		only elite player 0. So each Radiant player has odd number of elite friends. Similarly player 0 has friendship
 		with 1 and 3, and players 2 do not have any friend(0 elite friends).
 		So each Dire player has even number of elite friends.
 Example case 2.
 Say the odd numbered players are assigned as Radiant and even numbered players as Dire.
-And Chef assigns players {1, 3, 5, 6, 7} as elite players and keeps only the friendships between 
+And Chef assigns players {1, 3, 5, 6, 7} as elite players and keeps only the friendships between
 (1, 6), (3, 7) and (5, 6) and breaks up any other pair of friendships.So the total power of friendship is 6 + 5 + 8 = 19.
 Elite player 1 and 5 have friendship with only elite player 6 and player 3 and 7 have mutual friendship.
 So each Radiant player has odd number of elite friends.

@@ -1,12 +1,12 @@
 # Sampling distribution of prices
 
 #######################################################################################################################
-#	
+#
 #	And now the real challenge: running a loop.
-#	
-#	Since you have access to the population, we can simulate the sampling distribution for x¯¯¯x¯ by taking 
+#
+#	Since you have access to the population, we can simulate the sampling distribution for x¯¯¯x¯ by taking
 #	5000 samples of size 50 from the population and compute 5000 sample means.
-#	
+#
 #######################################################################################################################
 
 # Initialize sample_means50

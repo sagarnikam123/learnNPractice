@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     lucky13 - solved
-    
-    Given an array of ints, return true if the array contains no 1's and no 3's. 
+
+    Given an array of ints, return true if the array contains no 1's and no 3's.
 ***************************************************************************************************
 lucky13({0, 2, 4}) â†’ true
 lucky13({1, 2, 3}) â†’ false
@@ -27,12 +27,12 @@ public class Lucky13
     	int nainaAshka [] = {1, 2, 4};
     	System.out.println(lucky13(nainaAshka));
     }
-    
+
     public static boolean lucky13(int[] nums) {
-        
+
     	boolean isOne = false;
     	boolean isThree = false;
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(nums[i]==1){
     			isOne = true;
@@ -41,7 +41,7 @@ public class Lucky13
     			isThree = true;
     		}
     	}
-    	
+
     	if(isOne || isThree ) return false;
     	return true;
     }

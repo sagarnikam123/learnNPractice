@@ -24,7 +24,7 @@ export HBASE_HOME=/home/hadoop
 export HIVE_HOME=/home/hadoop
 
 
-#Making 
+#Making
 
 # Listing Databases
 bin/sqoop list-databases --connect jdbc:mysql://localhost/  --username root -P
@@ -69,5 +69,3 @@ answer varchar(20)
 
 # HDFS to MySQL
 bin/sqoop export  --connect jdbc:mysql://localhost/bookStore --username root -P --table qAns --export-dir /input/data.tsv --input-fields-terminated-by '\t' -verbose -m 1
-
-

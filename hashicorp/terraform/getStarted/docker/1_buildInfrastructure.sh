@@ -16,8 +16,8 @@ terraform fmt
 # check configuration validation
 terraform validate
 
-# check execution plan 
-terraform plan 
+# check execution plan
+terraform plan
 
 # Provision the NGINX server container with apply
 terraform apply
@@ -25,7 +25,7 @@ terraform apply
 # view resources terraform tracks & manages
 terraform show
 
-# visit localhost:8000 in your web browser 
+# visit localhost:8000 in your web browser
 
 # for advanced state management
 terraform state list

@@ -9,7 +9,7 @@
 #    your speed can be 5 higher in all cases.
 #
 #######################################################################################################################
-#   
+#
 #   caughtSpeeding(60, false) → 0
 #   caughtSpeeding(65, false) → 1
 #   caughtSpeeding(65, true) → 0
@@ -22,5 +22,5 @@
 #   caughtSpeeding(40, false) → 0
 #   caughtSpeeding(40, true) → 0
 #   caughtSpeeding(90, false) → 2
-#   
+#
 #######################################################################################################################

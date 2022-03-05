@@ -1,46 +1,46 @@
 /**
 
 	Merciless Chef
-	
+
 	These days Chief Chef is becoming more and more merciless. His mind is becoming full of cruel intentions.
 	Today he has decided to slowly poison and kill some of the staff members of his kitchen. Yeah, he is bored with them.
 	There are N Chefs in the kitchen besides the Chief Chef. Every Chef in the kitchen has an index.
-	
+
 	The index of the Chief Chef is 0. Remaining N chefs have indices between 1 and N and no two chefs have the same index.
 	As any other kitchen in the street, every chef has exactly one Immediate-Superior and can have any number of Superiors above him.
 	A chef (say A) is Superior of another chef (say B) if either A is the Immediate-Superior of B or A is the Superior of Immediate-Superior of B.
 	The Chief Chef is on the top position and Superior to all N chefs and has no Superior above him.
-	
+
 	If A is Immediate-Superior of B, then B is called Immediate-Inferior of A.
 	If A is Superior of B then B is called Inferior of A (See the example for better explanation).
-	
+
 	Every chef makes exactly one dish daily.
 	There is a small custom in the kitchen that every day each chef should taste the dishes made by all his superiors on that day.
 	So if our Chief Chef swaps the dish made by Chef A with a poisonous one,
-	every Inferior of A will taste this dish on that day and get poisoned. 
-	Every poisonous dish has some specific sickness value X and the health of every chef poisoned by it decreases by X on that day. 
+	every Inferior of A will taste this dish on that day and get poisoned.
+	Every poisonous dish has some specific sickness value X and the health of every chef poisoned by it decreases by X on that day.
 	As soon as the health of a chef drops to zero or less, he dies.
-	
-	When a chef dies in the kitchen, Chief Chef recruits a new chef to replace the dead chef, 
+
+	When a chef dies in the kitchen, Chief Chef recruits a new chef to replace the dead chef,
 	so the Immediate Superior and all the Immediate Inferiors of the dead chef will become the Immediate Superior and
-	Immediate Inferiors of the new chef respectively. The newly recruited chefs are very healthy. 
+	Immediate Inferiors of the new chef respectively. The newly recruited chefs are very healthy.
 	In fact, you can assume that they have infinite health.
-	
+
 	Chef has made some poison recipes and has some queries for you. He asks you one query per day for Q continuous days.
 	He has two types of queries:
-	1) He gives you two integers A and X which means that 
+	1) He gives you two integers A and X which means that
 		he wants to make the dish made by A poisonous on that day with a poison of sickness value X.
-	2) He gives you one integer A. 
+	2) He gives you one integer A.
 		In this type of query he wants to know how many chefs among the inferiors of A are old chefs, i.e, not newly recruited chefs.
-	
+
 	Remember that chef can also poison the dish made by himself, which will be tasted by all N chefs.
-	
+
 	Input
 	The first line contains an integer N. The next N lines have two integers each.
 	The first integer on the i-th line is the health and the second integer is the index of the immediate superior of chef with index i.
 	The index of immediate superior of the chef is strictly less than the index of the chef.
 	The next line contains an integer Q.
-	The next Q lines contain one query each. Each query starts with an integer which represents the type of query. 
+	The next Q lines contain one query each. Each query starts with an integer which represents the type of query.
 	If it is 1, then it is of the first type and is followed by two space separated integers A and X (in this order).
 	If it is 2, it is of the second type and is followed by one integer A.
 	The meanings of variables are well explained in the statement.
@@ -75,7 +75,7 @@ Sample Output
 
 Example explanation
 
-In this sample, chef-1 and chef-2 have Chief Chef(chef-0) as immediate superior and chef-3 and 
+In this sample, chef-1 and chef-2 have Chief Chef(chef-0) as immediate superior and chef-3 and
 chef-4 have chef-2 as immediate-superior.
 
 Immediate inferiors of the chefs are :

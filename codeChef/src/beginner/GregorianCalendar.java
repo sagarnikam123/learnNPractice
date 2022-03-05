@@ -1,10 +1,10 @@
 /**********************************************************************************************************************
 
 	 Gregorian Calendar
-	 
-	 According to Gregorian Calendar, it was Monday on the date 01/01/2001. If any year is input, 
-	Write a program to display what is the day on the 1st January of this year. 
-	
+
+	 According to Gregorian Calendar, it was Monday on the date 01/01/2001. If any year is input,
+	Write a program to display what is the day on the 1st January of this year.
+
 	Input
 	The first line contains an integer T, total number of testcases.
 	Then follow T lines, each line contains an integer year.
@@ -19,7 +19,7 @@
 Example
 
 Input
-3 
+3
 1994
 1991
 2014
@@ -27,7 +27,7 @@ Input
 Output
 saturday
 tuesday
-wednesday	  
+wednesday
 **********************************************************************************************************************/
 package beginner;
 

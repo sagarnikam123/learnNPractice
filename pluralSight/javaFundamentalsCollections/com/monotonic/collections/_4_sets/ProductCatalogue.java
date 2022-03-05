@@ -20,9 +20,9 @@ public class ProductCatalogue implements Iterable<Product>{
 	//private final Set<Product> products = new TreeSet<>(Product.BY_NAME);
 	//private final SortedSet<Product> products = new TreeSet<>(Product.BY_NAME);
 	private final SortedSet<Product> products = new TreeSet<>(Product.BY_WEIGHT);
-	
+
 	public void isSuppliedBy(Supplier supplier){ products.addAll(supplier.products()); }
-	
+
 	@Override
 	public Iterator<Product> iterator() { return products.iterator(); }
 
@@ -30,9 +30,9 @@ public class ProductCatalogue implements Iterable<Product>{
 		Product heaviestLightVanProduct = findHeaviestLightVanProduct();
 		return products.headSet(heaviestLightVanProduct);
 	}
-	
+
 	private Product findHeaviestLightVanProduct() {
-		
+
 		for(Product product : products){
 			if(product.getWeight() > 20){
 				return product;

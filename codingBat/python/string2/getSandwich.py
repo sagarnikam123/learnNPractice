@@ -7,7 +7,7 @@
 #    if there are not two pieces of bread.
 #
 #######################################################################################################################
-#   
+#
 #   getSandwich("breadjambread") → "jam"
 #   getSandwich("xxbreadjambreadyy") → "jam"
 #   getSandwich("xxbreadyy") → ""
@@ -20,5 +20,5 @@
 #   getSandwich("breadbreaxbread") → "breax"
 #   getSandwich("breaxbreadybread") → "y"
 #   getSandwich("breadbreadbreadbread") → "breadbread"
-#   
+#
 #######################################################################################################################

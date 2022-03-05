@@ -2,8 +2,8 @@
 
 # Download:-https://code.google.com/p/snappy/
 # More info:- https://code.google.com/p/hadoop-snappy/
-# Snappy would install lib*snappy.so files under /usr/local/lib directory by default. 
-# 
+# Snappy would install lib*snappy.so files under /usr/local/lib directory by default.
+#
 
 #  Trendwise
 # cp -R /usr/local/lib/lib*snappy*.so* /home/trendwise/apache/hadoop-1.0.4/lib/native/Linux-amd64-64
@@ -27,7 +27,7 @@ total 1940
 -rwxrwxr-x 1 hadoop hadoop 171844 Jun 29 11:55 libsnappy.so.1
 -rwxrwxr-x 1 hadoop hadoop 171844 Jun 29 11:55 libsnappy.so.1.1.3
 
-# Add following in $HBASE_HOME/conf/hbase-env.sh ( change dir as per ur installation) 
+# Add following in $HBASE_HOME/conf/hbase-env.sh ( change dir as per ur installation)
 
 export HADOOP_CONF_DIR=/home/hadoop/hadoop-0.20.2-hdh3u3/conf
 export HBASE_CLASSPATH=$HADOOP_CONF_DIR:/home/hadoop/hbase-hdh3u3/conf/hbase-site.xml

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     starOut - solved - copied
-    
-    Return a version of the given string, where for every star (*) in the string the star and 
+
+    Return a version of the given string, where for every star (*) in the string the star and
     the chars immediately to its left and right are gone.
-    So "ab*cd" yields "ad" and "ab**cd" also yields "ad". 
+    So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
 ***************************************************************************************************
 starOut("ab*cd") → "ad"
 starOut("ab**cd") → "ad"
@@ -34,16 +34,16 @@ public class StarOut
     {
     	System.out.println(starOut(""));
     }
-    
+
     public static String starOut(String str) {
-    	
+
     	String naina = "";
-    	
+
     	for(int i=0;i< str.length();i++){
-    		
+
     		if(i+1 < str.length() && str.charAt(i+1)=='*'){
     			i++;
-    			
+
     			while(i+1 < str.length() && str.charAt(i)=='*')
     				i++;
     		}else if(str.charAt(i)=='*'){

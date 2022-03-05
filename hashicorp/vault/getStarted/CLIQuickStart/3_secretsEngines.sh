@@ -33,7 +33,7 @@ vault kv delete kv/my-secret
 vault kv list kv/
 
 # Disable a Secrets Engine
-# When a secrets engine is disabled, 
+# When a secrets engine is disabled,
 # all secrets are revoked and the corresponding Vault data and configuration is removed
 vault secrets disable kv
 vault secrets disable humpy

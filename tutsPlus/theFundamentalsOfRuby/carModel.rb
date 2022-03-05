@@ -15,6 +15,3 @@ output = case car_model
 
 #3. output
 print "The car company for #{car_model} is ",output
-
-
-			

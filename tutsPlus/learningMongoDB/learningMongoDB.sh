@@ -20,13 +20,13 @@ use admin	# switched to db admin
 db.shutdownServer()	# shutdowns server
 
 # inserting document
-db.links.insert( 
+db.links.insert(
 	{
-		title: "Tuts+ Premium", 
-		url: "http://tutsplus.com", 
-		comment: "great video courses !", 
-		tags: ["tutorials","dev"], 
-		saved_on: new Date() 
+		title: "Tuts+ Premium",
+		url: "http://tutsplus.com",
+		comment: "great video courses !",
+		tags: ["tutorials","dev"],
+		saved_on: new Date()
 	}
 );
 
@@ -63,7 +63,7 @@ function counter(name){
 	return ret.next;
 	}
 
-db.products.insert( {_id: counter("products"),name: "product 1"} )	
+db.products.insert( {_id: counter("products"),name: "product 1"} )
 db.products.insert( {_id:counter("products"), name:"product 2"} )
 db.products.insert( {_id:counter("products"), name:"product 3"} )
 db.products.find()
@@ -162,7 +162,7 @@ db.users.find('this.name.first === "John"'  )
 var f = function(){return this.name.first==="John"}
 db.users.find(f)
 db.users.find( {$where : f})
- 
+
 #############################
 #	11-queries-4	- 8.40	#
 #############################
@@ -170,10 +170,10 @@ db.users.find( {$where : f})
 db.links.distinct('favourites')
 db.links.distinct('url')
 # grouping - Not running
-db.links.group({ 
-	key: {userId:true}, 
-	initial: {favCount:0}, 
-	reduce: function(doc, o){ o.favCount += doc.favourites; }, 
+db.links.group({
+	key: {userId:true},
+	initial: {favCount:0},
+	reduce: function(doc, o){ o.favCount += doc.favourites; },
 	finalize: function(o) { o.name = db.users.findOne( {_id : o.userId}).name;  }
 	} );
 # finding using regualr expression

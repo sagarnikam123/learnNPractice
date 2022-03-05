@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     canBalance - solved-copied
-    
+
     Given a non-empty array, return true if there is a place to split the array so that the sum of
     the numbers on one side is equal to the sum of the numbers on the other side.
 ***************************************************************************************************
@@ -27,9 +27,9 @@ public class CanBalance
     	int pull [] = {1, 2, 3, 1, 0, 2, 3};
     	System.out.println(canBalance(pull));
     }
-    
+
     public static boolean canBalance(int[] nums) {
-    	
+
     	int sumleft, sumright;
         for (int i = 0; i < nums.length; i++) {
           sumleft = 0;

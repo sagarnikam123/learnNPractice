@@ -33,7 +33,7 @@ drop table posts;
 dfs -ls /user/hive/warehouse;
 
 -- Load data from HDFS location
-bin/hadoop dfs -put  /home/hadoop/Desktop/learn/BigData/hive/coreservlets/userPosts.txt  /without/ 
+bin/hadoop dfs -put  /home/hadoop/Desktop/learn/BigData/hive/coreservlets/userPosts.txt  /without/
 load data inpath '/without/userPosts.txt'
 overwrite into table posts;
 
@@ -57,10 +57,9 @@ row format delimited
 fields terminated by ','
 stored as textfile;
 
-describe posts;  
+describe posts;
 show partitions posts; -- describes partition
 
 load data local inpath '/home/hadoop/Desktop/learn/BigData/hive/coreservlets/userPosts.txt'
 overwrite into table posts partition (country = 'US');
 -- Each file is loaded into separate partition, data is separated by country
-

@@ -2,18 +2,18 @@
 
 class dominosPizzaOrder():
     """ usage for creating an object of this class"""
-    
-    orderNum = 0   
+
+    orderNum = 0
     pizzaNames = ["Margherita", "cornNonion", "FarmHouse", "CountrySpecial", ]
     pizzaCrusts = ["HandTossed", "ThinCrust", "CheezeBurst", "NewHandTossed"]
     pizzaToppings = ["Onion", "Tomato", "Capsicum", "CottageCheeze", "Jalapeno", "Mushroom", "BlackOlives", "RedPaprika", "GoldenCorn", "Babycorn"]
     OrderStatus = ["recieved", "preparation", "baking", "outForDelivery", "Delivered"]
 
-    
+
     def __init__(self):
         self.name = input("What is your Name?   ")
         self.mobNumber = int(input("What is your Number?   "))
-        
+
         self.pizzaName = input("What is your PizzaName?   ")
         if self.pizzaName not in dominosPizzaOrder.pizzaNames:
             print("wrong Pizza name, choose among below names:")
@@ -33,9 +33,9 @@ class dominosPizzaOrder():
                 print(" - ".join(dominosPizzaOrder.pizzaToppings))
                 raise Exception
 
-        
+
         self.orderId = self.incrementOrderid()
-		
+
     def incrementOrderid(self):
         dominosPizzaOrder.orderNum += 1
         return dominosPizzaOrder.orderNum

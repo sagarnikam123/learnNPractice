@@ -1,15 +1,15 @@
 /**
 
 	Wireless Network
-	
-	A wireless network has been built consisting of many wireless access points for computers. Each access point 
-	can support a certain number of computers, and the network will perform better when computers are close 
-	to the access points supporting them. Specifically, the greatest distance between any computer and its 
+
+	A wireless network has been built consisting of many wireless access points for computers. Each access point
+	can support a certain number of computers, and the network will perform better when computers are close
+	to the access points supporting them. Specifically, the greatest distance between any computer and its
 	access point determines the	strength of the network.
 	A network has recently been designed that will automatically reconfigure itself every time a computer
 	is added so that the greatest distance will be as small as possible.
 	Your task is to compute, as each computer is added to the network, this distance.
-	
+
 	Consider the following example:
 	There are 2 access points, at (5,5) and (6,9), each of which can support 2 computers.
 	The first computer to be added to the wireless network is at (3,5).
@@ -23,7 +23,7 @@
 	can connect to the (5,5) access point.
 	The greatest distance is now from the (3,5) computer to the (6,9) access point, which is 5.
 	(Note: in the picture below, the top-left corner is (0,0)).
-	
+
 	Input
 	Input begins with an integer T, the number of test cases to follow.
 	Each test case begins with a line containing 2 integers, S (the number of access points)
@@ -31,7 +31,7 @@
 	giving the coordinates of an access point, followed by the number of connections it can support.
 	The next C lines contain 2 integers each, giving the coordinates of a computer.
 	There is a blank line before each test case.
-	
+
 	Output
 	For each test case, output C lines, where the i'th line contains the greatest distance
 	in the network after the first i computers have been added to the network, rounded to 3 decimal places.
@@ -78,7 +78,7 @@ S is between 1 and 30, inclusive.
 Each access point supports between 1 and 30 connections, inclusive.
 C is between 1 and the total number of supported connections, inclusive.
 All coordinates comprise integers between 0 and 10000, inclusive.
-All coordinates are distinct.	
+All coordinates are distinct.
 **********************************************************************************************************************/
 
 package medium.unsolved;

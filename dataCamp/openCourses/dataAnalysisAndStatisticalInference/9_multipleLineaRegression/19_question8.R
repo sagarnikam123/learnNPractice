@@ -1,10 +1,10 @@
 # Question 8
 
 #######################################################################################################################
-#			
-#	Which of the following is the correct order of the three levels of rank if we were to order them 
+#
+#	Which of the following is the correct order of the three levels of rank if we were to order them
 #	from lowest predicted course evaluation score to highest predicted course evaluation score?
-#	
+#
 #######################################################################################################################
 
 1	Teaching, Tenure Track, Tenured

@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
-    countAbc 
-    
+    countAbc
+
     Count recursively the total number of "abc" and "aba" substrings that appear in the given string.
 ***************************************************************************************************
 countAbc("abc") → 1
@@ -17,7 +17,7 @@ public class CountAbc
     {
 
     }
-    
+
     public static int countAbc(String str) {
         return 0;
     }

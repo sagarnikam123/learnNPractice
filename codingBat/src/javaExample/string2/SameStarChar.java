@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
-    sameStarChar - solved - treaky 
-    
+    sameStarChar - solved - treaky
+
     Returns true if for every '*' (star) in the string, if there are chars both immediately before
-    and after the star, they are the same. 
+    and after the star, they are the same.
 ***************************************************************************************************
 sameStarChar("xy*yzz") → true
 sameStarChar("xy*zzz") → false
@@ -31,9 +31,9 @@ public class SameStarChar
     {
     	System.out.println(sameStarChar("abcDEF"));
     }
-    
+
     public static boolean sameStarChar(String str) {
-        
+
     	if(!str.contains("*")) return true;
     	int noOfStars = 0;
     	for(int i=0;i<str.length();i++){
@@ -41,9 +41,9 @@ public class SameStarChar
     			noOfStars++;
     		}
     	}
-    	
+
     	if(noOfStars==str.length())return true;
-    		
+
     	boolean returnWhat = false;
     	for(int i=1;i<str.length()-1;i++){
     		if(str.charAt(i)=='*'){
@@ -52,7 +52,7 @@ public class SameStarChar
     			}else{
     				returnWhat= false;
     			}
-    		} 
+    		}
     	}
     	return returnWhat;
     }

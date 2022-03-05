@@ -47,7 +47,7 @@ kubectl describe svc/webapp1-clusterip-svc
 #  the service can be accessed via the ClusterIP allocated.
 export CLUSTER_IP=$(kubectl get services/webapp1-clusterip-svc -o go-template='{{(index .spec.clusterIP)}}')
 echo CLUSTER_IP=$CLUSTER_IP
-# hit multiple requests 
+# hit multiple requests
 curl $CLUSTER_IP:80
 ###############################################################################
 # Step 2 - Target Port
@@ -139,7 +139,7 @@ spec:
 kubectl apply -f nodeport.yaml
 # check service
 kubectl get svc
-# 
+#
 kubectl describe svc/webapp1-nodeport-svc
 # reach to service
 curl 172.17.0.10:30080
@@ -183,7 +183,7 @@ spec:
         - containerPort: 80
 ---
 
-# 
+#
 kubectl apply -f externalip.yaml
 kubectl get svc
 kubectl describe svc/webapp1-externalip-svc
@@ -306,12 +306,12 @@ spec:
 
 # deploy cloud provider
 kubectl apply -f cloudprovider.yaml
-# When a service requests a Load Balancer, the provider will allocate 
+# When a service requests a Load Balancer, the provider will allocate
 # one from the 10.10.0.0/26 range defined in the configuration
 kubectl get pods -n kube-system
 
 # service is configured via a Load Balancer as defined in
-# loadbalancer.yaml 
+# loadbalancer.yaml
 apiVersion: v1
 kind: Service
 metadata:

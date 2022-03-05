@@ -17,10 +17,10 @@
 	show dbs
 //Use Databases ("test" is name of db)
 	use test
-//Switch to other datbase ("bookmarks" is a database),mongo never creates db until u load data into it(documents/collections) 
+//Switch to other datbase ("bookmarks" is a database),mongo never creates db until u load data into it(documents/collections)
   & sets db variable to "bookmarks"
 	use bookmarks
-	
+
 //Current database selected
 	db
 
@@ -32,9 +32,9 @@ show collections
 
 //counts collections
 	db.links.count()
-	
+
 //inserting documents
-	db.links.insert({ 
+	db.links.insert({
 		title:	"Tuts + Premium",
 		url:	"http://tutsplus.com",
 		comment: "great video course !",
@@ -48,7 +48,7 @@ show collections
 	doc.url = "http://net.tutsplus.com";
 	doc.comment = "best tutrials on the web";
 	doc.tags = ["tutorials","web dev"];
-	doc.saved_on = new Date(); 
+	doc.saved_on = new Date();
 	doc.meta = {}
 	doc.meta.browser = "Google Chrome 24"
 	doc.meta.OS = "Mac Os 10.8.2"
@@ -67,7 +67,7 @@ show collections
 	fox.url = "http://foxid.com";
 	fox.comment = "best fekorials on the Earth";
 	fox.tags = ["Chutiayapanti","ishq ke kabutars"];
-	fox.saved_on = new Date(); 
+	fox.saved_on = new Date();
 	fox.meta = {}
 	fox.meta.browser = "Google Phrone 99"
 	fox.meta.OS = "Tac 10.8.2"
@@ -76,20 +76,20 @@ show collections
 //inseting document with customized id(ObjectId)
 	db.links.insert({_id:3,name:"test"});
 //ObjectId-12 bytes value,unique
-	/* based on 
+	/* based on
 		1)time
 		2)hostname on which server runnign on
 		3)process id of server process
 		4)random incrementing number */
-		
+
 //iterating  over each object/document in colletion
 	db.links.find()[0]
 	db.links.find()[0]._id
-	
+
 //geting time when docuemnt inserted/created
 	db.links.find()[0]._id.getTimestamp()
 	//ISODate("2013-05-27T14:58:41Z")
-	
+
 //Time diff of two obj creation
 	db.links.find()[1]._id.getTimestamp() - db.links.find()[0]._id.getTimestamp()
 
@@ -100,7 +100,7 @@ show collections
 	// ObjectId("51d84cd79e7c8316906f9f09")
 
 
-	
+
 //making cutomized ObjectIds (human readable)
 	db.products.insert({ _id: counter("products"),name: "product 1"});
 	Mon May 27 18:43:21 ReferenceError: counter is not defined (shell):1
@@ -114,16 +114,16 @@ show collections
 	db.links.insert({ title: "Psdtuts+",url: "http://psd.tutsplus.com",useId: a._id })
 	link = db.links.find()[4]
 	db.user.findOne({_id: link.userid})
-	
+
 //Dropping collections
 	db.users.drop()
 	db.links.drop
 
 //Dropping/emptying databse (where db have current database instance)
 	db.dropDatabase()
-	
+
 //running Javascript file containing mongoDb code
-	bin/mongo 127.0.0.1/bookmarks /home/trendwise/Desktop/mongoTry/bookmarks.js 
+	bin/mongo 127.0.0.1/bookmarks /home/trendwise/Desktop/mongoTry/bookmarks.js
 
 
 // Directly connecting to perticular database
@@ -136,8 +136,8 @@ show collections
 	//search inside array
 	db.links.find({tags:'code'}).forEach(printjson);
 	db.users.findOne({email:'johndoe@gmail.com'}).name ;
-	db.users.findOne({email:'johndoe@gmail.com'}).name.first ; //returns one  
-	db.users.find({email:'johndoe@gmail.com'}).name.first ; //returns Nothing  
+	db.users.findOne({email:'johndoe@gmail.com'}).name.first ; //returns one
+	db.users.find({email:'johndoe@gmail.com'}).name.first ; //returns Nothing
 
 
 //gettting selected field with query from object
@@ -155,8 +155,8 @@ show collections
 
 //
 	var john = db.users.findOne( {'name.first': 'John'} )
-	
-	db.links.find( {userId : john._id},{ title: 1 , _id: 0} )	
+
+	db.links.find( {userId : john._id},{ title: 1 , _id: 0} )
 
 //MongoDB operators (Greather/Lesser than,equal to)
 
@@ -202,7 +202,7 @@ show collections
 	db.users.find( { $and : [{'name.first':"John"},{'name.last':"Jones"}]},{_id:0,name:1} );
 
 	db.users.find ( {name: {first:"John",last:"Jones"}  });
-	
+
 //Other Operators (exists,mod,not,elemMatch,where)
 	db.users.find( {email : {$exists:true } },{name:1,_id:0} );
 
@@ -228,21 +228,3 @@ show collections
 	var f =function (){return this.name.first="John"}
 	db.users.find(f);
 	db.users.find({ $where : f} )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

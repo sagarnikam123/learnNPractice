@@ -1,10 +1,10 @@
 /*
-	
+
 	#############################################
 	#	StartsWithcount- tested on Hadoop-1.x.x	#
 	#############################################
-	
-	
+
+
 	# preparig input files & directory
 		bin/hdfs dfs -ls /
 		bin/hadoop dfs -mkdir /coreServlets/input/StartsWithCountJob
@@ -38,34 +38,34 @@ public class StartsWithCountJob extends Configured implements Tool{
 
 	@Override
 	public int run (String [] args) throws Exception{
-		
+
 		Job job = new Job(getConf(),"Start with count");
 		job.setJarByClass(getClass());
-		
+
 		// configure output and input source
 		TextInputFormat.addInputPath(job, new Path(args[0]));
 		job.setInputFormatClass(TextInputFormat.class);
-		
+
 		// configure mapper and reducer
 		job.setMapperClass(StartsWithCountMapper.class);
 		job.setCombinerClass(StartsWithCountReducer.class);
 		job.setReducerClass(StartsWithCountReducer.class);
-		
+
 		// configure output
 		TextOutputFormat.setOutputPath(job, new Path(args[1]));
 		job.setOutputFormatClass(TextOutputFormat.class);
-		
+
 		// key-value class
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
-			
-		
+
+
 		return job.waitForCompletion(true) ? 0 : 1;
 	} // run
-	
+
 	public static void main(String [] args) throws Exception{
 		int exitCode = ToolRunner.run(new StartsWithCountJob(),args);
 		System.exit(exitCode);
-		
+
 	} // main
 } // StartsWithCountJob - main

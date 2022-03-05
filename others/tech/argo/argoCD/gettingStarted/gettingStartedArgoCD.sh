@@ -28,7 +28,7 @@ kubectl -n argocd edit svc argocd-server
 kubectl get nodes -o wide -n argocd # taken any agent's ip & port
 
 # 4. Login Using The CLI
-# initial password for the admin account is auto-generated and stored as clear text in the  field 
+# initial password for the admin account is auto-generated and stored as clear text in the  field
 # password in a secret named argocd-initial-admin-secret in your Argo CD installation namespace.
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 
@@ -36,7 +36,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 argocd login <ARGOCD_SERVER>
 argocd login "localhost:8080"
 
-# Change the password using the command - {8,32} 
+# Change the password using the command - {8,32}
 argocd account update-password
 
 # 5. Register A Cluster To Deploy Apps To (Optional) - only for external cluster

@@ -1,9 +1,9 @@
 /**********************************************************************************************************************
 
 	GCD and LCM
-	
+
 	Two integers A and B are the inputs. Write a program to find GCD and LCM of A and B.
-	
+
 	Input
 	The first line contains an integer T, total number of testcases. Then follow T lines,
 	each line contains an integer A and B.
@@ -14,11 +14,11 @@
 	Constraints
 	1 ≤ T ≤ 1000
 	1 ≤ A,B ≤ 1000000
-***********************************************************************************************************************	
+***********************************************************************************************************************
 Example
 
 Input
-3 
+3
 120 11
 10213 312
 10 3

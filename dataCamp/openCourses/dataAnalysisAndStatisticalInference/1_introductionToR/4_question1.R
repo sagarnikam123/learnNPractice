@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	How many variables are included in the present data set? The data set is already available in the workspace; 
+#	How many variables are included in the present data set? The data set is already available in the workspace;
 #	you can inspect it by executing present in the console on the right!
 #
 #######################################################################################################################

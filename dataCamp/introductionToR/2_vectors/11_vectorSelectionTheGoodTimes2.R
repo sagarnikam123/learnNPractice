@@ -1,16 +1,16 @@
 # Vector selection: the good times (2)
 
 #################################################################################################################
-#																												
-#	How about analyzing your midweek results?																	
-#																												
-#	To select multiple elements from a vector, you can add square brackets at the end of it.					
-#	You can indicate between the brackets what elements should be selected. For example: suppose you want to	 
-#	select the first and the fifth day of the week: use the vector c(1,5) between the square brackets.			
-#	For example, the code below selects the first and fifth element of poker_vector:							
-#																												
-#	poker_vector[c(1,5)]																						
-#																												
+#
+#	How about analyzing your midweek results?
+#
+#	To select multiple elements from a vector, you can add square brackets at the end of it.
+#	You can indicate between the brackets what elements should be selected. For example: suppose you want to
+#	select the first and the fifth day of the week: use the vector c(1,5) between the square brackets.
+#	For example, the code below selects the first and fifth element of poker_vector:
+#
+#	poker_vector[c(1,5)]
+#
 #################################################################################################################
 
 # Poker winnings from Monday to Friday

@@ -2,32 +2,32 @@
 
 ##############################################################################
 
-To compare the state of your files with those in the staging area, you can 
-use git diff -r HEAD. The -r flag means "compare to a particular revision", 
+To compare the state of your files with those in the staging area, you can
+use git diff -r HEAD. The -r flag means "compare to a particular revision",
 and HEAD is a shortcut meaning "the most recent commit".
 
-You can restrict the results to a single file or directory using 
-git diff -r HEAD path/to/file, where the path to the file is relative to 
+You can restrict the results to a single file or directory using
+git diff -r HEAD path/to/file, where the path to the file is relative to
 where you are (for example, the path from the root directory of the repository).
 
 We will explore other uses of -r and HEAD in the next chapter.
 
 ##############################################################################
 
-You have been put in the dental repository, where data/northern.csv has been 
-added to the staging area. Use git diff with -r and an argument to see how 
+You have been put in the dental repository, where data/northern.csv has been
+added to the staging area. Use git diff with -r and an argument to see how
 files differ from the last saved revision.
 
     git diff -r HEAD
 
-Use a single Git command to view the changes in the file that has been 
+Use a single Git command to view the changes in the file that has been
 staged (and only that file).
 
     git diff -r HEAD data/northern.csv
 
-data/eastern.csv hasn't been added to the staging area yet. 
+data/eastern.csv hasn't been added to the staging area yet.
 Use a Git command to do this now.
 
     git add data/eastern.csv
-    
+
 ##############################################################################

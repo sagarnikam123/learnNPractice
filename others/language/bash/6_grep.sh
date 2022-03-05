@@ -41,7 +41,7 @@ time grep -cr docker . # with time, recursively search for docker
 
 # silversearcher-ag - recursively search for PATTERN in PATH. Like grep or ack, but faster
 sudo apt install silversearcher-ag
-time ag -cr docker . # faster 
+time ag -cr docker . # faster
 
 # ripgrep (rg) - recursively searches the current directory for a regex pattern
 sudo apt  install ripgrep

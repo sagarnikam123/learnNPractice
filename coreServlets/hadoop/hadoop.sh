@@ -50,7 +50,7 @@ bin/hdfs dfs -ls -R / # shows recursively all files inside folder structure
 #	Hadoop -1.x.x	#
 #########################
 
-# Running MapReduce - StartsWithCountJob 
+# Running MapReduce - StartsWithCountJob
 bin/hdfs dfs -ls /
 bin/hadoop dfs -rmr /coreServlets/input/StartsWithCountJob # delete if already present
 bin/hadoop dfs -mkdir /coreServlets/input/StartsWithCountJob
@@ -92,5 +92,3 @@ bin/hdfs dfs -mkdir /coreServlets/input/StartsWithCountJob/
 bin/hdfs dfs -copyFromLocal README.txt /coreServlets/input/StartsWithCountJob/readme
 bin/yarn jar /home/hadoop/Desktop/learn/BigData/hadoop/coreServlets/StartWithCountJob.jar \
 	mapReduce.StartsWithCountJob  /coreServlets/input/StartsWithCountJob/readme /coreServlets/output/StartsWithCountJob
-
-

@@ -23,13 +23,13 @@ pig -x mapreduce
 
 
 # running with diff languages
-bin/pig abc.perl 
+bin/pig abc.perl
 java -cp pig.jar org.apache.pig.Main -x local ....
 java -cp pig.jar org.apache.pig.Main -x mapreduce ...
 
 # example
-A = load 'passwd' using PigStorage(':');  -- load the passwd file 
-B = foreach A generate $0 as id;  -- extract the user IDs 
+A = load 'passwd' using PigStorage(':');  -- load the passwd file
+B = foreach A generate $0 as id;  -- extract the user IDs
 store B into ‘id.out’;  -- write the results to a file name id.out
 
 #example-2

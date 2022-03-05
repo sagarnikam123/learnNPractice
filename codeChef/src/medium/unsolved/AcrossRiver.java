@@ -2,21 +2,21 @@
 
 	Across the River
 
-	Chef Ciel would like to make a bridge on the river in order to purchase cooking ingredients more easily. 
+	Chef Ciel would like to make a bridge on the river in order to purchase cooking ingredients more easily.
 	The river is an infinitely long straight line with width W. To be more specific,
 	the river is a set of the all points on 0 ≤ y ≤ W in xy-plane.
 	There are N piles on the river, and M types of wooden disks are available. The location of the k-th pile is (Xk, Yk).
 	The k-th type of wooden disks has radius Rk, and its price is Ck per disk.
-	Ciel can buy wooden disks as many as she likes, and Ciel can put them on the river. 
-	For each wooden disk, its center must be one of the locations (Xk, Yk) of piles. 
-	
+	Ciel can buy wooden disks as many as she likes, and Ciel can put them on the river.
+	For each wooden disk, its center must be one of the locations (Xk, Yk) of piles.
+
 	Note that some part of wooden disks may be on the ground (y < 0, W < y) or other piles.
-	Ciel can move only on y = 0, on y = W, and on wooden disks. What is the minimum cost 
+	Ciel can move only on y = 0, on y = W, and on wooden disks. What is the minimum cost
 	to make it possible to move from y = 0 to y = W.
 
 	Input
 	The first line contains an integer T, the number of test cases. Then T test cases follow.
-	The first line for each test case has 3 space-sparated integers N, M and W. Next N lines 
+	The first line for each test case has 3 space-sparated integers N, M and W. Next N lines
 	has 2 space-separated integers Xk and Yk. Then next M lines has 2 space-separated integers Rk and Ck.
 
 	Output
@@ -79,7 +79,7 @@ Output
 impossible
 
 Explanation
-The following figure indicates the optimal way for the first case.[see in image] 	
+The following figure indicates the optimal way for the first case.[see in image]
 ***********************************************************************************************************************/
 
 package medium.unsolved;

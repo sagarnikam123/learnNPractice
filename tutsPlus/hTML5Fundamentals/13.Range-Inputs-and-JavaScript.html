@@ -9,7 +9,7 @@
 			dd { margin-bottom : 10 px ; }
 		</style>
 
-		<script> 
+		<script>
 
 		;( function(){
 			var heading,
@@ -19,7 +19,7 @@
 
 				var i = document.createElement('input');
 				i.setAttribute('type' , 'range');
-				
+
 				return i.type=='range';
 			}
 
@@ -29,7 +29,7 @@
 				g = document.querySelector('#g');
 				b = document.querySelector('#b');
 
-				document.body.addEventListener('change', 
+				document.body.addEventListener('change',
 					function(){
 						heading.style.color = 'rgb(' +[r.value,g.value,b.value].join(',') + ' )';
 
@@ -37,12 +37,12 @@
 			}
 
 		} )();
-		
+
 		</script>
 	</head>
 
 	<body>
-		
+
 		<dl> <!-- Definition list -->
 			<dt> Red </dt> <!-- Definition term -->
 				<dd> <input type="range" min="0" max="255" id="r" name="r"> </dd> <!-- Definition details -->
@@ -52,12 +52,12 @@
 			<dt> Green </dt> <!-- Definition term -->
 				<dd> <input type="range" min="0" max="255" id="g" name="g"> </dd> <!-- Definition details -->
 		</dl>
- 
+
 		<dl> <!-- Definition list -->
 			<dt> Blue </dt> <!-- Definition term -->
 				<dd> <input type="range" min="0" max="255" id="b" name="b"> </dd> <!-- Definition details -->
-		</dl>		
-			
+		</dl>
+
 		<h1> Tuts+ Rocks </h1>
 
 	</body>

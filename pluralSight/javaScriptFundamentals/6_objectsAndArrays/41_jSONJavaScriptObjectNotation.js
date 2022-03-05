@@ -1,4 +1,4 @@
-let jsonIn = 
+let jsonIn =
 `[
     {"carId" : 123},
     {"carId" : 456},

@@ -8,11 +8,11 @@
 	and s(x; n] is the substring from the (x+1)th digit to nth digit of s.
 	For example, s = 747474 is a balanced string, because s[1; 4) = 747 has one 4 and s(4; 6] = 74 has one 7.
 	Note that x can be 1 or n and s[1; 1) and s(n; n] denote an empty string.
-	
+
 	In one turn Chef can choose any pair of consecutive digits and swap them.
 	Find for Chef the total number of different balanced string that can be obtained from
 	string s using any (even 0) number of turns.Print the result modulo 1000000007.
-	
+
 	Input
 	The first line of the input contains one integer T, the number of test cases.
 	Then T lines follow, each of which contains string s for the corresponding test.

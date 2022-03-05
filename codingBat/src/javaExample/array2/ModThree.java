@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     modThree - solved
-    
-    Given an array of ints, return true if the array contains either 3 even 
-    or 3 odd values all next to each other. 
+
+    Given an array of ints, return true if the array contains either 3 even
+    or 3 odd values all next to each other.
 ***************************************************************************************************
 modThree({2, 1, 3, 5}) â†’ true
 modThree({2, 1, 2, 5}) â†’ false
@@ -28,11 +28,11 @@ public class ModThree
     	int sol [] = {2, 4, 2, 5};
     	System.out.println(modThree(sol));
     }
-    
+
     public static boolean modThree(int[] nums) {
-    	
+
     	for(int i=0;i<nums.length-2;i++){
-    		
+
     		//even
     		if(nums[i]%2 ==0 && nums[i+1]%2 ==0 && nums[i+2]%2 ==0){
     			return true;

@@ -2,19 +2,19 @@
 
 ##############################################################################
 
-So far, you have seen how to undo changes to a single file at a time using 
+So far, you have seen how to undo changes to a single file at a time using
 git reset HEAD path/to/file. You will sometimes want to undo changes to many files.
 
-One way to do this is to give git reset a directory. For example, 
-git reset HEAD data will unstage any files from the data directory. 
-Even better, if you don't provide any files or directories, it will unstage 
-everything. Even even better, HEAD is the default commit to unstage, so you 
+One way to do this is to give git reset a directory. For example,
+git reset HEAD data will unstage any files from the data directory.
+Even better, if you don't provide any files or directories, it will unstage
+everything. Even even better, HEAD is the default commit to unstage, so you
 can simply write git reset to unstage everything.
 
-Similarly git checkout -- data will then restore the files in the data 
-directory to their previous state. You can't leave the file argument 
-completely blank, but recall from Introduction to Shell for Data Science 
-that you can refer to the current directory as .. So git checkout -- . 
+Similarly git checkout -- data will then restore the files in the data
+directory to their previous state. You can't leave the file argument
+completely blank, but recall from Introduction to Shell for Data Science
+that you can refer to the current directory as .. So git checkout -- .
 will revert all files in the current directory.
 
 ##############################################################################
@@ -23,8 +23,8 @@ Use git reset to remove all files from the staging area.
 
 git reset
 
-Use git checkout to put those files back in their previous state. 
-Use the directory name . to mean "all of the files in or below this 
+Use git checkout to put those files back in their previous state.
+Use the directory name . to mean "all of the files in or below this
 directory", and separate it from the command with --.
 
 git checkout -- .

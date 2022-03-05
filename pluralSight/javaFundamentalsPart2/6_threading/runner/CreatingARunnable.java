@@ -10,11 +10,11 @@ public class CreatingARunnable {
 		ContinuousPrinterRunnable cp = new ContinuousPrinterRunnable();
 		Thread thread = new Thread(cp);
 		thread.start();
-		
+
 		for(int i=0;i<100;i++){
 			System.out.println("Main thread " + i);
 		}
 	}
-	
-	
+
+
 }

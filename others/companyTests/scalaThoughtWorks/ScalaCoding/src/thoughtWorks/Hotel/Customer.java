@@ -3,14 +3,14 @@ package thoughtWorks.Hotel;
 public class Customer {
 
 	/*
-	INPUT 2: Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)  
+	INPUT 2: Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)
 	OUTPUT 2: Bridgewood
-	*/ 
-	
+	*/
+
 	private String cutomerType = null;
 	private int weekDays = 0;
 	private int weekEnds = 0;
-	
+
 	public String getCutomerType() {
 		return cutomerType;
 	}
@@ -18,7 +18,7 @@ public class Customer {
 	public void setCutomerType(String cutomerType) {
 		this.cutomerType = cutomerType;
 	}
-	
+
 	public int getWeekDays() {
 		return weekDays;
 	}
@@ -26,7 +26,7 @@ public class Customer {
 	public void setWeekDays(int weekDays) {
 		this.weekDays = weekDays;
 	}
-	
+
 	public int getWeekEnds() {
 		return weekEnds;
 	}
@@ -34,20 +34,20 @@ public class Customer {
 	public void setWeekEnds(int weekEnds) {
 		this.weekEnds = weekEnds;
 	}
-	
+
 	public Customer(String customerType,int weekDays,int weekEnds){
 		this.weekDays = weekDays;
 		this.weekEnds = weekEnds;
 		this.cutomerType = customerType;
-	} 
-	
+	}
+
 	public String CalculateHotel(Customer customer){
-		
+
 		String bestHotel = null;
 		int lakeWood = 0;
 		int bridgeWood = 0;
 		int ridgeWood = 0;
-		
+
 		if (customer.cutomerType.equalsIgnoreCase("regular")) {
 
 			lakeWood = 90 * this.weekEnds + 110 * this.weekDays;
@@ -61,7 +61,7 @@ public class Customer {
 		}
 
 	//	System.out.println("LakeWood - "+lakeWood+" bridegeWood-"+bridgeWood+" ridgeWood-"+ridgeWood);
-		
+
 		if (lakeWood < bridgeWood) {
 			if (lakeWood < ridgeWood) {
 				bestHotel = "LakeWood";
@@ -75,13 +75,10 @@ public class Customer {
 		}else{
 			bestHotel = "RidgeWood";
 		}
-		
+
 		return bestHotel;
-			
+
 		}
-		
+
 
 	}
-	
-	
-

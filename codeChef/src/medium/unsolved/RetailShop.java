@@ -1,19 +1,19 @@
 /**
- 
+
 	Retail Shop
 
-A retail shop has announced a reward point scheme on pairs of items procured by customers. 
-No point is available on purchase of a single item. The scheme is applicable 
+A retail shop has announced a reward point scheme on pairs of items procured by customers.
+No point is available on purchase of a single item. The scheme is applicable
 for n (n > 0) different types of items available in the shop. However,
 a particular customer will be eligible to get reward for upto 7 out of these n types.
 
-Naturally, these items must be bought as pairs. 
-For every pair of such items (may or may not be of similar type), there is an associated point, 
-which may be different for different pairs. After billing, 
+Naturally, these items must be bought as pairs.
+For every pair of such items (may or may not be of similar type), there is an associated point,
+which may be different for different pairs. After billing,
 the computer calculates the maximum reward point that the customer can get by suitably pairing the items (upto 7)
 marked by the customer. Only two items of a particular type will be considered for reward scheme.
 There is no reward point for more than two items procured of a particular type.
-Calculate the maximum reward points that a customer can get after 
+Calculate the maximum reward points that a customer can get after
 he has purchased a few items and marked the ones for which he/she wants reward points.
 
 For example, suppose, n=4 and the pairwise reward metrics are as follows.
@@ -44,7 +44,7 @@ Input
 The first line contains an integer (say, m) - the number of test cases (not more than 500).
 It is followed by m pairs of lines, each corresponding to a test case. The first line of a pair contains 10 integers,
 identifying the number of items of each type the customer has bought (each integer is not more than 100).
-He always buys even number of items.The second line is an array of 10 bits corresponding to the 10 different item types. 
+He always buys even number of items.The second line is an array of 10 bits corresponding to the 10 different item types.
 A bit being ‘1’ indicates that the customer wants a reward on that item,
 a ‘0’ indicates that the customer does not want reward on the item. There will be at-most 7 '1's in this array.
 Also, the customer will choose a type iff he has bought atleast 2 items of that type.

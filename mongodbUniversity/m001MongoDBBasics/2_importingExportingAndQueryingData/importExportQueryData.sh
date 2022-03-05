@@ -32,7 +32,7 @@ mongoimport --uri="mongodb+srv://m001-student:m001-mongodb-basics@sandbox.xxxxx.
 show dbs
 use sample_training
 show collections
-# 1. Query the zips collection from the sample_training database to find all 
+# 1. Query the zips collection from the sample_training database to find all
     # documents where the state is NY.
 db.zips.find({"state" : "NY"})
 # 2. Iterate through the query results.
@@ -48,7 +48,7 @@ db.zips.find({"state" : "NY", "city" : "ALBANY"}).pretty()
 
 # In the sample_training.trips collection a person with birth year 1961 took a
 # trip that started at "Howard St & Centre St". What was the end station name for
-# that trip? 
+# that trip?
 use sample_training
 db.trips.find({"birth year":1969, "start station name" : "Howard St & Centre St"}).pretty()
 # "end station name" : "E 6 St & Avenue B"

@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     maxMod5 - solved
-    
-    Given two int values, return whichever value is larger. However if the two values have the 
-    same remainder when divided by 5, then the return the smaller value. However, in all cases, 
+
+    Given two int values, return whichever value is larger. However if the two values have the
+    same remainder when divided by 5, then the return the smaller value. However, in all cases,
     if the two values are the same, return 0. Note: the % "mod" operator computes the remainder,
     e.g. 7 % 5 is 2.
 ***************************************************************************************************
@@ -28,14 +28,14 @@ public class MaxMod5
     {
     	System.out.println(maxMod5(3,2));
     }
-    
+
     public static int maxMod5(int a, int b) {
     	int taller =0;
     	int smaller = 0;
     	int throwOut = 0;
-    	
+
     	if(a==b) return throwOut;
-    	
+
     	if(a>b){
     		taller = a;
     		smaller = b;
@@ -43,13 +43,13 @@ public class MaxMod5
     		taller = b;
     		smaller = a;
     	}
-    	
+
     	if(a%5 == b %5){
     		throwOut =  smaller;
     	}else{
     		throwOut = taller;
     	}
-    	
+
         return throwOut;
     }
 

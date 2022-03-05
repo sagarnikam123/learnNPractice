@@ -19,7 +19,7 @@ Availability zone (sydney)- ap-southeast-2a
 chmod 400 ubuntu14_04_t2MicroCodethon.pem
 
 # Connect to AMI
-# ssh -i mykey.pem user@aws-host.amazon.com 
+# ssh -i mykey.pem user@aws-host.amazon.com
 ssh -i ubuntu14_04_t2MicroCodethon.pem ubuntu@54.79.101.5
 
 # install apache2
@@ -33,8 +33,8 @@ sudo cat /etc/ldap/ldap.conf
 # You can run the following command to reveal your server’s IP address.
 ifconfig eth0 | grep inet | awk '{ print $2 }'
 
-sudo gedit /etc/phpldapadmin/config.php 
-sudo cat /etc/phpldapadmin/config.php 
+sudo gedit /etc/phpldapadmin/config.php
+sudo cat /etc/phpldapadmin/config.php
 
 $servers->setValue('server','name','Azad Parinda LDAP server');
 $servers->setValue('server','host','54.79.101.5');

@@ -7,7 +7,7 @@
 #    Return true if we are in trouble.
 #
 #######################################################################################################################
-#   
+#
 #   parrotTrouble(true, 6) → true
 #   parrotTrouble(true, 7) → false
 #   parrotTrouble(false, 6) → false
@@ -18,5 +18,5 @@
 #   parrotTrouble(false, 23) → false
 #   parrotTrouble(true, 20) → false
 #   parrotTrouble(false, 12) → false
-#   
+#
 #######################################################################################################################

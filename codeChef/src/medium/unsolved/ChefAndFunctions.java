@@ -1,7 +1,7 @@
 /**
 
 	Chef and Functions
-	
+
 Chef has just been introduced to functions and he has been experimenting a lot with the different kinds of functions. In the process,
 the chef has come up with an interesting problem for you.
 
@@ -51,7 +51,7 @@ Query 1.
 
 Query 2.
 
-(root(1,30)*4 + root(2,30)*5 + root(3,30)*6) % 1000000007 = (30*4 + 5*5 + 3*6) % 1000000007 = 163 % 1000000007 = 163 	
+(root(1,30)*4 + root(2,30)*5 + root(3,30)*6) % 1000000007 = (30*4 + 5*5 + 3*6) % 1000000007 = 163 % 1000000007 = 163
  */
 
 package medium.unsolved;

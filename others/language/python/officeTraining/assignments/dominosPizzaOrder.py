@@ -6,7 +6,7 @@ class dominosPizzaOrder(self):
     pizzaCrusts = ["HandTossed" , "ThinCrust", "CheezeBurst", "NewHandTossed"]
     pizzaToppings = ["Onion", "Tomato", "Capsicum" ]
     OrderStatus = ["recieved", "preperation", "baking", "outForDelivery", "Delivered"]
-    
+
     def __init__(self, name, mobNumber, orderNumber, pizzaName, pizzaCrust, pizzaTopping):
         self.name = name
         self.mobNumber = mobNumber

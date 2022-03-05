@@ -4,22 +4,22 @@
 		<meta charset="utf-8">
 		<title>Feature detection</title>
 	</head>
-	
+
 	<body>
 		<input type="text" placeholder="John Doe">
 		<input type="email">
-		
+
 		<script>
 			if( !'placeholder' in document.createElement('input') ){
 				// a polyfill
 			}
-			
+
 			function testSupport(type){
 			var i = document.createElement('input');
 			i.setAttribute('type',type);
 			return i.type == type;
 			}
-			
+
 			if( testSupport('email') ){
 				// provide fallback
 			}
@@ -43,12 +43,12 @@
 					return false;
 				}
 			}
-			
+
 			if ( !!navigator.geolocation) {
 				alert('track me!');
 			};
 
 			</script>
-	
+
 	</body>
 </html>

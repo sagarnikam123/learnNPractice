@@ -2,7 +2,7 @@
 
 	ChefGame
 
-	
+
  */
 
 package medium.unsolved;

@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     middleThree - solved
-    
+
     Given a string of odd length, return the string length 3 from its middle, so "Candy" yields "and".
-    The string length will be at least 3. 
+    The string length will be at least 3.
 ***************************************************************************************************
 middleThree("Candy") → "and"
 middleThree("and") → "and"
@@ -24,11 +24,11 @@ public class MiddleThree
     	System.out.println(middleThree("and"));
     	System.out.println(middleThree("solving"));
     }
-    
+
     public static String middleThree(String redHat){
     	int lambi = redHat.length();
     	if(lambi >3){
-    		return redHat.substring(lambi/2-1,lambi/2+2); 
+    		return redHat.substring(lambi/2-1,lambi/2+2);
     	}
     	return redHat;
     }

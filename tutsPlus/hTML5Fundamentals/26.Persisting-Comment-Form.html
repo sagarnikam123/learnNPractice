@@ -23,7 +23,7 @@
 	// detect localStorage support
 	if(Modernizr.localstorage){
 		// save comment every five seconds while writing in textarea
-		
+
 
 		// without jQuery
 		/*
@@ -42,12 +42,12 @@
 		}
 
 		// without jQuery
-		
+
 		/*
 		comment.addEventListener('focus', function(){
 			console.log('Focused');
 
-			updateInterval = setInterval( function(){ 
+			updateInterval = setInterval( function(){
 				//console.log('running')
 				localStorage.comment = comment.value;
 			}, 5000 )
@@ -67,7 +67,7 @@
 				console.log('Focused');
 				var $this = $(this);
 				// this
-				updateInterval = setInterval( function(){ 
+				updateInterval = setInterval( function(){
 					//console.log('running')
 					// this = DOMWindow
 					localStorage.comment = $this.val();
@@ -79,7 +79,7 @@
 
 
 	}
-	
+
 </script>
 
 </body>

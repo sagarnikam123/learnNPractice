@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     no14 - solved
-    
-    Given an array of ints, return true if it contains no 1's or it contains no 4's. 
+
+    Given an array of ints, return true if it contains no 1's or it contains no 4's.
 ***************************************************************************************************
 no14({1, 2, 3}) â†’ true
 no14({1, 2, 3, 4}) â†’ false
@@ -34,12 +34,12 @@ public class No14
     	int bhage [] = {2, 3,4};
     	System.out.println(no14(bhage));
     }
-    
+
     public static boolean no14(int[] nums) {
-        
+
     	boolean oneBeghar = false;
     	boolean fourAsuvan = false;
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(nums[i]==1){
     			oneBeghar = true;
@@ -47,7 +47,7 @@ public class No14
     			fourAsuvan = true;
     		}
     	}
-    	
+
     	if(oneBeghar && fourAsuvan) return false;
     	return true;
     }

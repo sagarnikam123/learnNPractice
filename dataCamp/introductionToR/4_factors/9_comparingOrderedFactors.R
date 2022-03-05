@@ -1,15 +1,15 @@
 # Comparing ordered factors
 
 #########################################################################################################
-#																										
-#	Having a bad day at work, 'data analyst number two' enters your office and starts complaining that	
-#	'data analyst number five' is slowing down the entire project. Since you know that					
-#	'data analyst number two' has the reputation of being a smarty-pants,								
-#	you first decide to check if his statement is true.													
-#																										
-#	The fact that factor_speed_vector is now ordered enables us to compare different elements			
-#	(the data analysts in this case). You can simply do this by using the well-known operators.			
-#																										
+#
+#	Having a bad day at work, 'data analyst number two' enters your office and starts complaining that
+#	'data analyst number five' is slowing down the entire project. Since you know that
+#	'data analyst number two' has the reputation of being a smarty-pants,
+#	you first decide to check if his statement is true.
+#
+#	The fact that factor_speed_vector is now ordered enables us to compare different elements
+#	(the data analysts in this case). You can simply do this by using the well-known operators.
+#
 #########################################################################################################
 
 speed_vector <- c("Fast", "Slow", "Slow", "Fast", "Ultra-fast")

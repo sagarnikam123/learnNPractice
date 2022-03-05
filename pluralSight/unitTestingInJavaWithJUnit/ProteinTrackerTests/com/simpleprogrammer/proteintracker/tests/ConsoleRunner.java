@@ -10,5 +10,5 @@ public class ConsoleRunner {
 		junit.addListener(new TextListener(System.out));
 		junit.run(TrackingServiceTest.class);
 	}
-	
+
 }

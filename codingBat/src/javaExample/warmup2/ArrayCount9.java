@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     arrayCount9n - solved
-    
+
     Given an array of ints, return the number of 9's in the array.
 ***************************************************************************************************
 arrayCount9({1, 2, 9}) → 1
@@ -23,15 +23,15 @@ public class ArrayCount9
     	System.out.println(arrayCount9(1, 9, 9));
     	System.out.println(arrayCount9(1, 9, 9, 3, 9));
     }
-    
+
     private static int arrayCount9(int ... actor){
     	int cultural9 = 0;
-    	
+
     	for(int i =0;i<actor.length;i++){
     	if(actor[i]==9)
     		cultural9++;
     	}
     	return cultural9;
     }
-    
+
 }

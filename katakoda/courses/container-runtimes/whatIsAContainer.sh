@@ -73,7 +73,7 @@ ls /sys/fs/cgroup/
 
 # What are the CPU stats for a process?
 cat /sys/fs/cgroup/cpu,cpuacct/docker/$DBID/cpuacct.stat
-# CPU shares limit 
+# CPU shares limit
 cat /sys/fs/cgroup/cpu,cpuacct/docker/$DBID/cpu.shares
 # all the Docker cgroups for the container's memory configuration
 ls /sys/fs/cgroup/memory/docker/

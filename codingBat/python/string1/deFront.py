@@ -6,7 +6,7 @@
 #    if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
 #
 #######################################################################################################################
-#   
+#
 #   deFront("Hello") → "llo"
 #   deFront("java") → "va"
 #   deFront("away") → "aay"
@@ -26,5 +26,5 @@
 #   deFront("his") → "s"
 #   deFront("xz") → ""
 #   deFront("zzz") → "z"
-#   
+#
 #######################################################################################################################

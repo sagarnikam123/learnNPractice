@@ -4,25 +4,25 @@
 
 	Long long ago, there is a magic board. The magic board has N*N cells: N rows and N columns.
 	Every cell contains one integer, which is 0 initially. Let the rows and the columns be numbered from 1 to N.
-	
+
 	There are 2 types of operations can be applied to the magic board:
-	
+
 	    RowSet i x: it means that all integers in the cells on row i have been changed to x after this operation.
 	    ColSet i x: it means that all integers in the cells on column i have been changed to x after this operation.
-	
+
 	And your girlfriend sometimes has an interest in the total number of the integers 0s on some row or column.
-	
+
 	    RowQuery i: it means that you should answer the total number of 0s on row i.
 	    ColQuery i: it means that you should answer the total number of 0s on column i.
-	
+
 	Input
-	The first line of input contains 2 space-separated integers N and Q. 
+	The first line of input contains 2 space-separated integers N and Q.
 	They indicate the size of the magic board, and the total number of operations and queries from the girlfriend.
 	Then each of the next Q lines contains an operation or a query by the format mentioned above.
-	
+
 	Output
 	For each query, output the answer of the query.
-	
+
 	Constraints
 	1 ≤ N, Q ≤ 500000 (5 * 105)
 	1 ≤ i ≤ N
@@ -73,7 +73,7 @@ Finally, apply the operation "RowSet 1 0", the board has changed to
 100
 
 From this board, the answer of the last query "ColQuery 1" should be 1.
- 
+
 ****************************************************************************************************************/
 
 package medium.unsolved;

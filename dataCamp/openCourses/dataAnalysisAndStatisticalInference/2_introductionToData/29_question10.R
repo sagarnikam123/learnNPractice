@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	Based on the plot you made in the previous exercise, which of the following is true about the relationship 
+#	Based on the plot you made in the previous exercise, which of the following is true about the relationship
 #	between weight and desired weight?
 #
 #######################################################################################################################

@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     maxMirror - copied - solved
-    
-    We'll say that a "mirror" section in an array is a group of contiguous elements such that 
+
+    We'll say that a "mirror" section in an array is a group of contiguous elements such that
     somewhere in the array, the same group appears in reverse order. For example, the largest mirror
-    section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the 
-    largest mirror section found in the given array. 
+    section in {1, 2, 3, 8, 9, 3, 2, 1} is length 3 (the {1, 2, 3} part). Return the size of the
+    largest mirror section found in the given array.
 ***************************************************************************************************
 maxMirror({1, 2, 3, 8, 9, 3, 2, 1}) → 3
 maxMirror({1, 2, 1, 4}) → 3
@@ -32,20 +32,20 @@ public class MaxMirror
     {
     	int abc [] = {1, 2, 1, 4};
     	System.out.println(maxMirror(abc));
-    	
+
     }
-    
+
     public static int maxMirror(int[] nums) {
-    	
+
     	int pratiDarshan = 1;
     	if(nums.length ==0){
     		return 0;
     	}
-    	
+
     	for(int i =0 ;i < nums.length; i++){
-    		
+
     		for(int j=nums.length-1;j>0;j--){
-    			
+
     			if(nums[i]==nums[j]){
     				int k = i, l = j;
     				while( k <nums.length && l >= 0 && nums[k]==nums[l]){
@@ -53,7 +53,7 @@ public class MaxMirror
     					l--;
     					pratiDarshan = Math.max(pratiDarshan, k-i);
     				}
-    				
+
     			}
     		}
     	}

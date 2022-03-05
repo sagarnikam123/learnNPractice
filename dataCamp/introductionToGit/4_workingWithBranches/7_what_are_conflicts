@@ -2,10 +2,10 @@
 
 ##############################################################################
 
-Sometimes the changes in two branches will conflict with each other: 
-for example, bug fixes might touch the same lines of code, or analyses in 
-two different branches may both append new (and different) records to a 
-summary data file. In this case, Git relies on you to reconcile 
+Sometimes the changes in two branches will conflict with each other:
+for example, bug fixes might touch the same lines of code, or analyses in
+two different branches may both append new (and different) records to a
+summary data file. In this case, Git relies on you to reconcile
 the conflicting changes.
 
 ##############################################################################
@@ -21,13 +21,13 @@ A) Write report.
 B) Submit final version.
 C) Submit expenses.
 
-You then switch back to the master branch and delete the first line, 
+You then switch back to the master branch and delete the first line,
 so that the file contains:
 
 B) Submit report.
 
-When you try to merge update and master, what conflicts does Git report? 
-You can use git diff master..update 
+When you try to merge update and master, what conflicts does Git report?
+You can use git diff master..update
 to view the difference between the two branches.
 
 

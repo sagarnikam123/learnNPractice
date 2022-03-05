@@ -17,5 +17,5 @@ for color in colors :
 # existing from REPL
 # Ctrl + z = Windows
 # Ctrl + d = Linux / Mac
-    
+
 ################################################################################

@@ -2,17 +2,17 @@
 
 ##############################################################################
 
-To save the changes in the staging area, you use the command git commit. 
-It always saves everything that is in the staging area as one unit: as 
-you will see later, when you want to undo changes to a project, 
+To save the changes in the staging area, you use the command git commit.
+It always saves everything that is in the staging area as one unit: as
+you will see later, when you want to undo changes to a project,
 you undo all of a commit or none of it.
 
-When you commit changes, Git requires you to enter a log message. 
-This serves the same purpose as a comment in a program: it tells the next 
+When you commit changes, Git requires you to enter a log message.
+This serves the same purpose as a comment in a program: it tells the next
 person to examine the repository why you made a change.
 
-By default, Git launches a text editor to let you write this message. 
-To keep things simple, you can use -m "some message in quotes" on the 
+By default, Git launches a text editor to let you write this message.
+To keep things simple, you can use -m "some message in quotes" on the
 command line to enter a single-line message like this:
 
 git commit -m "Program appears to have become self-aware."
@@ -23,7 +23,7 @@ git commit --amend - m "new message"
 
 ##############################################################################
 
-You have been put in the dental repository, and report.txt has been added 
+You have been put in the dental repository, and report.txt has been added
 to the staging area. Use a Git command to check the status of the repository.
 
     git status

@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     theEnd - solved
-    
+
     Given a string, return a string length 1 from its front, unless front is false,
-    in which case return a string length 1 from its back. The string will be non-empty. 
+    in which case return a string length 1 from its back. The string will be non-empty.
 ***************************************************************************************************
 theEnd("Hello", true) → "H"
 theEnd("Hello", false) → "o"
@@ -27,9 +27,9 @@ public class TheEnd
     	System.out.println(theEnd("Hello", false));
     	System.out.println(theEnd("oh", true));
     }
-    
+
     public static String theEnd(String khubiya,boolean expo){
-    	
+
     	if(expo == true){
     		return khubiya.substring(0, 1);
     	}else{

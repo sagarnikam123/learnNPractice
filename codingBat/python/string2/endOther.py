@@ -7,7 +7,7 @@
 #    "case sensitive"). Note: str.toLowerCase() returns the lowercase version of a string.
 #
 #######################################################################################################################
-#   
+#
 #   endOther("Hiabc", "abc") → true
 #   endOther("AbC", "HiaBc") → true
 #   endOther("abc", "abXabc") → true
@@ -22,5 +22,5 @@
 #   endOther("abcXYZ", "abcDEF") → false
 #   endOther("ab", "ab12") → false
 #   endOther("ab", "12ab") → true
-#   
+#
 #######################################################################################################################

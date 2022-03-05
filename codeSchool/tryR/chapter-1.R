@@ -7,8 +7,8 @@
 # CheatSheet:- http://cran.r-project.org/doc/contrib/Short-refcard.pdf
 	# http://www.amaynard.ca/computing/R_Cheatsheet.pdf
 
-# -cover basic R expressions. 
-# how to create variables,how to assign/store values in variables and accessing variables 
+# -cover basic R expressions.
+# how to create variables,how to assign/store values in variables and accessing variables
 # how to call functions
 # how to run pre-made R scripts
 # how to access R's help
@@ -41,8 +41,8 @@
 # 3 - Variables
 	# store values into a variable and access it later
 	# typing a variable evaluates it, or you can use print(x).
-	x = 34 # using assignment operator 
-	y <- 28 # second way of assignment 
+	x = 34 # using assignment operator
+	y <- 28 # second way of assignment
 	x/17  # accessing variables
 	y+2
 	y <- 2*x^2  # Evaluate expression for each element in x
@@ -50,13 +50,13 @@
 	x # Typing the name of a variable evaluates it
 	y =FALSE
 	print(y) # view value using "print" function
-	
+
 
 
 # 4 -Functions
 	# using pre-defined functins
 	# call a function by typing its name, followed by one or more arguments to that function in parenthesis
-	
+
 	# if u r working on RStudio IDE,
 	# then function name and press "Ctrl+Spacebar",
 	# a short help panel will apper,
@@ -66,7 +66,7 @@
 	rep ("Yes I Can !",3)  # repeating String for three times
 	sqrt(64) # Square root
 	substr("California",5,10) # Extracting substring
-	
+
 
 
 # 5 -Help
@@ -80,7 +80,7 @@
 	q()                       # Quit R
 	help(sum) # Help about "sum" function, # to go back to command prompt press button 'q'
 	?min
-	??substr # search Help Pages by matching function name	
+	??substr # search Help Pages by matching function name
 
 # 6 -Examples & demos
 	# example(functionname) # examples of usage for the given function
@@ -91,18 +91,18 @@
 	demo() # gives list of available demos in perticular package
 	demo(lm.glm, package = "stats", ask = TRUE)
 	demo(graphics)
-	
-		
-	
+
+
+
 
 #7 -Files
 	# R commands can also be written in plain text files (with a ".R" extension, by convention) for executing later.
-	# You can run them directly from the command line, or from within a running R instance.	
-	
+	# You can run them directly from the command line, or from within a running R instance.
+
 	list.files() # list the files in the current directory
 	dir() # list directory
 	source("FirstTest_Script.R") # Loads R commands from a file
-	
+
 
 # 8 -Packages
 	# Some extra packages are not loaded by default, but can be loaded as follows:
@@ -115,24 +115,24 @@
 # 9 -General/others
 	# Commands can be separated by a semicolon (;) or a newline
 	# All characters after # are treated as comments (even on the same line as commands)
-	# Typing the name of a function lists its contents; 
-	# Commands are entered interactively at the R user prompt. Up and down arrow keys scroll through your command history. 
+	# Typing the name of a function lists its contents;
+	# Commands are entered interactively at the R user prompt. Up and down arrow keys scroll through your command history.
 	# Editors:- R, RStudio,
-	
+
 # 10- Quitting & Saving History
 	q() # quit R. You will be prompted to save the workspace image,
-	# if you specify yes (y), it writes out two files to the current directory, 
+	# if you specify yes (y), it writes out two files to the current directory,
 	# called .RData (saved session i.e. all the R objects in memory)  and .Rhistory (is a list of all the command history as simple text file
-	
-	
+
+
 	# work with your previous commands
 	history() # display last 25 commands
 	history(max.show=Inf) # display all previous commands
-	
+
 	# Saving history of commands
 	savehistory(file="myCurrent.Rhistory")
 	loadhistory(file="myCurrent.Rhistory")     # load history file into current R session
-	
+
 
 # 11- Saving & loading R objects
 	save writes an external representation of R objects to the specified file; these can then be loaded back into R using load, e.g.
@@ -144,22 +144,22 @@
 	tmp <- load("mydata.RData")
 	tmp                            # Lists names of objects in file
 	[1] "a" "b"
-	
+
 	#Dealing with objects
 	# lists the objects currently defined
 	ls()
-	objects ()  
+	objects ()
 	# apropos finds objects with names containing the specified string, e.g.
 	apropos("max")
 	[1] "cummax"    "max"       "max.col"   "pmax"      "pmax.int"  "promax"
 	[7] "varimax"   "which.max"
 
-# 12- Workspace 
-	# Workspace is your current R working environment and includes any user-defined objects (vectors, matrices, data frames, lists, functions). 
-	# At the end of an R session, the user can save an image of the current workspace that is automatically reloaded the next time R is started. 
-	# keeping different projects in different physical directories as 
+# 12- Workspace
+	# Workspace is your current R working environment and includes any user-defined objects (vectors, matrices, data frames, lists, functions).
+	# At the end of an R session, the user can save an image of the current workspace that is automatically reloaded the next time R is started.
+	# keeping different projects in different physical directories as
 
-	getwd() # print the current working directory - cwd 
+	getwd() # print the current working directory - cwd
 	ls()    # list the objects in the current workspace
 
 	setwd(mydirectory)      # change to mydirectory
@@ -171,22 +171,20 @@
 	options() # view current option settings
 	options(digits=3) # number of digits to print on output
 
-	# save the workspace to the file .RData in the cwd 
+	# save the workspace to the file .RData in the cwd
 	save.image()
 
 	# save specific objects to a file
-	# if you don't specify the path, the cwd is assumed 
+	# if you don't specify the path, the cwd is assumed
 	save(object list,file="myfile.RData")
 
 # Build-in Datasets
 	data() # gives list of buildin datasets
 	data(phones)
-	# e.g. data(datasetName, package="pkgname") 
+	# e.g. data(datasetName, package="pkgname")
 	data(Cars93, package="MASS")
 	data(ToothGrowth)
 	?ToothGrowth
 	ToothGrowth
 	summary(ToothGrowth)
 	plot(ToothGrowth)
-	
-

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     mixString - solved
-    
+
     Given two strings, A and B, create a bigger string made of the first char of A, the first
     char of B, the second char of A, the second char of B, and so on.
-    Any leftover chars go at the end of the result. 
+    Any leftover chars go at the end of the result.
 ***************************************************************************************************
 mixString("abc", "xyz") â†’ "axbycz"
 mixString("Hi", "There") â†’ "HTihere"
@@ -29,27 +29,27 @@ public class MixString
     {
     	System.out.println(mixString("Long", "So"));
     }
-    
+
     public static String mixString(String a, String b) {
 
     	String kuthetari = "";
     	int iterator = 0;
 
     	if(a.length()==0)return b;
-    	if(b.length()==0) return a;	
-    	
+    	if(b.length()==0) return a;
+
     	if(a.length() > b.length()){
-    		iterator = a.length();	
+    		iterator = a.length();
     	}else{
     		iterator = b.length();
     	}
-    	
+
     	for(int i=0; i < iterator;i++){
-    		
+
     		if(i < a.length()){ kuthetari += a.substring(i, i+1); }
     		if(i < b.length()){ kuthetari += b.substring(i, i+1); }
     	}
-    	
+
     	return kuthetari;
     }
 

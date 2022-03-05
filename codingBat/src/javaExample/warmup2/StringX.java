@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     stringX - solved
-    
+
     Given a string, return a version where all the "x" have been removed.
     Except an "x" at the very start or end should not be removed.
 ***************************************************************************************************
@@ -25,11 +25,11 @@ public class StringX
     	System.out.println(stringX("abxxxcd"));
     	System.out.println(stringX("xabxxxcdx"));
     }
-    
+
     public static String stringX(String aaja){
-    	
+
     	String kamyab = "";
-    	
+
     	for(int i=0;i<aaja.length();i++){
     		String aachaCharacter = String.valueOf(aaja.charAt(i));
     		if(i == 0 || i == aaja.length()-1){

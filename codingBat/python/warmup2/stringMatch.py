@@ -7,7 +7,7 @@
 #    and "az" substrings appear in the same place in both strings.
 #
 #######################################################################################################################
-#   
+#
 #   stringMatch("xxcaazz", "xxbaaz") → 3
 #   stringMatch("abc", "abc") → 2
 #   stringMatch("abc", "axc") → 0
@@ -18,5 +18,5 @@
 #   stringMatch("aabbccdd", "abbbxxd") → 1
 #   stringMatch("aaxxaaxx", "iaxxai") → 3
 #   stringMatch("iaxxai", "aaxxaaxx") → 3
-#   
+#
 #######################################################################################################################

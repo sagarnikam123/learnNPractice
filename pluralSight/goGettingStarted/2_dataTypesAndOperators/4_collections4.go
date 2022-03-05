@@ -7,5 +7,5 @@ func main(){
 
   fmt.Println(mySlice)
   fmt.Println(len(mySlice))
-  
+
 }

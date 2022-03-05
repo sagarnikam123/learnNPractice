@@ -2,9 +2,9 @@
 
 def madlib(adjective ='thirsty',name = 'adam'):
 	print "the %s %s ate all the pizza" %(adjective,name)
-madlib() 
+madlib()
 madlib(adjective='hungry',name = 'adam')
-	
+
 def shoppingCart(itemName, *avgPrices):
 	for price in avgPrices :
 		print "price: ", price
@@ -14,7 +14,7 @@ def shoppingCart(itemName, **avgPrices):
 	for price in avgPrices :
 		print price , 'price : ', avgPrices[price]
 shoppingCart('computer',amazon = 100,ebay = 120,bestBuy = 34)
-	
+
 def dbLookup() :
 	dict = {}
 	dict['amazon'] = 100

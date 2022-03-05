@@ -1,16 +1,16 @@
 # Calculating total winnings (3)
 
 #####################################################################################################################
-#																													
-#	Based on the previous analysis, it looks like you had a mix of good and bad days. 								
-#	This is not what your ego expected, and you wonder if there may be a (very very very) 								
-#	tiny chance you have lost money over the week in total?															
-#																													
-#	A function that helps you to answer this question is sum(). It calculates the sum of all elements of a vector.	
-#	For example, to calculate the total amount of money you have lost/won with poker you do:						
-#																													
-#	total_poker <- sum(poker_vector)																				
-#																																																			
+#
+#	Based on the previous analysis, it looks like you had a mix of good and bad days.
+#	This is not what your ego expected, and you wonder if there may be a (very very very)
+#	tiny chance you have lost money over the week in total?
+#
+#	A function that helps you to answer this question is sum(). It calculates the sum of all elements of a vector.
+#	For example, to calculate the total amount of money you have lost/won with poker you do:
+#
+#	total_poker <- sum(poker_vector)
+#
 #####################################################################################################################
 
 # Poker winnings from Monday to Friday

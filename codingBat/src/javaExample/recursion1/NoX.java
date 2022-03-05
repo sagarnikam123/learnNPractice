@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
-    noX 
-    
+    noX
+
     Given a string, compute recursively a new string where all the 'x' chars have been removed.
 ***************************************************************************************************
 noX("xaxb") → "ab"
@@ -17,7 +17,7 @@ public class NoX
     {
 
     }
-    
+
     public static String noX(String str) {
         return null;
     }

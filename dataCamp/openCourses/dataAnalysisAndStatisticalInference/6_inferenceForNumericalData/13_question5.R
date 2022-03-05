@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	The bootstrap distribution of the median weight gain is a smooth, unimodal, symmetric distribution that 
+#	The bootstrap distribution of the median weight gain is a smooth, unimodal, symmetric distribution that
 #	yields a reliable confidence interval estimate.
 #
 ######################################################################################################################

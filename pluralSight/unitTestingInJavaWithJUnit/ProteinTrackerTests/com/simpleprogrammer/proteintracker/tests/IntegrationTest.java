@@ -35,5 +35,5 @@ public class IntegrationTest {
 			voice.deleteMessage(thread.getId());
 		}
 	}
-	
+
 }

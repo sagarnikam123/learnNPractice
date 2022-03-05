@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     array667 - solved
-    
-    Given an array of ints, return the number of times that two 6's are next to each other 
-    in the array. Also count instances where the second "6" is actually a 7. 
+
+    Given an array of ints, return the number of times that two 6's are next to each other
+    in the array. Also count instances where the second "6" is actually a 7.
 ***************************************************************************************************
 array667({6, 6, 2}) → 1
 array667({6, 6, 2, 6}) → 1
@@ -30,13 +30,13 @@ public class Array667
     	System.out.println(array667(6, 6, 2, 6));
     	System.out.println(array667(6, 7, 2, 6));
     }
-    
+
     // my code
 	private static int array667(int ... kesariya){
 		int no667 = 0;
-		
+
 		for (int i = 0 ;i < kesariya.length-1;i++){
-			
+
 			if(kesariya[i]==6 && kesariya[i+1]==6){
 				no667++;
 			}
@@ -46,7 +46,7 @@ public class Array667
 		}
     	return no667;
     }
-	
+
 	public static int array667Std(int[] nums) {
 		  int count = 0;
 		  // Note: iterate to length-1, so can use i+1 in the loop

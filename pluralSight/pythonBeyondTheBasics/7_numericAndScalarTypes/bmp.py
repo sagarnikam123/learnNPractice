@@ -102,5 +102,3 @@ def dimensions(filename):
 
         return (_bytes_to_int32(width_bytes),
                 _bytes_to_int32(height_bytes))
-
-

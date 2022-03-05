@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     stringSplosion - solved
-    
+
     Given a non-empty string like "Code" return a string like "CCoCodCode".
 ***************************************************************************************************
 stringSplosion("Code") → "CCoCodCode"
@@ -27,16 +27,16 @@ public class StringSplosion
     	System.out.println(stringSplosion("ab"));
     	System.out.println();
     }
-    
+
     public static String stringSplosion(String mastMagan){
-    	
+
     	int lambiJudai = mastMagan.length();
-    	
+
     	String feku  = "";
     	for(int i=0;i<lambiJudai;i++){
     		feku += mastMagan.substring(0,i+1);
     	}
-    	
+
     	return feku;
     }
 

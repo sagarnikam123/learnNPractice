@@ -2,7 +2,7 @@
 
 	Game of Divisors
 
-	
+
  */
 
 package medium.unsolved;

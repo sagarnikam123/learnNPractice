@@ -9,7 +9,7 @@ splitLine <- function(line) {
     val <- unlist(strsplit(line, "\t"))
     list(word = val[1], count = as.integer(val[2]))
 }
-    
+
 env <- new.env(hash = TRUE)
 
 con <- file("stdin", open = "r")
@@ -28,7 +28,3 @@ close(con)
 
 for (w in ls(env, all = TRUE))
     cat(w, "\t", get(w, envir = env), "\n", sep = "")
-
-
-
-

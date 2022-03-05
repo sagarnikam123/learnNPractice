@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     wordEnds - solved
-    
-     Given a string and a non-empty word string, return a string made of each char just before and 
-     just after every appearance of the word in the string. Ignore cases where there is no char 
+
+     Given a string and a non-empty word string, return a string made of each char just before and
+     just after every appearance of the word in the string. Ignore cases where there is no char
      before or after the word, and a char may be included twice if it is between two words.
 ***************************************************************************************************
 wordEnds("abcXY123XYijk", "XY") â†’ "c13i"
@@ -29,13 +29,13 @@ public class WordEnds
     {
     	System.out.println(wordEnds("XY1XY", "XY"));
     }
-    
+
     public static String wordEnds(String str, String word) {
-    	
+
     	String pork = "";
-    	
+
     	for(int i=0;i<=str.length()-word.length();i++){
-    		
+
     		if(str.substring(i, i+word.length()).equalsIgnoreCase(word) ){
     			if(i!=0){
     				pork +=str.charAt(i-1);
@@ -45,7 +45,7 @@ public class WordEnds
     			}
     			i=i+ word.length()-1;
     		}
-    		
+
     	}
         return pork;
     }

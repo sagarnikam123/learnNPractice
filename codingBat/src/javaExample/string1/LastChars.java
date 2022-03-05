@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     lastChars - solved
-    
+
     Given 2 strings, a and b, return a new string made of the first char of a and the last char of b,
-    so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char. 
+    so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
 ***************************************************************************************************
 lastChars("last", "chars") → "ls"
 lastChars("yo", "java") → "ya"
@@ -28,7 +28,7 @@ public class LastChars
     }
 
 	private static String lastChars(String dholitaro, String navyug) {
-		
+
 		String fuck = "";
 		if(dholitaro.length() != 0){
 			fuck+=dholitaro.substring(0, 1);
@@ -40,7 +40,7 @@ public class LastChars
 		}else{
 			fuck+="@";
 		}
-		
+
 		return fuck;
 	}
 

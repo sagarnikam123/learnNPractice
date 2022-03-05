@@ -6,15 +6,15 @@ public enum ColorCartridge implements ICartridge
 	BLUE("Blue"),
 	GREEN("Green"),
 	YELLOW("Yellow");
-	
+
 	private final String colorText;
 
 	private ColorCartridge(String colorText)
 	{
 		this.colorText = colorText;
-		
+
 	}
-	
+
 	@Override
 	public String toString()
 	{

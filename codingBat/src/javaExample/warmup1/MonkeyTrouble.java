@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     monkeyTrouble - solved
-    
-    We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. 
-    We are in trouble if they are both smiling or if neither of them is smiling. 
+
+    We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.
+    We are in trouble if they are both smiling or if neither of them is smiling.
     Return true if we are in trouble.
 ***************************************************************************************************
 monkeyTrouble(true, true) → true
@@ -21,9 +21,9 @@ public class MonkeyTrouble{
          System.out.println(monkeyTroubleMy(true, true) );
          System.out.println(monkeyTroubleMy(false, false) );
          System.out.println(monkeyTroubleMy(true, false) );
-    
+
     }
-    
+
     // my Solution:
     public static boolean monkeyTroubleMy(boolean aSmile, boolean bSmile) {
         if(aSmile == bSmile){
@@ -32,7 +32,7 @@ public class MonkeyTrouble{
          return false;
          }
     }
-    
+
     // Solution:
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
       if (aSmile && bSmile) {
@@ -47,10 +47,5 @@ public class MonkeyTrouble{
       // Or this very short version (think about how this is the same as the above)
       //   return (aSmile == bSmile);
     }
-    
+
 }
-
-
-
-
-  

@@ -1,10 +1,10 @@
 # Advanced selection
 
 #########################################################################################
-#																						
-#	Just like you did for poker, 														
-#	you also want to know those days where you realized a positive return for roulette.	
-#																						
+#
+#	Just like you did for poker,
+#	you also want to know those days where you realized a positive return for roulette.
+#
 #########################################################################################
 
 # Poker winnings from Monday to Friday

@@ -6,7 +6,7 @@
 #    Except if the parameter "negative" is true, then return true only if both are negative.
 #
 #######################################################################################################################
-#   
+#
 #   posNeg(1, -1, false) → true
 #   posNeg(-1, 1, false) → true
 #   posNeg(-4, -5, true) → true
@@ -26,5 +26,5 @@
 #   posNeg(1, 2, false) → false
 #   posNeg(-5, 6, true) → false
 #   posNeg(-5, -5, true) → true
-#   
+#
 #######################################################################################################################

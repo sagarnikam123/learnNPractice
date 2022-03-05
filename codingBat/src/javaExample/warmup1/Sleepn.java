@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     sleepn - solved
-    
-    The parameter weekday is true if it is a weekday, 
-    and the parameter vacation is true if we are on vacation. 
+
+    The parameter weekday is true if it is a weekday,
+    and the parameter vacation is true if we are on vacation.
     We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
 ***************************************************************************************************
 sleepIn(false, false) → true
@@ -20,9 +20,9 @@ public class Sleepn{
          System.out.println(sleepInMy(false, false) );
          System.out.println(sleepInMy(true, false) );
          System.out.println(sleepInMy(false, true) );
-    
+
     }
-    
+
     // my Solution:
     public static boolean sleepInMy(boolean weekday, boolean vacation) {
     if(!weekday && !vacation){
@@ -31,7 +31,7 @@ public class Sleepn{
     return false;
     }else{return true;}
     }
-    
+
     // Solution:
     public static boolean sleepIn(boolean weekday, boolean vacation) {
       if (!weekday || vacation) {
@@ -45,8 +45,3 @@ public class Sleepn{
       // Here we just put the return-false last, or could use an if/else.
     }
 }
-
-
-
-
-  

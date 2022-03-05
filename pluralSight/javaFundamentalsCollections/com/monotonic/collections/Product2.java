@@ -10,14 +10,14 @@ public class Product2 {
 			return Integer.compare(p1.getWeight(), p2.getWeight());
 		}
 	};
-	
+
 	public static final Comparator<Product2> BY_NAME = new Comparator<Product2>(){
 
 		@Override
 		public int compare(Product2 o1, Product2 o2) {
 			return 0;
 		}
-		
+
 	};
 
 	private final int id;
@@ -55,7 +55,7 @@ public class Product2 {
 		result = prime * result + weight;
 		return result;
 	}
-	
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -75,5 +75,5 @@ public class Product2 {
 			return false;
 		return true;
 	}
-	
+
 }

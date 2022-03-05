@@ -1,30 +1,30 @@
 /**
 
 	Sereja and Data Structures
-	
+
 	Sereja is a little student from the University of Kyiv. He studies computer science.
-	He is rather experienced programmer and he knows a lot of advanced algorithms. 
+	He is rather experienced programmer and he knows a lot of advanced algorithms.
 	The only thing he likes more than advanced algorithms is segment tree data structure.
-	
+
 	Every evening he goes to the loveliest place in Kyiv - The Chef's cafe.
-	Chef is also interested in computer science, so they often discuss different problems. 
+	Chef is also interested in computer science, so they often discuss different problems.
 	Last evening Sereja told Chef following problem: given an array A1, A2, ..., AN of N integers.
 	The task is to find the product of ranges of the segments [i, j] over 1 ≤ i < j ≤ N,
 	where the range of the segment [i, j] means max(Ai, Ai+1, ..., Aj) - min(Ai, Ai+1, ..., Aj).
-	
+
 	Both Sereja and Chef couldn't find any efficient algorithm for this problem with segment tree.
 	They gave up thinking of it, and Chef said we may calculate this value only for a random array,
 	that means all elements of the array are generated uniformly and independently at random.
 	Sereja were surprised to hear that, and he wanted to know about details.
 	However Chef is very busy at the moment, so he asked you to solve this problem for a random array.
-	
+
 	Input
 	The first line contains a single integer N, then N integers A1, A2, ..., AN follow on the second line.
-	
+
 	Output
-	Output a single line containing the required product modulo 1000000007 (109+7), 
+	Output a single line containing the required product modulo 1000000007 (109+7),
 	since the answer can be very large.
-	
+
 	Constraints
 	2 ≤ N ≤ 100000 (105)
 	0 ≤ Ai < 1000000007 (109+7)
@@ -60,11 +60,11 @@ Note that Example is created by manually, so these arrays are not random arrays.
 It is quite unlikely that the official test cases contain an array with equal elements such as Input 2.
 
 Test Case Generation
-There are 15 official test files.For every test file, 
+There are 15 official test files.For every test file,
 Ai are chosen from 0 to 1000000006 (109+6) uniformly and independently at random.
 The first 5 test files: N is chosen from 2 to 100 uniformly at random.
 The next 5 test files: N is chosen from 2 to 100000 (105) uniformly at random.
-The last 5 test files: N = 100000 (105) 	
+The last 5 test files: N = 100000 (105)
 
 *********************************************************************************************************************/
 

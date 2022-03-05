@@ -1,14 +1,14 @@
 /**
 
 	Maximum number, GCD condition
-	
+
 	You will be given an array A of N integers. You need to answer M queries.
 	Each query is of the form G x y.
 	For each query, construct the set S from A. A[i] is included in S if x <= i <= y and GCD(G,A[i]) > 1.
-	
+
 	Let MAX be the maximum number present in S. Output MAX and number of occurances of MAX in S.
 	If no such number exists, output "-1 -1" (without quotes).
-	
+
 	Input
 	The first line of the input contains 2 integers N and M.
 	Next line has N integers representing the elements of array A.
@@ -63,8 +63,7 @@ MAX = 4
 Answer is "4 2" as there are 2 occurances of 4 in S
 
 Author's Note
-Time Limit is not strict if correct Algorithm is used.Author's solution passes with 0.6 sec Time Limit 
+Time Limit is not strict if correct Algorithm is used.Author's solution passes with 0.6 sec Time Limit
 (C++ solution, using scanf and printf). Maximum Input File Size < 3MB.
 
 **********************************************************************************************************************/
-

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e 
+set -e
 
 function unit_tests(){
     echo "running unit tests"

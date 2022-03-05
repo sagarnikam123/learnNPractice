@@ -1,16 +1,16 @@
 /**
 
 	Machine Gun
-	
+
 	Country X has a military zone framed as a grid of size MxN.
 	Each point of the grid could be free, occupied by a machine gun or by a protector.
-	
-	A machine gun at point (x, y) could automatically attack other guns at points 
-	(x-2, y-2), (x-2, y+2), (x+2, y-2) and (x+2, y+2).So we could not put two guns 
+
+	A machine gun at point (x, y) could automatically attack other guns at points
+	(x-2, y-2), (x-2, y+2), (x+2, y-2) and (x+2, y+2).So we could not put two guns
 	at points which make them destroy each others, unless there is a protector exactly in the middle.
-	Eg.: We could put two guns at point (x, y) and (x+2, y+2) if and only if there is a protector 
+	Eg.: We could put two guns at point (x, y) and (x+2, y+2) if and only if there is a protector
 	at point (x+1, y+1).
-	
+
 	Given a map with some points which has been occupied by guns or protectors,
 	your task is to find out the greatest number of guns to add to this map satisfying rules above.
 	Note that we can put a machine gun at a free point, but we cannot remove any machine gun and protector,
@@ -26,7 +26,7 @@
 
 	Output
 	For each test case, output on a line the greatest number of guns which can be added the given map.
-	
+
 	Constraints
 	1 ≤ M, N ≤ 700
 	In the given map, any two machine guns do not attack each other.

@@ -6,7 +6,7 @@
 #    Note: Math.abs(num) computes the absolute value of a number.
 #
 #######################################################################################################################
-#   
+#
 #   nearHundred(93) → true
 #   nearHundred(90) → true
 #   nearHundred(89) → false
@@ -22,5 +22,5 @@
 #   nearHundred(210) → true
 #   nearHundred(211) → false
 #   nearHundred(290) → false
-#   
+#
 #######################################################################################################################

@@ -40,7 +40,7 @@ ping -c 3 10.132.0.2
 # Remove the allow-ssh firewall rules
 
 # For mynet-us-vm, click SSH to launch a terminal and connect
-# Please consider adding a firewall rule to allow ingress from the Cloud IAP for 
-# TCP forwarding netblock to the SSH port of your machine 
+# Please consider adding a firewall rule to allow ingress from the Cloud IAP for
+# TCP forwarding netblock to the SSH port of your machine
 # to start using Cloud IAP for TCP forwarding for better performance.
 ################################################################################

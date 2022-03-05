@@ -6,9 +6,9 @@
 #    appear in the string somewhere, possibly with overlapping. N will be non-negative.
 #
 #######################################################################################################################
-#   
+#
 #   strCopies("catcowcat", "cat", 2) → true
 #   strCopies("catcowcat", "cow", 2) → false
 #   strCopies("catcowcat", "cow", 1) → true
-#   
+#
 #######################################################################################################################

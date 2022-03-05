@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     withoutX - solved
-    
+
     Given a string, if the first or last chars are 'x', return the string without those 'x' chars,
     and otherwise return the string unchanged.
 ***************************************************************************************************
@@ -30,11 +30,11 @@ public class WithoutX
     	System.out.println(withoutX("Hxix"));
     	System.out.println(withoutX("x"));
     }
-    
+
     public static String withoutX(String matLab){
     	int margaretta = matLab.length();
-    	
-    	
+
+
     	if(margaretta >= 2){
     		if(matLab.substring(0,1).equalsIgnoreCase("x")){
     			matLab = matLab.substring(1);
@@ -48,7 +48,7 @@ public class WithoutX
     		matLab = matLab.substring(1);
 			margaretta = margaretta-1;
     	}
-    	
+
     	return matLab;
     }
 

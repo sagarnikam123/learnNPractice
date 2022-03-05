@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     countClumps - solved
-    
+
     Say that a "clump" in an array is a series of 2 or more adjacent elements of the same value.
     Return the number of clumps in the given array.
 ***************************************************************************************************
@@ -25,11 +25,11 @@ public class CountClumps
     	int limitedBass [] = {1, 1, 2, 1, 1};
     	System.out.println(countClumps(limitedBass));
     }
-    
+
     public static int countClumps(int[] nums) {
-        
+
     	int clumpNo = 0;
-    	
+
     	for(int i=0;i<nums.length-1;i++){
 
     			int tempClump=0;
@@ -39,12 +39,12 @@ public class CountClumps
     					i=j;
     				}else{
     					j=nums.length;
-    					
+
     				}
     			}
     			if(tempClump>0) clumpNo++;
     	}
-    	
+
     	return clumpNo;
     }
 

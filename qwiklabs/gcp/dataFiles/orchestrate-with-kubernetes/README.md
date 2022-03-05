@@ -7,7 +7,7 @@ In this Codelab you will learn how to:
 
 Kubernetes Version: 1.2.2
 
-## Setup GCE and Enable Cloud Shell 
+## Setup GCE and Enable Cloud Shell
 
 In this section you will create a Google Compute Engine (GCE) account. GCE will allow you to the create VMs, Networks, and Storage volumes required for this workshop. GCE also provides the [Cloud Shell](https://cloud.google.com/shell/docs) computing environment that will be used complete the labs.
 

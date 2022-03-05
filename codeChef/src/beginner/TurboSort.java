@@ -1,7 +1,7 @@
 /**********************************************************************************************************************
- 	
+
  	Turbo Sort
- 	
+
 	Given the list of numbers, you are to sort them in non decreasing order.
 
 	Input

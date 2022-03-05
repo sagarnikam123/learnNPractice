@@ -7,7 +7,7 @@
 
 	Compute the following:
 	S = a1*p1 + a2*p2 ... + an*pn.
-	
+
 	Input
 	A list of <100 integers, one on each line,
 	all less than 2*10^19.

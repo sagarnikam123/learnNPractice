@@ -3,7 +3,7 @@ package devprocess;
 public class User {
 
 	private String name;
-	
+
 	/**
 	 * Constructus a new user
 	 * @param n the users name
@@ -11,7 +11,7 @@ public class User {
 	public User(String n){
 		name = n;
 	}
-	
+
 	/**
 	 * Gets the users name
 	 * @return the users name

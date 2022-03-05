@@ -7,7 +7,7 @@
 #    This problem is harder than it looks.
 #
 #######################################################################################################################
-#   
+#
 #   xyzMiddle("AAxyzBB") â†’ true
 #   xyzMiddle("AxyzBB") â†’ true
 #   xyzMiddle("AxyzBBB") â†’ false
@@ -29,5 +29,5 @@
 #   xyzMiddle("xy") → false
 #   xyzMiddle("xyz") → true
 #   xyzMiddle("xyzz") → true
-#   
+#
 #######################################################################################################################

@@ -1,8 +1,8 @@
 # Connecting the dots
 
 #######################################################################################################################
-#	
-#	By default, R creates a scatterplot with each x,y pair indicated by an open circle. 
+#
+#	By default, R creates a scatterplot with each x,y pair indicated by an open circle.
 #	Now, if we want to connect the data points with a line, we could add a third argument:
 #	type = "l" (with l being short for line).
 #

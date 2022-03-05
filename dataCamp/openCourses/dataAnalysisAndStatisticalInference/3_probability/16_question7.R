@@ -2,7 +2,7 @@
 
 #######################################################################################################################
 #
-#	If you were to run the simulation of the independent shooter a second time, how would you expect 
+#	If you were to run the simulation of the independent shooter a second time, how would you expect
 #	its streak distribution to compare to the distribution from the question above?
 #
 #######################################################################################################################

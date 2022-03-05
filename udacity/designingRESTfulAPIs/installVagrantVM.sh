@@ -7,7 +7,7 @@
 sudo apt-get install git
 
 #Install VirtualBox from Software Center
-# 
+#
 
 #Install Vagrant (https://www.vagrantup.com/downloads.html)
 sudo dpkg -i vagrant_1.8.1_x86_64.deb

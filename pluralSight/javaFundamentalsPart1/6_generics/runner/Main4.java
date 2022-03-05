@@ -14,7 +14,7 @@ public class Main4 {
 		printOne(printer);
 		printOne(printer2);
 	}
-	
+
 	public static void printOne(Printer2<? extends ICartridge> printer){
 		String fillPercentage = printer.getCartridge().getFillPercentage();
 		System.out.println(fillPercentage);

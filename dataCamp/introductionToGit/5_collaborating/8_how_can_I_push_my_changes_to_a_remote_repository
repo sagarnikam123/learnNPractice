@@ -2,20 +2,20 @@
 
 ##############################################################################
 
-The complement of git pull is git push, which pushes the changes you have made 
+The complement of git pull is git push, which pushes the changes you have made
 locally into a remote repository. The most common way to use it is:
 
 git push remote-name branch-name
 
-which pushes the contents of your branch branch-name into a branch with the 
-same name in the remote repository associated with remote-name. It's possible 
-to use different branch names at your end and the remote's end, but doing 
-this quickly becomes confusing: it's almost always better to use the same 
+which pushes the contents of your branch branch-name into a branch with the
+same name in the remote repository associated with remote-name. It's possible
+to use different branch names at your end and the remote's end, but doing
+this quickly becomes confusing: it's almost always better to use the same
 names for branches across repositories.
 
 ##############################################################################
 
-You are in the master branch of the dental repository, which has a remote 
+You are in the master branch of the dental repository, which has a remote
 called origin. You have changed data/northern.csv; add it to the staging area.
 
 git add data/northern.csv

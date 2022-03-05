@@ -13,11 +13,11 @@ export HADOOP_CMD=/home/trendwise/apache/hadoop-1.0.4/bin/hadoop
 export HADOOP_STREAMING=/home/trendwise/apache/hadoop-1.0.4/contrib/streaming/hadoop-streaming-1.0.4.jar
 
 # installing packages
-R CMD INSTALL rhdfs_1.0.6.tar.gz 
-R CMD INSTALL rmr2_2.2.2.tar.gz 
+R CMD INSTALL rhdfs_1.0.6.tar.gz
+R CMD INSTALL rmr2_2.2.2.tar.gz
 
-# RHadoop dependencies  
-# rmr - RCpp, RJSONIO, digest, functional,stringr, plyr 
+# RHadoop dependencies
+# rmr - RCpp, RJSONIO, digest, functional,stringr, plyr
 # rhdfs- rJava.
 # rhbase
 
@@ -45,7 +45,7 @@ hdfs.init()
 #listing dir & files
 hdfs.ls("/") # list all dir & files in "/"
 hdfslist.files("/hivedatabase") # same as hdfs.ls()
-hdfs.ls("/tmp") 
+hdfs.ls("/tmp")
 
 # deleting dir & files
 hdfs.delete("/notice") # deletes files
@@ -83,16 +83,16 @@ tapply(groups, groups, length)
 
 groups = to.dfs(groups)
 from.dfs(
-	mapreduce(   
-		input = groups, 
-		map = function(k, v) keyval(v, 1), 
+	mapreduce(
+		input = groups,
+		map = function(k, v) keyval(v, 1),
 		reduce = function(k, vv) keyval(k, length(vv))
 		)
 	)
 
 
 # WordCount
-wc.map = 
+wc.map =
 	function(., lines) {
 		keyval( unlist(strsplit(x = lines, split = " ")), 1)
 		}
@@ -121,16 +121,16 @@ wc.reduce =
 # connectivity to HDFS
 # can browse, read, write, and modify files stored in HDFS.
 
-# Functions 
-	# File Manipulations 
+# Functions
+	# File Manipulations
 		# hdfs.copy, hdfs.move, hdfs.rename, hdfs.delete, hdfs.rm, hdfs.del, hdfs.chown, hdfs.put, hdfs.get
-	# File Read/Write 
+	# File Read/Write
 		# hdfs.file, hdfs.write, hdfs.close, hdfs.flush, hdfs.read, hdfs.seek, hdfs.tell, hdfs.line.reader, hdfs.read.text.file
-	# Directory 
+	# Directory
 		# hdfs.dircreate, hdfs.mkdir
-	# Utility 
+	# Utility
 		# hdfs.ls, hdfs.list.files, hdfs.file.info, hdfs.exists
-	# Initialization 
+	# Initialization
 		# hdfs.init, hdfs.defaults
 
 # R objects can be serialized to HDFS via the function: hdfs.write & deserialized from HDFS via the function: hdfs.read
@@ -140,15 +140,15 @@ wc.reduce =
 
 
 # rhbase
-# -using the Thrift server. 
-# - can browse, read, write, and modify tables stored in HBASE. 
+# -using the Thrift server.
+# - can browse, read, write, and modify tables stored in HBASE.
 # - functions in package
 
-	# Table Maninpulation 
+	# Table Maninpulation
 		# hb.new.table, hb.delete.table, hb.describe.table, hb.set.table.mode, hb.regions.table
-	# Read/Write 
+	# Read/Write
 		# hb.insert, hb.get, hb.delete, hb.insert.data.frame, hb.get.data.frame, hb.scan, hb.scan.ex
-	# Utility 
+	# Utility
 		# hb.list.tables
-	# Initialization 
+	# Initialization
 		# hb.defaults, hb.init

@@ -7,22 +7,22 @@
 	to write it down as a list of pairs of character and integer.
 	This is done by writing each segment of identical characters as the character and the length of the segment.
 	For example the string s = "AABBBCCCC" can be compressed as [ ('A', 2), ('B', 3), ('C', 4) ].
-	In compressed notation, two consecutive pairs cannot have same character. 
+	In compressed notation, two consecutive pairs cannot have same character.
 	For example [('A', 2), ('A', 4)] is invalid and its correct representation is [('A', 6)].
-	
-	After the first chemistry lesson, Ron realized that the simplest way to compress a string of Latin characters is 
-	to write it down as a list of pairs of character and integer. 
+
+	After the first chemistry lesson, Ron realized that the simplest way to compress a string of Latin characters is
+	to write it down as a list of pairs of character and integer.
 	This is done by writing each segment of identical characters as the character and the length of the segment.
 	For example the string s = "AABBBCCCC" can be compressed as [ ('A', 2), ('B', 3), ('C', 4) ].
-	In compressed notation, two consecutive pairs cannot have same character. 
+	In compressed notation, two consecutive pairs cannot have same character.
 	For example [('A', 2), ('A', 4)] is invalid and its correct representation is [('A', 6)].
 	Ron has written down a string in compressed notation, and he wants to count the number of sub-strings
 	(a segment of consecutive characters) of the original string that are palindromes.
-	
+
 	Recall that a palindrome is a non-empty string that reads the same backward as forward.
 	Two sub-strings are considered to be different if they have different lengths or start at
 	different positions in the original string.
-	
+
 	Input
 	The first line of the input contains an integer T denoting the number of test cases.
 	The description of T test cases follows.
@@ -62,15 +62,15 @@ Output:
 Explanation
 Example case 1:
 The original string is AABB so the sub-strings
-(represented by positions of the first and the last character) which are palindromes are 
+(represented by positions of the first and the last character) which are palindromes are
 (1, 1), (1, 2), (2, 2), (3, 3), (3, 4) and (4, 4).
 
 Example case 2:
-The original string is AABAA. The sub-strings that are palindromes are the 4 sub-strings A, 
+The original string is AABAA. The sub-strings that are palindromes are the 4 sub-strings A,
 the 2 sub-strings AA and the sub-strings B, ABA and AABAA. Together, they make 9 palindromes.
 
 Example case 3:
-The original string is A repeated 11 times, so all the sub-strings are palindromes.	
+The original string is A repeated 11 times, so all the sub-strings are palindromes.
 **********************************************************************************************************************/
 
 package medium.unsolved;

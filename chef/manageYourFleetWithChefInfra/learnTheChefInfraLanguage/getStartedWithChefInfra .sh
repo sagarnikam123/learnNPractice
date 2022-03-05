@@ -1,4 +1,4 @@
-# Get started with Chef Infra 
+# Get started with Chef Infra
 
 ###############################################################################
 # Configure your workstation

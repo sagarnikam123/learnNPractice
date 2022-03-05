@@ -4,7 +4,7 @@
 
 #download groovy from :- http://groovy.codehaus.org/Download?nc
 # unzip /groovy-2.1.6
-# add all Hive JARs to Groovy’s classpath by editing the groovy-starter.conf 
+# add all Hive JARs to Groovy’s classpath by editing the groovy-starter.conf
 # to allow Groovy to communicate with Hive without having to manually load JAR files each session
 
 
@@ -21,7 +21,7 @@
 
     #Loading configuration for Hive-client
     # loading all requied jar
-    
+
     #Hadoop
     load /home/trendwise/apache/hadoop-1.0.4/*.jar
     load /home/trendwise/apache/hadoop-1.0.4/lib/*.jar
@@ -67,7 +67,7 @@ client.getClusterStatus(); // getting cluster status
 
 
 // Fetching result
-client.fetchOne(); // fetch one by one,if no database present only show "default" database 
+client.fetchOne(); // fetch one by one,if no database present only show "default" database
 
 client.fetchAll(); //fetch all rows at time.
 

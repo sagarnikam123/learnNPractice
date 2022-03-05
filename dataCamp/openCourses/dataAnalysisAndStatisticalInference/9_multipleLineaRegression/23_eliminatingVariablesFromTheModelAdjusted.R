@@ -1,10 +1,10 @@
 # Eliminating variables from the model - adjusted R-squared selection
 
 #######################################################################################################################
-#			
-#	Now you will create a new model, where you will drop the variable that when dropped yields the 
+#
+#	Now you will create a new model, where you will drop the variable that when dropped yields the
 #	highest improvement in the adjusted R2R2.
-#	
+#
 #######################################################################################################################
 
 # The full model:
@@ -43,7 +43,7 @@ m6 <- lm(score ~  cls_students + cls_level +
 summary(m6)$adj.r.squared
 
 # Remove cls_students
-m7 <- lm(score ~   cls_level + 
+m7 <- lm(score ~   cls_level +
            cls_profs + cls_credits + bty_avg, data = evals)
 summary(m7)$adj.r.squared
 

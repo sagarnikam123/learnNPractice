@@ -9,11 +9,11 @@ public class HashMap {
 		PrinterHashMap<BWCartridge> printer = new PrinterHashMap<BWCartridge>(true, "My PRINTER", new BWCartridge());
 		printer.loadPaper(10);
 		printer.print(5);
-		
+
 		printer.outputPage(2);
 		printer.outputPage(3);
-		
-		
+
+
 	}
 
 }

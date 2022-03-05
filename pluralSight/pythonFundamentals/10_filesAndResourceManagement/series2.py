@@ -11,7 +11,7 @@ def read_series(filename):
         return [ int(line.strip()) for line in f ]
     finally:
         f.close()
-    
+
 def main(filename):
     series = read_series(filename)
     print(series)

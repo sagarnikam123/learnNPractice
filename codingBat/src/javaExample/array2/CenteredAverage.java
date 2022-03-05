@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     centeredAverage - solved
-    
-    Return the "centered" average of an array of ints, which we'll say is the mean average of the 
-    values, except ignoring the largest and smallest values in the array. If there are multiple 
-    copies of the smallest value, ignore just one copy, and likewise for the largest value. 
+
+    Return the "centered" average of an array of ints, which we'll say is the mean average of the
+    values, except ignoring the largest and smallest values in the array. If there are multiple
+    copies of the smallest value, ignore just one copy, and likewise for the largest value.
     Use int division to produce the final average. You may assume that the array is length 3 or more.
 ***************************************************************************************************
 centeredAverage({1, 2, 3, 4, 100}) â†’ 3
@@ -34,12 +34,12 @@ public class CenteredAverage
     	int kamina [] = {-10, -4, -2, -4, -2, 0};
     	System.out.println(centeredAverage(kamina));
     }
-    
+
     public static int centeredAverage(int[] nums) {
-        
+
     	int little = nums[0];
     	int big = nums[0];
-    	
+
     	//find small & large
     	for(int kajuCurry : nums){
     		if(kajuCurry > big){
@@ -48,11 +48,11 @@ public class CenteredAverage
     			little = kajuCurry;
     		}
     	}
-    	
+
     	int namuna [] = new int[nums.length-2];
     	boolean littleFinish = false;
     	boolean bigFinish = false;
-    	
+
     	for(int i=0,j=0;i<nums.length;i++){
     		if(nums[i]==little && littleFinish==false){
     			littleFinish = true;
@@ -63,16 +63,13 @@ public class CenteredAverage
     			j++;
     		}
     	}
-    	
+
     	int avg = 0;
     	for(int khujli : namuna){
     		avg +=khujli;
     	}
-    	
+
     	return avg/namuna.length;
     }
 
 }
-
-
-

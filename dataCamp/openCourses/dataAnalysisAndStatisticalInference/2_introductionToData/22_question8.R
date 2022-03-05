@@ -1,10 +1,10 @@
 # Question 8
 
 #######################################################################################################################
-#	
-#	How many observations are in the subset under23_and_smoke that you created in the previous exercise, i.e. how 
+#
+#	How many observations are in the subset under23_and_smoke that you created in the previous exercise, i.e. how
 #	many people in the sample are under the age of 23 and have smoked at least 100 cigarettes in their lifetime?
-#	
+#
 #	Note: The subset you created is already loaded.
 #
 #######################################################################################################################

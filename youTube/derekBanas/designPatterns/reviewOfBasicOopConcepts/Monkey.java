@@ -5,7 +5,7 @@ public class Monkey implements Living{
 	@Override
 	public void setName(String newName) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -17,7 +17,7 @@ public class Monkey implements Living{
 	@Override
 	public void setHeight(double newHeight) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class Monkey implements Living{
 	@Override
 	public void setFavFood(String navFood) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class Monkey implements Living{
 	@Override
 	public void setSpeed(double newSpeed) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class Monkey implements Living{
 	@Override
 	public void setSound(String newSound) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

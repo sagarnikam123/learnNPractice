@@ -77,6 +77,3 @@ means packages loads successfully.
 	> dbGetQuery(con,"Mysql-query") # regular MySQL query
 
 3)Refer RMySQL pdf for more commands
-
-
-

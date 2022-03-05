@@ -3,7 +3,7 @@
 
 # HBase-0.94.8
 # Hadoop-1.0.4
-#edit- 
+#edit-
 	# 1)hbase-env.sh -  Java_Home,HBASE_OPTS,HBASE_MANAGES_ZK
 	# 2)hbase-site.xml - hbase.rootdir,dfs.replication,zookeeper clientport,datadir,quorum, hbase.cluster
 
@@ -15,7 +15,7 @@ bin/start-hbase.sh
 #Start hbase shell
  bin/hbase shell
 
-# Table 
+# Table
 create 'testtable','colfam1' # jsut creates simple table
 
 #if want to create splitted table
@@ -37,7 +37,7 @@ for k in '0'..'9' do put 'testtable', "row-#{i}#{j}#{k}", \
 
 #gettting data
 get 'testtable','myrow-1'
-# or 
+# or
 scan 'testtable'
 
 
@@ -51,10 +51,10 @@ drop 'testable'
 # blogposts table
 create 'blogposts', 'post', 'image'
 
-put 'blogposts', 'post1', 'post:title', 'Hello World'  
-put 'blogposts', 'post1', 'post:author', 'The Author'  
+put 'blogposts', 'post1', 'post:title', 'Hello World'
+put 'blogposts', 'post1', 'post:author', 'The Author'
 put 'blogposts', 'post1', 'post:body', 'This is a blog post'
-put 'blogposts', 'post1', 'image:header', 'image1.jpg'  
+put 'blogposts', 'post1', 'image:header', 'image1.jpg'
 put 'blogposts', 'post1', 'image:bodyimage', 'image2.jpg'
 
 
@@ -81,7 +81,7 @@ export HADOOP_CLASSPATH=/home/hadoop/apache/hadoop-1.0.4/hadoop-core-1.0.4.jar
 bin/hbase org.apache.hadoop.hbase.mapreduce.Export blog hdfs://localhost:54310/ouput
 
 #Importing csv into HBase table
-# hadoop jar <path to hbase jar> importtsv -Dimporttsv.columns=a,b,c '-Dimporttsv.separator=,' <tablename> <inputdir> 
+# hadoop jar <path to hbase jar> importtsv -Dimporttsv.columns=a,b,c '-Dimporttsv.separator=,' <tablename> <inputdir>
 
 #bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=HBASE_ROW_KEY,d:c1,d:c2 -Dimporttsv.bulk.output=hdfs://storefile-outputdir <tablename> <hdfs-#data-inputdir>
 
@@ -89,7 +89,7 @@ bin/hbase org.apache.hadoop.hbase.mapreduce.Export blog hdfs://localhost:54310/o
 bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=HBASE_ROW_KEY,length:x,length:y,length:z,breadth:a,breadth:b,breadth:c '-Dimporttsv.separator=,' xbox  hdfs://localhost:54310/input/box.csv
 
 
-# importing TSV file  
+# importing TSV file
 create 'code','d'
 bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=HBASE_ROW_KEY,d:c1,d:c2 code  hdfs://localhost:54310/input/code.tsv
 
@@ -103,7 +103,3 @@ put 'dbox','square','length:z','300'
 put 'dbox','square','breadth:a','1'
 put 'dbox','square','breadth:b','2'
 put 'dbox','square','breadth:c','3'
-
-
-
-

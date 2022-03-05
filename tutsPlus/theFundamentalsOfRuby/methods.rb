@@ -37,5 +37,3 @@ post = Post.new author: "Jose Mota"
 
 
 p post.inspect
-
-

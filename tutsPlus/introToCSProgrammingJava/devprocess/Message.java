@@ -4,7 +4,7 @@ public class Message {
 
 	private User user;
 	private String content;
-	
+
 	/**
 	 * Costructs a new message
 	 * @param u the user
@@ -14,8 +14,8 @@ public class Message {
 		user = u;
 		content = m;
 	};
-	
-	
+
+
 	/**
 	 * Get's the message
 	 * @return the message
@@ -23,5 +23,5 @@ public class Message {
 	public String getMessage(){
 		String message = content+" - by: "+user.getName()+"\n";
 		return message;
-	} 
+	}
 }

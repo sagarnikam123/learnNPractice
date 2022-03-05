@@ -11,12 +11,12 @@
 
 2) ##### Linux 'find' command
 	`find / -name '*'` will _______
-	
+
 	- [ ] List all files belongs to the current user
 	- [ ] List all files and directories recursively starting from `/`
 	- [ ] List all files in `/` directory
 	- [ ] List all files and directories in `/` directory
-	
+
 3) ##### Linux user attributes file
 	Which one among the following files saves the user attributes in text format?
 	- [ ] `/root/passwd`
@@ -37,39 +37,39 @@
 	- [ ] `save`
 	- [ ] `flush`
 	- [ ] None of the above
-	
+
 6) ##### Linux User Shell name
 	Which one among the below can be used to determine the shell of the current logged-in user?
 	- [ ] `cat /etc/shell`
 	- [ ] `echo $SHELL`
 	- [ ] `cat /etc/current/shell`
 	- [ ] None
-	
+
 7) ##### Linux Processes (ps)
-	`ps -ef --forest` is a linux command used for which purposes? 
-	
+	`ps -ef --forest` is a linux command used for which purposes?
+
 	- [ ] Gives you a hierarchical way inter-processes dependency
 	- [ ] give information related to threads corresponding to a particular process
 	- [ ] produces a snapshot of all running processes
 	- [ ] All of the above
-	
+
 8) ##### Linux /dev/null importance
 	What is the meaning of below command in Linux?
-	
+
 	`some_command 2> /dev/null`
-	
+
 	- [ ] Send error messages from command to a file called `/dev/null`
 	- [ ] Append the output of command to a file called `/dev/null`
 	- [ ] Discard standard error entirely
 	- [ ] Send the output of command to a file called `/dev/null`
-	
+
 9) ##### Linux commands from history
 	Which of the folling runs the previous command you entered in the terminal?
 	- [ ] `!~`
 	- [ ] `!!`
 	- [ ] `~!`
 	- [ ] `~#`
-	
+
 10) ##### Git branches commandline
 	How to pull changes from a specific branch from GitHub?
 	- [ ] `git pull origin <branch_name>`

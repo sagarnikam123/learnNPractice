@@ -1,13 +1,13 @@
 /**
 
 	Candy Collecting Game
-	
-	Alice and Bob have come to spend their day in a FunFair which is close to their house. 
-	They have played almost all games and seen all the attractions. But there's one game left 
+
+	Alice and Bob have come to spend their day in a FunFair which is close to their house.
+	They have played almost all games and seen all the attractions. But there's one game left
 	which has caught their attention. The winner of this game could get a LOT of candies! The game is as follows:
-	
+
 	    The game is a two-player game which is played on an NxM grid.
-	    Each cell of the grid has a certain number of candies. 
+	    Each cell of the grid has a certain number of candies.
 	    A[i][j] denotes the number of candies in the jth column of the ith row. The players make alternate turns.
 	    In each turn, a player must remove one complete row or one complete column from the grid.
 	    He will add all the candies in that row/column into his account.
@@ -18,11 +18,11 @@
 	    When the entire matrix is emptied, the player with higher number of candies wins the game and can take
 	    all those candies with him/her. The loser has to give back the candies collected so far and return empty-handed.
 	    If both players have equal number of candies, both of them are declared winners.
-	
-	Alice and Bob want to take as many candies home as possible. They don't have much time with themselves. 
+
+	Alice and Bob want to take as many candies home as possible. They don't have much time with themselves.
 	So they come up with a strategy using which they want to increase Bob's share of candies and decrease Alice's share.
 	This way, they plan to make Bob win and take his entire share of candies! The strategy is as follows:
-	
+
 	    Alice decides to pick the row or column
 	    from the present grid which has the least number of candies in every turn of hers.
 	    If there are more than one such options, then her order of preference will be:
@@ -36,13 +36,13 @@
 	    Note that Bob's strategy maximizes the number of his candies, not winner's candies.
 	    Also note that Bob knows Alice's strategy, of course, and
 	    he will take into account her strategy when he decides his move.
-	
+
 	It's quite evident that their strategy is not optimal. It might happen that Bob loses a game.
 	And sometimes, both might win (with equal number of candies).
 	Given the grid and the number of candies in each cell,
 	your task is to tell them how many candies will the winner get if they play with this combined strategy.
 	Alice will always start the game (Ladies first!).
-	
+
 	Input:
 	First line of the test data contains a single integer T, the number of test cases.
 	Each test case starts with two space separated integers N and M,
@@ -52,11 +52,11 @@
 	Output:
 	For each test case, output a single line containing the number of candies the winner(s) gets.
 	Constraints:
-	
+
 	1 ≤ T ≤ 25
 	1 ≤ N, M ≤ 50
-	0 ≤ A[i][j] ≤ 1000000000 
-*********************************************************************************************************************** 
+	0 ≤ A[i][j] ≤ 1000000000
+***********************************************************************************************************************
 Example:
 
 Input:
@@ -79,12 +79,12 @@ Output:
 9
 
 Explanation:
-1st case: Alice picks the first column (with all 0's). We're left with a 3x2 grid now. 
-Bob picks the first column (9+6+9=24). We're left with a 3x1 grid. Alice picks the last row (6). 
+1st case: Alice picks the first column (with all 0's). We're left with a 3x2 grid now.
+Bob picks the first column (9+6+9=24). We're left with a 3x1 grid. Alice picks the last row (6).
 A 2x1 grid is left. Bob picks the entire column (9+6=15). Thus, Bob has 24+15=39 candies and Alice has 6.
 So clearly, Bob is the winner.
-2nd case: Here, both end up with two candies each. Hence both are the winners. 
-Thus the winner(s) have 2+2=4 candies in all.	
+2nd case: Here, both end up with two candies each. Hence both are the winners.
+Thus the winner(s) have 2+2=4 candies in all.
 
 ***********************************************************************************************************************/
 

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     bigDiff - solved
-    
+
     Given an array length 1 or more of ints, return the difference between the largest and smallest
-    values in the array. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return 
-    the smaller or larger of two values. 
+    values in the array. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return
+    the smaller or larger of two values.
 ***************************************************************************************************
 bigDiff({10, 3, 5, 6}) â†’ 7
 bigDiff({7, 2, 10, 9}) â†’ 8
@@ -29,14 +29,14 @@ public class BigDiff
     	int factualSite [] = {7, 7, 6, 8, 5, 5, 6};
     	System.out.println(bigDiff(factualSite));
     }
-    
+
     public static int bigDiff(int[] nums) {
-        
+
     	int choti = nums[0];
         int badi = nums[0];
-    
+
         if(nums.length==1) return 0;
-        
+
         for(int junoon : nums){
         	if(junoon > badi){
         		badi = junoon;
@@ -44,7 +44,7 @@ public class BigDiff
         		choti = junoon;
         	}
     	}
-        
+
     	return Math.abs(badi-choti);
     }
 

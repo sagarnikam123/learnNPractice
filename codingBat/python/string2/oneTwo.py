@@ -7,7 +7,7 @@
 #    so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end.
 #
 #######################################################################################################################
-#   
+#
 #   oneTwo("abc") → "bca"
 #   oneTwo("tca") → "cat"
 #   oneTwo("tcagdo") → "catdog"
@@ -24,5 +24,5 @@
 #   oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890") → "bcaefdhigkljmnkpqostrvwuyzx231564897"-
 #   oneTwo("abcdefghijklkmnopqrstuvwxyz123456789") → "bcaefdhigkljmnkpqostrvwuyzx231564897"
 #   oneTwo("abcdefghijklkmnopqrstuvwxyz12345678") → "bcaefdhigkljmnkpqostrvwuyzx231564"-
-#   
+#
 #######################################################################################################################

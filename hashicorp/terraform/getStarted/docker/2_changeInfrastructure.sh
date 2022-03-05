@@ -1,6 +1,6 @@
 # Change Infrastructure
 
-# Change the docker_container.nginx resource under the provider block in main.tf 
+# Change the docker_container.nginx resource under the provider block in main.tf
 # by replacing the ports.external value of 8000 with 8080
 
 # apply execution plan

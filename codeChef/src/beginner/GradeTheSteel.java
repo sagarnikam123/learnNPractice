@@ -1,7 +1,7 @@
 /**********************************************************************************************************************
 
 	Grade The Steel
-	
+
 	A certain grade of steel is graded according to the following conditions. Hardness must be greater than 50.
 	Carbon content must be less than 0.7. Tensile strength must be greater than 5600.
 	The grades are as follows:
@@ -11,12 +11,12 @@
 	Grade is 7 if conditions (i) and (iii) are met.
 	Garde is 6 if only one condition is met.
 	Grade is 5 if none of three conditions are met.
-		
-	Write a program, if the user gives values of hardness, carbon content and tensile strength of the steel 
-	under consideration and display the grade of the steel. 
-	
+
+	Write a program, if the user gives values of hardness, carbon content and tensile strength of the steel
+	under consideration and display the grade of the steel.
+
 	Input
-	The first line contains an integer T, total number of testcases. Then follow T lines, each line contains 
+	The first line contains an integer T, total number of testcases. Then follow T lines, each line contains
 	three numbers hardness, carbon content and tensile strength of the steel.
 
 	Output
@@ -30,15 +30,15 @@ Example
 
 Input
 
-3 
+3
 53 0.6 5602
 45 0 4500
-0 0 0 
+0 0 0
 Output
 
 10
 6
-6	
+6
 **********************************************************************************************************************/
 package beginner;
 

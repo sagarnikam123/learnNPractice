@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     countHi - solved
-    
-    Return the number of times that the string "hi" appears anywhere in the given string. 
+
+    Return the number of times that the string "hi" appears anywhere in the given string.
 ***************************************************************************************************
 countHi("abc hi ho") → 1
 countHi("ABChi hi") → 2
@@ -23,10 +23,10 @@ public class CountHi
     {
     	System.out.println(countHi("hihi"));
     }
-    
+
     public static int countHi(String str) {
     	int kitiHi = 0;
-    	
+
     	if(str.length() < 2){
     		return kitiHi;
     	}

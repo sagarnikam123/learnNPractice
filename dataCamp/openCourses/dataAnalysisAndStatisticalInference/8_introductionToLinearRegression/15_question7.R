@@ -1,17 +1,17 @@
 # Question 7
 
 #######################################################################################################################
-#	
-#	Point 2, nearly normal residuals: To check this condition, a normal probability plot of the residuals 
+#
+#	Point 2, nearly normal residuals: To check this condition, a normal probability plot of the residuals
 #	(the graph is shown).
-#	
+#
 #	qqnorm(m1$residuals)
 #	qqline(m1$residuals)
 #
 #	The final code statement here adds a diagonal line to the normal probability plot.
-#	
+#
 #	You can also look at a histogram via hist(m1$residuals).
-#	
+#
 #	Which of the following is true?
 #
 #######################################################################################################################

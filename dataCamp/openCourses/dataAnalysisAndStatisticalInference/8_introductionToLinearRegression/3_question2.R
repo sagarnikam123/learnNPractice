@@ -1,12 +1,12 @@
 # Question 2
 
 #######################################################################################################################
-#	
-#	Using the correct type of plot of the previous exercises, plot the relationship between runs and at_bats, 
+#
+#	Using the correct type of plot of the previous exercises, plot the relationship between runs and at_bats,
 #	using at_bats as the explanatory variable.
-#	
+#
 #	The relationship is...
-#	
+#
 #######################################################################################################################
 
 1	linear

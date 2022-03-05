@@ -28,7 +28,7 @@ Download the client credentials and CA cert:
 gcloud compute copy-files node0:~/admin-key.pem .
 gcloud compute copy-files node0:~/admin.pem .
 gcloud compute copy-files node0:~/ca.pem .
-``` 
+```
 
 Get the Kubernetes controller external IP:
 

@@ -8,7 +8,7 @@
 #    (i.e. n will be in the range 0..str.length()-1 inclusive).
 #
 #######################################################################################################################
-#   
+#
 #   missingChar("kitten", 1) → "ktten"
 #   missingChar("kitten", 0) → "itten"
 #   missingChar("kitten", 4) → "kittn"
@@ -19,5 +19,5 @@
 #   missingChar("code", 2) → "coe"
 #   missingChar("code", 3) → "cod"
 #   missingChar("chocolate", 8) → "chocolat"
-#   
+#
 #######################################################################################################################

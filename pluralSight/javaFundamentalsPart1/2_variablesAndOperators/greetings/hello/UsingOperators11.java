@@ -3,12 +3,12 @@ package greetings.hello;
 public class UsingOperators11 {
 
 	public static void main(String[] args) {
-		
+
 		// simple assignment operators
 		int number = 3;
 		number = 3 + 2;
 		number = 5 - 1;
-		
+
 		number++;
 		number--;
 		System.out.println(number);
@@ -18,7 +18,7 @@ public class UsingOperators11 {
 		number += 2;
 		number *= 2;
 		System.out.println(number);
-		
+
 		// boolean
 		boolean value = true;
 		System.out.println(value);
@@ -33,7 +33,7 @@ public class UsingOperators11 {
 		System.out.println(false || false);
 		System.out.println(!false);
 		System.out.println(!true);
-		
+
 	}
 
 }

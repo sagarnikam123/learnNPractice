@@ -29,7 +29,7 @@ Resources:
     Properties:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/24
-      AvailabilityZone: !Select 
+      AvailabilityZone: !Select
         - '0'
         - !GetAZs ''
       Tags:
@@ -41,7 +41,7 @@ Resources:
     Properties:
       VpcId: !Ref VPC
       CidrBlock: 10.0.1.0/24
-      AvailabilityZone: !Select 
+      AvailabilityZone: !Select
         - '0'
         - !GetAZs ''
       Tags:
@@ -89,6 +89,6 @@ Outputs:
     Value: !Ref VPC
   AZ1:
     Description: Availability Zone 1
-    Value: !GetAtt 
+    Value: !GetAtt
       - PublicSubnet1
       - AvailabilityZone

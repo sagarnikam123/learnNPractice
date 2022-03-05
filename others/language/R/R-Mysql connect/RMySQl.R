@@ -12,7 +12,7 @@ dbGetInfo(con) # detailed connection information
 
 dbListTables(con) #show available table
 dbReadTable(con,"books") # reading tables
-books=dbReadTable(con,"books") 
+books=dbReadTable(con,"books")
 names(books) # names of fields
 books["BookID"] # getting single columns
 
@@ -25,7 +25,7 @@ books["BookID"] # getting single columns
 > # dbConnect - Connect to a DBMS going through the appropriate authorization procedure
 > con <- dbConnect("MySQL", dbname="bookStore", user="root", password="")
 > con # connection information
-<MySQLConnection:(16720,2)> 
+<MySQLConnection:(16720,2)>
 > dbGetInfo(con) # detailed connection information
 $host
 [1] "localhost"
@@ -52,7 +52,7 @@ $rsId
 list()
 
 > dbListTables(con) #show available table
-[1] "authorBook" "authors"    "books"      "qAns"      
+[1] "authorBook" "authors"    "books"      "qAns"
 > dbReadTable(con,"books") # reading tables
    BookID      BookTitle Copyrith
 1     123         kkkkkA     2013
@@ -65,9 +65,9 @@ list()
 8   17695         Pl/SQL     1980
 9   19264     JavaScript     1992
 10  19354 www.java2s.com     1993
-> books=dbReadTable(con,"books") 
+> books=dbReadTable(con,"books")
 > names(books) # names of fields
-[1] "BookID"    "BookTitle" "Copyrith" 
+[1] "BookID"    "BookTitle" "Copyrith"
 > books["BookID"] # getting single columns
    BookID
 1     123
@@ -80,4 +80,3 @@ list()
 8   17695
 9   19264
 10  19354
-

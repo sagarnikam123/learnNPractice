@@ -1,14 +1,14 @@
 # Vector selection: the good times (3)
 
 #################################################################################################################
-#																												
-#	Selecting multiple elements of poker_vector with c(2,3,4) is not very convenient. Many statisticians are	
-#	lazy people by nature, so they created an easier way to do this: c(2,3,4) can be abbreviated to2:4,			
-#	which generates a vector with all natural numbers from 2 up to 4.											
-#																												
-#	So, another way to find the mid-week results is poker_vector[2:4].											
-#	Notice how the vector 2:4 is placed between the square brackets to select element 2 up to 4.				
-#																												
+#
+#	Selecting multiple elements of poker_vector with c(2,3,4) is not very convenient. Many statisticians are
+#	lazy people by nature, so they created an easier way to do this: c(2,3,4) can be abbreviated to2:4,
+#	which generates a vector with all natural numbers from 2 up to 4.
+#
+#	So, another way to find the mid-week results is poker_vector[2:4].
+#	Notice how the vector 2:4 is placed between the square brackets to select element 2 up to 4.
+#
 #################################################################################################################
 
 # Poker winnings from Monday to Friday

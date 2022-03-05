@@ -16,9 +16,9 @@ public class ZooKeeperConnection {
 
 	   // Method to connect zookeeper ensemble.
 	   public ZooKeeper connect(String host) throws IOException,InterruptedException {
-		
+
 	      zoo = new ZooKeeper(host,5000,new Watcher() {
-			
+
 	         public void process(WatchedEvent we) {
 
 	            if (we.getState() == KeeperState.SyncConnected) {
@@ -26,7 +26,7 @@ public class ZooKeeperConnection {
 	            }
 	         }
 	      });
-			
+
 	      connectedSignal.await();
 	      return zoo;
 	   }

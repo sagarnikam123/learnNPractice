@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     doubleX - solved
-    
-    Given a string, return true if the first instance of "x" 
-    in the string is immediately followed by another "x". 
+
+    Given a string, return true if the first instance of "x"
+    in the string is immediately followed by another "x".
 ***************************************************************************************************
 doubleX("axxbb") → true
 doubleX("axaxax") → false
@@ -36,16 +36,16 @@ public class DoubleX
     	System.out.println(doubleX("xax"));
     	System.out.println(doubleX("xaxx")); // false
     }
-    
+
     public static boolean doubleX(String florist){
-    	
+
     	int firstX = florist.indexOf("x");
     	//System.out.println(firstX);
-    	
+
     	// Is char at i+1 also an "x"?
     	  if (firstX+1 >= florist.length()) return false; // check i+1 in bounds?
     	  return florist.substring(firstX+1, firstX+2).equals("x");
-    	
+
     }
 
 }

@@ -1,18 +1,18 @@
 # 4_Demo: Starting Apache Kafka and Producing and Consuming Messages
 
-# # adding Four Letter Words commands in whitelists, in config/zookeeper.properties 
+# # adding Four Letter Words commands in whitelists, in config/zookeeper.properties
 4lw.commands.whitelist=stat, ruok, conf, isro
 4lw.commands.whitelist=*
 
 # starting zookeeper server, with default config properties
-bin/zookeeper-server-start.sh config/zookeeper.properties 
+bin/zookeeper-server-start.sh config/zookeeper.properties
 
 # checking zookeeper running
 telnet localhost 2181
 stat    # zookeeper status, mode: standalone
 
 # starting kafka server
-bin/kafka-server-start.sh config/server.properties 
+bin/kafka-server-start.sh config/server.properties
 
 # create topic
 bin/kafka-topics.sh --create --topic my_topic --zookeeper localhost:2181 --replication-factor 1 --partitions 1

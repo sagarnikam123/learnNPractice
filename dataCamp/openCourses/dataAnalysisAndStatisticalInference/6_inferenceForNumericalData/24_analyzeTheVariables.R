@@ -1,10 +1,10 @@
 # Analyze the variables
 
 #######################################################################################################################
-#	
-#	Create numerical and visual summaries of the two variables individually to better understand their distribution. 
+#
+#	Create numerical and visual summaries of the two variables individually to better understand their distribution.
 #	Also compute summary statistics and visualizations that display the relationship between the two variables.
-#	
+#
 #######################################################################################################################
 
 # Numerical and visual summaries of wordsum and class:

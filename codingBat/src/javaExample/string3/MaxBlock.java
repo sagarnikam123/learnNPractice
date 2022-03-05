@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     maxBlock - solved
-    
+
     Given a string, return the length of the largest "block" in the string.
     A block is a run of adjacent chars that are the same.
 ***************************************************************************************************
@@ -26,14 +26,14 @@ public class MaxBlock
     {
     	System.out.println(maxBlock(""));
     }
-    
+
     public static int maxBlock(String str) {
-        
+
     	int largeBlock = 0;
     	if(str.length()==0) return largeBlock;
-    	
+
     	for(int i=0;i<str.length();i++){
-    		
+
     		char curKartoon = str.charAt(i);
     		int curBlockMax = 1;
     		for(int j=i+1;j<str.length();j++){
@@ -44,9 +44,9 @@ public class MaxBlock
     			}
     		}
     		if(largeBlock < curBlockMax) largeBlock = curBlockMax;
-    		
+
     	}
-    	
+
     	return largeBlock;
     }
 

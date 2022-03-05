@@ -31,7 +31,7 @@ git config --global --edit
 # getting all configs for global
 git config --global --list
 
-# adding alias 
+# adding alias
 git config --global alias.st status
 
 # removing alias
@@ -55,9 +55,6 @@ git checkout master
 git branch aajPhir ef3884032c68dc2c715a42b51495f4dfd04e04d7
 git branch
 git checkout aajPhir	# go to new branch
- 
+
 git checkout cc35172 tutsPlus/git/gitLearn.sh	# to go to perticular stage
 git checkout HEAD tutsPlus/git/gitLearn.sh	# switch to master branch, where u left
-
-
-

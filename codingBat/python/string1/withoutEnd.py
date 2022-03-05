@@ -6,7 +6,7 @@
 #    The string length will be at least 2.
 #
 #######################################################################################################################
-#	
+#
 #	withoutEnd("Hello") → "ell"
 #	withoutEnd("java") → "av"
 #	withoutEnd("coding") → "odin"
@@ -15,5 +15,5 @@
 #	withoutEnd("Chocolate!") → "hocolate"
 #	withoutEnd("kitten") → "itte"
 #	withoutEnd("woohoo") → "ooho"
-#	
+#
 #######################################################################################################################

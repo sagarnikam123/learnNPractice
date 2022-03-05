@@ -2,9 +2,9 @@
 
 ##############################################################################
 
-Writing a one-line log message with git commit -m "message"is good enough 
-for very small changes, but your collaborators (including your future self) 
-will appreciate more information. If you run git commit without -m "message", 
+Writing a one-line log message with git commit -m "message"is good enough
+for very small changes, but your collaborators (including your future self)
+will appreciate more information. If you run git commit without -m "message",
 Git launches a text editor with a template like this:
 
 # Please enter the commit message for your changes. Lines starting
@@ -16,16 +16,16 @@ Git launches a text editor with a template like this:
 #       modified:   skynet.R
 #
 
-The lines starting with # are comments, and won't be saved. (They are there 
-to remind you what you are supposed to do and what files you have changed.) 
+The lines starting with # are comments, and won't be saved. (They are there
+to remind you what you are supposed to do and what files you have changed.)
 Your message should go at the top, and may be as long and as detailed as you want.
 
 ##############################################################################
 
-You have been put in the dental repository, and report.txt has been added to 
-the staging area. The changes to report.txt have already been staged. 
-Use git commit without -m to commit the changes. The Nano editor will open up. 
-Write a meaningful message and use Ctrl+O and Enter to save, 
+You have been put in the dental repository, and report.txt has been added to
+the staging area. The changes to report.txt have already been staged.
+Use git commit without -m to commit the changes. The Nano editor will open up.
+Write a meaningful message and use Ctrl+O and Enter to save,
 and then Ctrl+X to leave the editor.
 
 ##############################################################################

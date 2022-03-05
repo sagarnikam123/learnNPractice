@@ -1,9 +1,9 @@
 # Switching rank and gender
 
 #######################################################################################################################
-#			
+#
 #	Create a new model called m_bty_rank with gender removed and rank added in.
-#			
+#
 #######################################################################################################################
 
 # Your linear model with rank and average beauty:

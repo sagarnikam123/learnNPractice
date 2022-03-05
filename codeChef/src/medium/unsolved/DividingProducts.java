@@ -1,10 +1,10 @@
 /**
 
 	Dividing Products
-	
-	Dr. Bobo, while working in his laboratory, thought of an interesting problem. He has spent considerable time trying 
+
+	Dr. Bobo, while working in his laboratory, thought of an interesting problem. He has spent considerable time trying
 	to find a solution but in vain. So he turns to you to find the solution using your special powers of coding.
-	
+
 	For a positive integer N, he defines a function DIVPRO(N) as follows.
 	    Let N be L-digit number and ni is the i-th digit in the decimal representation of N (i = 1, 2, ..., L).
 	    So we can write N = n1n2...nL.
@@ -12,15 +12,15 @@
 	    The result is calculated from left to right.
 	    Division here is performed in standard mathematical way, so the result of the division can be non-integer number.
 	    If division by 0 occurs at any point for a given N, then DIVPRO(N) is undefined in such a case.
-	
+
 	Let's consider some examples:
 	    DIVPRO(1) = 1. In fact, DIVPRO(N) = N for any 1-digit number N.
 	    DIVPRO(42) = 4 / 2 = 2 is an integer.
 	    DIVPRO(123) = 1 / 2 * 3 = 3 / 2 = 1.5 is non-integer.
 	    DIVPRO(370) = 3 / 7 * 0 = 0, while intermediate result was 3 / 7 which is non-integer.
 	    DIVPRO(3465009) = 3 / 4 * 6 / 5 * 0 / 0 * 9 is undefined since we have division by zero.
-	
-	Now Dr. Bobo would like to know how many L-digit numbers have their DIVPRO value equal to V and he wants your help. 
+
+	Now Dr. Bobo would like to know how many L-digit numbers have their DIVPRO value equal to V and he wants your help.
 	Since this number can be quite large output it modulo 232, that is,
 	you need to find the remainder of the division of the answer by 232.
 
@@ -31,7 +31,7 @@
 	Output
 	For each test case, output a single line containing the number of L-digit positive integers, whose DIVPRO value is V.
 	As was mentioned above you should print this number modulo 232.
-	
+
 	Constraints
 	    1 ≤ T ≤ 320000 (320 thousands)
 	    1 ≤ L ≤ 36
@@ -57,7 +57,7 @@ Example case 1. No 2-digit number has DIVPRO value of 0 (as leading zeros are no
 Example case 2. The only 3-digit numbers having DIVPRO value of 27 are 319, 629, 913, 926 and 939. So there are 5 such numbers in all.
 
 Warning!
-The input file size could reach 7MB so be sure you are using fast I/O method. 
+The input file size could reach 7MB so be sure you are using fast I/O method.
 **********************************************************************************************************************/
 
 package medium.unsolved;

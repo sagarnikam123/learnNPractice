@@ -1,11 +1,11 @@
 # Question 3
 
 #######################################################################################################################
-#	
+#
 #	Which of the following is false about the distribution of Kobe's streak lengths from the 2009 NBA finals?
-#	
+#
 #	Hint: You may also want to use other visualizations and summaries of kobe streak in order to answer this question.
-#	
+#
 #######################################################################################################################
 
 1	The distribution of Kobe's streaks is unimodal and left skewed.

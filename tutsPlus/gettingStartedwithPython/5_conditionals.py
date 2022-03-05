@@ -9,8 +9,8 @@ elif len(name) == 5 :
 	print "Your name has exactly 5 characters"
 	if name == 'Jesse':
 		print "Hey Jesse !"
-else : print "Your name has greater than 5 characters"	
-	
+else : print "Your name has greater than 5 characters"
+
 # 2 - condition
 language = raw_input('Please enter a programming language : ')
 if language in ['C++','Python','Java','']:

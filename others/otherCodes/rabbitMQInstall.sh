@@ -19,14 +19,14 @@ publc ip - 54.206.121.252
 chmod 400 ubuntuRabbitMQ.pem
 ssh -i ubuntuRabbitMQ.pem ubuntu@54.206.121.252
 
-# To avoid warnings about unsigned packages, add our public key to your trusted key list using apt-key(8): 
+# To avoid warnings about unsigned packages, add our public key to your trusted key list using apt-key(8):
 wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
 sudo apt-key add rabbitmq-signing-key-public.asc
 
-# Add the following line to your /etc/apt/sources.list 
+# Add the following line to your /etc/apt/sources.list
 (testing,unstable,stable)
 # testing works
-sudo vi /etc/apt/sources.list 
+sudo vi /etc/apt/sources.list
 deb http://www.rabbitmq.com/debian/ stable main
 
 sudo apt-get update
@@ -77,7 +77,7 @@ rabbitmqctl set_user_tags clogeny administrator
 rabbitmqctl set_permissions -p / clogeny ".*" ".*" ".*"
 
 
-open port 
+open port
 15672
 
 
@@ -88,8 +88,8 @@ open port
 # install RabbitMQ server.
 # enable management plugins
 rabbitmq-plugins enable rabbitmq_management
-# http://localhost:15672/	(open in browser) 
-# user-guest 
+# http://localhost:15672/	(open in browser)
+# user-guest
 # password - guest
 # rabbitmqctl.bat status 	# checking status on cmd
 
@@ -104,5 +104,3 @@ rabbitmqctl set_permissions -p / clogeny ".*" ".*" ".*"
 	rabbitmq-server.bat starts the broker as an application.
 	rabbitmq-service.bat manages the service and starts the broker.
 	rabbitmqctl.bat manages a running broker.
-
-

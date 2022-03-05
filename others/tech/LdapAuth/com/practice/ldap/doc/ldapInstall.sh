@@ -12,7 +12,7 @@ svn://115.113.226.194/repo/governance/api
 svn://115.113.226.194/repo/governance/ui
 svn://115.113.226.194/repo/governance/ServiceUtility
 
- 
+
 sagar = Sagar@Clogeny
 
 #  Install OpenLDAP
@@ -39,8 +39,8 @@ sudo apt-get install phpldapadmin
 # symbolic link for phpldapadmin directory.
 sudo ln -s /user/share/phpldapadmin/ /var/www/phpldapadmin
 
-# open  
-sudo gedit /etc/phpldapadmin/config.php 
+# open
+sudo gedit /etc/phpldapadmin/config.php
 
 # 192.168.100.80
 # 192.168.101.54

@@ -6,7 +6,7 @@
 #    Return the number of triples in the given string. The triples may overlap.
 #
 #######################################################################################################################
-#   
+#
 #   countTriple("abcXXXabc") â†’ 1
 #   countTriple("xxxabyyyycd") â†’ 3
 #   countTriple("a") â†’ 0
@@ -19,5 +19,5 @@
 #   countTriple("abYYXabXXYXXab") → 0
 #   countTriple("abYYXabXXYXXab") → 0
 #   countTriple("122abhhh2") → 1
-#   
+#
 #######################################################################################################################

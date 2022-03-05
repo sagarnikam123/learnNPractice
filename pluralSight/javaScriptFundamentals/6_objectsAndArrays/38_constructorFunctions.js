@@ -11,4 +11,3 @@ function Car(id) {
 }
 let vehicle = new Car(123);
 vehicle.start(); // start: 123
-

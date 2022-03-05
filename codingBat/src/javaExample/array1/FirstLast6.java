@@ -1,9 +1,9 @@
 /**************************************************************************************************
-  
+
     firstLast6 - solved
-    
-    Given an array of ints, return true if 6 appears as either the first or last element 
-    in the array. The array will be length 1 or more. 
+
+    Given an array of ints, return true if 6 appears as either the first or last element
+    in the array. The array will be length 1 or more.
 ***************************************************************************************************
 firstLast6({1, 2, 6}) → true
 firstLast6({6, 1, 2, 3}) → true
@@ -29,9 +29,9 @@ public class FirstLast6
     	int codaiCanal [] = {13,6,1,2,3};
     	System.out.println(firstLast6(codaiCanal));
     }
-    
+
     public static boolean firstLast6(int [] jabTak){
-    	
+
     	if(jabTak[0] == 6 || jabTak[jabTak.length-1] == 6) return true;
     	return false;
     }

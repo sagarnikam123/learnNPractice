@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     commonTwo - copied - solved
-    
+
     Start with two arrays of strings, a and b, each in alphabetical order, possibly with duplicates.
     Return the count of the number of strings which appear in both arrays. The best "linear" solution
     makes a single pass over both arrays, taking advantage of the fact that they are in alphabetical order.
@@ -34,9 +34,9 @@ public class CommonTwo
     	String dMart [] = {"a", "b", "c", "x", "z"};
     	System.out.println(commonTwo(megaMart,dMart));
     }
-    
+
     public static int commonTwo(String[] a, String[] b) {
-        
+
     	  int ai = 0, bi = 0, count = 0;
     	    while (ai < a.length && bi < b.length) {
     	      while (ai < a.length && bi < b.length && a[ai].compareTo(b[bi]) < 0)

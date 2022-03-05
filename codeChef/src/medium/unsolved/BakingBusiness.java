@@ -1,42 +1,42 @@
 /**
 
 	The Baking Business
-	
-	The chef has turned into an entrepreneur running a bakery business. He is selling products like Biscuit, Bread etc 
-	which are packaged in various sizes. He is selling the products in the various cities of different provinces 
-	which are further sub-categorized into various regions. He maintains the data about the sex and age of all 
-	his customers along with the time of purchase. For running his business successfully, he requires a business 
-	intelligence tool to get analysis reports of sales aggregates based on various parameters so that he can run 
+
+	The chef has turned into an entrepreneur running a bakery business. He is selling products like Biscuit, Bread etc
+	which are packaged in various sizes. He is selling the products in the various cities of different provinces
+	which are further sub-categorized into various regions. He maintains the data about the sex and age of all
+	his customers along with the time of purchase. For running his business successfully, he requires a business
+	intelligence tool to get analysis reports of sales aggregates based on various parameters so that he can run
 	his business efficiently.
-	
+
 	Input
-	There are 10 different products which will be packaged in maximum 3 different sizes. There are 10 different 
+	There are 10 different products which will be packaged in maximum 3 different sizes. There are 10 different
 	provinces and each province can have upto 20 cities which can be further divided in at maximum 5 different regions.
-	The first line of the input contains the total number S (<= 100000) of input lines. Each input line either begins 
+	The first line of the input contains the total number S (<= 100000) of input lines. Each input line either begins
 	with character 'I' (which stands for sale input)or 'Q' (which stands for query). The format of sale input is
-	
+
 	I product_id[.size_id] province[.city_id[.region_id]] M/F age units_sold
-	
-	This line contains details of individual sale vis-vis product details, location detail, customer sex and age 
-	(from 1 to 90, including the limit) separated by spaces in the following format. The product details e.g 6.2 
+
+	This line contains details of individual sale vis-vis product details, location detail, customer sex and age
+	(from 1 to 90, including the limit) separated by spaces in the following format. The product details e.g 6.2
 	which means the product with code 6 and size id 2. Next will be location like 8.18.4 which means the 8th province,
 	in the 4th region of the city with code 18. Then the sex of the customer either 'M' or 'F' and age from 1 to 90,
 	including the limits. Note that all the codes/id's will begin from 0. Note that parts in the square brackets in
 	the given format are optional because some specific information about the sale is missing due to practical reasons.
 	The units_sold will be less than or equal to 100. Similarly, the format for a query line is
-	
+
 	Q product_id[.size_id] province[.city_id[.region_id]] M/F start_age[-end_age]
-	
-	This queries the total number of product units sold which falls under that specification. 
-	In case the optional parts are missing, then it means that the query is asking for the total units sold falling 
+
+	This queries the total number of product units sold which falls under that specification.
+	In case the optional parts are missing, then it means that the query is asking for the total units sold falling
 	under all the sub-specifications under that. For the age parameter, if the end_age is missing then the query is
 	only for the unit sold to customer of age equal to start_age, otherwise for all the customers falling in the range.
 	A special product_id is -1 which means all the products and similarly -1 for province means all the provinces.
 	This id will never be qualified with sub-specifications.
-	
+
 	Output
 	For each query line specification output the total units sold which falls under that on a separate line.
-	The answer should be based on the input given before the line and not on the input which will appear 
+	The answer should be based on the input given before the line and not on the input which will appear
 	in the subsequent lines.
 ***********************************************************************************************************************
 Example

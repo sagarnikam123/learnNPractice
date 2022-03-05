@@ -1,15 +1,15 @@
 /**********************************************************************************************************************
-	
+
 	Devu and Grapes
-	
-	Grapes of Coderpur are very famous. Devu went to the market and saw that there were N people selling grapes. 
-	He didn’t like it because things were not very structured. So, he gave a task to Dhinwa to make things better. 
-	If Dhinwa successfully completes the task, Devu will be happy.Devu wants to change the number of grapes in a bucket 
+
+	Grapes of Coderpur are very famous. Devu went to the market and saw that there were N people selling grapes.
+	He didn’t like it because things were not very structured. So, he gave a task to Dhinwa to make things better.
+	If Dhinwa successfully completes the task, Devu will be happy.Devu wants to change the number of grapes in a bucket
 	of zero or more sellers in such a way that the GCD of all the number of grapes is divisible by K. Dhinwa can add or
-	remove any number of grapes from each of the buckets. Adding or removing a grape will be counted as an operation. 
+	remove any number of grapes from each of the buckets. Adding or removing a grape will be counted as an operation.
 	Also after the operation, none of the seller’s bucket should be empty.
 	Help Dhinwa in finding the minimum number of operations needed to make Devu happy.
-	
+
 	Input
 	First line of input contains an integer T denoting the number of test cases.
 	For each test case, first line will contain an integer N denoting the number of buckets and integer K.

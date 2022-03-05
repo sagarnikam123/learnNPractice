@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     lessBy10 - solved
-    
+
      Given three ints, a b c, return true if one of them is 10 or more less than one of the others.
-     Tip mine :- diff between any two is 10 or greater than 10 
+     Tip mine :- diff between any two is 10 or greater than 10
 ***************************************************************************************************
 lessBy10(1, 7, 11) → true
 lessBy10(1, 7, 10) → false
@@ -29,13 +29,13 @@ public class LessBy10
     {
     	System.out.println(lessBy10(2, 8, 12));
     }
-    
+
     public static boolean lessBy10(int a, int b, int c) {
-        
+
         int aDiffB = Math.abs(a-b);
         int bDiffC = Math.abs(b-c);
         int aDiffC = Math.abs(a-c);
-		
+
         if(aDiffB >=10 || bDiffC >=10 || aDiffC >=10){
 			return true;
 		}

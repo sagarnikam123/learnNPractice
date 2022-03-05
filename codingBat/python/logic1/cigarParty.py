@@ -8,7 +8,7 @@
 #    Return true if the party with the given values is successful, or false otherwise.
 #
 #######################################################################################################################
-#   
+#
 #   cigarParty(30, false) → false
 #   cigarParty(50, false) → true
 #   cigarParty(70, true) → true
@@ -20,5 +20,5 @@
 #   cigarParty(39, false) → false
 #   cigarParty(40, true) → true
 #   cigarParty(39, true) → false
-#   
+#
 #######################################################################################################################

@@ -7,14 +7,14 @@
 		<nickname>dinkar</nickname>
 		<marks>85</marks>
 	</student>
-	
+
 	<student rollno="493">
 		<firstname>Vaneet</firstname>
 		<lastname>Gupta</lastname>
 		<nickname>vinni</nickname>
 		<marks>95</marks>
 	</student>
-	
+
 	<student rollno="593">
 		<firstname>jasvir</firstname>
 		<lastname>singn</lastname>

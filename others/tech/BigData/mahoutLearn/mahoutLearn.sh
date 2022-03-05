@@ -54,11 +54,11 @@ CONSUMER_SECRET='REPLACE_CONSUMER_SECRET'
 ACCESS_TOKEN_KEY='REPLACE_ACCESS_TOKEN_KEY'
 ACCESS_TOKEN_SECRET='REPLACE_ACCESS_TOKEN_SECRET'
 
-# download tweets ( tweets-train.tsv contains a list of tweets in a tab separated value format. 
+# download tweets ( tweets-train.tsv contains a list of tweets in a tab separated value format.
 # The first number is the tweet id followed by the tweet message:)
 python scripts/twitter_fetcher.py 5 > scripts/tweets-train.tsv
 
-# To transform this into a training set, you can use your favorite editor and add the category of the tweet 
+# To transform this into a training set, you can use your favorite editor and add the category of the tweet
 # at the beginning of the line followed by a tab characte
 
 # For the classifier to work properly, this set must have at least 50 tweets messages in each category.

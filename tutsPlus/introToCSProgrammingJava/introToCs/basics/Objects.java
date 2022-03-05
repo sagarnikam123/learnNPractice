@@ -7,8 +7,8 @@ public class Objects {
 		String myString = "This is a string";
 		int length  = myString.length();
 		System.out.println(length);
-		
-		
+
+
 	}
-	
+
 }

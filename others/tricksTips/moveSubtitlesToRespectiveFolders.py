@@ -30,4 +30,3 @@ for dirNames in next(os.walk(os.getcwd())):
                 os.makedirs(finalDepositFolder)
                 #print(finalDepositFolder)
             shutil.move(fileToMove, finalDepositFolder)
-   

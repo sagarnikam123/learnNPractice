@@ -3,7 +3,7 @@
 # madlib.py - module
 def madlib1(adjective, name):
 	print 'The %s %s ate all the pizza' % (adjective, name)
-	
+
 def madlib2(adjective='cool',name='jesse'):
 	print 'The %s %s ate all the pizza' % (adjective, name)
 
@@ -30,6 +30,6 @@ cp ~/Desktop/learn/python/files/madlib.py ~/python
 	cd ~
 	python
 	import sys
-	sys.path 
+	sys.path
 	import madlib
 	madlib.madlib1('kutra','harami')

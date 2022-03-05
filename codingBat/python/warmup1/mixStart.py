@@ -6,7 +6,7 @@
 #    except the 'm' can be anything, so "pix", "9ix" .. all count.
 #
 #######################################################################################################################
-#   
+#
 #   mixStart("mix snacks") → true
 #   mixStart("pix snacks") → true
 #   mixStart("piz snacks") → false
@@ -14,5 +14,5 @@
 #   mixStart("ni") → false
 #   mixStart("n") → false
 #   mixStart("") → false
-#   
+#
 #######################################################################################################################

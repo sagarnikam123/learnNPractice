@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     icyHot - solved
-    
+
     Given two temperatures, return true if one is less than 0 and the other is greater than 100.
 **************************************************************************************************
 icyHot(120, -1) → true
@@ -20,9 +20,9 @@ public class IcyHot{
          System.out.println(icyHot(120, -1) );
          System.out.println(icyHot(-1, 120) );
          System.out.println(icyHot(2, 120) );
-    
+
     }
-    
+
     public static boolean icyHot(int temp1, int temp2) {
         if ((temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0)) {
           return true;
@@ -32,4 +32,3 @@ public class IcyHot{
         // Could be written as: return ((temp1 < 0 && ...));
     }
 }
-

@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     fizzString2 - solved
-    
-    Given an int n, return the string form of the number followed by "!". So the int 6 yields "6!". 
+
+    Given an int n, return the string form of the number followed by "!". So the int 6 yields "6!".
     Except if the number is divisible by 3 use "Fizz" instead of the number, and if the number \
     is divisible by 5 use "Buzz", and if divisible by both 3 and 5, use "FizzBuzz".
     Note: the % "mod" operator computes the remainder after division, so 23 % 10 yields 3.
@@ -35,11 +35,11 @@ public class FizzString2
     {
     	System.out.println(fizzString2(100));
     }
-    
+
     public static String fizzString2(int n) {
-    	
+
     	String whatToReturn = "";
-    	
+
     	if(n% 3 ==0 && n%5 == 0){
     		whatToReturn = "FizzBuzz";
     	}else if(n% 3 ==0){
@@ -49,7 +49,7 @@ public class FizzString2
     	}else{
     		whatToReturn = Integer.toString(n);
     	}
-    	
+
     	return whatToReturn+"!";
     }
 

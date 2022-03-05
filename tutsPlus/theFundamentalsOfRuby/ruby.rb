@@ -16,7 +16,7 @@
 "Jimmy " * 5
 
 # defining function
-def add_and_power a,b 
+def add_and_power a,b
 	(a+b)**(a+b)
 end
 #calling function

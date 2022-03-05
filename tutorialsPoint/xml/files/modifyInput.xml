@@ -5,7 +5,7 @@
 		<carname type="formula one">Ferrari 101</carname>
 		<carname type="sports">Ferrari 202</carname>
 	</supercars>
-	
+
 	<luxurycars company="Benteley">
 		<carname>Benteley 1</carname>
 		<carname>Benteley 2</carname>

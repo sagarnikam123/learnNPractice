@@ -100,7 +100,7 @@ def test_GET_cookie():
     else:
         print("GET request with cookie succeeded!")
         return None
-     
+
 
 if __name__ == '__main__':
     tests = [test_connect, test_GET_plain, test_POST_cookie, test_GET_cookie]

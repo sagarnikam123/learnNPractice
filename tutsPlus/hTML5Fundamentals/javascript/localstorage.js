@@ -31,7 +31,7 @@ var Storage = function (type) {
     }
     return null;
   }
-  
+
   function setData(data) {
     data = JSON.stringify(data);
     if (type == 'session') {
@@ -40,7 +40,7 @@ var Storage = function (type) {
       createCookie('localStorage', data, 365);
     }
   }
-  
+
   function clearData() {
     if (type == 'session') {
       window.name = '';
@@ -48,7 +48,7 @@ var Storage = function (type) {
       createCookie('localStorage', '', 365);
     }
   }
-  
+
   function getData() {
     var data = type == 'session' ? window.name : readCookie('localStorage');
     return data ? JSON.parse(data) : {};

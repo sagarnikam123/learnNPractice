@@ -11,18 +11,18 @@ import java.util.List;
 public class PersonLoader {
 
 	private final RandomAccessFile file;
-	
+
 	public PersonLoader(final File file) throws FileNotFoundException{
 		this.file = new RandomAccessFile(file, "rw");
 	}
-	
+
 	public Person load() throws ClassNotFoundException{
-		
+
 		try{
 			final String className = file.readUTF();
 			final String personName = file.readUTF();
 			final int age = file.readInt();
-			
+
 			final Class<?> personClass = Class.forName(className);
 			final Constructor<?> constructor = personClass.getConstructor(String.class, int.class);
 			return (Person) constructor.newInstance(personName, age);
@@ -33,13 +33,13 @@ public class PersonLoader {
 			return null;
 		}
 	}
-	
+
 	public void loadAll(final List<? super Person> people) throws ClassNotFoundException{
-		
+
 		Person person;
 		while((person = load()) != null){
 			people.add(person);
 		}
 	}
-	
+
 }

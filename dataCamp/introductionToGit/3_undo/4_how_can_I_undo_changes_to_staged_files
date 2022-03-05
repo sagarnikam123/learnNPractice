@@ -2,16 +2,16 @@
 
 ##############################################################################
 
-At the start of this chapter you saw that git reset will unstage files that 
-you previously staged using git add. By combining git reset 
-with git checkout, you can undo changes to a file that you staged changes to. 
+At the start of this chapter you saw that git reset will unstage files that
+you previously staged using git add. By combining git reset
+with git checkout, you can undo changes to a file that you staged changes to.
 The syntax is as follows.
 
 git reset HEAD path/to/file
 git checkout -- path/to/file
 
-(You may be wondering why there are two commands for re-setting changes. 
-The answer is that unstaging a file and undoing changes are both special 
+(You may be wondering why there are two commands for re-setting changes.
+The answer is that unstaging a file and undoing changes are both special
 cases of more powerful Git operations that you have not yet seen.)
 
 ##############################################################################

@@ -1,14 +1,14 @@
 /**
 
 	The Archipelago
-	
+
 	Byteland is a country located in the Archipelago of Rectangular Islands.
 	The archipelago consists of 1<=n<=1000 islands. A fact that each island
 	has a rectangular shape is very nice for Bytelandian cartographers.
 
-	Bytelandian islands are rather small and none are very fertile, so each 
+	Bytelandian islands are rather small and none are very fertile, so each
 	of the rectangular pieces of cultivated land is under special control,
-	simply speaking: ‘never enter there if you value your life’. 
+	simply speaking: ‘never enter there if you value your life’.
 	Other areas are guaranteed to be freely accessible for all people.
 
 	The communication between islands is possible by ferries. On each island
@@ -18,7 +18,7 @@
 	Other infrastructure is practically unknown. Specifically the only possible
 	way of traveling through the island is to do it on foot.
 
-	Well, now we are close to a task you are requested to solve. 
+	Well, now we are close to a task you are requested to solve.
 	John – one of the Bytelandian citizens is working as a sales manager.
 	He is often requested to travel from one place to another which he rather
 	dislikes. What he'd rather do is spend his time relaxing on the beach.
@@ -30,12 +30,12 @@
 	always moving one BM (Bytelandian unit of length) per BH (Bytelandian unit of time). You can also assume that the
 	ferry departures nearly immediately after John arrives the terminal, it will be enough to round up the walking time
 	to the nearest integer.
-	
+
 	Input
-	
+
 	In the first line t - the number of tests, then for each test:
 	in next line n - the number of islands. Description of each island is as follows:
-	
+
 	name
 	w h [island dimensions]
 	b - [number of terminals]
@@ -44,12 +44,12 @@
 	F [number of restricted areas F<20]
 	xl, yd, xr, yu [coordinates of each restricted area,
 	0 <=xl < xr<=250 0<=yd < yu<=250.]
-	
+
 	All coordinates are nonnegative integers measured in BM according to upper left corner of an island.
-	
-	You can assume that any two restricted areas are disjoint. After the description of all islands 
+
+	You can assume that any two restricted areas are disjoint. After the description of all islands
 	all ferry connections are given (each connection is bi-directional).
-	
+
 	m  [number of connections]
 	[description of each connection]
 	NB1 NW1 NB2 NW2 time [name of a first terminal, its island, the second respectively
@@ -58,12 +58,12 @@
 	[description follows]
 	...
 	NBS NWS NBC NWC [start and goal terminal for John]
-	
+
 	Output
-	
-	For each test describe the shortest route for John from terminal NBS on NWS island to terminal NBC on NWC island 
+
+	For each test describe the shortest route for John from terminal NBS on NWS island to terminal NBC on NWC island
 	in the following format:
-	
+
 	case nr Y [nr - test number]
 	T [travel time in BH]
 	NBS  NWS
@@ -73,8 +73,8 @@
 	NBC NWC
 	[empty line]
 	[consecutive tests]
-	
-	If two consecutive terminals are located on the same island and John must take some walk 
+
+	If two consecutive terminals are located on the same island and John must take some walk
 	you must give all middle point like in an example.
 ***********************************************************************************************************************
 Example
@@ -89,8 +89,8 @@ Lindos 4 0
 Kamejros 4 7
 3
 2 1 6 2
-2 3 6 4 
-2 5 6 6 
+2 3 6 4
+2 5 6 6
 W2
 14 12
 2
@@ -102,7 +102,7 @@ Knossos 1 12
 8 1 10 5
 11 7 12 9
 3 2 5 4
-W3 
+W3
 1 1
 1
 Korkyra 0 0
@@ -129,7 +129,7 @@ Kamejros W1
 Lindos W1
 
 **********************************************************************************************************************/
-		
+
 
 package hard.unsolved;
 

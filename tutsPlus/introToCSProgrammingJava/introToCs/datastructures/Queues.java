@@ -12,10 +12,10 @@ public class Queues {
 		line.add("Person 1");
 		line.add("Person 2");
 		line.add("Person 3");
-		
+
 		String person1 = line.remove();
 		String person2 = line.remove();
-		
+
 		System.out.println(person1);
 		System.out.println(person2);
 

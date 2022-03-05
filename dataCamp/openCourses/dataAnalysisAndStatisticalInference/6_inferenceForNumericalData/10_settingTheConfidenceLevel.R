@@ -1,9 +1,9 @@
 # Setting the confidence level
 
 #######################################################################################################################
-#	
+#
 #	We can easily change the confidence level to 95% by changing the argument conflevel of the inference() function.
-#	
+#
 ######################################################################################################################
 
 # Adapt the inference() function:

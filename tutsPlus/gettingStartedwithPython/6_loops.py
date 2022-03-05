@@ -4,7 +4,7 @@ languages = ['python','java','c++','php']
 
 for language in languages :
 	print language , "rocks !"
-	
+
 dict = { "name":"Jesse","location":"Denver","favorite":"tutsplus"}
 
 for key in dict :
@@ -18,7 +18,7 @@ count = 0
 while count < 10 :
 	print count," is less than 10"
 	count +=1
-	
+
 for i in range(10):
 	print "i = ", i
 	if i ==5 :

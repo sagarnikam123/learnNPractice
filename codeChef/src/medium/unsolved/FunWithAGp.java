@@ -2,10 +2,10 @@
 
 	Fun with AGp
 
-	You are given an 1-based array A and its fixed parameters: R, p1, p2. You need to mantain this array, 
+	You are given an 1-based array A and its fixed parameters: R, p1, p2. You need to mantain this array,
 	performing some operations. The operations are as follows:
 	0 S D X Y
-	Add an AGP with the start term of S, the common difference of D, common ratio of R 
+	Add an AGP with the start term of S, the common difference of D, common ratio of R
 	from the X-th to the to Y-th element of A.
 	In other words: add S , (S+D)*R , (S+2D)*R2 ,....., (S+(Y-X)*D)*RY-X respectively to A[X], A[X+1], ..., A[Y].
 	1 X g
@@ -14,14 +14,14 @@
 	2 X Y
 	Report the sum of elements in A from the X-th to the Y-th modulo p1.
 	In other words: output (A[X] + ...... + A[Y]) modulo p1.
-	
+
 	Input
-	The first line of input contains an integer T denoting the number of test cases. 
+	The first line of input contains an integer T denoting the number of test cases.
 	The description of T test cases follows.
 	The first line of each test case contains 5 single space separated integers: N, Q, R, p1, p2).
 	The next line contains N single space separated integers (each is between 0 and 100000 inclusive).
 	Then, there are Q lines denoting the queries in the format, described above.
-	
+
 	Output
 	For each query of the type 2 output the sum of all elements of A from the X-th to the Y-th modulo p1.
 
@@ -82,7 +82,7 @@ The second test case
 Initially A = [1,2,3,4,5]
 After the first query : A = [3,17,75,4,5]
 After the second query : A = [3,2,75,4,5] as (17*17) modulo 7 = 2
-So in the third query : 3 + 2 + 75 + 4 + 5 = 89 , so 89 modulo 11 = 1	
+So in the third query : 3 + 2 + 75 + 4 + 5 = 89 , so 89 modulo 11 = 1
 **********************************************************************************************************************/
 package medium.unsolved;
 

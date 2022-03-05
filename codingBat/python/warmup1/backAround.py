@@ -7,12 +7,12 @@
 #    so "cat" yields "tcatt". The original string will be length 1 or more.
 #
 #######################################################################################################################
-#   
+#
 #   backAround("cat") → "tcatt"
 #   backAround("Hello") → "oHelloo"
 #   backAround("a") → "aaa"
 #   backAround("abc") → "cabcc"
 #   backAround("read") → "dreadd"
 #   backAround("boo") → "obooo"
-#   
+#
 #######################################################################################################################

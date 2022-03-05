@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     makeEnds - solved
-    
-    Given an array of ints, return a new array length 2 containing the first and last elements 
-    from the original array. The original array will be length 1 or more. 
+
+    Given an array of ints, return a new array length 2 containing the first and last elements
+    from the original array. The original array will be length 1 or more.
 ***************************************************************************************************
 makeEnds({1, 2, 3}) → {1, 3}
 makeEnds({1, 2, 3, 4}) → {1, 4}
@@ -28,9 +28,9 @@ public class MakeEnds
     		System.out.println(hatke);
     	}
     }
-    
+
     public static int[] makeEnds(int[] nums) {
-    	
+
     	int sathiya [] = new int[2];
     	if(nums.length ==1){
     		sathiya[0]=nums[0];
@@ -39,7 +39,7 @@ public class MakeEnds
     	}else if(nums.length==2){
     		return nums;
     	}
-    	
+
     	sathiya[0] = nums[0];
     	sathiya[1] = nums[nums.length-1];
         return sathiya;

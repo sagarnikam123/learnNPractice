@@ -9,7 +9,7 @@ var counter = 0;
 
 casper.repeat(viewportSizes.length,function(){
   var viewportSize = viewportSizes[counter];
-  
+
   casper.each(urls, function(self, item ,index){
     self.thenOpen(item, function(){
       var title = self.getTitle();

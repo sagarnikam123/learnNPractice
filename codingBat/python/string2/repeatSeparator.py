@@ -6,7 +6,7 @@
 #    of the word, separated by the separator string.
 #
 #######################################################################################################################
-#   
+#
 #   repeatSeparator("Word", "X", 3) → "WordXWordXWord"
 #   repeatSeparator("This", "And", 2) → "ThisAndThis"
 #   repeatSeparator("This", "And", 1) → "This"
@@ -18,5 +18,5 @@
 #   repeatSeparator("abc", "XX", 2) → "abcXXabc"
 #   repeatSeparator("abc", "XX", 1) → "abc"
 #   repeatSeparator("XYZ", "a", 2) → "XYZaXYZ"
-#   
+#
 #######################################################################################################################

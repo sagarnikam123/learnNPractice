@@ -1,4 +1,4 @@
-# 4_What is stdout, stderr, _dev_null and redirection 
+# 4_What is stdout, stderr, _dev_null and redirection
 
 # version2.sh
 ################################################################################

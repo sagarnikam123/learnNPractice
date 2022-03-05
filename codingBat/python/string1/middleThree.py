@@ -6,7 +6,7 @@
 #    The string length will be at least 3.
 #
 #######################################################################################################################
-#   
+#
 #   middleThree("Candy") → "and"
 #   middleThree("and") → "and"
 #   middleThree("solving") → "lvi"
@@ -14,5 +14,5 @@
 #   middleThree("java yet java") → "yet"
 #   middleThree("Chocolate") → "col"
 #   middleThree("XabcxyzabcX") → "xyz"
-#   
+#
 #######################################################################################################################

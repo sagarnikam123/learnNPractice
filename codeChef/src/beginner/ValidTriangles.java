@@ -1,12 +1,12 @@
 /**********************************************************************************************************************
 
 	Valid Triangles
-	
-	Write a program to check whether a triangle is valid or not, when the three angles of the triangle 
-	are the inputs. A triangle is valid if the sum of all the three angles is equal to 180 degress. 
-	
+
+	Write a program to check whether a triangle is valid or not, when the three angles of the triangle
+	are the inputs. A triangle is valid if the sum of all the three angles is equal to 180 degress.
+
 	Input
-	The first line contains an integer T, total number of testcases. Then follow T lines, 
+	The first line contains an integer T, total number of testcases. Then follow T lines,
 	each line contains three angles A, B and C of triangle separated by space.
 
 	Output
@@ -19,7 +19,7 @@
 Example
 
 Input
-3 
+3
 30 40 110
 45 45 90
 180 0 0
@@ -27,7 +27,7 @@ Input
 Output
 YES
 YES
-NO	
+NO
 **********************************************************************************************************************/
 package beginner;
 

@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     deFront - solved
-    
+
     Given a string, return a version without the first 2 chars. Except keep the first char
     if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
 ***************************************************************************************************
@@ -36,22 +36,22 @@ public class DeFront
     	System.out.println(deFront("java"));
     	System.out.println(deFront("away"));
     }
-    
+
     public static String deFront(String shaadi){
-    	
+
     	String tereVaste = "";
-    	if(!shaadi.isEmpty()){ 
-    		
+    	if(!shaadi.isEmpty()){
+
     		for(int i=0;i<shaadi.length();i++){
     			//System.out.println("--");
     			if(i==0 && shaadi.charAt(i)== 'a' || i==1  && shaadi.charAt(i)== 'b' || i >= 2 ){
     				tereVaste += shaadi.substring(i, i+1);
     			}
-    			
+
     		}
-    		
+
     	}
-    	
+
     	return tereVaste;
     }
 

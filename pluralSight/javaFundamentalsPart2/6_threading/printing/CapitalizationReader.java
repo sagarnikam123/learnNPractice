@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 
-public class CapitalizationReader extends BufferedReader 
+public class CapitalizationReader extends BufferedReader
 {
 
 	@Override
@@ -12,14 +12,14 @@ public class CapitalizationReader extends BufferedReader
 		String line = super.readLine();
 		if(line != null)
 			return line.toUpperCase();
-		
+
 		return null;
 	}
 
-	public CapitalizationReader(Reader in) 
+	public CapitalizationReader(Reader in)
 	{
 		super(in);
 	}
-	
+
 
 }

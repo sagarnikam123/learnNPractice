@@ -3,7 +3,7 @@ package reviewOfBasicOopConcepts;
 public class Giraffe extends Creature{
 
 	private String name;
-	
+
 	@Override
 	public void setName(String newName) {
 		name = newName;
@@ -16,7 +16,7 @@ public class Giraffe extends Creature{
 
 	@Override
 	public void setWeight(double newWeight) {
-		
+
 	}
 
 	@Override

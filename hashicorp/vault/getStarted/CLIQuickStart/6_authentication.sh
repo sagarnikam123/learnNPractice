@@ -32,14 +32,14 @@ export VAULT_TOKEN=s.DZEXwshb1fj1tkXa29ASJIkc
 # Enable the GitHub auth method
 vault auth enable github
 
-# This auth method requires that you set a GitHub organization in the configuration. 
+# This auth method requires that you set a GitHub organization in the configuration.
 # A GitHub organization maintains a list of users which you are allowing to authenticate with Vault.
 # Set the organization for the github authentication
 vault write auth/github/config/ organization=hashicorp
 vault write auth/github/config/ organization=vaultlearn
 
 # GitHub organizations can define teams. Each team may have access to different
-# actions across all the repositories that the organization maintains. 
+# actions across all the repositories that the organization maintains.
 # These teams may also need access to specific secrets within Vault.
 # Configure the GitHub engineering team authentication to be granted the default and applications policies.
 vault write auth/github/map/teams/engineering value=default,applications

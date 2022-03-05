@@ -11,7 +11,7 @@ sudo apt-get install ruby1.9.1 ruby1.9.1-dev \
 
 sudo rvm pkg install openssl
 sudo rvm install 1.9.1 --with-openssl-dir=$rvm_path/usr
-sudo rvm install rubygems1.9.1 
+sudo rvm install rubygems1.9.1
 sudo gem install rdoc
 
 # setting default ruby version

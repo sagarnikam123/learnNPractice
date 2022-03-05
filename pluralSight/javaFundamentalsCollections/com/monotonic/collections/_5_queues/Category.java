@@ -6,5 +6,5 @@ public enum Category {
 	COMPUTER,
 	PHONE,
 	TABLET
-	
+
 }

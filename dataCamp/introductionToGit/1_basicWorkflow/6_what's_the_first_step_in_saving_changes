@@ -11,7 +11,7 @@ To add a file to the staging area, use git add filename
 
 ##############################################################################
 
-You have been put in the dental repository. 
+You have been put in the dental repository.
 Use git add to add the file report.txt to the staging area.
 
     git add report.txt
@@ -19,5 +19,5 @@ Use git add to add the file report.txt to the staging area.
 Use another Git command to check the repository's status.
 
     git status
-    
+
 ##############################################################################

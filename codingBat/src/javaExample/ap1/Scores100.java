@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     scores100 - solved
-    
+
     Given an array of scores, return true if there are scores of 100 next to each other in the array.
     The array length will be at least 2.
 ***************************************************************************************************
@@ -22,9 +22,9 @@ public class Scores100
     	int glister [] = {1, 2, 100, 4, 5};
     	System.out.println(scores100(glister));
     }
-    
+
     public static boolean scores100(int[] scores) {
-        
+
     	for(int i =0;i<scores.length;i++){
     		if(i!=0 && scores[i]==100 && scores[i-1]==100)
     				return true;

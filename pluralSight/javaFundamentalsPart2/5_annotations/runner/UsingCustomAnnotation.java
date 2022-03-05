@@ -12,17 +12,17 @@ public class UsingCustomAnnotation {
 	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException
 	{
 		PrinterUsingACustomAnnotation<ColorCartridge> printer  = new PrinterUsingACustomAnnotation<ColorCartridge>(true, "MY PRINTER", ColorCartridge.RED);
-		
+
 		printer.loadPaper(5);
-		
+
 		PrintingDevice annotation = printer.getClass().getAnnotation(PrintingDevice.class);
 		Method printMethod = printer.getClass().getMethod(annotation.defaultPrintingMethod(), int.class);
 		printMethod.invoke(printer, annotation.defaultNumberOfCopies());
-		
+
 		printer.outputPage(4);
-		
-		
+
+
 	}
-	
-	
+
+
 }

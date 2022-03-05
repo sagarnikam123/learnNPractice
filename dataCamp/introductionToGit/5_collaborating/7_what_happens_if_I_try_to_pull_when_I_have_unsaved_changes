@@ -2,14 +2,14 @@
 
 ##############################################################################
 
-Just as Git stops you from switching branches when you have unsaved work, 
-it also stops you from pulling in changes from a remote repository when 
-doing so might overwrite things you have done locally. The fix is simple: 
+Just as Git stops you from switching branches when you have unsaved work,
+it also stops you from pulling in changes from a remote repository when
+doing so might overwrite things you have done locally. The fix is simple:
 either commit your local changes or revert them, and then try to pull again.
 
 ##############################################################################
 
-You are in the dental repository, which was cloned from a remote called origin. 
+You are in the dental repository, which was cloned from a remote called origin.
 Use git pull to bring in changes from that repository.
 
 git pull origin

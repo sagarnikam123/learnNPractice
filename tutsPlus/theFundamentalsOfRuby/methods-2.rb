@@ -60,5 +60,3 @@ post.insert_comment Comment.new({user: "Jeffrey Way",
 
 
 p post.inspect
-
-

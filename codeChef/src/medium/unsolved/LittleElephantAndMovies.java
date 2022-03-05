@@ -1,8 +1,8 @@
 /**
 
 	Little Elephant and Movies
-	
-	
+
+
  */
 
 package medium.unsolved;

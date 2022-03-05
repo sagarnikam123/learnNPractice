@@ -2,9 +2,9 @@
 
     make2 - solved
 
-    Given 2 int arrays, a and b, return a new array length 2 containing, as much as will fit, 
+    Given 2 int arrays, a and b, return a new array length 2 containing, as much as will fit,
     the elements from a followed by the elements from b. The arrays may be any length, including 0,
-    but there will be 2 or more elements available between the 2 arrays. 
+    but there will be 2 or more elements available between the 2 arrays.
 ***************************************************************************************************
 make2({4, 5}, {1, 2, 3}) → {4, 5}
 make2({4}, {1, 2, 3}) → {4, 1}
@@ -30,16 +30,16 @@ public class Make2
     	int b [] = {1,2};
     	int jebya [] ;
     	System.out.println(jebya = make2(a,b));
-    	
+
     	for(int chongya : jebya){
     		System.out.println(chongya);
     	}
     }
-    
+
     public static int[] make2(int[] a, int[] b) {
-        
+
     	int lagaan [] = new int [2];
-    	
+
     	if(a.length ==0 ){
     		lagaan[0] = b[0];
     		lagaan[1] = b[1];
@@ -50,7 +50,7 @@ public class Make2
     		lagaan[0] = a[0];
     		lagaan[1] = a[1];
     	}
-    	
+
     	return lagaan;
     }
 

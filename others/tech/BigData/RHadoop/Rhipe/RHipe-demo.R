@@ -11,7 +11,7 @@ Sys.setenv(HIVE_HOME="/home/trendwise/apache/hive-0.10.0");
 
 #loading library
 library(Rhipe)
-rhinit() # initializing 
+rhinit() # initializing
 	#Rhipe: Using Rhipe.jar file
 	#Initializing Rhipe v0.73
 	#Initializing mapfile caches
@@ -23,14 +23,14 @@ setwd("~")        	# MUST SET THIS
 hdfs.setwd("/tmp")     # MUST SET THIS
 system("rm -Rf RhipeLib_0.67")
 bashRhipeArchive("RhipeLib_0.67")
-	# Creating new RhipeLib_0.67 
-	# Copying contents of R.home() to RhipeLib_0.67 
-	# Copying all detected R libraries to /home/trendwise/RhipeLib_0.67/library 
-	# Copying all detected shared library dependencies to /home/trendwise/RhipeLib_0.67/lib 
-	# Runner script found at /home/trendwise/RhipeLib_0.67/library/Rhipe/bin/RhipeMapReduce.sh 
-	# Creating archive at /home/trendwise/RhipeLib_0.67.tar.gz 
-	# Placing archive on HDFS at /tmp/RhipeLib_0.67.tar.gz 
-	# 
+	# Creating new RhipeLib_0.67
+	# Copying contents of R.home() to RhipeLib_0.67
+	# Copying all detected R libraries to /home/trendwise/RhipeLib_0.67/library
+	# Copying all detected shared library dependencies to /home/trendwise/RhipeLib_0.67/lib
+	# Runner script found at /home/trendwise/RhipeLib_0.67/library/Rhipe/bin/RhipeMapReduce.sh
+	# Creating archive at /home/trendwise/RhipeLib_0.67.tar.gz
+	# Placing archive on HDFS at /tmp/RhipeLib_0.67.tar.gz
+	#
 	# ***********************************************************************
 	# In the future use:
 	# rhoptions(zips = '/tmp/RhipeLib_0.67.tar.gz')
@@ -57,4 +57,3 @@ rhex(rhwatch(input = c("/tmp/in1"), output = "/tmp/inout1", map = expression(rhc
 rhex(rhwatch(input = c("/tmp/inout1/"), output = "/tmp/out1", map = expression(rhcollect(map.keys[[1]], map.values[[1]]))))
 
 z <- rhwatch(map=rhmap( rhcollect(k,r) ), reduce=0, input=rhfmt("/inputFile",type='text'),read=FALSE)
-

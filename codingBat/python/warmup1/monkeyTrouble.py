@@ -7,10 +7,10 @@
 #    Return true if we are in trouble.
 #
 #######################################################################################################################
-#   
+#
 #   monkeyTrouble(true, true) → true
 #   monkeyTrouble(false, false) → true
 #   monkeyTrouble(true, false) → false
 #   monkeyTrouble(false, true) → false
-#   
+#
 #######################################################################################################################

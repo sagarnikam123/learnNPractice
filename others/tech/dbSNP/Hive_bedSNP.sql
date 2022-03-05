@@ -75,5 +75,3 @@ row format delimited fields terminated by '\t' stored as textfile;
 
 
 load data local inpath '/home/trendwise/Documents/dbSNP/dataFile/bigSNP.csv' overwrite into table bigSNP;
-
-

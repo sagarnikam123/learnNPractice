@@ -25,10 +25,10 @@ export PATH=$PATH:$HADOOP_HOME/bin
 #HIVE
 export HIVE_HOME=/home/benzene/apache/hive-0.9.0
 export PATH=$PATH:$HIVE_HOME/bin
-export HIVE_CONF=$HIVE_HOME/conf 
-export HIVE_LIB=$HIVE_HOME/lib 
+export HIVE_CONF=$HIVE_HOME/conf
+export HIVE_LIB=$HIVE_HOME/lib
 export HIVE_PORT=10000
-export CLASSPATH=$CLASSPATH:$HIVE_LIB 
+export CLASSPATH=$CLASSPATH:$HIVE_LIB
 
 #HBASE
 export HBASE_HOME=/home/benzene/apache/hbase-0.94.3
@@ -54,11 +54,7 @@ Sys.setenv(HIVE_HOME="/home/benzene/apache/hive-0.9.0");
 export HIVE_PORT=10000
 export HIVE_PORT=54310
 commands to perform
-$HADOOP_HOME/bin/hadoop fs -mkdir       /tmp 
-$HADOOP_HOME/bin/hadoop fs -mkdir       /user/hive/warehouse 
-$HADOOP_HOME/bin/hadoop fs -chmod g+w   /tmp 
-$HADOOP_HOME/bin/hadoop fs -chmod g+w   /user/hive/warehouse 
-
-
-
-
+$HADOOP_HOME/bin/hadoop fs -mkdir       /tmp
+$HADOOP_HOME/bin/hadoop fs -mkdir       /user/hive/warehouse
+$HADOOP_HOME/bin/hadoop fs -chmod g+w   /tmp
+$HADOOP_HOME/bin/hadoop fs -chmod g+w   /user/hive/warehouse

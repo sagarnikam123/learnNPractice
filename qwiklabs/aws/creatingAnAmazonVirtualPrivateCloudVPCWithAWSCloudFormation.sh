@@ -8,7 +8,7 @@
 # Task 2: Examine the VPC
 # Task 3: Updating a Stack
     # dataFiles/vpc-2.yaml
-    # dataFiles/vpc-2.json    
+    # dataFiles/vpc-2.json
 # Task 4: Viewing a Stack in CloudFormation Designer
 # Task 5: Delete the Stack
 

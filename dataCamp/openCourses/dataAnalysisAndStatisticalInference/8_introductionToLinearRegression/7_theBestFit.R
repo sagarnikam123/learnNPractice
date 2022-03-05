@@ -1,10 +1,10 @@
 # The best fit
 
 #######################################################################################################################
-#	
-#	Removing the coordinates for estimating and adding leastSquares = TRUE to the function gives us 
+#
+#	Removing the coordinates for estimating and adding leastSquares = TRUE to the function gives us
 #	the best fitting line.
-#	
+#
 #######################################################################################################################
 
 # Adapt the function to plot the best fitting line:

@@ -47,7 +47,3 @@ fields terminated by ','
 enclosed by '"'
 
 lines terminated by '\n';
-
-
-
-

@@ -20,7 +20,7 @@ export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib/R/lib:/usr/local/lib64/R/li
 # Download Rhipe pkg:-  http://www.datadr.org/install.html
 # Documentation:- http://www.datadr.org/doc/index.html
 # Installing Rhipe package
-R CMD INSTALL Rhipe_0.73.1.tar.gz 
+R CMD INSTALL Rhipe_0.73.1.tar.gz
 
 #Open R & load library
 library(Rhipe)

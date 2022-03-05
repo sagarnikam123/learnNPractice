@@ -1,7 +1,7 @@
 /**
- 
+
  	Triangular Queries
- 	
+
 You are given N lattice points (Xi, Yi), i = 1, 2, ..., N on a 2D Coordinate System.
 You have to process Q queries, each query will be given as the form "x y d".
 Let ABC be the triangle having vertices at A(x+d, y), B(x, y) and C(x, y+d).
@@ -13,7 +13,7 @@ Each of the following N lines have two space-sparated integers Xi, Yi giving the
 Then the following Q lines contain three space-sparated integers x, y, d giving a query.
 
 Output
-For each query, output one integer on a line which denotes the number of the given lattice points 
+For each query, output one integer on a line which denotes the number of the given lattice points
 which lie inside or on the boundary of the triangle.
 
 Constraints
@@ -46,7 +46,7 @@ Input 2:
 3 7
 2 5 6
 2 3 4
- 
+
 Output 2:
 1
 0

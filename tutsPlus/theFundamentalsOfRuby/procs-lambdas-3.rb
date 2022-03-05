@@ -17,5 +17,3 @@ meat = -> (str) { ["veel","park","chicken"].include? str }
 		puts "I don't know what "+ food+  " is."
 	end
 end
-
-

@@ -1,14 +1,14 @@
 /**************************************************************************************************
 
     userCompare - solved
-    
+
     We have data for two users, A and B, each with a String name and an int id. The goal is to order
-    the users such as for sorting. Return -1 if A comes before B, 1 if A comes after B, and 0 
+    the users such as for sorting. Return -1 if A comes before B, 1 if A comes after B, and 0
     if they are the same. Order first by the string names, and then by the id numbers if the
-    names are the same. Note: with Strings str1.compareTo(str2) returns an int value 
+    names are the same. Note: with Strings str1.compareTo(str2) returns an int value
     which is negative/0/positive to indicate how str1 is ordered to str2 (the value is not limited
     to -1/0/1). (On the AP, there would be two User objects, but here the code simply takes the two
-    strings and two ints directly. The code logic is the same.) 
+    strings and two ints directly. The code logic is the same.)
 ***************************************************************************************************
 userCompare("bb", 1, "zz", 2) → -1
 userCompare("bb", 1, "aa", 2) → 1
@@ -28,17 +28,17 @@ public class UserCompare
     {
     	System.out.println(userCompare("bb", 1, "bb", 1));
     }
-    
+
     public static int userCompare(String aName, int aId, String bName, int bId) {
-        
+
     	int aToBString = aName.compareTo(bName); // A is small (negative)
-    
+
     	//System.out.println(" ---  "+aq);
     	if( aToBString < 0 || (aToBString == 0 && aId < bId) )
     		return -1; // A comes first than B
     	if( aToBString > 0 || (aToBString == 0 && aId > bId))
-    		return 1; // B comes first 
-    	
+    		return 1; // B comes first
+
     	return 0;
     }
 

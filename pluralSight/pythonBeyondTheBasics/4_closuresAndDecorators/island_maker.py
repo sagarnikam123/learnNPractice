@@ -28,6 +28,6 @@ class IslandMaker:
     def __init__(self, suffix):
         self.suffix = suffix
 
-    @tracer 
+    @tracer
     def make_island(self, name):
         return name + self.suffix

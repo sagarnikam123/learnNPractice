@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     left2 - solved
-    
+
     Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end.
     The string length will be at least 2.
 ***************************************************************************************************
@@ -25,9 +25,9 @@ public class Left2
     	System.out.println(left2("java"));
     	System.out.println(left2("Hi"));
     }
-    
+
     public static String left2(String shokantika){
-    	
+
     	if(shokantika.length() >2){
     		return shokantika.substring(2)+shokantika.substring(0, 2);
     	}

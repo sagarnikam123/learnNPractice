@@ -1,25 +1,25 @@
 /**
- 
+
  	Juno Puzzle for May
- 	
-	Chef Juno's girlfriend, May, is a programmer and a mathematician, and she loves solving problems. 
+
+	Chef Juno's girlfriend, May, is a programmer and a mathematician, and she loves solving problems.
 	Everyday Chef Juno comes up with new problems for her to solve, otherwise she gets bored and depressed.
-	He doesn't want her to feel so, but he has run out of all problems. He consults his Chef friends, 
+	He doesn't want her to feel so, but he has run out of all problems. He consults his Chef friends,
 	who came up with a new problem.
-	
-	The Chef City is an N-dimensional city of dimensions L[0]*..*L[N-1] and each of the (L[0]*..*L[N-1]) 
-	cells may have 0 to V-1 restaurants. 
+
+	The Chef City is an N-dimensional city of dimensions L[0]*..*L[N-1] and each of the (L[0]*..*L[N-1])
+	cells may have 0 to V-1 restaurants.
 	They want to know the number of ways they can open restaurants in each cell of the city such that
 	the sum of the number of restaurants in every sub-block(see details) in Chef City is divisible by V.
-	
+
 	Chef Juno realizes that this number could be very huge given the size of Chef City,
 	so to make this problem a little easier for his girlfriend (and for himself,
-	as he should himself know the solution ;)), he wants the answer modulo 1000000007. 
+	as he should himself know the solution ;)), he wants the answer modulo 1000000007.
 	But before asking her this problem, he wants to know the answer himself. So he turns to you for help.
 	Please help him :)
-	
+
 	Details
-	
+
 	A sub-block of an N-dimensional hyperrectangle can be defined as an N-dimensional hyperrectangle of
 	1*1*..L[i]..*1*1 dimensions for i ranging from 0 to N-1, where the ith dimension is L[i].
 	For example, in a 2*3*2 cuboid, we can have sub-blocks of
@@ -31,24 +31,24 @@
 	The description of T test cases follows.
 	The first line of each test case contains two space-separated integers V and N.
 	Since the input file size may go large, we ask you to generate the input using the following scheme.
-	
+
 	You have two lines of 6 integers each.
 	The first line consists of the integers P[0], P[1], A0, B0, C0, M0.
 	The second line consists of the integers Q[0], Q[1], A1, B1, C1, M1.
-	
+
 	Using the above, you can generate arrays P[] and Q[] as follows:
-	
+
 	P[i] = A0 * A0 * P[i-1] + B0 * P[i-2] + C0 modulo (M0)
 	Q[i] = A1 * A1 * Q[i-1] + B1 * Q[i-2] + C1 modulo (M1)
-	
+
 	for i>=2 and i < N
 	From this, the ith dimension can be calculated as follows:
 	The ith dimension, L[i] = P[i]*(M1)+Q[i]+1 for i>=0 and i < N
-	
+
 	Output
 	For each test case, output a single line containing the answer.
 	As was mentioned above, you should print this number modulo 1000000007.
-	
+
 	Constraints
 	1 <= T <= 100000
 	2 <= N <= 100
@@ -110,8 +110,8 @@ is divisible by V=3.
 Test case 3: Here we are given a 3-dimensional hyperrectangle
 of dimensions 4*4*3 and V is 3.
 So in each of the 48 cells, we can open 0 to 2 restaurants,
-but we have to ensure that sum of the number of restaurants in every 4*1*1 sub-block, 1*4*1 sub-block and 
-1*1*3 sub-block is divisible by 3. 	
+but we have to ensure that sum of the number of restaurants in every 4*1*1 sub-block, 1*4*1 sub-block and
+1*1*3 sub-block is divisible by 3.
 
 **********************************************************************************************************************/
 

@@ -40,7 +40,7 @@ db.users.insert({
 
 
 var u1 = db.users.findOne({'name.first' : 'John'});
-var u2 = db.users.findOne({'name.first' : 'Jane'});	
+var u2 = db.users.findOne({'name.first' : 'Jane'});
 var u3 = db.users.findOne({'name.first' : 'Bob'});
 
 
@@ -129,7 +129,7 @@ db.links.insert({
 	tags: ['selling','buying'],
 	favourites: 329,
 	userId: u1._id
-	});	
+	});
 
 db.links.insert(  {
 	title:'ThemeForest',
@@ -157,5 +157,3 @@ db.links.insert(  {
 	favourites:543,
 	userId:u1._id
 } );
-
-

@@ -1,10 +1,10 @@
 # The jitter function
 
 #######################################################################################################################
-#			
-#	Replot the scatterplot, but this time use the jitter() function. What was misleading 
+#
+#	Replot the scatterplot, but this time use the jitter() function. What was misleading
 #	about the initial scatterplot?
-#	
+#
 #######################################################################################################################
 
 ?jitter

@@ -6,7 +6,7 @@
 #    at the end of the string, such as with "edited"
 #
 #######################################################################################################################
-#   
+#
 #   frontAgain("edited") → true
 #   frontAgain("edit") → false
 #   frontAgain("ed") → true
@@ -18,5 +18,5 @@
 #   frontAgain("") → false
 #   frontAgain("java") → false
 #   frontAgain("javaja") → true
-#   
+#
 #######################################################################################################################

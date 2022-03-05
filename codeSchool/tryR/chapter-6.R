@@ -4,9 +4,9 @@
 #################
 
 
-# like an Excel spreadsheet or database table or . 
+# like an Excel spreadsheet or database table or .
 # It has columns (contain values of a particular type) and rows (contains sets of related values for each column)
-# -how to create and access data frames. 
+# -how to create and access data frames.
 # -how to load frames in from files
 # -how to combine multiple frames together into a new data set.
 
@@ -41,11 +41,11 @@ print(company)
 
 	# Getting single row
 	company[1,]
-	
+
 	# printing firest few rows
 	# print first/last rows of data
 	head(company, n=5)
-	tail(company,n=3) 
+	tail(company,n=3)
 	A <- data.frame(a=1:3, b=4:6, c=7:9)
 	A$a                 # Print the column named "a"
 	A[c("a", "c")]      # Print the columns listed in the square brackets
@@ -84,9 +84,9 @@ print(company)
 	read.csv("datasets/books.csv",header=T)
 
 	# "bones.tsv" file has a similar format, but its fields are separated by tab characters
-	# For files that use separator strings other than commas, you can use the read.table function. 
+	# For files that use separator strings other than commas, you can use the read.table function.
 	# The sep argument defines the separator character, and you can specify a tab character with "\t".
-	# 
+	#
 	# having fields boneName and No_of_Bones
 
 	read.table("datasets/bones.tsv",sep='\t',header=T)
@@ -94,11 +94,11 @@ print(company)
 
 # 4 - Merging Data Frames
 	# The merge function joins two data frames together, using the contents of one or more columns.
-	# IT takes arguments with an x frame (area) and a y frame (popuVehicle). 
-	# By default, it joins the frames on columns with the same name (Area). 
+	# IT takes arguments with an x frame (area) and a y frame (popuVehicle).
+	# By default, it joins the frames on columns with the same name (Area).
 	area=read.table("datasets/areaInfo.tsv",sep='\t',header=T)
 	colnames(area)
-	rownames(area) 
+	rownames(area)
 	names(area) # another way to access columnnames in data frames
 	popuVehicle=read.csv("datasets/popuVehicleInfo.csv",header=T)
 	popuVehicle[0]
@@ -115,9 +115,9 @@ print(company)
 	colnames(B) <- colnames(A)  # Use same column names for B as for A
 	rbind(A, B)    # Works
 	m <- cbind(1, 1:7)
-	
-	
-	
+
+
+
 	#	You can use attach(A) and detach(A) to add/remove data frame to/from the current search path, allowing you to use the column names as if they were standalone vectors. However, this approach is usually best avoided, since it can cause confusion if any objects exist with the same name as a column of an attached data frame. It's better to use with to achieve the same effect within a controlled setting:
 	#   The with function enables you to work with column names without having to prefix the data frame name, as follows
 	A <- data.frame(a=1:20, b=rnorm(20))
@@ -130,9 +130,9 @@ print(company)
 	# You can also easily perform database join operations, using merge:
 	B <- data.frame(a=1:7, x=runif(7))
 	merge(A, B)   # Return rows with same "a", combining unique columns from A & B
-		
-	
-	
+
+
+
 # 5 -Writing data frames
 	write.table(mergeData, quote=F, row.names=F, col.names=T) # shows how data will be written
 	write.table(mergeData,file="mergeData.tsv", sep='\t',quote=F, row.names=F, col.names=T)  #writes a tsv file to current folder
@@ -162,4 +162,3 @@ rownames(A)        # List row names (will just be numbers if not specified)
 
 # 8- remvoing dataframes
 	detach(company)
-

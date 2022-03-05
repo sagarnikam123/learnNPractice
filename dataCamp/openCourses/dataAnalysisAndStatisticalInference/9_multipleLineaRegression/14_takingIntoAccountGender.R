@@ -1,10 +1,10 @@
 # Taking into account gender
 
 #######################################################################################################################
-#			
-#	In order to see if beauty is still a significant predictor of professor score after we've accounted for the 
+#
+#	In order to see if beauty is still a significant predictor of professor score after we've accounted for the
 #	gender is the professor, we can add the gender term into the model.
-#			
+#
 #######################################################################################################################
 
 # Your new linear model:

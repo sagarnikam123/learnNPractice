@@ -7,7 +7,7 @@
 #    Assume that the string is not empty and that N is in the range 1..str.length().
 #
 #######################################################################################################################
-#   
+#
 #   prefixAgain("abXYabc", 1) → true
 #   prefixAgain("abXYabc", 2) → true
 #   prefixAgain("abXYabc", 3) → false
@@ -20,5 +20,5 @@
 #   prefixAgain("a", 1) → false
 #   prefixAgain("aa", 1) → true
 #   prefixAgain("ab", 1) → false
-#   
+#
 #######################################################################################################################

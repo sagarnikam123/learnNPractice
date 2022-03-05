@@ -44,7 +44,7 @@ kubectl describe pods <pod-name>
 
 ## Tutorial: Experiment with Readiness Probes
 
-In this tutorial you will observe how Kubernetes responds to failed readiness probes. The `monolith` container supports the ability to force failures of it's readiness and liveness probes. This will enable us to simulate failures for the `healthy-monolith` Pod. 
+In this tutorial you will observe how Kubernetes responds to failed readiness probes. The `monolith` container supports the ability to force failures of it's readiness and liveness probes. This will enable us to simulate failures for the `healthy-monolith` Pod.
 
 Use the `kubectl port-forward` command to forward a local port to the health port of the `healthy-monolith` Pod.
 
@@ -110,4 +110,4 @@ curl http://127.0.0.1:10081/healthz/status
 ## Summary
 
 In this lab you learned that Kubernetes supports application monitoring using
-liveness and readiness probes. You also learned how to add readiness and liveness probes to Pods and what happens when probes fail. 
+liveness and readiness probes. You also learned how to add readiness and liveness probes to Pods and what happens when probes fail.

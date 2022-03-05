@@ -1,11 +1,11 @@
 /**********************************************************************************************************************
 
 	Chef and Subarrays
-	
+
 	Chef likes problems involving arrays. Unfortunately, the last one he tried to solve didn't quite get solved.
 	Chef has an array A of N positive numbers. He wants to find the number of subarrays for which the sum and product
 	of elements are equal. Please help Chef find this number.
-	
+
 	Input
 	The first line of input contains an integer T denoting the number of test cases. T test cases follow. The first line
 	of each test contains the integer N. The next line contains N integers — A1, A2, ..., AN — denoting the array.
@@ -18,7 +18,7 @@
 	1 ≤ n ≤ 50
 	1 ≤ Ai ≤ 109
 	A1 * A2 * ... * An ≤ 109
-***********************************************************************************************************************	
+***********************************************************************************************************************
 Example
 
 Input:

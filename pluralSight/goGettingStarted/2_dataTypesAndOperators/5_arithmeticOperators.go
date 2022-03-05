@@ -21,5 +21,5 @@ func main(){
     println(inc)
     inc *= 10
     println(inc)
-    
+
 }

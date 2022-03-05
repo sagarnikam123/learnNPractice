@@ -1,7 +1,7 @@
 # OozieLearn
 
 # Hadoop
-# YAHOO Oozie(GitHub):-https://github.com/yahoo/oozie/downloads   
+# YAHOO Oozie(GitHub):-https://github.com/yahoo/oozie/downloads
 # Apache Oozie:- http://oozie.apache.org/
 # EXTJS-http://www.sencha.com/products/extjs/download/
 
@@ -45,13 +45,13 @@ export PATH=$PATH:$HADOOP_HOME/bin
 
 
 
-# in Hadoop--core-site.xml	
+# in Hadoop--core-site.xml
 	 <!-- OOZIE -->
 	<property>
 		<name>hadoop.proxyuser.masternode.hosts</name>
 		<value>*</value>
 	</property>
-	  
+
 	 <property>
 		<name>hadoop.proxyuser.masternode.groups</name>
 		<value>*</value>
@@ -88,19 +88,19 @@ bin/mkdistro.sh -DskipTests
 	# New Oozie WAR file with added 'Hadoop JARs, ExtJS library' at
 	# /home/trendwise/apache/oozie-3.3.2/distro/target/oozie-3.3.2-distro/oozie-3.3.2/oozie-server/webapps/oozie.war
 	# INFO: Oozie is ready to be started
-	
-	
+
+
 	#oozie.war file to your Tomcat deployment directory
 	cp $OOZIE_HOME/distro/target/oozie-3.3.2-distro/oozie-3.3.2/oozie-server/webapps/oozie.war   $OOZIE_HOME/webapp/src/main/webapp/oozie.war
-	
-# editing oozie-site.xml 
+
+# editing oozie-site.xml
 # go to /home/trendwise/apache/oozie-3.3.2/distro/target/oozie-3.3.2-distro/oozie-3.3.2/conf & edit oozie-site.xml
 # change property value of oozie.service.JPAService.create.db.schema from "false" to "true'
 
 $OOZIE_HOME/distro/target/oozie-3.3.2-distro/oozie-3.3.2/bin/ooziedb.sh create -sqlfile oozie.sql -run
 # output
 #   setting CATALINA_OPTS="$CATALINA_OPTS -Xmx1024m"
-# 
+#
 # Validate DB Connection
 # DONE
 # Check DB schema does not exist
@@ -111,15 +111,15 @@ $OOZIE_HOME/distro/target/oozie-3.3.2-distro/oozie-3.3.2/bin/ooziedb.sh create -
 # DONE
 # Create OOZIE_SYS table
 # DONE
-# 
+#
 # Oozie DB has been created for Oozie version '3.3.2'
-# 
-# 
-# The SQL commands have been written to: oozie.sql	
+#
+#
+# The SQL commands have been written to: oozie.sql
 
-# Starting Oozie server 
+# Starting Oozie server
 cd $OOZIE_HOME/distro/target/oozie-3.3.2-distro/oozie-3.3.2
-bin/oozie-start.sh 
+bin/oozie-start.sh
 
 # To start Oozie as a foreground process run:
 bin/oozie-run.sh
@@ -135,14 +135,14 @@ bin/oozie admin -oozie http://localhost:11000/oozie -status
 	http://localhost:11000/oozie/
 
 # Running Examples
-	
+
 	# make some folders in HDFS
 	cd $HADOOP_HOME
 	bin/hadoop fs -mkdir /user/
 	bin/hadoop fs -mkdir /user/oozie
 	bin/hadoop fs -ls /user
-	
-	
+
+
 	bin/hadoop fs -mkdir /user/
 	bin/hadoop fs -mkdir /user/trendwise
 	bin/hadoop fs -ls /user
@@ -171,4 +171,3 @@ bin/oozie job -oozie http://localhost:11000/oozie -config  examples/apps/map-red
 bin/oozie job -oozie http://localhost:11000/oozie -info 0000000-131010162517449-oozie-tren-W
 
 # you can view similar job with job-id in Workflow panel of oozie window at http://localhost:11000/oozie/
-

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     countYZ - solved
-    
-    Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and 
-    the 'z' in "fez" count, but not the 'y' in "yellow" (not case sensitive). We'll say that a y 
-    or z is at the end of a word if there is not an alphabetic letter immediately following it. 
+
+    Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and
+    the 'z' in "fez" count, but not the 'y' in "yellow" (not case sensitive). We'll say that a y
+    or z is at the end of a word if there is not an alphabetic letter immediately following it.
     (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
 ***************************************************************************************************
 countYZ("fez day") → 2
@@ -28,15 +28,15 @@ public class CountYZ
     {
     	System.out.println(countYZ("day fyyyz"));
     }
-    
+
     public static int countYZ(String str) {
-    	
+
     	int kitiAakde = 0;
-    	
+
     	for(int i=0;i<str.length();i++){
     		String strip = "";
     		for(int j=i;j<str.length();j++){
-    			
+
     			if(Character.isLetter(str.charAt(j))){
     				strip += String.valueOf(str.charAt(j));
     				if(j==str.length()-1) i=j;
@@ -51,9 +51,9 @@ public class CountYZ
     				kitiAakde++;
     			}
     		}
-    		
+
     	}
-    	
+
         return kitiAakde;
     }
 

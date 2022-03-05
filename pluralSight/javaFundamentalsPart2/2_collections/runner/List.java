@@ -10,7 +10,7 @@ public class List {
 		printer.loadPaper(10);
 		printer.print(5);
 		printer.outputPages();
-		
+
 	}
 
 }

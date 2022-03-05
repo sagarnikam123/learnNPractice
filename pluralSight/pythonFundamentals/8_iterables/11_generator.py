@@ -17,7 +17,7 @@ def is_prime(x) :
         if x % i == 0 :
             return False
     return True
-    
+
 sum( x for x in range(1001) if is_prime(x) )
 
 ################################################################################

@@ -5,7 +5,7 @@
 #########################
 
 
-# - how your data points are distributed, without the need to look closely at each one. 
+# - how your data points are distributed, without the need to look closely at each one.
 # - functions for mean, median, and standard deviation, as well as ways to display them on your graphs.
 
 # Mean

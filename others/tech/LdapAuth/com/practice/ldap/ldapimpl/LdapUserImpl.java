@@ -42,7 +42,7 @@ public class LdapUserImpl
 
         /*
          * -- conflict - authenticate user / create user
-         * 
+         *
          * if(userinfo.getUserName().equalsIgnoreCase("admin")){ env.put(Context.SECURITY_PRINCIPAL,
          * "cn="+userinfo.getUserName() +",dc=azadparinda,dc=com");
          * env.put(Context.SECURITY_CREDENTIALS, userinfo.getPassword()); }else{
@@ -119,7 +119,7 @@ public class LdapUserImpl
     }
 
     /***
-     * 
+     *
      * @param name
      * @param cd
      * @return

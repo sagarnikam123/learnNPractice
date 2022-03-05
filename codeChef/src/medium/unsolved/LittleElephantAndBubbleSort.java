@@ -1,11 +1,11 @@
 /**
 
 	Little Elephant and Bubble Sort
-	
+
 	Little Elephant loves bubble sorting.
-	
+
 	Bubble sorting for any array A of n integers works in the following way:
-	
+
 	var int i, j;
 	for i from n downto 1
 	{
@@ -15,15 +15,15 @@
 	swap(A[j], A[j+1])
 	}
 	}
-	
+
 	You are given an array B of n integers. Then the array A is created using array B as following :
 	for each i (1 <= i <= n), we set Ai = Bi + d with the probability Pi, otherwise Ai = Bi.
-	Help Little Elephant to find the expect number of swaps that bubble sorting will make when 
+	Help Little Elephant to find the expect number of swaps that bubble sorting will make when
 	the array A is sorted with the above bubble sorting algorithm.
 
 	Input
 	First line of the input contains single integer T - the number of test cases. T test cases follows.
-	First line of each test case contains pair of integers n and d. 
+	First line of each test case contains pair of integers n and d.
 	Next line of each test case contains n integers - array B. Next line contains n integers - array P.
 
 	Output

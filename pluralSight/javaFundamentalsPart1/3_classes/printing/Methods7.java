@@ -9,4 +9,3 @@ public class Methods7 {
 		System.out.println(modelNumber);
 	}
 }
-

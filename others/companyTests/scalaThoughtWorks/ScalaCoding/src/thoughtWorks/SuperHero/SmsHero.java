@@ -38,7 +38,7 @@ public class SmsHero {
 		String line = null;
 
 		while ((line = br.readLine()) != null) {
-			
+
 			String code[] = line.trim().split(" ");
 			//System.out.println(code[1]);
 			if (superHero.containsKey(code[1])) {

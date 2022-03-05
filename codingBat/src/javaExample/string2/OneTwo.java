@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     oneTwo - solved
-    
+
     Given a string, compute a new string by moving the first char to come after the next two chars,
     so "abc" yields "bca". Repeat this process for each subsequent group of 3 chars,
-    so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end. 
+    so "abcdef" yields "bcaefd". Ignore any group of fewer than 3 chars at the end.
 ***************************************************************************************************
 oneTwo("abc") → "bca"
 oneTwo("tca") → "cat"
@@ -31,16 +31,16 @@ public class OneTwo {
     {
     	System.out.println(oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890"));
     }
-    
+
 	public static String oneTwo(String str) {
-		  
+
 		String bawari = "";
 		String engage = "";
-		
+
 		for(int i=0;i < str.length();i++){
-			
+
 			bawari += str.charAt(i);
-			
+
 			if(bawari.length()==3){
 				engage += bawari.substring(1,3)+bawari.charAt(0);
 				bawari = "";

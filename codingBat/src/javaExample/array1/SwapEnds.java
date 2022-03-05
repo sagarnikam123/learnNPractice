@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
-    swapEnds 
-    
+    swapEnds
+
     Given an array of ints, swap the first and last elements in the array.
-    Return the modified array. The array length will be at least 1. 
+    Return the modified array. The array length will be at least 1.
 ***************************************************************************************************
 swapEnds({1, 2, 3, 4}) → {4, 2, 3, 1}
 swapEnds({1, 2, 3}) → {3, 2, 1}
@@ -26,20 +26,20 @@ public class SwapEnds
     		System.out.println(oneBottleDown);
     	}
     }
-    
+
     public static int[] swapEnds(int[] nums) {
-        
+
     	int bharo [] = new int[nums.length];
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(i==0){
     			bharo[i] = nums[nums.length-1];
     		}else if(i==nums.length-1){
     			bharo[i] = nums[0];
     		}else{
-    			bharo[i] = nums[i];	
+    			bharo[i] = nums[i];
     		}
-    		
+
     	}
     	return bharo;
     }

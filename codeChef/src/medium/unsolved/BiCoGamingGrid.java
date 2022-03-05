@@ -1,15 +1,15 @@
 /**
 
 	BiCo Gaming Grid
-	
+
 The much anticipated video game "BiCo Grid" has been released. The rules of "Bico Grid" are very simple.
 
 The game field is a 100x100 matrix, where each cell is either a blocked cell, or a cell with some number of coins.
-For a regular player the look of the field seems pretty random, but the programmer in you recognizes the following pattern: 
-the i-th cell on the n-th row contains C(n, i) coins if and only if 0 ≤ i ≤ n, 
+For a regular player the look of the field seems pretty random, but the programmer in you recognizes the following pattern:
+the i-th cell on the n-th row contains C(n, i) coins if and only if 0 ≤ i ≤ n,
 all other cells are blocked. Record C(n, i) denotes binomial coefficient "n choose i".
 
-The player starts from the cell situated at row R and column C in the matrix. 
+The player starts from the cell situated at row R and column C in the matrix.
 The objective is to collect exactly G number of coins from matrix in several moves. There are some rules:
 
     On each move the player must collect all the coins from some unblocked cell in the current column.
@@ -47,9 +47,9 @@ Input:
 
 Output:
 2
-3 2 
+3 2
 1
-10 
+10
 3
 5 1 1
 
@@ -57,7 +57,7 @@ Explanation
 
 Example case 1. We first pick 3 coins from [3, 2] then we pick 2 coins from [2, 1]
 Example case 2. As 3rd column contains 10 coins in cell [5, 3] we pick it.
-Example case 3. We first pick 5 coins from [5, 4] then we pick 1 coin from [3, 3] and again we pick 1 coin from [2, 2].	
+Example case 3. We first pick 5 coins from [5, 4] then we pick 1 coin from [3, 3] and again we pick 1 coin from [2, 2].
 
 ****************************************************************************************************************/
 

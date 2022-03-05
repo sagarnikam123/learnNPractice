@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     makeAbba - solved
-    
-    Given two strings, a and b, return the result of putting them together in the order abba, 
-    e.g. "Hi" and "Bye" returns "HiByeByeHi". 
+
+    Given two strings, a and b, return the result of putting them together in the order abba,
+    e.g. "Hi" and "Bye" returns "HiByeByeHi".
 ***************************************************************************************************
 makeAbba("Hi", "Bye") → "HiByeByeHi"
 makeAbba("Yo", "Alice") → "YoAliceAliceYo"
@@ -26,9 +26,9 @@ public class MakeAbba
     	System.out.println(makeAbba("Yo", "Alice"));
     	System.out.println(makeAbba("What", "Up"));
     }
-    
+
     public static String makeAbba(String dhamni,String pingala){
-    	
+
     	return dhamni+pingala+pingala+dhamni;
     }
 

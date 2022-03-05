@@ -110,7 +110,7 @@ kubectl exec --stdin --tty monolith -- sh
 # after inside monolith pod, test external connectivity
 ping -c 3 google.com
 
-# logout 
+# logout
 exit
 ################################################################################
 # Services

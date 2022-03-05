@@ -10,7 +10,7 @@ public class Main {
 
 		Printer<ColorCartridge> printer = new Printer<ColorCartridge>(true, "MY PRINTER", new ColorCartridge());
 		printer.print(1);
-		
+
 		Printer<BWCartridge> printer2 = new Printer<BWCartridge>(true, "BW PRINTER", new BWCartridge());
 		printer2.print(1);
 	}

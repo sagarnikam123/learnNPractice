@@ -13,4 +13,4 @@ knife bootstrap 54.169.164.70 -N sagarnikam1232b.mylabserver.com -x user -P 1234
 # check node associated
 knife node list
 
-# user winrm to connect to windows machine 
+# user winrm to connect to windows machine

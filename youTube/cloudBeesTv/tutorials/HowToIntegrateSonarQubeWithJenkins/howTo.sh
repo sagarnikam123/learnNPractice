@@ -43,7 +43,7 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
 # for Quality Gates
 
 # Disable local webhook validation
-# SonarQube server -> Administration -> Configuration -> 
+# SonarQube server -> Administration -> Configuration ->
 # General Settings -> Security -> Enable local webhooks validation -> disable
 
 # create webhook
@@ -52,4 +52,3 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
 
 # using default quality gates
 ################################################################################
-

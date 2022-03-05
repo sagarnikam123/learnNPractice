@@ -1,14 +1,14 @@
 # Compare matrices
 
 #####################################################################################################################
-#																													
-#	R's ability to deal with different data structures for comparisons does not stop at vectors.					
-#	You'll see that it is straightforward to use matrices together with relational operators!						
-#																													
-#	Instead of in vectors (as in the previous exercise), the LinkedIn and Facebook data is now contained in a 		
-#	matrix called views. The first row contains the LinkedIn information; the second row the Facebook information.	
-#	The original vectors facebook and linkedin are still available as well.											
-#																													
+#
+#	R's ability to deal with different data structures for comparisons does not stop at vectors.
+#	You'll see that it is straightforward to use matrices together with relational operators!
+#
+#	Instead of in vectors (as in the previous exercise), the LinkedIn and Facebook data is now contained in a
+#	matrix called views. The first row contains the LinkedIn information; the second row the Facebook information.
+#	The original vectors facebook and linkedin are still available as well.
+#
 #####################################################################################################################
 
 # The social data has been created for you

@@ -1,10 +1,10 @@
 /**************************************************************************************************
 
     xyzMiddle - solved
-    
+
     Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that
     the number of chars to the left and right of the "xyz" must differ by at most one.
-    This problem is harder than it looks. 
+    This problem is harder than it looks.
 ***************************************************************************************************
 xyzMiddle("AAxyzBB") â†’ true
 xyzMiddle("AxyzBB") â†’ true
@@ -37,14 +37,14 @@ public class XyzMiddle
     {
     	System.out.println(xyzMiddle("xyzxyzAxyzxyzxyz"));
     }
-    
+
     public static boolean xyzMiddle(String str) {
-        
+
     	int leftChars = 0;
     	int rightChars = 0;
-    	
+
     	if(str.length() <3) return false;
-    	
+
     	for(int i =0;i<str.length()-3;i++){
     		if(str.substring(i, i+3).equals("xyz")){
     			leftChars = str.substring(0, i).length();
@@ -57,7 +57,7 @@ public class XyzMiddle
     	if(Math.abs(rightChars-leftChars) > 1){
     		return false;
     	}
-    	
+
     	return true;
     }
 

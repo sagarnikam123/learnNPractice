@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     nonStart - solved
-    
+
     Given 2 strings, return their concatenation, except omit the first char of each.
-    The strings will be at least length 1. 
+    The strings will be at least length 1.
 ***************************************************************************************************
 nonStart("Hello", "There") → "ellohere"
 nonStart("java", "code") → "avaode"
@@ -29,16 +29,16 @@ public class NonStart
     	System.out.println(nonStart("x", "ac"));
     	System.out.println(nonStart("a", "x"));
     }
-    
+
     public static String nonStart(String choubare, String mohalle){
     	int gubbare = choubare.length();
     	int bhalle = mohalle.length();
     	String tharki = "";
-    	
+
     	if(gubbare >1){
     		tharki += choubare.substring(gubbare-(gubbare-1));
     	}
-    	
+
     	if(bhalle>1){
     		tharki += mohalle.substring(bhalle - (bhalle-1));
     	}

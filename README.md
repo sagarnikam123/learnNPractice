@@ -10,7 +10,7 @@ learnNPractice
 * all the codes to learn new programming languages, Advanced logic & solved practice problems.
 * directly copied codes from video tutorials to get hands on & understanding.
 * solved problems from online coding challenges, tutorials & training.
-* self learning codes from various topics & technologies.  
+* self learning codes from various topics & technologies.
 
 
   * [CodeAcademy](http://www.codeacademy.com)

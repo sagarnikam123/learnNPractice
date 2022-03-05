@@ -17,7 +17,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 
  public class WordCount {
-	
+
 	// Map
 	public static class Map extends Mapper<LongWritable,Text,Text,IntWritable> {
 
@@ -48,7 +48,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 				sum+=val.get();
 			}
 			context.write(key,new IntWritable(sum));
-			
+
 		} //reduce
 
 	} //class Reduce

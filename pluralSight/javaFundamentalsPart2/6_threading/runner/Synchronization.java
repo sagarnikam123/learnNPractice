@@ -18,11 +18,11 @@ public class Synchronization {
 		executor.submit(cp);
 		executor.submit(cp);
 		executor.shutdown();
-		
+
 		for(int i=0;i< 100;i++){
 			System.out.println("Main thread " + i);
 		}
 	}
-	
-	
+
+
 }

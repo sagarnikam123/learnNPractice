@@ -46,7 +46,7 @@ AuthID smallint not null,
 BookID smallint not null,
 primary key(AuthID,BookID),
 foreign key(AuthID) references authors(AuthID),
-foreign key(BookID) references books (BookID) 
+foreign key(BookID) references books (BookID)
 )
 engine=innodb;
 

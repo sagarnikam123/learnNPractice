@@ -6,7 +6,7 @@
 #    its left or right. Return true if all the g's in the given string are happy.
 #
 #######################################################################################################################
-#   
+#
 #   gHappy("xxggxx") → true
 #   gHappy("xxgxx") → false
 #   gHappy("xxggyygxx") → false
@@ -19,5 +19,5 @@
 #   gHappy("mgm") → false
 #   gHappy("mggm") → true
 #   gHappy("yyygggxyy") → true
-#   
+#
 #######################################################################################################################

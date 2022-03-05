@@ -9,7 +9,7 @@ while input('Type "play" to play the game, "exit" to quit:') == 'play':
     show_word = list('-' * len(game_word))
     attempt_count = 8
     uni_guess_letter = set()
-    
+
     while attempt_count > 0:
         print()
         print(''.join(show_word))
@@ -25,7 +25,7 @@ while input('Type "play" to play the game, "exit" to quit:') == 'play':
             print('You already typed this letter')
             continue
         uni_guess_letter.add(letter)
-        
+
         if letter in game_word:
             for i in range(len(game_word)):
                 if game_word[i] == letter:

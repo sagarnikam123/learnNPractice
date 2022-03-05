@@ -1,12 +1,12 @@
 # More on sampling distribution of prices
 
 #######################################################################################################################
-#	
+#
 #	Do the same thing, but now create a vector called sample_means150 to store means of samples of size 150.
-#	
-#	Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample 
+#
+#	Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample
 #	size of 50. Based on this sampling distribution, what would you guess to be the mean sale price of homes in Ames?
-#	
+#
 #######################################################################################################################
 
 # sample_means50 is already loaded.

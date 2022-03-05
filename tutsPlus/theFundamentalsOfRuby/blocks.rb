@@ -21,4 +21,3 @@ form do	# calls form & give its conetent as block
 	paragraph "This is a paragraph"
 	quote "This is a quote from Shakespeare"
 end
-

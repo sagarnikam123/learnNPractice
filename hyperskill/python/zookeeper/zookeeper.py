@@ -15,7 +15,7 @@ Switching on camera from habitat with camels...
               ! ; !'',,,',',,,,'!  ;   ;:
              : ;  ! !       ! ! ;  ;   :;
              ; ;   ! !      ! !  ; ;   ;,
-            ; ;    ! !     ! !   ; ;     
+            ; ;    ! !     ! !   ; ;
             ; ;    ! !    ! !     ; ;
            ;,,      !,!   !,!     ;,;
            /_I      L_I   L_I     /_I
@@ -115,7 +115,7 @@ Switching on camera from habitat with rabbits...
  /| ;-"~ _  l
 / l/ ,-"~    \
 \//\/      .- \
- Y        /    Y 
+ Y        /    Y
  l       I     !
  ]\      _\    /"\
 (" ~----( ~   Y.  )

@@ -45,5 +45,3 @@ db.links.insert({
 	favourites: 1000,
 	userId: u3._id
 	});
-
-

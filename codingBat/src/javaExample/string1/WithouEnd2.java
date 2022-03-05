@@ -1,9 +1,9 @@
 /**************************************************************************************************
 
     withouEnd2 - solved
-    
-    Given a string, return a version without both the first and last char of the string. 
-    The string may be any length, including 0. 
+
+    Given a string, return a version without both the first and last char of the string.
+    The string may be any length, including 0.
 ***************************************************************************************************
 withouEnd2("Hello") → "ell"
 withouEnd2("abc") → "b"
@@ -24,9 +24,9 @@ public class WithouEnd2
     	System.out.println(withouEnd2("abc"));
     	System.out.println(withouEnd2("ab"));
     }
-    
+
     public static String withouEnd2(String sexy){
-    	
+
     	if(sexy.length()>2){
     		return sexy.substring(1, sexy.length()-1);
     	}else{

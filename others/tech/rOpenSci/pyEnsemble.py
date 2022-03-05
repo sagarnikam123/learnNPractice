@@ -4,7 +4,7 @@ pyEnsembleRest- A python wrapper for EnsEMBL REST API
 
 # installing  pyEnsembleRest
 # download 4m internet or clone via git- https://github.com/pyOpenSci/pyEnsemblRest
-git clone https://github.com/pyOpenSci/pyEnsemblRest.git 
+git clone https://github.com/pyOpenSci/pyEnsemblRest.git
 cd pyEnsemblRest/
 sudo python setup.py install
 
@@ -30,7 +30,7 @@ print ensemblrest.getGeneTreeByMemberSymbol(species='human', symbol='BRCA2')
 print ensemblrest.getHomologyById(id='ENSG00000157764')
 print ensemblrest.getHomologyBySymbol(species='human', symbol='BRCA2')
 
-# Accessing the Cross References endpoints 
+# Accessing the Cross References endpoints
 print ensemblrest.getXrefsById(id='ENSG00000157764')
 print ensemblrest.getXrefsByName(species='human', name='BRCA2')
 print ensemblrest.getXrefsBySymbol(species='human', symbol='BRCA2')

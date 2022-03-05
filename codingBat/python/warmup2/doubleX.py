@@ -6,7 +6,7 @@
 #    in the string is immediately followed by another "x".
 #
 #######################################################################################################################
-#   
+#
 #   doubleX("axxbb") → true
 #   doubleX("axaxax") → false
 #   doubleX("xxxxx") → true
@@ -18,5 +18,5 @@
 #   doubleX("xx") → true
 #   doubleX("xax") → false
 #   doubleX("xaxx") → false
-#   
+#
 #######################################################################################################################

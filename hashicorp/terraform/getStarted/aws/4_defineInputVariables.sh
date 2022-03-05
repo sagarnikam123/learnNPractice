@@ -2,7 +2,7 @@
 
 # Set the instance name with a variable
 # Create a new file called variables.tf with a block defining a new instance_name variable
-# in main.tf -> Name = var.instance_name 
+# in main.tf -> Name = var.instance_name
 
 # Apply your configuration
 terraform apply

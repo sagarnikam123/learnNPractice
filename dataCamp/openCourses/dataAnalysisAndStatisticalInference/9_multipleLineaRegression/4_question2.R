@@ -1,10 +1,10 @@
 # Question 2
 
 #######################################################################################################################
-#			
+#
 #	The original research question posed in the paper is whether beauty leads directly to the differences in course
 #	evaluations. Given the study design, should the question be rephrased? If so, how?
-#			
+#
 #######################################################################################################################
 
 1	No, the question is worded accurately.

@@ -6,7 +6,7 @@
 #    where all the "yak" are removed, but the "a" can be any char. The "yak" strings will not overlap.
 #
 #######################################################################################################################
-#   
+#
 #   stringYak("yakpak") → "pak"
 #   stringYak("pakyak") → "pak"
 #   stringYak("yak123ya") → "123ya"
@@ -14,5 +14,5 @@
 #   stringYak("yakxxxyak") → "xxx"
 #   stringYak("HiyakHi") → "HiHi"
 #   stringYak("xxxyakyyyakzzz") → "xxxyyzzz"
-#   
+#
 #######################################################################################################################

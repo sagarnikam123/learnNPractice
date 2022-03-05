@@ -6,7 +6,7 @@
 #    preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
 #
 #######################################################################################################################
-#   
+#
 #   xyzThere("abcxyz") â†’ true
 #   xyzThere("abc.xyz") â†’ false
 #   xyzThere("xyz.abc") â†’ true
@@ -21,5 +21,5 @@
 #   xyzThere("12.xyz") → false
 #   xyzThere("12xyz") → true
 #   xyzThere("1.xyz.xyz2.xyz") → false
-#   
+#
 #######################################################################################################################

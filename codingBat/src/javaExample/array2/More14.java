@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     more14 - solved
-    
-    Given an array of ints, return true if the number of 1's is greater than the number of 4's 
+
+    Given an array of ints, return true if the number of 1's is greater than the number of 4's
 ***************************************************************************************************
 more14({1, 4, 1}) â†’ true
 more14({1, 4, 1, 4}) â†’ false
@@ -29,12 +29,12 @@ public class More14
     	int dilliWaliGirlFriend [] = {1, 1};
     	System.out.println(more14(dilliWaliGirlFriend));
     }
-    
+
     public static boolean more14(int[] nums) {
-        
+
     	int oneMajnu = 0;
     	int fourPoint = 0;
-    	
+
     	for(int i=0;i<nums.length;i++){
     		if(nums[i]==1){
     			oneMajnu++;
@@ -43,7 +43,7 @@ public class More14
     		}
     	}
     	if(oneMajnu > fourPoint) return true;
-    	
+
     	return false;
     }
 

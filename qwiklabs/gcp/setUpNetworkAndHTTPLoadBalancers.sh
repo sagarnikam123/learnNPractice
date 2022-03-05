@@ -10,7 +10,7 @@ gcloud config set conpute/region us-central1
 # Task 2: Create multiple web server instances
 
 # 1.create three Compute Engine VM instances in your default zone and give them all the same tag.
-# and install Apache on them, then add a firewall rule that 
+# and install Apache on them, then add a firewall rule that
 # allows HTTP traffic to reach the instances.
 gcloud compute instances create www1 \
   --image-family debian-9 \
@@ -49,7 +49,7 @@ gcloud compute instances create www3 \
 gcloud compute firewall-rules create www-firewall-network-lb \
     --target-tags network-lb-tag --allow tcp:80
 
-# 3. Run the following to list your instances. 
+# 3. Run the following to list your instances.
 # You'll see their IP addresses in the EXTERNAL_IP column:
 gcloud compute instances list
 
@@ -61,7 +61,7 @@ gcloud compute instances list
 # EXTERNAL_IP: 34.133.206.246
 # STATUS: RUNNING
 
-# 4. Verify that each instance is running with curl, replacing [IP_ADDRESS] 
+# 4. Verify that each instance is running with curl, replacing [IP_ADDRESS]
 # with the IP address for each of your VMs:
 curl http://[IP_ADDRESS]
 curl http://34.136.103.164
@@ -76,7 +76,7 @@ gcloud compute addresses create network-lb-ip-1 \
 # 2. Add a legacy HTTP health check resource:
 gcloud compute http-health-checks create basic-check
 
-# 3. Add a target pool in the same region as your instances. Run the following to create 
+# 3. Add a target pool in the same region as your instances. Run the following to create
 # the target pool and use the health check, which is required for the service to function:
 gcloud compute target-pools create www-pool \
     --region us-central1 --http-health-check basic-check
@@ -98,7 +98,7 @@ gcloud compute forwarding-rules create www-rule \
 # view the external IP address of the www-rule forwarding rule used by the load balancer
 gcloud compute forwarding-rules describe www-rule --region us-central1
 
-# access the external IP address, replacing IP_ADDRESS 
+# access the external IP address, replacing IP_ADDRESS
 # with an external IP address from the previous command:
 while true; do curl -m1 IP_ADDRESS; done
 while true; do curl -m1 35.222.40.83; done
@@ -138,7 +138,7 @@ gcloud compute firewall-rules create fw-allow-health-check \
     --target-tags=allow-health-check \
     --rules=tcp:80
 
-# 4. Now that the instances are up and running, set up a global static external IP address 
+# 4. Now that the instances are up and running, set up a global static external IP address
 # that your customers use to reach your load balancer.
 gcloud compute addresses create lb-ipv4-1 \
     --ip-version=IPV4 \
@@ -190,10 +190,10 @@ gcloud compute forwarding-rules create http-content-rule \
 
 # 2. Click on the load balancer that you just created (web-map-http).
 
-# 3. In the Backend section, click on the name of the backend and confirm that the VMs are Healthy. 
+# 3. In the Backend section, click on the name of the backend and confirm that the VMs are Healthy.
 # If they are not healthy, wait a few moments and try reloading the page.
 
-# 4,. When the VMs are healthy, test the load balancer using a web browser, going to http://IP_ADDRESS/, 
+# 4,. When the VMs are healthy, test the load balancer using a web browser, going to http://IP_ADDRESS/,
 # replacing IP_ADDRESS with the load balancer's IP address.
 
 ###############################################################################

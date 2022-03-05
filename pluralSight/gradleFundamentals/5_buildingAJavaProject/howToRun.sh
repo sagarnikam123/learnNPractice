@@ -39,7 +39,7 @@ echo "include 'Repository', 'JacketService'" >> jacket/settings.gradle
 touch jacket/build.gradle
 gradle --console 'verbose' build
 
-# Could not find method compile() for arguments [project ':Repository'] 
+# Could not find method compile() for arguments [project ':Repository']
 # on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
 
 ###############################################################################

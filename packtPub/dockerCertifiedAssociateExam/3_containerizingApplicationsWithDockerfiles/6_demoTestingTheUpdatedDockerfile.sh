@@ -28,5 +28,5 @@ exit
 
 # check volume on local host
 cd /var/lib/docker/volumes/ && ls
-cd <numbered dir> 
+cd <numbered dir>
 cd _data && ls # verify foo.txt be there

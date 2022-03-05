@@ -6,7 +6,7 @@
 #    except we'll accept any letter for the 'd', so "cope" and "cooe" count.
 #
 #######################################################################################################################
-#   
+#
 #   countCode("aaacodebbb") → 1
 #   countCode("codexxcode") → 2
 #   countCode("cozexxcope") → 2
@@ -21,5 +21,5 @@
 #   countCode("AAcodeBBcoleCCccoreDD") → 3
 #   countCode("AAcodeBBcoleCCccorfDD") → 2
 #   countCode("coAcodeBcoleccoreDD") → 3
-#   
+#
 #######################################################################################################################

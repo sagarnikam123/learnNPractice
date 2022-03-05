@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     allStar - solved
-    
-    Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*". 
+
+    Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*".
 ***************************************************************************************************
 allStar("hello") → "h*e*l*l*o"
 allStar("abc") → "a*b*c"
@@ -22,15 +22,15 @@ public class AllStar
     {
     	System.out.println(allStar("hello"));
     }
-    
+
     public static String allStar(String str) {
-    
+
     	if(str.length()==0) return str;
     	if(str.length()==1) return str;
     	String firstChani = str.substring(0, 1)+"*";
     	String remainingFaluda = str.substring(1,str.length());
-    	
+
     	return firstChani+allStar(remainingFaluda);
     }
-    
+
   }

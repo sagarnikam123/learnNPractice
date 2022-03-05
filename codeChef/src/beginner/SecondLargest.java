@@ -3,9 +3,9 @@
 	Second Largest
 
 	Three numbers A, B and C are the inputs. Write a program to find second largest among three numbers.
-	
+
 	Input
-	The first line contains an integer T, total number of testcases. Then follow T lines, 
+	The first line contains an integer T, total number of testcases. Then follow T lines,
 	each line contains three integers A, B and C.
 
 	Output
@@ -18,7 +18,7 @@
 Example
 
 Input
-3 
+3
 120 11 400
 10213 312 10
 10 3 450

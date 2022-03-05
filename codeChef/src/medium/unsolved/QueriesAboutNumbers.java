@@ -1,23 +1,23 @@
 /**
 
 	Queries About Numbers
-	
+
 	Chef loves number theory very much. Now it is time to solve a new kind of problem.
-	
+
 	There is given a natural number N. Chef has to answer Q queries of the form T K.
-	
+
 	Here T is the type of query and K is the natural number.
-	
+
 	If T=1, Chef must find the number of natural numbers which is divisor of both N and K.
-	
+
 	If T=2, Chef must find the number of natural numbers which is divisor of N and is divisible by K.
-	
+
 	If T=3, Chef must find the number of natural numbers which is divisor of N and is not divisible by K.
-	
-	
+
+
 	Chef can solve all these queries, but you will be hungry for night if this happens, because Chef will not have free time to cook a meal.
 	Therefore you compromise with him and decided that everyone must do his/her own job. You must program and Chef must cook.
-	
+
 	Input
 	There will be 2 numbers in the first line: N and Q.
 	Q lines follow with 2 numbers each: T and K
@@ -67,7 +67,7 @@ Constraints
 
 1<=T<=3
 
-1<=K<=1012	
+1<=K<=1012
 
 *******************************************************************************************************************/
 

@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     nTwice - solved
-    
+
     Given a string and an int n, return a string made of the first and last n chars from the string.
     The string length will be at least n.
 ***************************************************************************************************
@@ -24,12 +24,12 @@ public class NTwice
     	System.out.println(nTwice("Chocolate", 3));
     	System.out.println(nTwice("Chocolate", 1));
     	System.out.println(nTwice("Code", 4));
-    			
+
     }
-    
+
     public static String nTwice(String mangal,int jaguar){
     	return mangal.substring(0,jaguar)+mangal.substring(mangal.length()-jaguar);
     }
-    
+
 
 }

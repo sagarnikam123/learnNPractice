@@ -1,11 +1,11 @@
 /**************************************************************************************************
 
     scoresSpecial - solved
-    
+
     Given two arrays, A and B, of non-negative int scores. A "special" score is one which is a multiple
-    of 10, such as 40 or 90. Return the sum of largest special score in A and the largest special 
-    score in B. To practice decomposition, write a separate helper method which finds the largest 
-    special score in an array. Write your helper method after your scoresSpecial() method 
+    of 10, such as 40 or 90. Return the sum of largest special score in A and the largest special
+    score in B. To practice decomposition, write a separate helper method which finds the largest
+    special score in an array. Write your helper method after your scoresSpecial() method
     in the JavaBat text area.
 ***************************************************************************************************
 scoresSpecial({12, 10, 4}, {2, 20, 30}) → 40
@@ -32,17 +32,17 @@ public class ScoresSpecial
     	int chotya [] = {2, 20, 31};
     	System.out.println(scoresSpecial(gotya,chotya));
     }
-    
+
     public static int scoresSpecial(int[] a, int[] b) {
-    	
+
     	int first = specialScore(a);
     	int second = specialScore(b);
-    	
+
         return first+second;
     }
 
     public static int specialScore(int [] pqr){
-    	
+
     	int firstBadi =0;
     	for(int i=0;i<pqr.length;i++){
     		if(pqr[i]%10 ==0 & pqr[i] > firstBadi){

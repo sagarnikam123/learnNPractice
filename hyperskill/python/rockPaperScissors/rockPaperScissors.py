@@ -81,7 +81,7 @@ class RockPaperScissors(object):
         # user interaction
         while user_choose != '!exit':
             user_choose = input().strip()
-            
+
             if user_choose == '!rating':
                 print('Your rating: {}'.format(self._userscore))
             elif user_choose == '!exit':

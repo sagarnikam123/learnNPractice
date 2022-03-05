@@ -12,7 +12,7 @@ public class Product {
 			return Integer.compare(p1.getWeight(), p2.getWeight());
 		}
 	};
-	
+
 	public static final Comparator<Product> BY_NAME = new Comparator<Product>(){
 
 		// Comparator.comparing(Product::getName()); // Java-8 style
@@ -55,7 +55,7 @@ public class Product {
 		result = prime * result + weight;
 		return result;
 	}
-	
+
 	/*
 	@Override
 	public int hashCode(){
@@ -81,5 +81,5 @@ public class Product {
 			return false;
 		return true;
 	}
-	
+
 }

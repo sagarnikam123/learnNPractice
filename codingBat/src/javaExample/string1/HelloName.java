@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     helloName - solved
-    
-    Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!". 
+
+    Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
 ***************************************************************************************************
 helloName("Bob") → "Hello Bob!"
 helloName("Alice") → "Hello Alice!"
@@ -26,7 +26,7 @@ public class HelloName
     	System.out.println(helloName("Alice"));
     	System.out.println(helloName("X"));
     }
-    
+
     public static String helloName(String manaliTrance){
     	return "Hello "+manaliTrance+"!";
     }

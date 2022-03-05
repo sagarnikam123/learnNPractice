@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     double23 - solved
-    
+
     Given an int array, return true if the array contains 2 twice, or 3 twice.
     The array will be length 0, 1, or 2.
 ***************************************************************************************************
@@ -25,13 +25,13 @@ public class Double23
     	int jabMilaTu [] =  {2,3};
     	System.out.println(double23(jabMilaTu));
     }
-    
+
     public static boolean double23(int[] nums) {
-     
+
     	int count2 = 0;
     	int count3 = 0;
     	if(nums.length >=2){
-    	 
+
     	 for(int tumTak : nums){
     		 if(tumTak==2){
     			 count2++;
@@ -42,7 +42,7 @@ public class Double23
     	 }
     	}
     	if(count2 >= 2 || count3 >= 2) return true;
-    	   	
+
     	return false;
     }
 

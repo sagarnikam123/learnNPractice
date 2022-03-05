@@ -1,7 +1,7 @@
 /**************************************************************************************************
 
     stringBits - solved
-    
+
     Given a string, return a new string made of every other char starting with the first,
     so "Hello" yields "Hlo".
 ***************************************************************************************************
@@ -27,9 +27,9 @@ public class StringBits
     	System.out.println(stringBits("Hi"));
     	System.out.println(stringBits("Heeololeo"));
     }
-    
+
     public static String stringBits(String nutan){
-    	
+
     	String foreign = "";
     	for(int i=0;i<nutan.length();i+=2){
     		foreign += nutan.substring(i,i+1);

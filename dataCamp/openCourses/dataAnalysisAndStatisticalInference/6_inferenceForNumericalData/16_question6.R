@@ -1,10 +1,10 @@
 # Question 6
 
 #######################################################################################################################
-#	
-#	Based on the plot from the previous exercise, which of the following is false about 
+#
+#	Based on the plot from the previous exercise, which of the following is false about
 #	the relationship between habit and weight?
-#	
+#
 ######################################################################################################################
 
 1	Median birth weight of babies born to non-smoker mothers is slightly higher than that of babies born to smoker mothers.

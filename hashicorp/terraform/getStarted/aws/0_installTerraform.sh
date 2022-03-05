@@ -35,9 +35,9 @@ terraform init
 # Provision the NGINX server container with apply
 terraform apply
 
-# Verify the existence of the NGINX container 
+# Verify the existence of the NGINX container
 # by visiting localhost:8000 in your web browser or by using docker
-docker ps 
+docker ps
 
 # stop the container
 terraform destory

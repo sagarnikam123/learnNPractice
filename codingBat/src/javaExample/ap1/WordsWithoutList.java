@@ -1,8 +1,8 @@
 /**************************************************************************************************
 
     wordsWithoutList - solved
-    
-    Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the 
+
+    Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the
     given length are omitted. See wordsWithout() below which is more difficult because it uses arrays.
 ***************************************************************************************************
 wordsWithoutList({"a", "bb", "b", "ccc"}, 1) → {"bb", "ccc"}
@@ -27,14 +27,14 @@ public class WordsWithoutList
     		System.out.println(k);
     	}
     }
-    
+
     public static ArrayList<String> wordsWithoutList(String[] words, int len) {
-        
+
     	ArrayList<String> lageNaJiya = new ArrayList<String>();
-    	
+
     	for(int i =0;i<words.length;i++){
     		if(words[i].length()==len){
-    			
+
     		}else{
     			lageNaJiya.add(words[i]);
     		}

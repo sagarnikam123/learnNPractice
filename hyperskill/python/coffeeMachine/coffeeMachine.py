@@ -25,7 +25,7 @@ class CoffeeMachine:
         self.milk -= milk_r
         self.coffee_beans -= coffee_beans_r
         self.disposable_cups -= disposable_cups_r
-        self.money += money_r 
+        self.money += money_r
 
 
     def check_quantity(self, water_c, milk_c, coffee_beans_c, disposable_cups_c): # c - check quantity

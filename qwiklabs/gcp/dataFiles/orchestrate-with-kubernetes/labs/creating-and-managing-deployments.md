@@ -6,7 +6,7 @@ Deployments sit on top of ReplicaSets and add the ability to define how updates 
 
 In this lab we will combine everything we learned about Pods and Services to breakup the monolith application into smaller Services. You will create 3 deployments, one for each service:
 
-* frontend 
+* frontend
 * auth
 * hello
 

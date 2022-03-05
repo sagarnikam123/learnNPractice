@@ -22,7 +22,7 @@
 #################################
 
 # Configuration scope
-	# 1. System (Multiusers) - for every user of the system - /etc/gitconfig 
+	# 1. System (Multiusers) - for every user of the system - /etc/gitconfig
 	# 2. Global (single user) - for perticular user - ~./gitconfig
 	# 3. Local (repository) - per repository- created in respective project folder .git/config--default behaviour
 
@@ -30,13 +30,13 @@
 # Configuring username & email
 
 	git config user.name "sagarnikam123"
-	
+
 	# error: could not lock config file .git/config: No such file or directory
 	# means git trys to set username at local leleve
-	
+
 	git config --global user.name "sagarnikam123"
 	git config --global user.email "sagarnikam123@gmail.com"
-	
+
 	# checking
 	ls -a ~/
 	cat ~/.gitconfig
@@ -50,7 +50,7 @@
 
 # Coloring of output of GIT globally
 	git config --global color.ui true
-	
+
 #############################
 #	03-initializing - 2.32	#
 #############################
@@ -64,7 +64,7 @@
 
 	# Initialized empty Git repository in /home/hadoop/Desktop/project/.git/
 	ls -a  # produces 3 folders
-		# .  ..  .git 
+		# .  ..  .git
 	cd .git
 	ls
 		# branches  config  description  HEAD  hooks  info  objects  refs
@@ -226,7 +226,7 @@ mkdir tmp
 touch tmp/temp1
 
 # modify TODO file (add '(done)' in 2 no line-at last)
-git status 
+git status
 
 
 # to track/commit
@@ -271,4 +271,3 @@ git status
  git reset HEAD test/master.txt
  git status
  rm -r test/ # remvoe folder also
-  

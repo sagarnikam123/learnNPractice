@@ -12,5 +12,5 @@ def shoppingCart(itemName, avgPrices):
 	print 'item : ', itemName
 	for price in avgPrices:
 		print price, 'price: ', avgPrices[price]
-		
+
 shoppingCart('computer',dbLookup())

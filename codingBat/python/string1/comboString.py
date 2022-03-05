@@ -7,7 +7,7 @@
 #    but they may be empty (length 0).
 #
 #######################################################################################################################
-#   
+#
 #   comboString("Hello", "hi") → "hiHellohi"
 #   comboString("hi", "Hello") → "hiHellohi"
 #   comboString("aaa", "b") → "baaab"
@@ -19,5 +19,5 @@
 #   comboString("a", "bb") → "abba"
 #   comboString("bb", "a") → "abba"
 #   comboString("xyz", "ab") → "abxyzab"
-#   
+#
 #######################################################################################################################

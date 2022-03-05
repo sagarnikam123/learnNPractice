@@ -2,16 +2,16 @@
 
 # Graphing Docker 1.13 metrics with Prometheus
 
-# With Docker 1.13, they introduced an experimental feature 
+# With Docker 1.13, they introduced an experimental feature
 # that allows the Docker Engine metrics to be exported using the Prometheus syntax.
 
 ###############################################################################
 # Step 1 - Enable Metrics
 
-# enable the new experimental flag that will enable the metrics feature and 
+# enable the new experimental flag that will enable the metrics feature and
 # define the metrics address to listen on localhost:9323
 
-# command below will update the systemd configuration used to start Docker 
+# command below will update the systemd configuration used to start Docker
 # to set the flags when the daemon starts and then restarts Docker
 echo '{ "metrics-addr" : "127.0.0.1:9323", "experimental" : true }' > /etc/docker/daemon.json
 systemctl restart docker
@@ -40,7 +40,7 @@ scrape_configs:
 # Step 3 - Start Prometheus
 
 # Prometheus runs as a Docker Container with a UI available on port 9090
-# Any data created by Prometheus will be stored on the host, in the directory 
+# Any data created by Prometheus will be stored on the host, in the directory
 # /prometheus/data. When we update the container, the data will be persisted.
 docker run -d --net=host \
 -v /root/prometheus.yml:/etc/prometheus/prometheus.yml \
@@ -64,7 +64,7 @@ curl localhost:9100/metrics
 ###############################################################################
 # Step 5 - View Metrics
 
-# default Prometheus Dashboard reports internal information and provides 
+# default Prometheus Dashboard reports internal information and provides
 # a way to debug the metrics being collected.
 # graph -> https://2886795292-9090-elsy04.environments.katacoda.com/graph
 # targets -> https://2886795292-9090-elsy04.environments.katacoda.com/targets
@@ -75,11 +75,11 @@ curl localhost:9100/metrics
 # actions are containers being started, deleted, created, committed, or changed.
 engine_daemon_container_actions_seconds_sum
 
-# host metrics 
+# host metrics
 # will output the Docker Hosts CPU information
 node_cpu
 
 # Generate Metrics
-# Running additional containers will result in changes to the metrics produced, 
+# Running additional containers will result in changes to the metrics produced,
 docker run -d katacoda/docker-http-server:latest
 ###############################################################################

@@ -19,5 +19,3 @@ bin/flume-ng agent --conf conf -n syslog-agent -f conf/syslog-agent.cnf
 
 # Open terminal & put
 telnet localhost 5140
-
-

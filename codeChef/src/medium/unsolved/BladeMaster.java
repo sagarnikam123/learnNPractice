@@ -1,7 +1,7 @@
 /**
 
 	Blade Master
-	
+
 	Loda and Maelk are legendary ChefCraft players. They have played so many games that this number doesn't fit in
 	a standard 32-bit integer type. Today Loda and Maelk are going to sort the things out and find out who is the
 	greatest ChefCraft player ever. So the great fight is coming. There are a lot of different heroes you may
@@ -12,7 +12,7 @@
 	grid has number 1 and the lower row has number N. The same holds for columns. They are numbered
 	by integers from 1 to M such that the most left column has number 1 while the most right
 	column has number M.
-	
+
 	At the beginning of the game the only Blade Master's image stands on some starting cell (Sx, Sy) where
 	1 ≤ Sx ≤ N and 1 ≤ Sy ≤ M. Then Loda makes T moves. Maelk knows how the
 	distribution of images on the grid changes after each Loda's move. This happens according to the following
@@ -24,15 +24,15 @@
 	    the cell (i, j) is union of all cells in the i-th row of the grid and in the j-th column
 	    of the grid. So N + M − 1 cells belongs to the "cross".
 	    Let X = F(i, j) mod 6, that is X is the remainder of the division of F(i, j) by
-	
+
 	    6.
 	    For every possible value of X we have following values: D1, D2, P1 and
-	
+
 	    P2.
 	    D1 and D2 may be equal to one of the 4 values ['U', 'R', 'D', 'L'] and mean
-	
+
 	    some two directions. Here 'U' means up, 'R' means right, 'D' means
-	
+
 	    down and 'L' means left.
 	    P1 and P2 are integer numbers.
 	    New mirror images will appear at every cell in the direction D1 with the period P1 starting
@@ -48,15 +48,15 @@
 	    D1 = 'D', D2 = 'L' for X = 4,
 	    D1 = 'L', D2 = 'U' for X = 5.
 	    But values P1 and P2 may vary for different games. But once chosen they will be the same for
-	
+
 	    all moves.
-	
+
 	2. Appearing of new mirror images happens immediately.
 	3. Whenever there is more than one image at the cell they start one on one fights. In each fight two
 	images participate and both die. So if the number of images in the cell was even than all images will
 	disappear in the end, otherwise exactly one image will remain at this cell.
 	Now Maelk wants to choose his hero in order to win the fight. The most important thing he needs to know for
-	
+
 	this is how the number of images changes during Loda's moves. So he asks you for help. Denote by C(t)
 	the number of images on the grid after the t-th Loda's move for t from 1 to T. For
 	convenience we denote C(0) = 1 with meaning that 0-th move is the putting of the only Blade
@@ -75,10 +75,10 @@
 	the values P1 and P2 for the corresponding X, that is, i-th line among these six
 	lines contains values P1 and P2 for X = i − 1. Each of the following Q
 	lines contains a single integer T, the number of Loda's moves for the corresponding Maelk's query.
-	
+
 	Output
 	For every Maelk's query output on a separate line the numbers of images Maelk will see during Loda's move.
-	
+
 	Constrains
 	N and M are positive
 	N • M ≤ 34
@@ -132,7 +132,7 @@ Finally, after the third move we have
 
 So after the first move Maelk will see 3 images, after the second move – 8 images and
 after the third move – 5 images. Hence the answers for T = 1, 2, 3 are 1 + 3 = 4,
-1 + 3 + 8 = 12 and 1 + 3 + 8 + 5 = 17 respectively.	
+1 + 3 + 8 = 12 and 1 + 3 + 8 + 5 = 17 respectively.
 **********************************************************************************************************************/
 package medium.unsolved;
 

@@ -14,7 +14,7 @@ gcloud config list project
 terraform
 
 # Build infrastructure
-# create an empty configuration file 
+# create an empty configuration file
 touch instance.tf
 
 # instance.tf
@@ -31,12 +31,12 @@ resource "google_compute_instance" "terraform" {
     network_interface {
         network = "default"
         access_config {
-            
+
         }
     }
 }
 
-#  new file has been added and 
+#  new file has been added and
 # that there are no other *.tf files in your directory
 ls
 
