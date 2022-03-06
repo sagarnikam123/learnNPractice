@@ -11,4 +11,11 @@ out
 .settings
 .gradle/
 target
+
+# terraform
 .terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraformrc
+terraform.rc
