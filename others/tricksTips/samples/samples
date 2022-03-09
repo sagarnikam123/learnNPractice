@@ -1,0 +1,22 @@
+# sample apps/projects/containerImages/codes
+
+###############################################################################
+# app/projects
+
+# example 12-Factor application
+https://github.com/kelseyhightower/app
+###############################################################################
+# container images
+
+# Hello microservice. Greets authenticated users
+kelseyhightower/hello
+
+# Monolith includes auth and hello services
+kelseyhightower/monolith:1.0.0
+
+# Auth microservice. Generates JWT tokens for authenticated users
+kelseyhightower/auth
+###############################################################################
+# others
+
+###############################################################################
