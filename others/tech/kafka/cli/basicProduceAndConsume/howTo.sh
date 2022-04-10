@@ -8,6 +8,7 @@ mkdir console-consumer-producer-basic && cd console-consumer-producer-basic
 # 2. Get Confluent Platform
 touch docker-compose.yml
 docker-compose up -d
+docker-compose ps # check
 ################################################################################
 # 3. Create the Kafka topic
 docker-compose exec broker kafka-topics --create --topic orders --boostrap-server broker:9092
@@ -15,11 +16,12 @@ docker-compose exec broker kafka-topics --create --topic orders --boostrap-serve
 # 4. Start a console consumer
 
 # open terminal on broker container
-docker-compose exec broker bash
+#docker-compose exec broker bash # not working
+docker exec -it broker bash
 
 kafka-console-consumer \
 --topic orders \
---boostrap-server broker:9092
+--bootstrap-server broker:9092
 ################################################################################
 # 5. Produce your first records
 
@@ -28,7 +30,7 @@ docker-compose exec broker bash
 
 kakfa-console-producer \
 --topic orders \
---boostrap-server broker:9092
+---bootstrap-server broker:9092
 
 # each line is one record, see consumer window, then close consumer - CTRL+C
 the
@@ -50,13 +52,13 @@ to Kafka!
 # reading previously sent records, then close consumer - CTRL+C
 kafka-console-consumer \
 --topic orders \
---boostrap-server broker:9092
+--bootstrap-server broker:9092
 --from-beginning
 ################################################################################
 # 8. Produce records with full key-value pairs
 kafka-console-producer \
 --topic orders \
---boostrap-server broker:9092 \
+--bootstrap-server broker:9092 \
 --property parse.key=true \
 --property key.separator=":"
 
@@ -69,7 +71,7 @@ fun:programming
 # 9. Start a consumer to show full key-value pairs
 kafka-console-consumer \
 --topic orders \
---boostrap-server broker:9092
+--bootstrap-server broker:9092
 --from-beginning \
 --property print.key=true \
 --property key.separator="-"
