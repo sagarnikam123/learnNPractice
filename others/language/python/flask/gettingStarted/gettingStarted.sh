@@ -2,6 +2,7 @@
 
 ################################################################################
 # install virtualenv
+pip3 install flask
 pip3 install virtualenv
 pip3 install -U --force-reinstall virtualenv
 ################################################################################
