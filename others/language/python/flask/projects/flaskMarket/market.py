@@ -8,6 +8,6 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 
-@app.route('/about')
-def about_page():
-    return '<h1>About Page</h1>'
+@app.route('/about/<username>')
+def about_page(username):
+    return f'<h1>This is the about page of {username}</h1>'
