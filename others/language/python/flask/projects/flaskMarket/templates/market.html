@@ -40,7 +40,33 @@
     </nav>
 
     <h1>Market Page</h1>
-    <p>{{item_name}}</p>
+
+    <table class="table table-hover table-dark">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Barcode</th>
+        <th scope="col">Price</th>
+        <th scope="col">Options</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for item in items %}
+        <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.barcode }}</td>
+          <td>{{ item.price }} $</td>
+          <td>
+            <button class="btn btn-outline btn-info">More info</button>
+            <button class="btn btn-outline btn-success">Purchase this item</button>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
