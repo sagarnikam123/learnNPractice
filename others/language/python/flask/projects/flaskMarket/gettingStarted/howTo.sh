@@ -1,5 +1,8 @@
 # how to flaskMarket
 
+# install
+pip3 install flask flask_sqlalchemy
+
 # export
 #export FLASK_APP=market.py
 export FLASK_APP=run.py
@@ -58,3 +61,10 @@ item1.owner
 i = Item.query.filter_by(name='IPhone 10').first()
 i.owned_user
 exit()
+
+# install
+pip3 install flask-wtf wtforms
+
+# generate secret key
+import os
+os.urandom(12).hex()
