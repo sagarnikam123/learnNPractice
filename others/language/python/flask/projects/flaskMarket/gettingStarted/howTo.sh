@@ -71,3 +71,6 @@ os.urandom(12).hex()
 
 # install
 pip3 install email_validator
+
+# install - user authentication
+pip3 install flask-bcrypt
