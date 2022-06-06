@@ -68,3 +68,6 @@ pip3 install flask-wtf wtforms
 # generate secret key
 import os
 os.urandom(12).hex()
+
+# install
+pip3 install email_validator
