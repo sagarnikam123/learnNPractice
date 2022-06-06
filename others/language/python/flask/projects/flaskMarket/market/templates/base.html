@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -43,6 +43,19 @@
     </nav>
 
     <!-- Future content here -->
+    {% with messages =  get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        {{ message }}
+      </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     {% block content %}
     {% endblock %}
 
