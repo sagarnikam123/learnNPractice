@@ -24,3 +24,6 @@ from src.database import db
 db.create_all()
 db.drop_all()
 db.create_all()
+
+# install
+pip3 install validators
