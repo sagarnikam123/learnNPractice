@@ -27,3 +27,4 @@ db.create_all()
 
 # install
 pip3 install validators
+pip3 install flask-jwt-extended
