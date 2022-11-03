@@ -11,7 +11,7 @@ sudo port install pdsh
 
 # etc/hadoop/hadoop-env.sh - not required on mac
 # JAVA_HOME
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home
 # HADOOP_HOME
 export HADOOP_HOME=/Users/sagar/Documents/apache/hadoop-3.2.3
 # WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
@@ -20,7 +20,7 @@ export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_HOME/lib/native"
 # usage documentation for the hadoop script
 bin/hadoop
 ################################################################################
-# Pseudo-Distributed ( on single node)
+# Pseudo-Distributed (on single node)
 
 # etc/hadoop/core-site.xml
 <configuration>
@@ -31,7 +31,7 @@ bin/hadoop
 
     <property>
 	    <name>hadoop.tmp.dir</name>
-	    <value>/Users/sagar/Documents/apache/hadoop-3.2.3/hadoop_temp/</value>
+	    <value>/Users/sagar/Documents/apache/hadoop-2.6.5/hadoop_temp/</value>
 	    <description>A base for other temporary directories.</description>
 	</property>
 </configuration>
@@ -65,7 +65,7 @@ sbin/stop-dfs.sh # stop the daemons
 # check
 jps
 
-# web interface for the NameNode - http://localhost:9870/
+#  default address of NameNode web UI - http://localhost:50070/
 # Make the HDFS directories required to execute MapReduce jobs
 bin/hdfs dfs -mkdir /user
 bin/hdfs dfs -mkdir /user/sagar
