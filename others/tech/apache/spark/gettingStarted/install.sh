@@ -14,19 +14,19 @@ export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
 
 # view version
 bin/spark-submit --version
-
+#######################################################################################################
 # Start up spark-shell with yarn
 bin/spark-shell --master yarn
 
 sc # spark context
 spark # spark session
 
+#######################################################################################################
 # example
-# ./bin/spark-submit --class path.to.your.Class --master yarn --deploy-mode cluster [options] <app jar> [app options]
+# /bin/spark-submit --class path.to.your.Class --master yarn --deploy-mode cluster [options] <app jar> [app options]
 
 # client mode-single
-bin/spark-submit --master yarn --deploy-mode client --class org.apache.spark.examples.SparkPi \
-    examples/jars/spark-examples*.jar 10
+bin/spark-submit --master yarn --deploy-mode client --class org.apache.spark.examples.SparkPi examples/jars/spark-examples*.jar 10
 # cluster mode
 bin/spark-submit --class org.apache.spark.examples.SparkPi \
     --master yarn \
@@ -39,7 +39,7 @@ bin/spark-submit --class org.apache.spark.examples.SparkPi \
     10
 
 examples/jars/spark-examples_2.12-3.2.1.jar
-
+#######################################################################################################
 # enable prometheus metrics
 cp conf/metrics.properties.template conf/metrics.properties
 
@@ -51,3 +51,4 @@ cp conf/metrics.properties.template conf/metrics.properties
 
 bin/spark-shell --master yarn --conf spark.ui.prometheus.enabled=true \
 --conf spark.executor.processTreeMetrics.enabled=true
+#######################################################################################################
