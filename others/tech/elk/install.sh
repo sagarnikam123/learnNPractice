@@ -22,6 +22,8 @@ curl --cacert $ES_HOME/config/certs/http_ca.crt -u elastic https://localhost:920
 ./bin/elasticsearch-reset-password -i -u kibana_system
 ./bin/elasticsearch-reset-password -i -u logstash_system
 
+# list of all indices
+https://localhost:9200/_aliases?pretty=true
 ####################################################################################################
 # install kibana
 
