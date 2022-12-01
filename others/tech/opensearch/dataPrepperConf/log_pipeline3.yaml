@@ -1,0 +1,15 @@
+log-pipeline:
+  source:
+    http:
+      ssl: false
+  processor:
+    - grok:
+        match:
+          log: [ "%{DATA:time} [%{DATA:executor_driver}] %{LOGLEVEL:log_level} %{DATA:class} - %{GREEDYDATA:message}" ]
+  sink:
+    - opensearch:
+        hosts: [ "https://opensearch:9200" ]
+        insecure: true
+        username: admin
+        password: admin
+        index: error_logs
