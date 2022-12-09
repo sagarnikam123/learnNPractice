@@ -11,6 +11,9 @@ cd elasticsearch-8.5.2/
 # Enable automatic creation of system indices
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,*
 
+# disable geoip indexing download
+#ingest.geoip.downloader.enabled: false
+
 # run
 bin/elasticsearch
 
@@ -44,6 +47,11 @@ elasticsearch.password: "admin123"
 # change http -> https
 elasticsearch.hosts: ["https://localhost:9200"]
 
+# copy ca certificate
+mkdir "/Users/sagar/Documents/apache/kibana-8.5.2/config/cert"
+cp "/Users/sagar/Documents/apache/elasticsearch-8.5.2/config/certs/http_ca.crt" \
+"/Users/sagar/Documents/apache/kibana-8.5.2/config/cert/http_ca.crt"
+
 # certificateAuthorities
 elasticsearch.ssl.certificateAuthorities: [ "/Users/sagar/Documents/apache/kibana-8.5.2/config/cert/http_ca.crt" ]
 
@@ -62,6 +70,11 @@ http://localhost:5601/
 # install logstash
 tar -xvzf logstash-8.5.2-darwin-x86_64.tar.gz
 cd logstash-8.5.2
+
+# copy ca cert
+mkdir /Users/sagar/Documents/apache/logstash-8.5.2/config/cert
+cp "/Users/sagar/Documents/apache/elasticsearch-8.5.2/config/certs/http_ca.crt" \
+"/Users/sagar/Documents/apache/logstash-8.5.2/config/cert/http_ca.crt"
 
 # config/logstash.yml
 xpack.monitoring.enabled: true
@@ -83,11 +96,13 @@ bin/logstash-plugin list
 # The input-elastic_agent plugin is the next generation of the input-beats plugin.
 
 #filebeat
+mkdir examples
+touch examples/filebeat.yml
 # examples/filebeat.yml
 filebeat.inputs:
 - type: log
   paths:
-    - /Users/sagar/Downloads/logstash-tutorial.log
+    - /Users/sagar/Documents/secura/work/logAnalysis/logstash-tutorial.log
 output.logstash:
   hosts: ["localhost:5044"]
 
@@ -95,6 +110,8 @@ output.logstash:
 ./filebeat -e -c examples/filebeat.yml -d "publish"
 
 # logstash
+mkdir examples
+touch examples/first-pipeline.conf
 # examples/first-pipeline.conf
 input {
     beats {
