@@ -6,6 +6,13 @@
 # How to run
 # chmod +x grafanaExports.sh
 # sh grafanaExports.sh
+
+# other installs
+# install jq
+# sudo apt-get install jq # Debian and Ubuntu
+# sudo dnf install jq # Fedora
+# sudo zypper install jq # openSUSE
+# brew install jq # OS X
 #######################################################################################################################
 
 # variables
@@ -38,6 +45,7 @@ for uid in $(echo $dashboards | jq -r '.[] | .uid'); do
   echo "Dashboard $uid exported"
 done
 
+echo 'Backup directory for grafana exports- '$BACKUPDIR
 cd ..
 
 # https://www.ifconfig.it/hugo/2021/12/backup-grafana-dashboards-with-api-and-jq/
