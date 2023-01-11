@@ -20,19 +20,17 @@ export token=xxxxxxxxx #admin token
 export grafanaurl=http://localhost:3000/api # grafana url
 
 # backup folder
-BACKUPDIR=backup_$(date +%Y%m%d_%H%M)
+# backup folder
+if [ -z "$BACKUPDIR" ]
+then
+      BACKUPDIR=backup_$(date +%Y%m%d_%H%M)
+else
+      echo "Using $BACKUPDIR as backup folder"
+fi
+
+#BACKUPDIR=backup_$(date +%Y%m%d_%H%M)
 mkdir -p $BACKUPDIR
 cd $BACKUPDIR
-
-# datasource exports
-datasources=$(curl -s -H "Authorization: Bearer $token" -X GET $grafanaurl/datasources)
-for uid in $(echo $datasources | jq -r '.[] | .uid'); do
-  uid="${uid/$'\r'/}" # remove the trailing '/r'
-  curl -s -H "Authorization: Bearer $token" -X GET "$grafanaurl/datasources/uid/$uid" | jq > grafana-datasource-$uid.json
-  slug=$(cat grafana-datasource-$uid.json | jq -r '.name')
-  mv grafana-datasource-$uid.json grafana-datasource-$uid-$slug.json # rename with datasource name and id
-  echo "Datasource $uid exported"
-done
 
 # dashboard exports
 #dashboards=$(curl -s -H "Authorization: Bearer $token" -X GET $grafanaurl/search?folderIds=0&query=&starred=false)
@@ -44,6 +42,18 @@ for uid in $(echo $dashboards | jq -r '.[] | .uid'); do
   mv grafana-dashboard-$uid.json grafana-dashboard-$uid-$slug.json # rename with dashboard name and id
   echo "Dashboard $uid exported"
 done
+
+# datasource exports
+datasources=$(curl -s -H "Authorization: Bearer $token" -X GET $grafanaurl/datasources)
+for uid in $(echo $datasources | jq -r '.[] | .uid'); do
+  uid="${uid/$'\r'/}" # remove the trailing '/r'
+  curl -s -H "Authorization: Bearer $token" -X GET "$grafanaurl/datasources/uid/$uid" | jq > grafana-datasource-$uid.json
+  slug=$(cat grafana-datasource-$uid.json | jq -r '.name')
+  mv grafana-datasource-$uid.json grafana-datasource-$uid-$slug.json # rename with datasource name and id
+  echo "Datasource $uid exported"
+done
+
+
 
 echo 'Backup directory for grafana exports- '$BACKUPDIR
 cd ..
