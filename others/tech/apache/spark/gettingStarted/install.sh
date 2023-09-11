@@ -22,6 +22,10 @@ sc # spark context
 spark # spark session
 
 #######################################################################################################
+
+# Spark Shell Web UI
+# http://localhost:4040/
+#######################################################################################################
 # example
 # /bin/spark-submit --class path.to.your.Class --master yarn --deploy-mode cluster [options] <app jar> [app options]
 
@@ -51,4 +55,15 @@ cp conf/metrics.properties.template conf/metrics.properties
 
 bin/spark-shell --master yarn --conf spark.ui.prometheus.enabled=true \
 --conf spark.executor.processTreeMetrics.enabled=true
+#######################################################################################################
+# Spark Standalone
+
+# BTS, this invokes more general spark-submit script for launching applications
+bin/run-example SparkPi 10
+
+# with scala shell
+# local[N] to run locally with N threads
+# :quit - Exit the interpreter
+# :help - for help
+/bin/spark-shell --master local[2]
 #######################################################################################################
