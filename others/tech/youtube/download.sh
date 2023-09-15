@@ -1,7 +1,7 @@
 # yt-dlp
 
 # 720
-yt-dlp --format mp4 --download-archive $HOME/dw/download.list --batch-file $HOME/dw/list.download \
+yt-dlp --format mp4 --download-archive $HOME/dw/download.list --batch-file $HOME/dw/list.720.download \
 -o "$HOME/Documents/videos/%(title)s-%(id)s.%(ext)s" --compat-options filename-sanitization
 
 
