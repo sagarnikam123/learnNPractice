@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-1
+  namespace: namespace-1
+  labels:
+    type: webapi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      type: webapi
+  template:
+    metadata:
+      labels:
+        type: webapi
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "200m"
+            limits:
+              memory: "64Mi"
+              cpu: "400m"
