@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-deployment
+  namespace: namespace-1
+  labels:
+    type: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: webapp
+  template:
+    metadata:
+      labels:
+        type: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: hello-world:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "200m"
+          limits:
+            memory: "64Mi"
+            cpu: "400m"
