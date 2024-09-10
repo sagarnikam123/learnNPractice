@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-test-pod
+  namespace: namespace-1
+  labels:
+    name: configmap-test-pod
+spec:
+  containers:
+  - name: configmap-test-pod
+    image: registry.k8s.io/busybox
+    command: [ "/bin/sh", "-c", "env" ]
+    env:
+      - name: CONFIGMAP_MESSAGE
+        valueFrom:
+          configMapKeyRef:
+            name: configmap-message
+            key: message
+      - name: CONFIGMAP_WARNING
+        valueFrom:
+          configMapKeyRef:
+            name: configmap-warning
+            key: message
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+  restartPolicy: Never
