@@ -1,6 +1,18 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: double-quote-string-fixer
+      - id: fix-byte-order-marker
+      - id: check-json
+      - id: pretty-format-json
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: detect-aws-credentials
+      - id: detect-private-key
+      - id: check-merge-conflict
