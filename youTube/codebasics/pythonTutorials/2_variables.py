@@ -9,10 +9,10 @@ total=rent+gas+groceries
 print(total)
 
 rent=1400
-item1="rent"
-item2="gas"
-item3="groceries"
-print("Expense items: ", item1, item2, item3)
+item1='rent'
+item2='gas'
+item3='groceries'
+print('Expense items: ', item1, item2, item3)
 
 True
 True=4
@@ -36,7 +36,7 @@ myAge=currentYear-birthYear
 print(myAge)
 
 # 3
-firstName="Sagar"
-middleName="Jiwan"
-lastName="Nikam"
-print("Full Name: ", firstName, middleName, lastName)
+firstName='Sagar'
+middleName='Jiwan'
+lastName='Nikam'
+print('Full Name: ', firstName, middleName, lastName)

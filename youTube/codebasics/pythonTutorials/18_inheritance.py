@@ -24,7 +24,7 @@ class MotorCycle(Vehicle):
         self.has_roof = False
 
     def specific_usage(self):
-        print("specific use: road trip, racing")
+        print('specific use: road trip, racing')
 
 
 c = Car()

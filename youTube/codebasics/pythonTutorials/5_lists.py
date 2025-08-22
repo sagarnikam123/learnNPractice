@@ -1,37 +1,37 @@
 #5_Lists
 
-item1="bread"
-item2="pasta"
-item3="fruits"
+item1='bread'
+item2='pasta'
+item3='fruits'
 
-items=["bread", "pasta", "fruits", "veggies"]
+items=['bread', 'pasta', 'fruits', 'veggies']
 items
 items[0]
 items[2]
 
-items[0]="chips"
+items[0]='chips'
 items
 items[0:2]
 items[-1]
 
-items=["bread", "pasta", "fruits", "veggies"]
+items=['bread', 'pasta', 'fruits', 'veggies']
 items
-items.append("butter")
+items.append('butter')
 items
-items=["bread", "pasta", "fruits", "veggies"]
+items=['bread', 'pasta', 'fruits', 'veggies']
 items
 items.insert(1,'butter')
 items
 
-food=["bread", "pasta", "fruits"]
-bathroom=["shampoo", "soap"]
+food=['bread', 'pasta', 'fruits']
+bathroom=['shampoo', 'soap']
 items=food+bathroom
 items
-food+"soda"
+food+'soda'
 # TypeError: can only concatenate list (not "str") to list
 len(items)
-"bread" in items
-"soda" in items
+'bread' in items
+'soda' in items
 
 # Exercise
 
@@ -50,7 +50,7 @@ firstQuarterExpenses
 2000 in expenses
 
 # d)
-months.append("June")
+months.append('June')
 expenses.append(1980)
 
 # e)

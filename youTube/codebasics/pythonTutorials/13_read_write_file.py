@@ -1,17 +1,17 @@
 # 13_ReadingWriting Files
 
 f = open('/home/quanta/git/learnNPractice/youTube/codeBasics/pythonTutorials/data/funny.txt', 'w')
-f.write("I Love Python")
+f.write('I Love Python')
 f.close()
 ################################################################################
 
 f = open('/home/quanta/git/learnNPractice/youTube/codeBasics/pythonTutorials/data/funny.txt', 'w')
-f.write("I Love JavaScript")
+f.write('I Love JavaScript')
 f.close()
 ################################################################################
 
 f = open('/home/quanta/git/learnNPractice/youTube/codeBasics/pythonTutorials/data/funny.txt', 'a')
-f.write("\nI Love PHP")
+f.write('\nI Love PHP')
 f.close()
 ################################################################################
 

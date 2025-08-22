@@ -32,41 +32,41 @@ def sum(a, b):
     return total
 
 n = sum(5, 6)
-print("Total: ", n)
+print('Total: ', n)
 ################################################################################
 
 total = 0
 
 
 def sum(a, b):
-    print("a: ", a)
-    print("b: ", b)
+    print('a: ', a)
+    print('b: ', b)
 
     total = a + b
-    print("Total inside function : ", total)
+    print('Total inside function : ', total)
     return total
 
 
 n = sum(b=5, a=6)
-print("n: ", n)
-print("Total outside function : ", total)
+print('n: ', n)
+print('Total outside function : ', total)
 ################################################################################
 
 total = 0
 
 
 def sum(a, b=0):
-    print("a: ", a)
-    print("b: ", b)
+    print('a: ', a)
+    print('b: ', b)
 
     total = a + b
-    print("Total inside function : ", total)
+    print('Total inside function : ', total)
     return total
 
 
 n = sum(5)
-print("n: ", n)
-print("Total outside function : ", total)
+print('n: ', n)
+print('Total outside function : ', total)
 ################################################################################
 
 total = 0
@@ -81,17 +81,17 @@ def sum(a, b=0):
     :param b:
     :return total:
     """
-    print("a: ", a)
-    print("b: ", b)
+    print('a: ', a)
+    print('b: ', b)
 
     total = a + b
-    print("Total inside function : ", total)
+    print('Total inside function : ', total)
     return total
 
 
 n = sum(5)
-print("n: ", n)
-print("Total outside function : ", total)
+print('n: ', n)
+print('Total outside function : ', total)
 ################################################################################
 
 # Exercise
@@ -111,7 +111,7 @@ def calculate_area(base, height):
     return area
 
 
-print("Area of Triangle: ", calculate_area(4, 5))
+print('Area of Triangle: ', calculate_area(4, 5))
 ################################################################################
 
 # 2
@@ -126,25 +126,25 @@ def calculate_shaped_area(base, height, shape):
     :param shape: t-triangle, s-square
     :return area: area of given shape
     """
-    if shape == "t":
+    if shape == 't':
         area = 1/2 * (base * height)
         return area
-    elif shape == "s":
+    elif shape == 's':
         area = base * height
         return area
     else:
         print("Can't find shape given")
 
 
-print("Area of shape: ", calculate_shaped_area(4, 5, "s"))
+print('Area of shape: ', calculate_shaped_area(4, 5, 's'))
 ################################################################################
 
 # 3
 def print_pattern(pattern):
     for i in range(1, pattern+1):
         for j in range(i):
-            print("*", end="")
-        print("\n")
+            print('*', end='')
+        print('\n')
 
 
 print_pattern(3)

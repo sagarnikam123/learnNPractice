@@ -6,6 +6,6 @@ def calculate_area_(base, height):
 
 
 if __name__ == '__main__':
-    print("I am in area.py")
+    print('I am in area.py')
     a = calculate_area_(10, 20)
-    print("area: ", a)
+    print('area: ', a)

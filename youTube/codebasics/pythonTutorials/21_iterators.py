@@ -1,6 +1,6 @@
 # 21_Iterators
 
-a = ["hey", "bro", "you'r", "awesome"]
+a = ['hey', 'bro', "you'r", 'awesome']
 for i in a:
     print(i)
 dir(a)

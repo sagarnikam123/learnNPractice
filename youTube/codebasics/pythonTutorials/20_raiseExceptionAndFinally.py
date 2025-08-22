@@ -34,7 +34,7 @@ class Accident2(Exception):
         self.msg = msg
 
     def handle(self):
-        print("accident occurred. take the detour")
+        print('accident occurred. take the detour')
 
 
 try:

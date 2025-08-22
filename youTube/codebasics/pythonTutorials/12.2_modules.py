@@ -33,10 +33,10 @@ print(area)
 ################################################################################
 import sys
 import functions as f
-sys.path.append("/home/quanta/git/learnNPractice/youTube/codeBasics/pythonTutorials/modules")
+sys.path.append('/home/quanta/git/learnNPractice/youTube/codeBasics/pythonTutorials/modules')
 
 area = f.calculate_square_area(10)
 area_triangle = f.calculate_triangle_area(5,10)
-print("square area - ", area)
-print("triangle area - ", area_triangle)
+print('square area - ', area)
+print('triangle area - ', area_triangle)
 ################################################################################
