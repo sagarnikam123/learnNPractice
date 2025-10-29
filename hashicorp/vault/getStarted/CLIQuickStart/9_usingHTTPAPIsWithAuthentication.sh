@@ -23,7 +23,7 @@ curl \
     http://127.0.0.1:8200/v1/sys/init | jq
 
 export VAULT_ADDR='http://127.0.0.1:8200'
-export VAULT_TOKEN='s.l0XTkfXAuzN2BMvehTzQnkM5'
+export VAULT_TOKEN='<vault-token>'
 
 # unseal the Vault via the HTTP API using unseal key
 curl \
@@ -91,7 +91,7 @@ curl --request POST \
        http://127.0.0.1:8200/v1/auth/approle/login | jq -r ".auth"
 
 # newly acquired token can be exported as the VAULT_TOKEN env_feature variable value and used to authenticate subsequent Vault requests.
-export VAULT_TOKEN="s.UnG6RFPnxDa37zOCSvkiyy1m"
+export VAULT_TOKEN="<vault-token>"
 
 # Create a version 1 of secret named creds with a key password and its value set to my-long-password
 curl \
