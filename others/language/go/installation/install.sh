@@ -3,7 +3,7 @@
 #download - https://golang.org/dl/
 tar -C /usr/local -xzf /home/quanta/Downloads/go1.9.2.linux-amd64.tar.gz
 
-# Adding PATH environment variable
+# Adding PATH env_feature variable
 /etc/profile # (for system-wide)
 $HOME/.profile #(for all user)
 $HOME/.bashrc (# for local user)

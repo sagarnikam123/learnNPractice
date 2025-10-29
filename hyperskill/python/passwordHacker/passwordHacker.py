@@ -33,7 +33,7 @@ class PasswordHacker:
         return username_list
 
     def check_login_only(self, login):
-        login_only = {"login": login, "password": ' '}
+        login_only = {'login': login, 'password': ' '}
         json_login_only = json.dumps(login_only)
         self.client_socket.send(json_login_only.encode())
         response = self.client_socket.recv(1024)
@@ -45,7 +45,7 @@ class PasswordHacker:
             return True
 
     def check_login_password(self, username, password):
-        login_password = {"login": username, "password": password}
+        login_password = {'login': username, 'password': password}
         json_login_pass = json.dumps(login_password)
 
         start = datetime.now()

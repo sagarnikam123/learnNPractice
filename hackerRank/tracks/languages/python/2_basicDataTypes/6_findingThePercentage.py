@@ -80,4 +80,4 @@ total = 0
 for mark in hashMap[lastPersonName]:
     total += mark
 
-print("%.2f" %(total/3.00) )
+print('%.2f' %(total/3.00) )

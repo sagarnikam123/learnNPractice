@@ -1,3 +1,3 @@
 import logging
 
-logging.warning("Remain Calm!")
+logging.warning('Remain Calm!')

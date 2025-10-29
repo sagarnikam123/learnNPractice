@@ -1,6 +1,6 @@
 # Deploy Vault
 
-# unset the VAULT_TOKEN environment variable.
+# unset the VAULT_TOKEN env_feature variable.
 unset VAULT_TOKEN
 
 # Configuring Vault

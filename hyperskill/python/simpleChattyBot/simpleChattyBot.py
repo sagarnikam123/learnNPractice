@@ -20,7 +20,7 @@ def guess_age():
     rem7 = int(input())
     age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
 
-    print("Your age is " + str(age) + "; that's a good time to start programming!")
+    print('Your age is ' + str(age) + "; that's a good time to start programming!")
 
 
 def count():

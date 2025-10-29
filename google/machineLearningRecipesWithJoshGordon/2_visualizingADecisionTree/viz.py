@@ -34,10 +34,10 @@ tree.export_graphviz(clf,
                         impurity =  False   )
 
 graph = pydot.graph_from_dot_data(dot_data.getvalue())
-graph.write_pdf("iris.pdf")
+graph.write_pdf('iris.pdf')
 
 print iris.feature_names, iris.target_names
-print " -- Test data -- "
-print "Test - 1 " , test_data[0], test_target[0]
-print "Test - 2 " , test_data[1], test_target[1]
-print "Test - 3 " , test_data[2], test_target[2]
+print ' -- Test data -- '
+print 'Test - 1 ' , test_data[0], test_target[0]
+print 'Test - 2 ' , test_data[1], test_target[1]
+print 'Test - 3 ' , test_data[2], test_target[2]

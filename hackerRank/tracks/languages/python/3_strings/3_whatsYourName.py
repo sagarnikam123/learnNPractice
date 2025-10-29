@@ -30,4 +30,4 @@
 firstName = input().strip()
 lastName = input().strip()
 
-print("Hello "+ firstName+" "+ lastName + "! You just delved into python.")
+print('Hello '+ firstName+' '+ lastName + '! You just delved into python.')

@@ -40,4 +40,4 @@ for fikir in range(n):
     suvojit = 0
 
     if len(jindaDil) < 4:
-        print( "SUVO= {suvo}, SUVOJIT = {suvojit}".format(suvo = suvo,suvojit=suvojit ) )
+        print( 'SUVO= {suvo}, SUVOJIT = {suvojit}'.format(suvo = suvo,suvojit=suvojit ) )

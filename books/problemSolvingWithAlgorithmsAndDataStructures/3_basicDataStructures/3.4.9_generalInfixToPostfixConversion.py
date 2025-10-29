@@ -6,16 +6,16 @@ from stack import Stack
 
 def infix_to_postfix(infix_expr):
     prec = {}
-    prec["*"] = 3
-    prec["/"] = 3
-    prec["+"] = 2
-    prec["-"] = 2
-    prec["("] = 1
+    prec['*'] = 3
+    prec['/'] = 3
+    prec['+'] = 2
+    prec['-'] = 2
+    prec['('] = 1
     op_stack = Stack()
     postfix_list = []
     token_list = infix_expr.split()
     for token in token_list:
-        if token in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or token in "0123456789":
+        if token in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' or token in '0123456789':
             postfix_list.append(token)
         elif token == '(':
             op_stack.push(token)
@@ -30,7 +30,7 @@ def infix_to_postfix(infix_expr):
                 op_stack.push(token)
     while not op_stack.is_empty():
         postfix_list.append(op_stack.pop())
-    return " ".join(postfix_list)
+    return ' '.join(postfix_list)
 
 print(infix_to_postfix('A * B + C * D'))
 print(infix_to_postfix('(A + B) * C - (D - E) * (F + G)'))

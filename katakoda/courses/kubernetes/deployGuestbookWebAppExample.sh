@@ -89,7 +89,7 @@ spec:
         - name: GET_HOSTS_FROM
           value: dns
           # If your cluster config does not include a dns service, then to
-          # instead access an environment variable to find the master
+          # instead access an env_feature variable to find the master
           # service's host, comment out the 'value: dns' line above, and
           # uncomment the line below.
           # value: env
@@ -147,7 +147,7 @@ spec:
         - name: GET_HOSTS_FROM
           value: dns
           # If your cluster config does not include a dns service, then to
-          # instead access environment variables to find service host
+          # instead access env_feature variables to find service host
           # info, comment out the 'value: dns' line above, and uncomment the
           # line below.
           # value: env

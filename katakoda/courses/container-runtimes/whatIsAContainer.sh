@@ -22,9 +22,9 @@ echo $DBPID
 echo Redis is $DBPID
 ls /proc
 ls /proc/$DBPID
-# you can view and update the environment variables defined to that process
+# you can view and update the env_feature variables defined to that process
 cat /proc/$DBPID/environ
-# check environment
+# check env_feature
 docker exec -it db env
 ###############################################################################
 # Step 2 - Namespaces

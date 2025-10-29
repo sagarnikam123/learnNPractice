@@ -25,6 +25,6 @@
 #######################################################################################################################
 
 n = int(input().strip())
-unspacedIntegers = [int(x) for x in input().strip().split(" ")]
+unspacedIntegers = [int(x) for x in input().strip().split(' ')]
 t = tuple(unspacedIntegers)
 print(hash(t))

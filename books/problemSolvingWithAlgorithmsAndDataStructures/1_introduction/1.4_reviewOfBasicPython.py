@@ -1,7 +1,7 @@
 # 1.4 Review of Basic Python
 
 # 1.4.1 Getting Started with Data
-print("Algorithms and Data Structures")
+print('Algorithms and Data Structures')
 
 # Built-in Atomic Data Types
 print(2+3 * 4)
@@ -79,8 +79,8 @@ list(range(5,10))
 list(range(5,10,2))
 list(range(10,1,-1))
 
-"David"
-my_name = "David"
+'David'
+my_name = 'David'
 my_name[3]
 my_name * 2
 len(my_name)
@@ -108,12 +108,12 @@ my_tuple[0:2]
 # TypeError: 'tuple' object does not support item assignment
 my_tuple[1] = False
 
-{3,6,"cat",4.5,False}
-my_set = {3,6,"cat",4.5,False}
+{3,6,'cat',4.5,False}
+my_set = {3,6,'cat',4.5,False}
 my_set
 len(my_set)
 False in my_set
-"dog" in my_set
+'dog' in my_set
 
 my_set
 my_set = {False, 3, 4.5, 6, 'cat'}
@@ -126,7 +126,7 @@ my_set.difference(your_set)
 my_set - your_set
 {3,100}.issubset(your_set)
 {3,100} <= your_set
-my_set.add("house")
+my_set.add('house')
 my_set
 my_set.pop()
 my_set
@@ -142,13 +142,13 @@ capitals['California'] = 'Sacramento'
 print(len(capitals))
 
 for k in capitals:
-    print(capitals[k], " is the capital of ", k)
+    print(capitals[k], ' is the capital of ', k)
 
 phone_ext = {'david':1410, 'brad':1137}
 phone_ext
 phone_ext.keys()
 list(phone_ext.keys())
-"brad" in phone_ext
+'brad' in phone_ext
 
 phone_ext.values()
 list(phone_ext.values())
@@ -161,36 +161,36 @@ phone_ext
 
 # 1.4.2 Input and Output
 user_name = input('Please enter your name: ')
-print("Your name in all capitals is", user_name.upper(), "and has length", len(user_name))
+print('Your name in all capitals is', user_name.upper(), 'and has length', len(user_name))
 
-user_radius = input("Please enter the radius of the circle ")
+user_radius = input('Please enter the radius of the circle ')
 radius = float(user_radius)
 diameter =  2 * radius
 diameter
 
 # String Formatting
-print("Hello")
-print("Hello", "World")
-print("Hello", "World", sep="***")
-print("Hello", "World", end="***")
-print("Hello", end="***");print("World")
+print('Hello')
+print('Hello', 'World')
+print('Hello', 'World', sep='***')
+print('Hello', 'World', end='***')
+print('Hello', end='***');print('World')
 name = 'a'; age = 12
 
-print(name, "is", age, "years old.")
-print("%s is %d years old." %(name, age))
+print(name, 'is', age, 'years old.')
+print('%s is %d years old.' %(name, age))
 
 price = 24
-item = "banana"
-print("The %s costs %d cents" % (item, price) )
-print("The %+10s costs %5.2f cents" %(item, price) )
-print("The %+10s costs %10.2f cents"%(item,price) )
-item_dict = {"item": "banana", "cost" : 24}
-print("The %(item)s costs %(cost)7.1f cents"%item_dict)
+item = 'banana'
+print('The %s costs %d cents' % (item, price) )
+print('The %+10s costs %5.2f cents' %(item, price) )
+print('The %+10s costs %10.2f cents'%(item,price) )
+item_dict = {'item': 'banana', 'cost' : 24}
+print('The %(item)s costs %(cost)7.1f cents'%item_dict)
 
 # 1.4.3 Control Structures
 counter = 1
 while counter <= 5:
-    print("Hello, world")
+    print('Hello, world')
     counter = counter + 1
 
 for item in [1,3,6,2,5]:
@@ -199,7 +199,7 @@ for item in [1,3,6,2,5]:
 for item in range(5):
     print(item ** 2)
 
-word_list = ["cat","dog","rabbit"]
+word_list = ['cat','dog','rabbit']
 letter_list = []
 
 for a_word in word_list:
@@ -210,7 +210,7 @@ print(letter_list)
 
 n = 4
 if n < 0:
-    print("Sorry, value is negative")
+    print('Sorry, value is negative')
 else:
     print(math.sqrt(n))
 
@@ -275,8 +275,8 @@ print(math.sqrt(a_number))
 try:
     print(math.sqrt(a_number))
 except:
-    print("Bad Value for square root")
-    print("Using absolute value instead")
+    print('Bad Value for square root')
+    print('Using absolute value instead')
     print(math.sqrt(abs(a_number)))
 
 # RuntimeError: You can't use a negative number

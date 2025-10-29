@@ -5,7 +5,7 @@
 # poetry install
 python3 -m pip install --user pipx
 pipx install poetry
-pipx ensurepath # to add '/Users/sagar/.local/bin' in your PATH environment variable
+pipx ensurepath # to add '/Users/sagar/.local/bin' in your PATH env_feature variable
 
 # install from source
 git clone https://github.com/Beam-Connectivity/grafana-dashboard-manager.git

@@ -2,7 +2,7 @@
 
 # An if … elif … elif … sequence is a substitute for the switch or case statements found in other languages.
 
-x = int(input("Please enter an integer: "))
+x = int(input('Please enter an integer: '))
 
 if x < 0 :
     x = 0

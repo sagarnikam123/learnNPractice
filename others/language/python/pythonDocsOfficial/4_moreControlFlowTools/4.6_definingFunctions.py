@@ -6,11 +6,11 @@
 
 # UnboundLocalError: local variable 'x' referenced before assignment
 x = 1
-print("Zero - ",x)
+print('Zero - ',x)
 def abc():
-    print("First - ",x)
+    print('First - ',x)
     x = 2
-    print("second - ",x)
+    print('second - ',x)
 
 def fib(n): # write Fibonacci series up to n
     """Print a Fibonacci series up to n."""

@@ -1,7 +1,7 @@
 # venv
 
 ################################################################################
-# create virtual environment
+# create virtual env_feature
 python3 -m venv iee_multipipeline
 
 # activate

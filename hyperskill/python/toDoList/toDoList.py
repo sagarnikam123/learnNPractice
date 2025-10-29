@@ -85,7 +85,7 @@ class ToDoList:
             day = datetime.today().date()
         which_day = 'Today'
         if week_task:
-            which_day = day.strftime("%A")
+            which_day = day.strftime('%A')
         print('{} {} {}:'.format(which_day, day.day, day.strftime('%b')))
         table_rows = self.get_all_table_rows_by_date(day)
         if len(table_rows) >= 1:

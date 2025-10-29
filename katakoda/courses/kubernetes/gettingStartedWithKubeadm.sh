@@ -11,7 +11,7 @@
 # initialise the cluster with a known token to simplify the following steps.
 kubeadm init --token=102952.1a7dd4cc8d1f4cc5 --kubernetes-version $(kubeadm version -o short)
 
-# copies the configuration to the users home directory and sets the environment variable for use with the CLI.
+# copies the configuration to the users home directory and sets the env_feature variable for use with the CLI.
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf

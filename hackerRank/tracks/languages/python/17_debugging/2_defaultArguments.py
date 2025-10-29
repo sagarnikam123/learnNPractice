@@ -135,7 +135,7 @@ queries = int(input())
 for _ in range(queries):
     stream_name, n = input().split()
     n = int(n)
-    if stream_name == "even":
+    if stream_name == 'even':
         print_from_stream(n)
     else:
         print_from_stream(n, OddStream())

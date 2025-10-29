@@ -62,7 +62,7 @@ class Task:
                 lab_printer.startNext(next_task)
             lab_printer.tick()
         average_wait = sum(waiting_times) / len(waiting_times)
-        print("Average Wait %6.2f secs %3d tasks remaining." %(average_wait, print_queue.size()) )
+        print('Average Wait %6.2f secs %3d tasks remaining.' %(average_wait, print_queue.size()) )
 
 def new_print_task():
     num = random.randrange(1, 181)

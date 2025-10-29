@@ -9,20 +9,20 @@ from datetime import timedelta
     # contstruct a basicdelta & print it
 print timedelta(days=365, hours=5, minutes=1)
 # print today's date
-print "today is " +  str(datetime.now())
-print " "
+print 'today is ' +  str(datetime.now())
+print ' '
 
 # print today's date from one year now
-print "one year from now it will be: ", str(datetime.now() + timedelta(days=365) )
+print 'one year from now it will be: ', str(datetime.now() + timedelta(days=365) )
 # create a timedelta that uses more than one argument
-print "in two weeks & 3 days it will be ", str(datetime.now() + timedelta(weeks=2, days=3))
-print " "
+print 'in two weeks & 3 days it will be ', str(datetime.now() + timedelta(weeks=2, days=3))
+print ' '
 
 # calculate the date 1 week ago, formatted as a string
 t = datetime.now() - timedelta(weeks=1)
-s = t.strftime("%A %B %d %Y")
-print "one week ago it was " + s
-print " "
+s = t.strftime('%A %B %d %Y')
+print 'one week ago it was ' + s
+print ' '
 
 # How many days untill April Fools' day ?
 today = date.today() # get today's date

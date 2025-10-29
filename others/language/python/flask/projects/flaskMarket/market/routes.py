@@ -5,7 +5,7 @@ from market.forms import RegisterForm, LoginForm
 from market import db
 
 
-@app.route("/")
+@app.route('/')
 @app.route('/home')
 def home_page():
     return render_template('home.html')

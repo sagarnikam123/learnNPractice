@@ -16,12 +16,12 @@ vagrant --version
 mkdir learn-chef-infra
 cd learn-chef-infra
 ###############################################################################
-# Prep a test environment
+# Prep a test env_feature
 
 # create minimal file  structure
 chef generate cookbook learn_chef
 
-# validate kitchen.yml & list instances info in test environment
+# validate kitchen.yml & list instances info in test env_feature
 cd learn_chef/
 kitchen list
 
@@ -64,6 +64,6 @@ kitchen converge ubuntu
 kitchen login ubuntu
 curl localhost # nothing shown, as content is not included
 
-# exit and clean up your testing environment and delete your test instances
+# exit and clean up your testing env_feature and delete your test instances
 kitchen destroy
 ###############################################################################

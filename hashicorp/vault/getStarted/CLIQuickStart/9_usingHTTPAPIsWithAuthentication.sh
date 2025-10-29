@@ -90,7 +90,7 @@ curl --request POST \
        --data '{"role_id": "8a927224-9b44-aff4-7a93-f73dc9e5bef2", "secret_id": "71f6f353-c048-ae1f-ab23-38f38775e454"}' \
        http://127.0.0.1:8200/v1/auth/approle/login | jq -r ".auth"
 
-# newly acquired token can be exported as the VAULT_TOKEN environment variable value and used to authenticate subsequent Vault requests.
+# newly acquired token can be exported as the VAULT_TOKEN env_feature variable value and used to authenticate subsequent Vault requests.
 export VAULT_TOKEN="s.UnG6RFPnxDa37zOCSvkiyy1m"
 
 # Create a version 1 of secret named creds with a key password and its value set to my-long-password
@@ -100,5 +100,5 @@ curl \
     --data '{ "data": {"password": "my-long-password"} }' \
     http://127.0.0.1:8200/v1/secret/data/creds | jq -r ".data"
 
-#  can stop the server and unset the VAULT_TOKEN environment variable
+#  can stop the server and unset the VAULT_TOKEN env_feature variable
 unset VAULT_TOKEN

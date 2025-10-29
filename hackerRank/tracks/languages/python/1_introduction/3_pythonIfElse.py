@@ -59,6 +59,6 @@ import sys
 n = int(input().strip())
 
 if (n % 2 !=0 ) or (n >= 6 and n <= 20):
-    print("Weird")  # odd
+    print('Weird')  # odd
 elif (n >=2 and n <=5) or (n > 20):
-    print("Not Weird")
+    print('Not Weird')

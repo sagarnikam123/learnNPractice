@@ -19,7 +19,7 @@ predictions_decisionTree = decisionTree_classifier.predict(x_test)
 #print "Predictions - Decision Tree : ",predictions_decisionTree
 
 from sklearn.metrics import accuracy_score
-print "Accuracy score - Decision Tree : ",accuracy_score(y_test, predictions_decisionTree)
+print 'Accuracy score - Decision Tree : ',accuracy_score(y_test, predictions_decisionTree)
 
 
 # using KNearest Neighbors
@@ -27,5 +27,5 @@ from sklearn.neighbors import KNeighborsClassifier
 kNeighbors_classifier = KNeighborsClassifier()
 kNeighbors_classifier.fit(x_train, y_train)
 predictions_kNeighbors = kNeighbors_classifier.predict(x_test)
-print "Predictions - KNeighbors : ", predictions_kNeighbors
-print "Accuracy score - KNeighbors : ", accuracy_score(y_test, predictions_kNeighbors)
+print 'Predictions - KNeighbors : ', predictions_kNeighbors
+print 'Accuracy score - KNeighbors : ', accuracy_score(y_test, predictions_kNeighbors)

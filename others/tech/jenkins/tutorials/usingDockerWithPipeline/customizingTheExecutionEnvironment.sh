@@ -1,6 +1,6 @@
-# Customizing the execution environment
+# Customizing the execution env_feature
 
-# Docker images as the execution environment for a single Stage or the entire Pipeline
+# Docker images as the execution env_feature for a single Stage or the entire Pipeline
 # install 2 plugins before -> "Docker plugin" & "Docker Pipeline"
 
 # declarative

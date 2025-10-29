@@ -34,7 +34,7 @@ vault policy read my-policy
 # Test the Policy
 # Policies are attached to tokens that Vault generates directly or through its various auth methods
 # Create a token, add the my-policy policy, and
-# set the token ID as the value of the VAULT_TOKEN environment variable for later use
+# set the token ID as the value of the VAULT_TOKEN env_feature variable for later use
 export VAULT_TOKEN="$(vault token create -field token -policy=my-policy)"
 
 # validate the token ID with correct policies
@@ -67,11 +67,11 @@ vault write auth/approle/role/my-role \
     secret_id_num_uses=40 \
     token_policies=my-policy
 
-# To authenticate with AppRole, first fetch the role ID, and capture its value in a ROLE_ID environment variable.
+# To authenticate with AppRole, first fetch the role ID, and capture its value in a ROLE_ID env_feature variable.
 export ROLE_ID="$(vault read -field=role_id auth/approle/role/my-role/role-id)"
 
 # get a secret ID (which is similar to a password for applications to use for AppRole authentication),
-# and capture its value in the SECRET_ID environment variable.
+# and capture its value in the SECRET_ID env_feature variable.
 export SECRET_ID="$(vault write -f -field=secret_id auth/approle/role/my-role/secret-id)"
 
 # authenticate to AppRole with vault write by specifying the role path and passing the role ID and

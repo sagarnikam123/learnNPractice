@@ -16,6 +16,6 @@ for n in range(2,10):
 # a try statement’s else clause runs when no exception occurs, and a loop’s else clause runs when no break occurs.
 for num in range(2, 10):
     if num % 2 == 0:
-        print("Found an even number", num)
+        print('Found an even number', num)
         continue
-    print("Found a number", num)
+    print('Found a number', num)

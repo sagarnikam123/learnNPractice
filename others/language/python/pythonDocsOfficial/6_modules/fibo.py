@@ -3,7 +3,7 @@
 def fib(n):
 	a, b = 0, 1
 	while a < n:
-		print(a, end=" ")
+		print(a, end=' ')
 		a, b = b, a+b
 	print()
 
@@ -17,11 +17,11 @@ def fib2(n):    # return Fibonacci series up to n
     return result
 
 
-print("I m from Fibo newly changed-Part-2")
+print('I m from Fibo newly changed-Part-2')
 
 def abc_newlyMade():
 	pass
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 	import sys
 	fib(int(sys.argv[1]))

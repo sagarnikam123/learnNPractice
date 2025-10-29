@@ -29,7 +29,7 @@ dir()
 
 # 6.1.1. Executing modules as scripts
 # put into fibo.py
-if __name__ == "__main__":
+if __name__ == '__main__':
 	import sys
 	fib(int(sys.argv[1]))
 

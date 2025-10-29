@@ -2,7 +2,7 @@
 
 class Book:
     # TODO: properties defined at the class level are shared by all instances
-    BOOK_TYPES = ("HARDCOVER", "PAPERBACK", "EBOOK")
+    BOOK_TYPES = ('HARDCOVER', 'PAPERBACK', 'EBOOK')
 
     # TODO: double-underscore properties are hidden from other classes
     __booklist = None
@@ -32,13 +32,13 @@ class Book:
             self.booktype = booktype
 
 # TODO: access the class attribute
-print("Book types: ", Book.getbooktypes())
+print('Book types: ', Book.getbooktypes())
 
 # # TODO: create some book instances
-b1 = Book("Title 1", "HARDCOVER")
+b1 = Book('Title 1', 'HARDCOVER')
 # ValueError: COMIC is not a valid book type
 # b2 = Book("Title 2", "COMIC")
-b2 = Book("Title 2", "PAPERBACK")
+b2 = Book('Title 2', 'PAPERBACK')
 
 # TODO: use the static method to access a singleton object
 thebooks = Book.getbooklist()

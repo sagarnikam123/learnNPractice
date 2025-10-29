@@ -78,7 +78,7 @@ class MyHTMLParser(HTMLParser):
 
 
 
-html = ""
+html = ''
 for i in range(int(input())):
     html += input().rstrip()
     html += '\n'

@@ -9,7 +9,7 @@
 #   Ananya and Bhavya are on their way to Goa. On their trip they visit a lot of different places. But one place
 #   left Ananya awe struck. She saw a lot of round big stones laid in a straight line with a number encrypted on
 #   each of them. She called this number as the value of the stones. Since they both are coders they could not
-#   leave their geekiness away for too long. So Bhavya converted the present environment to a problem.
+#   leave their geekiness away for too long. So Bhavya converted the present env_feature to a problem.
 #   She labelled all the stones from 1 onwards. She then asked Ananya to tell her the total number of triplets
 #   such that the label of 1st stone< label of 2nd stone < label of 3rd stone and the product of value of 1st sone,
 #   value of 2nd stone and value of 3rd stone is less than or equal to a given value K that is

@@ -11,13 +11,13 @@ for x in os.walk(PATH):
 #for code_line in delete_code_list:
 #	print(code_line)
 ##########################################################
-infile = "/home/tetra/Dropbox/downloadArchive/uTubeDownloadArchive/youtube_archive"
-outfile = "/home/tetra/Dropbox/downloadArchive/uTubeDownloadArchive/youtube_archive_clean"
+infile = '/home/tetra/Dropbox/downloadArchive/uTubeDownloadArchive/youtube_archive'
+outfile = '/home/tetra/Dropbox/downloadArchive/uTubeDownloadArchive/youtube_archive_clean'
 
 
-with open(infile) as fin, open(outfile, "w+") as fout:
+with open(infile) as fin, open(outfile, 'w+') as fout:
     for line in fin:
         for word in delete_code_list:
-            line = line.replace(word, "")
+            line = line.replace(word, '')
         if not line.isspace():
             fout.write(line)

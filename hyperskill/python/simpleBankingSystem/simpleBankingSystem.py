@@ -75,7 +75,7 @@ class SimpleBankingSystem(object):
             self.create_sqlite3_table()
 
         # insert card_number & card_pin
-        query = "INSERT INTO card (number, pin, balance) VALUES({}, {}, 0)".format(card_number, card_pin)
+        query = 'INSERT INTO card (number, pin, balance) VALUES({}, {}, 0)'.format(card_number, card_pin)
         self._execute_only_sqlite3_query(query)
 
     def create_account(self):
@@ -112,11 +112,11 @@ class SimpleBankingSystem(object):
         return self._execute_fetchone_sqlite3_query(query)[0]
 
     def _add_income_target(self, target_card_number, income):
-        query = "UPDATE card SET balance = balance + {} where number = {}".format(income, target_card_number)
+        query = 'UPDATE card SET balance = balance + {} where number = {}'.format(income, target_card_number)
         self._execute_only_sqlite3_query(query)
 
     def _minus_income_user(self, user_card_number, income):
-        query = "UPDATE card SET balance = balance - {} where number = {}".format(income, user_card_number)
+        query = 'UPDATE card SET balance = balance - {} where number = {}'.format(income, user_card_number)
         self._execute_only_sqlite3_query(query)
 
     def _check_card_number_by_algo(self, target_card_number):

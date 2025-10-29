@@ -40,5 +40,5 @@ while input('Type "play" to play the game, "exit" to quit:') == 'play':
     if attempt_count == 0:
         print('You are hanged!')
     else:
-        print("You survived!")
+        print('You survived!')
     print()

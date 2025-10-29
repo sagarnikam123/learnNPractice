@@ -78,6 +78,6 @@ magazine = input().strip().split(' ')
 ransom = input().strip().split(' ')
 answer = ransom_note(magazine, ransom)
 if(answer):
-    print("Yes")
+    print('Yes')
 else:
-    print("No")
+    print('No')

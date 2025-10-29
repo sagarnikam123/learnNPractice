@@ -3,4 +3,4 @@
 # import sys
 
 sys.argv[0]
-print("dsfasdf")
+print('dsfasdf')

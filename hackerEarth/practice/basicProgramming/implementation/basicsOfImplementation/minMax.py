@@ -29,15 +29,15 @@
 
 n = int(input().strip())
 pt = [int(x) for x in input().strip().split()]
-mestry = "YES"
+mestry = 'YES'
 
 maxPt = max(pt)
 i = min(pt)
 
-while mestry == "YES" and i <= maxPt:
+while mestry == 'YES' and i <= maxPt:
     if i in pt:
         i +=1
     else:
-        mestry="NO"
+        mestry='NO'
 
 print(mestry)

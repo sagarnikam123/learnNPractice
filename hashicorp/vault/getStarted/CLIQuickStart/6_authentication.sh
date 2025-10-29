@@ -51,8 +51,8 @@ vault auth list
 # auth help for github
 vault auth help github
 
-# VAULT_TOKEN environment variable will take precedence over any token you obtain from Vault.
-# Unset the VAULT_TOKEN environment variable
+# VAULT_TOKEN env_feature variable will take precedence over any token you obtain from Vault.
+# Unset the VAULT_TOKEN env_feature variable
 unset VAULT_TOKEN
 
 # Attempt to login with the github auth method.

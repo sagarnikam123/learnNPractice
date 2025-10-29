@@ -42,9 +42,9 @@ def f(a, L=None):
 # 4.7.2. Keyword Arguments
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("-- This parrot wouldn't", action, end=' ')
-    print("if you put", voltage, "volts throught it.")
-    print("-- Lovely plumage, the", type)
-    print("-- It's", state, "!")
+    print('if you put', voltage, 'volts throught it.')
+    print('-- Lovely plumage, the', type)
+    print("-- It's", state, '!')
 
 parrot(1000)    # 1 positional argument
 parrot(voltage=1000)    # 1 keyword argument
@@ -71,26 +71,26 @@ def function(a):
 function(0, a = 0)
 
 def cheeseshop(kind, *arguments, **keywords):
-    print("-- Do you have any", kind, "?")
+    print('-- Do you have any', kind, '?')
     print("-- I'm sorry, we're all out of", kind)
     for arg in arguments:
         print(arg)
-    print("-" * 40)
+    print('-' * 40)
     for kw in keywords:
-        print(kw, ":", keywords[kw])
+        print(kw, ':', keywords[kw])
 
-cheeseshop("Limburger", "It's very runny, sir.",
+cheeseshop('Limburger', "It's very runny, sir.",
             "It's really very, VERY runny, sir.",
-            shopkeeper="Michael Palin",
-            client="John Cleese",
-            sketch="Cheese Shop Sketch")
+            shopkeeper='Michael Palin',
+            client='John Cleese',
+            sketch='Cheese Shop Sketch')
 
 # 4.7.3. Arbitrary Argument Lists
-def concat(*args, sep="/"):
+def concat(*args, sep='/'):
     return sep.join(args)
 
-concat("earth", "mars", "venus")
-concat("earth", "mars", "venus", sep='.')
+concat('earth', 'mars', 'venus')
+concat('earth', 'mars', 'venus', sep='.')
 
 # 4.7.4. Unpacking Argument Lists
 list(range(3, 6))
@@ -101,10 +101,10 @@ list(range(args))
 
 def parrot(voltage, state='a stiff', action='voom'):
     print("-- This parrot wouldn't", action, end=' ')
-    print("if you put", voltage, "volts through it.", end=' ')
-    print("E's", state, "!")
+    print('if you put', voltage, 'volts through it.', end=' ')
+    print("E's", state, '!')
 
-d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+d = {'voltage': 'four million', 'state': "bleedin' demised", 'action': 'VOOM'}
 parrot(**d)
 
 # 4.7.5. Lambda Expressions
@@ -132,7 +132,7 @@ print(my_function.__doc__)
 
 # 4.7.7. Function Annotations
 def f(ham: str, eggs: str = 'eggs') -> str :
-    print("Annotations:", f.__annotations__)
-    print("Arguments:", ham, eggs)
+    print('Annotations:', f.__annotations__)
+    print('Arguments:', ham, eggs)
     return ham + ' and ' + eggs
 f('spam')

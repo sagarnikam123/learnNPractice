@@ -13,7 +13,7 @@ chmod +x ./aws-iam-authenticator
 # We recommend creating a $HOME/bin/aws-iam-authenticator and ensuring that $HOME/bin comes first in your $PATH
 mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin
 
-# Add $HOME/bin to your PATH environment variable
+# Add $HOME/bin to your PATH env_feature variable
 echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
 
 # Test that the aws-iam-authenticator binary works

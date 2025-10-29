@@ -8,10 +8,10 @@ cd spark-spark-bench_2.3.0_0.4.0-RELEASE/
 SPARK_HOME
 SPARK_MASTER_HOST
 
-# 3. Set the environment variable for $SPARK_HOME
+# 3. Set the env_feature variable for $SPARK_HOME
 export SPARK_HOME=/Users/sagar/Documents/apache/spark-2.4.8-bin-hadoop2.6
 
-# 4. Set the environment variable for your Spark master.
+# 4. Set the env_feature variable for your Spark master.
 export SPARK_MASTER_HOST=yarn
 # or
 export SPARK_MASTER_HOST=local[*]

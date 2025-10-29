@@ -23,7 +23,7 @@ def main():
     # f.close()
 
     # Open the file back up & read the contents
-    f = open("textfile.txt", "r")
+    f = open('textfile.txt', 'r')
 
     if f.mode == 'r' :  # check to make sure that the file was open
         # use the read() function to read the entire file
@@ -34,7 +34,7 @@ def main():
         for x in fl:
             print x
 ########################################################################
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
 ########################################################################

@@ -19,7 +19,7 @@ quit()
 
 # tried but not working
 python -m timeit 'print("sdfdsf")'
-python3 -m 'sys' -c "sys.argv[0]"
+python3 -m 'sys' -c 'sys.argv[0]'
 python3 -m 'sys' 'sys.argv[0]'
 python -m sys 'print("sdfdsf")'
 python -m sys _.py
@@ -32,7 +32,7 @@ python3 -c "print('dsfdsf')" -i 'print("dsfsdf")'
 # for continuation lines it prompts with the secondary prompt, by default three dots (...).
 the_world_is_flat = True
 if the_world_is_flat:
-    print("Be carefull not to fall off!!")
+    print('Be carefull not to fall off!!')
 
 # 2.2.1. Source Code Encoding
 # -*- coding: encoding -*-

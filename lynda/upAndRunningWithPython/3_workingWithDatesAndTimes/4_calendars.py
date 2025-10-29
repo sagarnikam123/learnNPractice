@@ -23,11 +23,11 @@ for i in c.itermonthdays(2013,8):
 # such as the names of days and months in both full & abbreviated forms.
 for name in calendar.month_name:
     print name
-print " "
+print ' '
 
 for day in calendar.day_name:
     print day
-print " "
+print ' '
 # calculate days based on a rule : For example, consider
 # a team meething on the first Friday of every month.
 # To figure out what days that would be for each month,
@@ -46,6 +46,6 @@ for m in range(1,13): # 12 month
     else :
         # if the first Friday isn't in the first week, it must be in the second
         meetday = weektwo[calendar.FRIDAY]
-    print "%10s %2d" % (calendar.month_name[m], meetday)
+    print '%10s %2d' % (calendar.month_name[m], meetday)
 
 ########################################################################

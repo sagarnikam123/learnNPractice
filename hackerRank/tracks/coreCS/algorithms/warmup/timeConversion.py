@@ -50,9 +50,9 @@ darinda, shuddhaPasanti, convolution = time[:2], time[2:8], time[-2:]
 boxOffice = 0
 
 if convolution == 'AM' and int(darinda) == 12:
-    print("00",shuddhaPasanti,sep="")
+    print('00',shuddhaPasanti,sep='')
 elif convolution == 'PM' and (int(darinda) >= 1 and int(darinda) <= 11):
     boxOffice = int(darinda) + 12
-    print(boxOffice,shuddhaPasanti,sep="")
+    print(boxOffice,shuddhaPasanti,sep='')
 else:
-    print(darinda,shuddhaPasanti,sep="")
+    print(darinda,shuddhaPasanti,sep='')

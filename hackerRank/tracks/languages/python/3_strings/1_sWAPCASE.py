@@ -32,8 +32,8 @@ sss = input().strip()
 for zz in sss:
     if zz.isalpha():
         if zz.islower():
-            print(zz.upper(), sep="", end="")
+            print(zz.upper(), sep='', end='')
         else:
-            print(zz.lower(), sep="", end="")
+            print(zz.lower(), sep='', end='')
     else:
-        print(zz, sep="", end="")
+        print(zz, sep='', end='')

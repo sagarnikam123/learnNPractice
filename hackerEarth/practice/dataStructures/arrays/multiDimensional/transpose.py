@@ -44,5 +44,5 @@ for sidbi in range(rowdy):
 
 for i in range(conty):
     for j in range(rowdy):
-        print(mastachNa[j][i]," ",sep="",end="")
+        print(mastachNa[j][i],' ',sep='',end='')
     print()
