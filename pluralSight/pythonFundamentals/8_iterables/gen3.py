@@ -43,7 +43,7 @@ def run_pipeline():
     for item in take(3, distinct(items)):
         print(item)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run_pipeline()
 
 ################################################################################

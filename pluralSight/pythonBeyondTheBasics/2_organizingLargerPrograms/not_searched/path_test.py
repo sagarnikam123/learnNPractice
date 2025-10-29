@@ -1,2 +1,2 @@
 def found():
-    print("Python found me!")
+    print('Python found me!')

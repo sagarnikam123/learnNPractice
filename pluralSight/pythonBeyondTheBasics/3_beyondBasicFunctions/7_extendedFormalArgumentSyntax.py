@@ -1,10 +1,10 @@
 # 03_07-Extended Formal Argument Syntax
 
 print()
-print("one")
-print("one", "two")
-print("one", "two", "three")
-"{a}<===>{b}".format(a="Oslo", b="Stavanger")
+print('one')
+print('one', 'two')
+print('one', 'two', 'three')
+'{a}<===>{b}'.format(a='Oslo', b='Stavanger')
 
 def hypervolume(*args):
     print(args)
@@ -43,7 +43,7 @@ def tag(name, **kwargs):
     print(kwargs)
     print(type(kwargs))
 
-tag('img', src="monet.jpg", alt="Sunrise by Claude Monet", border=1)
+tag('img', src='monet.jpg', alt='Sunrise by Claude Monet', border=1)
 
 def tag(name, **attributes):
     result = '<' + name
@@ -52,7 +52,7 @@ def tag(name, **attributes):
     result += '>'
     return result
 
-tag('img', src="monet.jpg", alt="Sunrise by Claude Monet", border=1)
+tag('img', src='monet.jpg', alt='Sunrise by Claude Monet', border=1)
 
 def print_args(arg1, arg2, *args):
     print(arg1)

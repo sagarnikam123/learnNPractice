@@ -23,7 +23,7 @@ def fetch_words(url):
         story_words = []
         for line in story :
             # line_words = line.split()
-            line_words = line.decode("utf-8").split() # converts bytes->string
+            line_words = line.decode('utf-8').split() # converts bytes->string
             for word in line_words():
                 story_words.append(word)
 
@@ -55,5 +55,5 @@ def main(url):
     # print_words(words)
     print_items(words)
 
-if __name__ == "__main__" :
+if __name__ == '__main__' :
     main(sys.argv[1])   # The 0th arg is the module filename

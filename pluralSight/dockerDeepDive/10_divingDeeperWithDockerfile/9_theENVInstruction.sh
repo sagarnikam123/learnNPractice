@@ -5,7 +5,7 @@ docker images
 # run container
 docker run -it sagar1 /bin/bash
 
-# inside container type...to view environment variable
+# inside container type...to view env_feature variable
 env
 
 # using ENV as command executor

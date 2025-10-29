@@ -17,7 +17,7 @@ class SimpleList:
         return len(self._items)
 
     def __repr__(self):
-        return "SimpleList({!r})".format(self._items)
+        return 'SimpleList({!r})'.format(self._items)
 
 
 class SortedList(SimpleList):
@@ -30,7 +30,7 @@ class SortedList(SimpleList):
         self.sort()
 
     def __repr__(self):
-        return "SortedList({!r})".format(list(self))
+        return 'SortedList({!r})'.format(list(self))
 
 
 class IntList(SimpleList):
@@ -48,7 +48,7 @@ class IntList(SimpleList):
         super().add(item)
 
     def __repr__(self):
-        return "IntList({!r})".format(list(self))
+        return 'IntList({!r})'.format(list(self))
 
 
 class SortedIntList(IntList, SortedList):

@@ -56,9 +56,9 @@ class App:
 		self.links = links
 
 	def __str__(self):
-		return ( "Name: "  + self.name.encode('UTF-8') +
-		"\r\nDeveloper: " + self.developer.encode('UTF-8') +
-		"\r\nPrice: " + self.price.encode('UTF-8') + "\r\n" )
+		return ( 'Name: '  + self.name.encode('UTF-8') +
+		'\r\nDeveloper: ' + self.developer.encode('UTF-8') +
+		'\r\nPrice: ' + self.price.encode('UTF-8') + '\r\n' )
 
 
 crawler = AppCrawler('https://itunes.apple.com/in/app/candy-crush-saga/id553834731' , 2 )

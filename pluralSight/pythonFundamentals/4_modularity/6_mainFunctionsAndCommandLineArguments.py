@@ -11,7 +11,7 @@ fetch_words()
 print_words( ['Any', 'list', 'of', 'words'] )
 main()
 print_words( [1, 7, 3] )
-print_words("Strings are iterable too")
+print_words('Strings are iterable too')
 
 # refactor words.py
 # give url from command line

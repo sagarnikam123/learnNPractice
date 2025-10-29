@@ -11,7 +11,7 @@ linkedList.insertStart(31);
 # traversing I
 linkedList.traverseList();
 
-print("============ going to remove ============")
+print('============ going to remove ============')
 
 # removing
 linkedList.remove(12);

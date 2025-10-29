@@ -4,7 +4,7 @@
 # sudo pip3 install nltk
 
 import nltk
-print("Installed NLTK")
+print('Installed NLTK')
 
 # downloading Collections, Corpora, Modules, Books, third-party data packages
 # nltk.download()
@@ -20,10 +20,10 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 # investor speak 'bull' = someone who is positive about the market
 # english-speak 'bull' = scary animal you don't want running @ you
 
-example_text = "Hello Mr. Smith, how are you donig today? The weather is great and Python is awesome. The sky is pinkish-blue. You should not eat cardboard."
-print("Senten tokenized :- ", sent_tokenize(example_text))
-print("Words tokenized:- ", word_tokenize(example_text))
-print("================================")
+example_text = 'Hello Mr. Smith, how are you donig today? The weather is great and Python is awesome. The sky is pinkish-blue. You should not eat cardboard.'
+print('Senten tokenized :- ', sent_tokenize(example_text))
+print('Words tokenized:- ', word_tokenize(example_text))
+print('================================')
 
 for i in word_tokenize(example_text):
     print(i)

@@ -12,7 +12,7 @@ z = [1, 4, 2]
 z[4]
 
 # ValueError: invalid literal for int() with base 10: 'jim'
-int("jim")
+int('jim')
 
 codes = dict(gb=44, us=1, no=47, fr=33, es=34)
 # KeyError: 'de'

@@ -18,8 +18,8 @@ def sqrt(x):
     """
 
     if x < 0 :
-        raise ValueError( "Cannot compute square root "
-                   "of negative number {}".format(x) )
+        raise ValueError( 'Cannot compute square root '
+                   'of negative number {}'.format(x) )
 
     guess = x
     i = 0
@@ -34,13 +34,13 @@ def main():
         print(sqrt(9))
         print(sqrt(2))
         print(sqrt(-1))
-        print("This is never printed.")
+        print('This is never printed.')
     except ValueError as e :
         print(e, file=sys.stderr)
 
-    print("Program execution continues normally here.")
+    print('Program execution continues normally here.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
 ################################################################################

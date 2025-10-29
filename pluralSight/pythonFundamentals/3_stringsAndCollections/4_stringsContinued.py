@@ -1,7 +1,7 @@
 # Strings (Continued)
 
 ################################################################################
-"first" "second"
+'first' 'second'
 
 # Multiline String(double quotes/single quotes)
 """ This is

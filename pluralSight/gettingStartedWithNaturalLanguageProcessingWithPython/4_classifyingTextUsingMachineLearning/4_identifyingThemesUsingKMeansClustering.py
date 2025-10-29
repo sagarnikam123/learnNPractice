@@ -30,7 +30,7 @@ from string import punctuation
 from heapq import nlargest
 import nltk
 
-_stopwords = set(stopwords.words('english') + list(punctuation)+["million","billion","year","millions","billions","y/y","'s","''","``"])
+_stopwords = set(stopwords.words('english') + list(punctuation)+['million','billion','year','millions','billions','y/y',"'s","''",'``'])
 
 keywords = {}
 counts = {}

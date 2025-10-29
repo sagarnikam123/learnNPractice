@@ -8,10 +8,10 @@ def banner(message, border='-'):
     print(message)
     print(line)
 
-banner("Norwegian Blue")
-banner("Sun, Moon and Stars", "*")
-banner("Sun, Moon and Starts", border="*")
-banner(border=".", message="Hello from Earth")
+banner('Norwegian Blue')
+banner('Sun, Moon and Stars', '*')
+banner('Sun, Moon and Starts', border='*')
+banner(border='.', message='Hello from Earth')
 
 import time
 time.ctime()
@@ -22,7 +22,7 @@ show_default()
 show_default()
 
 def add_spam(menu = []):
-    menu.append("spam")
+    menu.append('spam')
     return menu
 
 breakfast = ['bacon', 'eggs']

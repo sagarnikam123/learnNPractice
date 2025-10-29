@@ -1,10 +1,10 @@
 # 11_07-Assertions Internal Invariants
 
 # AssertionError: The condition was false
-assert False, "The condition was false"
+assert False, 'The condition was false'
 
-assert True, "The condition was false"
-assert 5 > 2, "You are in a defective universe!"
+assert True, 'The condition was false'
+assert 5 > 2, 'You are in a defective universe!'
 
 from internal import *
 

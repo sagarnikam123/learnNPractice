@@ -27,7 +27,7 @@ class SortedSet(Sequence, Set):
         return self._items[index]
 
     def __repr__(self):
-        return "SortedSet({})".format(
+        return 'SortedSet({})'.format(
             repr(self._items) if self._items else ''
         )
 
@@ -45,7 +45,7 @@ class SortedSet(Sequence, Set):
         index = bisect_left(self._items, item)
         if (index != len(self._items)) and (self._items[index] == item):
             return index
-        raise ValueError("{} not found".format(repr(item)))
+        raise ValueError('{} not found'.format(repr(item)))
 
     def count(self, item):
         return int(item in self)

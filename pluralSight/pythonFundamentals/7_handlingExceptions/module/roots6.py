@@ -15,8 +15,8 @@ def sqrt(x):
     """
 
     if x < 0 :
-        raise ValueError( "Cannot compute square root "
-                   "of negative number {}".format(x) )
+        raise ValueError( 'Cannot compute square root '
+                   'of negative number {}'.format(x) )
 
     guess = x
     i = 0
@@ -31,7 +31,7 @@ def main():
     print(sqrt(2))
     print(sqrt(-1))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
 ################################################################################

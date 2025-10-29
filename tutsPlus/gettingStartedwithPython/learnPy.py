@@ -14,32 +14,32 @@
 #	01_hello-world.mov - 5.42	#
 #################################
 
-print "Hello World !"
+print 'Hello World !'
 2+1
 3*7
 2*(3+4)
-print "hey"
+print 'hey'
 3+2
-print "yo"
+print 'yo'
 
 # executing from *.py file
 #! /usr/bin/env python
-print "yo !"
+print 'yo !'
 
 #####################################
 #	02_strings-slicing.mov - 8.29	#
 #####################################
 
-var1 = "this is a string"
+var1 = 'this is a string'
 print var1
-var2 = "and another"
+var2 = 'and another'
 print var2
 print var1+var2
 var3 = var1+var2
 
 # multiline strings
-	multiline = "This is a \n\
-	multiline string "
+	multiline = 'This is a \n\
+	multiline string '
 	print multiline
 
 	multilie = """this is also
@@ -167,25 +167,25 @@ name = raw_input('Please type in your name : ')
 
 # 1 - condition
 if len(name) < 5 :
-	print "Your name has fewer than 5 characters"
+	print 'Your name has fewer than 5 characters'
 elif len(name) == 5 :
-	print "Your name has exactly 5 characters"
+	print 'Your name has exactly 5 characters'
 	if name == 'Jesse':
-		print "Hey Jesse !"
-else : print "Your name has greater than 5 characters"
+		print 'Hey Jesse !'
+else : print 'Your name has greater than 5 characters'
 
 # 2 - condition
 language = raw_input('Please enter a programming language : ')
 if language in ['C++','Python','Java','']:
-	print language + "rocks"
+	print language + 'rocks'
 
 # 3 - condition
 dinner = raw_input('Please choose pizza or spaghetti : ')
 
 if dinner == 'pizza' or dinner == 'spaghetti' :
-	print "bone appetit !"
+	print 'bone appetit !'
 else :
-	print "You can't have", dinner, "for dinner."
+	print "You can't have", dinner, 'for dinner.'
 
 #########################
 #	06_loops.mov - 7.24	#
@@ -194,45 +194,45 @@ else :
 languages = ['python','java','c++','php']
 
 for language in languages :
-	print language , "rocks !"
+	print language , 'rocks !'
 
-dict = { "name":"Jesse","location":"Denver","favorite":"tutsplus"}
+dict = { 'name':'Jesse','location':'Denver','favorite':'tutsplus'}
 
 for key in dict :
-	print "His",key,"is",dict[key]
+	print 'His',key,'is',dict[key]
 print range(10)
 
 for int in range(10) :
-	print "int = ", int
+	print 'int = ', int
 
 count = 0
 while count < 10 :
-	print count," is less than 10"
+	print count,' is less than 10'
 	count +=1
 
 for i in range(10):
-	print "i = ", i
+	print 'i = ', i
 	if i ==5 :
 		break
-print "done looping"
+print 'done looping'
 
 for i in range(2):
-	print "this is before continue"
+	print 'this is before continue'
 	continue
-	print "this is after the countinue statement "
+	print 'this is after the countinue statement '
 
 #################################
 #	07_functions.mov - 10.48	#
 #################################
 
 def madlib(adjective ='thirsty',name = 'adam'):
-	print "the %s %s ate all the pizza" %(adjective,name)
+	print 'the %s %s ate all the pizza' %(adjective,name)
 madlib()
 madlib(adjective='hungry',name = 'adam')
 
 def shoppingCart(itemName, *avgPrices):
 	for price in avgPrices :
-		print "price: ", price
+		print 'price: ', price
 shoppingCart('computer',100,120,34)
 
 def shoppingCart(itemName, **avgPrices):
@@ -263,7 +263,7 @@ variable = 'tutsplus'
 def scopeInvestigator():
 	global variable
 	variable = 'envato'
-	print "the variable inside the function is", variable
+	print 'the variable inside the function is', variable
 
 scopeInvestigator()
 print 'the variable outside the function is',variable

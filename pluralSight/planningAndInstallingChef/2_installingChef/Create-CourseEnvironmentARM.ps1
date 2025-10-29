@@ -1,4 +1,4 @@
-﻿function New-RandomString {
+function New-RandomString {
     $String = $null
     $r = New-Object System.Random
     1..6 | % { $String += [char]$r.next(97,122) }

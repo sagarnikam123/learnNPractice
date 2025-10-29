@@ -4,7 +4,7 @@
 m = [9, 15, 24]
 def modify(k):
     k.append(39)
-    print("k = ", k)
+    print('k = ', k)
 
 modify(m)
 m
@@ -12,7 +12,7 @@ m
 f = [14, 23, 37]
 def replace(g):
     g = [17, 28, 45]
-    print("g = ", g)
+    print('g = ', g)
 
 replace(f)
 f
@@ -22,7 +22,7 @@ def replace_contents(g):
     g[0] = 17
     g[1] = 28
     g[2] = 45
-    print("g = ", g)
+    print('g = ', g)
 
 f
 replace_contents(f)

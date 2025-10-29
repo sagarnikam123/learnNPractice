@@ -24,7 +24,7 @@ def create(owner_code, serial, category='U'):
         raise ValueError("Invalid ISO 6346 category identifier '{}'".format(category))
 
     if not (len(serial) == 6 and serial.isdigit()):
-        raise ValueError("Invalid ISO 6346 serial number")
+        raise ValueError('Invalid ISO 6346 serial number')
 
     raw_code = owner_code + category + serial
     full_code = raw_code + str(check_digit(raw_code))

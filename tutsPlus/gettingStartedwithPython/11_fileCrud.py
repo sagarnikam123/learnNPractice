@@ -14,7 +14,7 @@ file.close()
 file = open('files/poem')
 
 for line in file:
-    print "LINE : ", line
+    print 'LINE : ', line
 
 file.close()
 
@@ -43,7 +43,7 @@ import pickle
 
 # writing using pickle
 data = open('files/mydata.pkl', 'w')
-cred = {"user": "jesse", "pass":"essej"}
+cred = {'user': 'jesse', 'pass':'essej'}
 pickle.dump(cred, data)
 data.close()
 

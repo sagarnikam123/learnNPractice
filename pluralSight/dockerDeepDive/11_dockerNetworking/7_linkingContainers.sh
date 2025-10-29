@@ -18,7 +18,7 @@ docker inspect rcvr
 # see any links for source container
 docker inspect src | grep Links
 
-# go inside receiver conatiner & see environment variables
+# go inside receiver conatiner & see env_feature variables
 env
 env | grep ALI
 

@@ -18,7 +18,7 @@ timeit(setup='from __main__ import resolve', stmt="resolve('localhost')", number
 
 timeit(setup='from __main__ import resolve', stmt="resolve('python.org')", number=1)
 timeit(setup='from __main__ import resolve', stmt="resolve('python.org')", number=1)
-print("{:f}".format(_))
+print('{:f}'.format(_))
 exit()
 
 from resolver import Resolver

@@ -7,4 +7,4 @@ class Square:
 
 squareOne = Square(5)
 squareTwo = Square(10)
-print("Sum of sides of both the squares =", squareOne + squareTwo)
+print('Sum of sides of both the squares =', squareOne + squareTwo)

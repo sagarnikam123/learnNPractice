@@ -23,11 +23,11 @@ def main():
     try:
         print(sqrt(-1))
     except ZeroDivisionError :
-        print("Cannot compute square root of a negative number.")
+        print('Cannot compute square root of a negative number.')
 
-    print("Program execution continues normally here.")
+    print('Program execution continues normally here.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
 ################################################################################

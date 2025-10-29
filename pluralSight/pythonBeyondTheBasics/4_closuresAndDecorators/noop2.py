@@ -9,5 +9,5 @@ def noop(f):
 
 @noop
 def hello():
-    "Print a well-known message."
-    print("Hello, world!")
+    'Print a well-known message.'
+    print('Hello, world!')

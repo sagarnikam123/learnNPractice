@@ -14,6 +14,6 @@ def sequence_class(immutable):
 
 seq = sequence_class(immutable=True)
 seqp
-t = seq("Timbuktu")
+t = seq('Timbuktu')
 t
 type(t)

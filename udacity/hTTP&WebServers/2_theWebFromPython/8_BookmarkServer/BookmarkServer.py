@@ -66,7 +66,7 @@ class Shortener(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/html')
             self.end_headers()
             # List the known associations in the form.
-            known = "\n".join("{} : {}".format(key, memory[key])
+            known = '\n'.join('{} : {}'.format(key, memory[key])
                               for key in sorted(memory.keys()))
             self.wfile.write(form.format(known).encode())
 
@@ -77,7 +77,7 @@ class Shortener(http.server.BaseHTTPRequestHandler):
         params = parse_qs(body)
 
         # Check that the user submitted the form fields.
-        if "longuri" not in params or "shortname" not in params:
+        if 'longuri' not in params or 'shortname' not in params:
             # 3. Serve a 400 error with a useful message.
             #    Delete the following line.
             self.send_response(400)
@@ -87,8 +87,8 @@ class Shortener(http.server.BaseHTTPRequestHandler):
             return
             # raise NotImplementedError("Step 3 isn't written yet!")
 
-        longuri = params["longuri"][0]
-        shortname = params["shortname"][0]
+        longuri = params['longuri'][0]
+        shortname = params['shortname'][0]
 
         if CheckURI(longuri):
             # This URI is good!  Remember it under the specified name.

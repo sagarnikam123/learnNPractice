@@ -23,7 +23,7 @@ def run_distinct():
     for item in distinct(items):
         print(item)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run_distinct()
 
 ################################################################################

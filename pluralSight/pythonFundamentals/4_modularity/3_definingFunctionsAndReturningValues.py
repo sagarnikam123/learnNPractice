@@ -7,15 +7,15 @@ def square(x):
 square(5)
 
 def launch_missiles():
-    print("Missiles launched!")
+    print('Missiles launched!')
 
 launch_missiles()
 
 def even_or_odd(n):
     if n % 2 == 0 :
-        print("even")
+        print('even')
         return
-    print("odd")
+    print('odd')
 
 even_or_odd(4)
 even_or_odd(5)

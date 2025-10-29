@@ -195,11 +195,11 @@ class TestReprProtocol(unittest.TestCase):
 
     def test_repr_empty(self):
         s = SortedSet()
-        self.assertEqual(repr(s), "SortedSet()")
+        self.assertEqual(repr(s), 'SortedSet()')
 
     def test_repr_some(self):
         s = SortedSet([42, 40, 19])
-        self.assertEqual(repr(s), "SortedSet([19, 40, 42])")
+        self.assertEqual(repr(s), 'SortedSet([19, 40, 42])')
 
 class TestEqualityProtocol(unittest.TestCase):
 

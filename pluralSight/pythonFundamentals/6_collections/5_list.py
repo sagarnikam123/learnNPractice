@@ -2,7 +2,7 @@
 
 ################################################################################
 # heterogeneous mutable sequence
-s = "show how to index into sequences".split()
+s = 'show how to index into sequences'.split()
 s
 # using positive indexes
 s[4]

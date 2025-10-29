@@ -3,8 +3,8 @@
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-example_sentence = "This is an example showing off stop word filteration."
-stop_words = set(stopwords.words("english"))
+example_sentence = 'This is an example showing off stop word filteration.'
+stop_words = set(stopwords.words('english'))
 #print(stop_words)
 
 words = word_tokenize(example_sentence)

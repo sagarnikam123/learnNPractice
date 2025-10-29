@@ -3,7 +3,7 @@
 ###############################################################################
 # List Comprehension
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
 newlist = []
 
 for x in fruits:

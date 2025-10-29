@@ -139,7 +139,7 @@ docker push gcr.io/qwiklabs-gcp-01-c8712ba2f372/node-app:0.2
 # http://gcr.io/<project-id>/node-app
 # http://gcr.io/qwiklabs-gcp-01-c8712ba2f372/node-app
 
-# make fresh-environment
+# make fresh-env_feature
 
 # Stop and remove all containers
 docker stop $(docker ps -q)

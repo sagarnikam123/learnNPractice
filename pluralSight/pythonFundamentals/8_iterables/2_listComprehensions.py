@@ -1,7 +1,7 @@
 # List Comprehensions
 
 ################################################################################
-words = "Why sometimes I have believed as many as six impossible things before breakfast".split()
+words = 'Why sometimes I have believed as many as six impossible things before breakfast'.split()
 words
 # list comprehension
 # [expr(item) for item in iterable]

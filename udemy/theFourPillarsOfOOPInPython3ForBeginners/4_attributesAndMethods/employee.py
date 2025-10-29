@@ -19,11 +19,11 @@ print(employeeOne.numberOfWorkingHours)
 print(employeeTwo.numberOfWorkingHours)
 
 # Give instance attributes for a class
-employeeOne.name = "John"
+employeeOne.name = 'John'
 print(employeeOne.name)
 # AttributeError: 'Employee' object has no attribute 'name'
 #print(employeeTwo.name)
-employeeTwo.name = "Mary"
+employeeTwo.name = 'Mary'
 print(employeeTwo.name)
 
 # change class attribute using object

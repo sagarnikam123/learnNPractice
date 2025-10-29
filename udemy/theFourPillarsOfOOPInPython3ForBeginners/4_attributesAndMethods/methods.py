@@ -8,11 +8,11 @@
 
 class Employee:
     def employeeDetails(self):
-        self.name = "Ben"
+        self.name = 'Ben'
 
     @staticmethod
     def welcomeMessage():
-        print("Welcome to our organization!")
+        print('Welcome to our organization!')
 
 employee = Employee()
 employee.employeeDetails()

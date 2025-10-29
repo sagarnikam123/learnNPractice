@@ -7,7 +7,7 @@ import sys, re, traceback
 try:
     import requests
 except ImportError:
-    print("You need to install the requests module.")
+    print('You need to install the requests module.')
     sys.exit(1)
 
 try:
@@ -33,6 +33,6 @@ if not m:
     sys.exit(1)
 
 print("Tests pass!  Here are the fields I found in your code's output:")
-print("Name:", m.group(1))
-print("Surname:", m.group(2))
-print("PIN:", m.group(3))
+print('Name:', m.group(1))
+print('Surname:', m.group(2))
+print('PIN:', m.group(3))

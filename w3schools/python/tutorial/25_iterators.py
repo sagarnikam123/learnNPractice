@@ -1,7 +1,7 @@
 # Iterators
 
 # Return an iterator from a tuple, and print each value
-fruits_tuple = ("apple", "banana", "cherry")  # tuple
+fruits_tuple = ('apple', 'banana', 'cherry')  # tuple
 fruits_it = iter(fruits_tuple)
 print(next(fruits_it))
 print(next(fruits_it))
@@ -9,7 +9,7 @@ print(next(fruits_it))
 print(next(fruits_it))
 
 # Strings are also iterable objects, containing a sequence of characters
-banana_str = "banana"
+banana_str = 'banana'
 banana_iter = iter(banana_str)
 print(next(banana_iter))
 print(next(banana_iter))
@@ -21,12 +21,12 @@ print(next(banana_iter))
 # Looping Through an Iterator
 
 # Iterate the values of a tuple
-fresh_tuple = ("apple", "banana", "cherry")
+fresh_tuple = ('apple', 'banana', 'cherry')
 for fru_fresh in fresh_tuple:
     print(fru_fresh)
 
 # Iterate the characters of a string
-simple_str = "banana"
+simple_str = 'banana'
 for b_str in simple_str:
     print(b_str)
 ###############################################################################

@@ -12,7 +12,7 @@ while c :
     c -=1
 
 while True :
-    print("Looping")
+    print('Looping')
 
 # break
 while True :

@@ -9,13 +9,13 @@ class Shape(metaclass = ABCMeta):
 class Square(Shape):
     side = 4
     def area(self):
-        print("Area of Square:", self.side * self.side)
+        print('Area of Square:', self.side * self.side)
 
 class Rectangle(Shape):
     width = 5
     length = 10
     def area(self):
-        print("Area of Rectangle:", self.width * self.length)
+        print('Area of Rectangle:', self.width * self.length)
 
 square = Square()
 rectangle = Rectangle()

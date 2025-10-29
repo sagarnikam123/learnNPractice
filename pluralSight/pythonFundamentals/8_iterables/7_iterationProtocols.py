@@ -17,10 +17,10 @@ def first(iterable) :
     try :
         return next(iterator)
     except StopIteration :
-        raise ValueError("iterable is empty")
+        raise ValueError('iterable is empty')
 
-first(["1st", '2nd', '3rd'])
-first(["1st", '2nd', '3rd'])
+first(['1st', '2nd', '3rd'])
+first(['1st', '2nd', '3rd'])
 # ValueError: iterable is empty
 first(set())
 

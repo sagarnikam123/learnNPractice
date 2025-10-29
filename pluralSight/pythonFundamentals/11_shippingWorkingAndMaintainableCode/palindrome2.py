@@ -58,7 +58,7 @@ class Tests(unittest.TestCase) :
         for i in range(10) :
             self.assertTrue(is_palindrome(i))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
 
 ################################################################################

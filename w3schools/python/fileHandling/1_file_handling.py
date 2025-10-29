@@ -14,6 +14,6 @@
 """
 
 # open a file
-f = open("demofile.txt")
-f = open("demofile.txt", "rt")
+f = open('demofile.txt')
+f = open('demofile.txt', 'rt')
 ###############################################################################

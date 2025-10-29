@@ -66,14 +66,14 @@ def write_grayscale(filename, pixels):
         bmp.write(_int32_to_bytes(pixel_data_bookmark))
 
 def _int32_to_bytes(i):
-    "Convert an integer to four bytes in little-endian format."
+    'Convert an integer to four bytes in little-endian format.'
     return bytes( (i & 0xff,
                    i >> 8 & 0xff,
                    i >> 16 & 0xff,
                    i >> 24 & 0xff) )
 
 def _bytes_to_int32(b):
-    "Convert a bytes object containing four bytes into an integer."
+    'Convert a bytes object containing four bytes into an integer.'
     return b[0] | (b[1] << 8) | (b[2] << 16) | (b[3] << 24)
 
 def dimensions(filename):
@@ -94,7 +94,7 @@ def dimensions(filename):
     with open(filename, 'rb') as f:
         magic = f.read(2)
         if magic != b'BM':
-            raise ValueError("{} is not a BMP file".format(filename))
+            raise ValueError('{} is not a BMP file'.format(filename))
 
         f.seek(18)
         width_bytes = f.read(4)

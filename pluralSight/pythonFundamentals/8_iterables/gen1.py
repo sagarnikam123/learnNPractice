@@ -27,7 +27,7 @@ def run_take():
     for item in take(3, items):
         print(item)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run_take()
 
 ################################################################################

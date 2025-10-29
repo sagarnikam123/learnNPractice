@@ -9,7 +9,7 @@ class house:
 
     def slamDoors(self):
         for door in range(self.doors):
-            print("SLAM!")
+            print('SLAM!')
         print("that's a lot of slamming for a house that costs ", self.__cost)
 
 myHouse = house()

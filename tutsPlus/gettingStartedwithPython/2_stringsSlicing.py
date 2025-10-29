@@ -1,15 +1,15 @@
 #! /usr/bin/env python
 
-var1 = "this is a string"
+var1 = 'this is a string'
 print var1
-var2 = "and another"
+var2 = 'and another'
 print var2
 print var1+var2
 var3 = var1+var2
 
 # multiline strings
-	multiline = "This is a \n\
-	multiline string "
+	multiline = 'This is a \n\
+	multiline string '
 	print multiline
 
 	multilie = """this is also

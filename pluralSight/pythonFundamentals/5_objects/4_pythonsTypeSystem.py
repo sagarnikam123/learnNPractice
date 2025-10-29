@@ -6,7 +6,7 @@ def add(a,b):
 
 add(5,7)
 add(3.1, 2.4)
-add("news", "paper")
+add('news', 'paper')
 add([1,6] , [21,107])
 # not run
 # add("The answer is ", 42)

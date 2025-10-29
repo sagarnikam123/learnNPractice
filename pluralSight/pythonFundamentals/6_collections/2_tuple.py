@@ -4,7 +4,7 @@
 # heterogeneous immutable sequence
 
 # creating & access
-t = ("Norway", 4.953, 3)
+t = ('Norway', 4.953, 3)
 t
 t[0]
 t[2]
@@ -60,7 +60,7 @@ a
 b
 # using tuple(iterable) constructor from other iterable series of objects
 tuple( [561, 1105, 1729, 2465] )
-tuple( "Carmichael" )
+tuple( 'Carmichael' )
 # membership testing using 'in' & 'not in' operator with tuple
 5 in (3, 5, 17, 257, 65537)
 5 not in (3, 5, 17, 257, 65537)

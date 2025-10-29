@@ -14,6 +14,6 @@ from module.exceptional6 import convert
 
 # using named reference to except object & print it
 from module.exceptional7 import convert
-convert("fail")
+convert('fail')
 
 ################################################################################

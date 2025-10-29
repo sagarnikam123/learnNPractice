@@ -1,13 +1,13 @@
 #! /usr/bin/env python
 
 def madlib(adjective ='thirsty',name = 'adam'):
-	print "the %s %s ate all the pizza" %(adjective,name)
+	print 'the %s %s ate all the pizza' %(adjective,name)
 madlib()
 madlib(adjective='hungry',name = 'adam')
 
 def shoppingCart(itemName, *avgPrices):
 	for price in avgPrices :
-		print "price: ", price
+		print 'price: ', price
 shoppingCart('computer',100,120,34)
 
 def shoppingCart(itemName, **avgPrices):

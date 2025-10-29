@@ -13,9 +13,9 @@
 int(3.5)
 int(-3.5)
 # string to integer
-int("496")
+int('496')
 # convert from base3
-int("10000", 3)
+int('10000', 3)
 
 #  float
 3.125
@@ -25,12 +25,12 @@ int("10000", 3)
 # from integer
 float(7)
 # from string
-float("1.168")
+float('1.168')
 # special value floating no
-float("nan")
+float('nan')
 # infinity
-float("inf")
-float("-inf")
+float('inf')
+float('-inf')
 # int + float = float
 3.0 + 1
 
@@ -50,9 +50,9 @@ bool(0.207)
 bool(-1.217)
 bool([])
 bool([1,5,9])
-bool("")
-bool("spam")
-bool("False")
-bool("True")
+bool('')
+bool('spam')
+bool('False')
+bool('True')
 
 ################################################################################

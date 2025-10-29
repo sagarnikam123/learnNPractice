@@ -11,14 +11,14 @@
 
 class Employee2:
     def employeeDetails(fake):  # can put "self" also
-        fake.name = "Matthew"
-        print("Name = ", fake.name)
+        fake.name = 'Matthew'
+        print('Name = ', fake.name)
         age = 30    # without self parameter
-        print("Age = ", age)
+        print('Age = ', age)
 
     def printEmployee2Details(self):
-        print("Printing in another method")
-        print("Name: ", self.name)
+        print('Printing in another method')
+        print('Name: ', self.name)
         # NameError: name 'age' is not defined
         #print("Age: ", age)
 

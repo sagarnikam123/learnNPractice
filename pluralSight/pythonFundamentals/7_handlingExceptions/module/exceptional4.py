@@ -10,9 +10,9 @@ def convert(s) :
 
     try :
         x = int(s)
-        print("Conversion succeeded! x = ", x)
+        print('Conversion succeeded! x = ', x)
     except (ValueError, TypeError) :
-        print("Conversion failed!")
+        print('Conversion failed!')
     return x
 
 ################################################################################

@@ -14,14 +14,14 @@ class Trainee(Employee):
 
 employee = Employee()
 employee.setNumberOfWorkingHours()
-print("Number of working hours of employee:", end = ' ')
+print('Number of working hours of employee:', end = ' ')
 employee.displayNumberOfWorkingHours()
 
 trainee = Trainee()
 trainee.setNumberOfWorkingHours()
-print("Number of working hours of trainee:", end = ' ')
+print('Number of working hours of trainee:', end = ' ')
 trainee.displayNumberOfWorkingHours()
 
 trainee.resetNumberOfWorkingHours()
-print("Number of working hours of trainee after reset:", end = ' ')
+print('Number of working hours of trainee after reset:', end = ' ')
 trainee.displayNumberOfWorkingHours()

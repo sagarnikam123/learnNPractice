@@ -5,7 +5,7 @@
 # visit each item in a sequence
 
 # iterating over list/collection
-cities = ["London", "New York", "Paris", "Oslo", "Helsinki"]
+cities = ['London', 'New York', 'Paris', 'Oslo', 'Helsinki']
 for city in cities :
     print(city)
 

@@ -4,7 +4,7 @@
 # mutable heterogeneous sequences of object
 
 [1,9,8]
-a = ["apple", "orange", "pear"]
+a = ['apple', 'orange', 'pear']
 a[1]
 a[1] = 7
 
@@ -15,7 +15,7 @@ b
 b.append(1.414)
 
 # using list() constructor
-list("character")
+list('character')
 
 # for long literal collection/to improve readibility
 # check last additional commas
