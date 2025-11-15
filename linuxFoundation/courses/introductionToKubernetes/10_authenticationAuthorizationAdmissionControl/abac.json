@@ -1,0 +1,10 @@
+{
+"apiVersion": "abc.authorization.kubernetes.io/v1beta1",
+"kind": "Policy",
+"spec": {
+    "user": "bob",
+    "namespace": "lfs158",
+    "resource": "pods",
+    "readonly": true
+    }
+}
