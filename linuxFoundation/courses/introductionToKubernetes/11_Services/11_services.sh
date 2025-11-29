@@ -44,5 +44,54 @@ spec:
 
 # Environment Variables
 # DNS
-# my-svc.my-namespace.sv.cluster.local
+# my-svc.my-namespace.svc.cluster.local
 kubectl exec client-app-po-name -c cluent-container-name -- /bin/sh -c curl -s frontend-svc:80
+
+# ServiceType: ClusterIP and NodePort
+# ClusterIP (default) - accessible only within the cluster
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-svc
+spec:
+  selector:
+    app: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: ClusterIP
+
+# NodePort - accessible externally via <NodeIP>:<NodePort> , highPort range: 30000-32767
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-svc
+spec:
+  selector:
+    app: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+      nodePort: 32233
+    type: NodePort
+
+kubectl expose deployment frontend --name=frontend-svc \
+  --port=80 --target-port=5000 --type=NodePort
+
+kubectl create service nodeport frontend-svc \
+  --tcp=80:5000 --node-port=32233
+
+# ServiceType: LoadBalancer
+# ServiceType: ExternalIP
+# ServiceType: ExternalName
+# Multi-Port Services
+# application port
+
+# Port-fowrading
+kubectl port-forward deployment/frontend 8080:5000
+kubectl port-forward frontend-77cbdf6f79-qsdts 8080:5000
+kubectl port-forward svc/frontend-svc 8080:80
