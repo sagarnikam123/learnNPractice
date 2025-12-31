@@ -73,3 +73,22 @@ minikube service web-service-2 --url
 
 kubectl port-forward svc/web-service 8080:80
 kubectl port-forward svc/web-service-2 8080:80
+
+# For Minikube clusters on the Docker driver, the NodePort cannot be accessed
+# from the host workstation due to limitations of the Docker networking model.
+# In those scenarios, another application access option is via the minikube tunnel.
+
+kubectl expose deployment webserver --name=web-lb --type=LoadBalancer --port 8080
+kubectl get services
+# open in browser <external-ip>:8080
+
+# Demo: Deploying a Containerized Application
+
+# Liveness, Readiness, and Startup Probes
+# Liveness Command
+kubectl apply -f livenss-probe.yaml
+
+# Liveness HTTP Request
+# TCP Liveness Probe
+# gRPC Liveness Probe
+# Readiness Probes
