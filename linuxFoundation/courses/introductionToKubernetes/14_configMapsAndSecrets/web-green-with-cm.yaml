@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: green-web
+  name: green-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: green-web
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: green-web
+    spec:
+      volumes:
+      - name: web-config
+        configMap:
+          name: green-web-cm
+      containers:
+      - image: nginx:latest
+        name: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: web-config
+status: {}
