@@ -59,3 +59,80 @@ spec:
     min:
       cpu: 100m
     type: Container
+
+# Quota and Limits Management
+
+# Horizontal Pod Autoscaler (HPA)
+kubectl autoscale deployment myapp --min=2 --max=10 --cpu-percent=80
+
+# Vertical Pod Autoscaler (VPA)
+
+# Cluster Autoscaler
+
+# Jobs and CronJobs
+
+# StatefulSets
+
+# Custom Resources
+  # Custom Resource Definitions (CRDs)
+  # API Aggregation
+
+# Security Contexts and Pod Security Admission
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+spec:
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 3000
+    fsGroup: 2000
+  volumes:
+  - name: vol
+    emptyDir: {}
+  containers:
+  - name: busy
+    image: busybox:1.28
+    command: ["sh", "-c", "sleep infinity"]
+    volumeMounts:
+    - name: vol
+      mountPath: /data/demo
+    securityContext:
+      allowPrivilegeEscalation: false
+
+# Pod Security Standards
+
+# Network Policies
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: demo-netpol
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: db
+    policyTypes:
+    - Ingress
+    - Egress
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            project: myproject
+      - podSelector:
+          matchLabels:
+            role: frontend
+      ports:
+      - protocol: TCP
+        port: 6379
+    egress:
+    - to:
+      - ipBlock:
+          cidr: 10.0.0.0/24
+      ports:
+      - protocol: TCP
+        port: 5978
+
+# Monitoring, Logging, and Troubleshooting
