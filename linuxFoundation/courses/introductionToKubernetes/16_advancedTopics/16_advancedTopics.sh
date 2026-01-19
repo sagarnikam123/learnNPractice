@@ -136,3 +136,24 @@ spec:
         port: 5978
 
 # Monitoring, Logging, and Troubleshooting
+
+# Metrics Server
+kubectl top nodes --sort-by=cpu
+kubectl top pods --sort-by=memory
+# logs
+kubectl logs pod-name
+kubectl logs pod-name container-name
+kubectl logs pod-name container-name -p # previous logs (logs of the very last failed container)
+
+kubectl exec pod-name -- ls -la /
+kubectl exec pod-name -c container-name -- env
+kubectl exec pod-name -c container-name -it -- /bin/sh
+
+# events
+kubectl get events
+kubectl events
+kubect describe pod pod-name
+
+# Helm
+# Service Mesh
+# Application Deployment Strategies
