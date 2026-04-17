@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Solarized Flat</string>
+	<key>type</key>
+	<string>Window Settings</string>
+	<key>ProfileCurrentVersion</key>
+	<real>2.09</real>
+	<key>BackgroundColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAnMC4wMDAwMDAwMDAwIDAuMTY4NjI3NDUx
+	MCAwLjIxMTc2NDcwNTkAEAGAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+	cqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+qKqssbzFzdAAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>TextColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAnMC41MTM3MjU0OTAyIDAuNTgwMzkyMTU2
+	OSAwLjU4ODIzNTI5NDEAEAGAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+	cqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+qKqssbzFzdAAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>TextBoldColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAnMC41NzY0NzA1ODgyIDAuNjMxMzcyNTQ5
+	MCAwLjYzMTM3MjU0OTAAEAGAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+	cqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+qKqssbzFzdAAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>CursorColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAnMC44MzkyMTU2ODYzIDAuMzI1NDkwMTk2
+	MSAwLjA1ODgyMzUyOTQAEAGAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+	cqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+qKqssbzFzdAAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>SelectionColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAnMC4wMjc0NTA5ODA0IDAuMjExNzY0NzA1
+	OSAwLjI1ODgyMzUyOTQAEAGAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+	cqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+qKqssbzFzdAAAAAAAAABAQAAAAAA
+	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>Font</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0w0ODxBfEBpO
+	U0ZvbnREZXNjcmlwdG9yQXR0cmlidXRlc1YkY2xhc3NfEBBOU0ZvbnRTaXplQXR0cmli
+	dXRlgAIjQCgAAAAAAADSEhMUFVokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9udKIUFlhO
+	U09iamVjdNENDhcQXxAaTlNGb250RGVzY3JpcHRvckF0dHJpYnV0ZXOAANIaGxwdWk5T
+	LmtleXNaTlMub2JqZWN0c6EeoR+AAwAEXxAOTlNGb250TmFtZUtleV8QD01lbmxvLVJl
+	Z3VsYXLSEhMiI18QEk5TRGljdGlvbmFyeaIiJFhOU09iamVjdNISEyYnXxASTlNGb250
+	RGVzY3JpcHRvcqImFAgRGiQpMjdJTFFTV11kbHl+gIKEhoeJi5Wgqq+ys7W3wMnO0dPV
+	4OkAAAAAAAABAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAA8g==
+	</data>
+	<key>FontWidthSpacing</key>
+	<real>1.004032258064516</real>
+	<key>FontHeightSpacing</key>
+	<real>1.1</real>
+	<key>UseBoldFonts</key>
+	<true/>
+	<key>FontAntialias</key>
+	<true/>
+	<key>columnCount</key>
+	<integer>120</integer>
+	<key>rowCount</key>
+	<integer>36</integer>
+	<key>CursorType</key>
+	<integer>1</integer>
+	<key>CursorBlink</key>
+	<true/>
+	<key>ShowWindowSettingsNameInTitle</key>
+	<true/>
+	<key>WindowTitle</key>
+	<string>Solarized Flat</string>
+</dict>
+</plist>
