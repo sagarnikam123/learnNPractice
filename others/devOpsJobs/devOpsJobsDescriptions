@@ -1,0 +1,1186 @@
+
+Endava
+Senior DevOps Consultant 
+
+Job Description
+
+About the Role
+
+
+We’re looking for a Senior DevOps Consultant (Azure) to lead the design and implementation of foundational cloud infrastructure for new and evolving platforms.
+
+
+This is a hands-on, high-impact role where you’ll help shape cloud strategy from day one — building secure, scalable Azure environments that enable modern engineering teams to deliver at speed. You’ll work closely with architects, developers, and stakeholders to establish best practices across infrastructure, automation, security, and CI/CD.
+
+
+If you enjoy turning greenfield ideas into production-ready platforms, this role is for you.
+
+
+Job Responsibilities
+
+
+Designing and implementing Azure landing zones and cloud foundations
+Setting up subscriptions, management groups, policies, and governance models
+Building Infrastructure as Code using Terraform and/or Bicep
+Creating and managing CI/CD pipelines with Azure DevOps or GitHub Actions
+Implementing secure networking (VNets, peering, VPN, ExpressRoute)
+Establishing identity and access management with Azure Entra ID (Azure AD)
+Embedding security and compliance best practices (Key Vault, Defender for Cloud, Azure Policy)
+Enabling observability using Azure Monitor, Log Analytics, Application Insights
+Supporting containerised and serverless workloads (AKS, Functions, Container Apps)
+Advising on scalability, resilience, cost optimisation, and disaster recovery
+Mentoring engineers and influencing cloud engineering standards
+
+Qualifications
+
+What We’re Looking For
+
+
+Strong experience as a Senior DevOps Engineer or DevOps Consultant
+Proven track record of building Azure infrastructure from scratch
+Deep knowledge of Azure core services (compute, storage, networking, IAM)
+Strong Infrastructure as Code experience (Terraform, Bicep, ARM)
+CI/CD expertise (Azure DevOps, GitHub Actions)
+Solid understanding of cloud security and DevSecOps principles
+Experience with containers and/or Kubernetes (AKS preferred)
+Strong stakeholder communication skills and consulting mindset
+Nice to Have
+
+
+Azure certifications (AZ-104, AZ-305, AZ-400)
+Experience in enterprise or regulated environments
+Experience designing enterprise landing zones
+Platform engineering background
+
+Additional Information
+
+Discover some of the global benefits that empower our people to become the best version of themselves:
+
+
+
+Finance:
+ Competitive salary package, share plan, company performance bonuses, value-based recognition awards, referral bonus; 
+Career Development:
+Career coaching, global career opportunities, non-linear career paths, internal development programmes for management and technical leadership;
+Learning Opportunities:
+Complex projects, rotations, internal tech communities, training, certifications, coaching, online learning platforms subscriptions, pass-it-on sessions, workshops, conferences;
+Work-Life Balance:
+ Hybrid work and flexible working hours, employee assistance programme;
+Health:
+ Global internal wellbeing programme, access to wellbeing apps;
+Community:
+ Global internal tech communities, hobby clubs and interest groups, inclusion and diversity programmes, events and celebrations. 
+At Endava, we’re committed to creating an open, inclusive, and respectful environment where everyone feels safe, valued, and empowered to be their best. We welcome applications from people of all backgrounds, experiences, and perspectives—because we know that inclusive teams help us deliver smarter, more innovative solutions for our customers. Hiring decisions are based on merit, skills, qualifications, and potential. If you need adjustments or support during the recruitment process, please let us know.
+--------
+Checkmarx
+Senior Automation Infrastructure Engineer
+About the job
+Who are we?
+
+Checkmarx is the leader in application security and ensures that enterprises worldwide can secure their application development from code to cloud. Our consolidated platform and services address the needs of enterprises by improving security and reducing TCO, while simultaneously building trust between AppSec, developers, and CISOs. At Checkmarx, we believe it’s not just about finding risk but remediating it across the entire application footprint and software supply chain with one seamless process for all relevant stakeholders.
+
+We are honored to serve more than 1,800 customers, which includes 40 percent of all Fortune 100 companies, including Siemens, Airbus, Salesforce, Stellantis, Adidas, Walmart, and Sanofi.
+
+What are we looking for?
+
+We are looking for a hands-on Automation Infrastructure Engineer to join our Automation Platform team.
+
+This role sits at the intersection of test infrastructure, CI/CD, Kubernetes, and cloud operations.
+
+You will play a key role in ensuring the stability, observability, and scalability of our automated testing systems, with a strong focus on debugging failures, improving reliability, and building the infrastructure that enables large-scale automated testing.
+
+This is an excellent opportunity for someone who enjoys deep technical debugging, working close to CI pipelines and Kubernetes clusters, and building robust test platforms used across the organization.
+
+How will you make an impact?
+
+In this role, you will be responsible for:
+
+Debugging and maintaining Jenkins pipelines, with a strong focus on failed automated tests and CI infrastructure issues
+Investigating and resolving Kubernetes issues, including pods, nodes, resource constraints, scheduling, and networking problems
+Supporting and configuring AWS infrastructure, including EC2, VPCs, route tables, security groups, and related services
+Improving the reliability and observability of our test execution environments
+Helping design, implement, and maintain test infrastructure, including:
+Collaborating closely with automation engineers, QA, DevOps, and development teams
+Identifying recurring failures and turning them into systematic fixes and improvements
+Documenting infrastructure behavior, common failure modes, and operational best practices
+
+Requirements:
+
+What is needed to succeed?
+
+Required qualifications:
+
+4-6 years of experience in DevOps, Automation Infrastructure, or similar roles
+Strong experience debugging CI/CD systems (Jenkins)—must
+Hands-on experience with Kubernetes (debugging pods, nodes, deployments, jobs)—must
+Strong Linux troubleshooting skills—must
+Experience writing and maintaining automation code in Python—must
+Practical experience with AWS, including: (Advantage)
+EC2
+VPC / networking concepts
+Route tables and security groups
+Familiarity with test frameworks such as pytest and/or Playwright—Advantage
+Strong problem-solving skills and a debugging-oriented mindset
+Ability to work independently and take ownership of infrastructure issues
+Good communication skills and ability to collaborate across teams
+
+Desired qualifications (strong advantages):
+
+Experience supporting large-scale automated test systems
+Familiarity with Kubernetes internals (resources, networking)
+Experience with observability tools (logs, metrics, dashboards)
+Experience working with cloud networking concepts
+Understanding of software testing principles and test lifecycle
+
+What we have to offer:
+
+Checkmarx offers a collaborative work environment, opportunities for professional growth, challenging technical problems, competitive compensation, and a strong work-life balance. We believe in ownership, continuous improvement, and building systems that teams can trust.
+
+Checkmarx is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, or other characteristics protected by law.
+-----
+Azodha
+Senior DevOps Engineer – AI-Native Healthcare Platform
+About the job
+
+
+Role:Senior DevOps Engineer – AI-Native Healthcare Platform
+Location: Pune / Remote (with overlap)
+Type: Full-Time
+
+
+What this role is about
+
+You’ll own the infrastructure that everything depends on Not just uptime—but:
+
+Systems that scale unpredictably.
+Deployments that are fast and safe.
+Failures that are handled before they escalate.
+
+
+What you’ll do
+
+Cloud & Systems
+
+Design and run scalable infrastructure on AWS (or similar).
+Support multi-tenant, high-throughput SaaS environments.
+
+
+CI/CD & Automation
+
+Build and improve CI/CD pipelines (GitHub Actions, GitLab, Jenkins).
+Automate build, test, and deployment workflows.
+
+
+Containers & Orchestration
+
+Work with Docker and Kubernetes for deployment and scaling.
+Ensure system stability under load.
+
+
+Observability & Reliability
+
+Implement monitoring, logging, and alerting (Prometheus, Grafana, ELK).
+Diagnose and resolve production issues.
+
+
+AI-Native Infrastructure
+
+Support AI workloads (low latency, high concurrency).
+Enable reliable deployment of AI-powered services.
+
+
+Infrastructure as Code
+
+Use Terraform / CloudFormation.
+Build reproducible, version-controlled infrastructure.
+
+
+Security & Compliance
+
+Implement secure infrastructure practices.
+Ensure healthcare-grade reliability and compliance.
+
+
+What you bring
+
+Strong hands-on experience with AWS (or Azure/GCP), Docker, Kubernetes
+Experience running production SaaS systems at scale
+CI/CD, observability, and incident response experience
+Infrastructure as Code (Terraform, etc.) + scripting (Python/Shell)
+Understanding of distributed systems and system reliability
+Exposure to AI/data workloads is a plus.
+
+
+Why this is worth your time
+
+Own infrastructure that directly impacts real-world care delivery
+Work on AI-native systems at scale
+High ownership, real problems, no busywork
+
+
+If you’re looking for:
+
+Predictable infrastructure work → not this
+Ticket-based ops → not this
+----
+EPAM Systems
+Senior Azure DevOps Engineer 
+
+About the job
+We are seeking a Senior Azure DevOps Engineer to drive the implementation and optimization of CI/CD pipelines, production deployments and automation initiatives within our technology environment.
+The ideal candidate will have a strong background in Azure DevOps practices, microservices and configuration management, with a proven track record of delivering robust solutions in dynamic settings.
+ 
+Responsibilities
+
+Implement CI/CD pipelines with automated build and test systems
+Oversee production deployment using multiple deployment strategies
+Automate system configurations using configuration management tools
+Apply microservices concepts and best practices
+Coordinate requirements, schedules and activities to enable application development
+Address issues and respond positively to setbacks and challenges with a focus on continuous improvement
+Carry out POCs to ensure suggested designs and technologies meet requirements
+Learn services used in the environment quickly
+ 
+Requirements
+
+5 to 8 years of working experience in DevOps or related roles
+Knowledge of CI/CD pipelines, automated build and test systems
+Expertise in production deployment strategies and configuration management tools
+Understanding of microservices concepts and best practices
+Skills in coordinating requirements, schedules and activities for application development
+Capability to address issues and drive continuous improvement
+Background in conducting POCs for design and technology validation
+Flexibility to learn new services and adapt to the environment quickly
+----
+Easebuzz
+Senior DevOps Engineer
+
+About the job
+About The Company
+
+Easebuzz is a payment solutions (fintech) company that enables online merchants to accept, process, and disburse payments through developer-friendly APIs. We are focused on building plug-and-play products—including payment infrastructure—to solve end-to-end business challenges across sectors.
+
+We’re at the center of all things fintech: payments, lending, subscriptions, eKYC—you name it. Easebuzz is where innovation meets execution.
+
+We have been consistently profitable and continue to scale rapidly, having grown 4x in the past year alone. Backed by a strong product roadmap and execution, we recently closed a fresh funding round of $30 million in 2025, led by leading VC firms and strategic investors. This comes in addition to our earlier $4 million fundraise in March 2021.
+
+Easebuzz has been granted Full Authorization from the Reserve Bank of India (RBI) for payment aggregator license in 2025.
+
+Our corporate culture is built on openness, ownership, and collaboration. We are an equal opportunity employer and celebrate diversity across all levels. At Easebuzz, you’ll find yourself working with passionate colleagues who are committed to growing together.
+
+Headquartered in Pune, we also have a presence in Delhi, Mumbai, Kolkata, Bengaluru, and Gurugram.
+
+Location: Pune, India
+
+Job Title: Senior DevOps Engineer
+
+Role Overview
+
+We are looking for a Senior DevOps Engineer with 7 plus years of hands-on experience in managing and scaling infrastructure on AWS. The ideal candidate should possess deep expertise in operating systems, networking, Kubernetes, Ansible, and Infrastructure as Code (IaC). You will be responsible for designing, implementing, and maintaining robust DevOps practices that ensure seamless deployment, scalability, and reliability of our systems.
+
+Key Responsibilities
+
+Cloud Infrastructure Management:
+Design, deploy, and manage scalable, highly available, and fault-tolerant systems on AWS.
+Optimize resource utilization and implement cost-effective solutions.
+Container Orchestration:
+Build, manage, and maintain Kubernetes clusters for deploying containerized applications.
+Optimize workload scheduling, scaling, and monitoring in Kubernetes environments.
+Configuration Management & Automation:
+Implement and maintain automation tools and frameworks like Ansible.
+Develop and enforce configuration management best practices.
+Networking:
+Configure and manage secure network architectures, including VPCs, subnets, and firewalls.
+Ensure optimal network performance and connectivity between on-premises and cloud environments.
+Infrastructure as Code (IaC):
+Develop, deploy, and manage infrastructure using IaC tools like Terraform or CloudFormation.
+Maintain version control and ensure repeatable, auditable deployments.
+Monitoring and Incident Management:
+Implement monitoring tools for system health, performance, and security.
+Troubleshoot and resolve issues in development, testing, and production environments.
+Collaboration:
+Work closely with development teams to improve CI/CD pipelines and integrate DevOps best practices.
+Act as a mentor for junior team members and contribute to team knowledge sharing.
+Required Skills And Qualifications
+
+7 minimum years of professional experience in DevOps or related roles.
+Expert-level knowledge of AWS (EKS and API Gateway).
+Strong experience with Linux/Unix (Redhat and Debain based)
+Proficiency in Kubernetes for container orchestration and management.
+Hands-on experience with Ansible for configuration management and automation.
+Solid understanding of networking concepts: DNS, Load Balancers, VPNs, and firewalls.
+Expertise in IaC tools like Terraform or AWS CloudFormation.
+Experience with CI/CD tools (e.g., Jenkins, GitLab CI/CD, or AWS CodePipeline).
+Strong scripting skills (Bash, Python, or similar).
+Knowledge of monitoring and logging tools (e.g. ELK Stack, Grafana).
+Very strong understanding on SSL standards and encryption
+
+Preferred Qualifications
+
+AWS Certifications (e.g., Solutions Architect, SysOps Administrator, or DevOps Engineer).
+Experience with security compliance frameworks and tools.
+Have worked in high throughput environments.
+Familiarity with microservices architecture and related best practices.
+Knowledge on handling infra with compliance standards such as HIPAA, PCI DSS, SOCII
+----
+Siemens
+
+Senior DevOps Engineer
+
+About the job
+Hello Visionary!
+
+We empower our people to stay resilient and relevant in a constantly changing world. We’re looking for people who are always searching for creative ways to grow and learn. People who want to make a real impact, now and in the future. Does that sound like you? Then it seems like you’d make a great addition to our vibrant international team.
+
+We are looking for a Senior DevOps Engineer
+
+You’ll make a difference by:
+
+Key Responsibilities:
+Design, implement, and maintain CI/CD pipelines using GitLab, including configuring GitLab Runners.
+Build, manage, and scale containerized applications using Docker, Kubernetes, and HELM.
+Automate infrastructure provisioning and management with Terraform.
+Manage and optimize cloud-based environments, especially AWS.
+Administer and optimize Kafka clusters for data streaming and processing.
+Oversee the performance and reliability of databases and Linux environments.
+Monitor and enhance system health using tools like Prometheus and Grafana.
+Collaborate with cross-functional teams to implement DevOps best practices.
+Ensure system security, scalability, and disaster recovery readiness.
+Troubleshoot and resolve technical issues across the infrastructure.
+Required Skills & Qualifications:
+5 - 8 years of experience in DevOps, system administration, or a related role.
+Expertise in CI/CD tools and workflows, especially GitLab Pipelines and GitLab Runners.
+Proficient in containerization and orchestration tools like Docker, Kubernetes, and HELM.
+Strong hands-on experience with Docker Swarm, including creating and managing Docker clusters.
+Proficiency in packaging Docker images for deployment.
+Strong hands-on experience with Kubernetes, including managing clusters and deploying applications.
+Strong hands-on experience with Terraform for Infrastructure as Code (IaC).
+In-depth knowledge of AWS services, including EC2, S3, IAM, EKS, MSK, Route53 and VPC.
+Solid experience in managing and maintaining Kafka ecosystems.
+Strong Linux system administration skills.
+Proficiency in database management, optimization, and troubleshooting.
+Experience with monitoring tools like Prometheus and Grafana.
+Excellent scripting skills in languages like Bash, Python.
+Strong problem-solving skills and the ability to work in a fast-paced environment.
+Excellent communication skills and a collaborative mindset.
+Good to Have Skills:
+Experience with Keycloak for identity and access management.
+Familiarity with Nginx or Traefik for reverse proxy and load balancing.
+Hands-on experience in PostgreSQL maintenance, including backups, tuning, and troubleshooting.
+Knowledge of the railway domain, including industry-specific challenges and standards.
+Experience in implementing and managing high-availability architectures.
+Exposure to distributed systems and microservices architecture.
+
+Your success is grounded in:
+
+5-8 years of experience is required.
+Great Communication skills.
+Analytical and problem-solving skills
+
+Join us and be yourself! 
+
+We value your unique identity and perspective and are fully committed to providing equitable opportunities and building a workplace that reflects the diversity of society. Come bring your authentic self and create a better tomorrow with us.
+
+This role is based in Pune, where you’ll get the chance to work with teams, impacting entire cities, countries - and the shape of things to come.
+
+We’re Siemens. A collection of over 312,000 minds building the future, one day at a time in over 200 countries. We're dedicated to equality, and we encourage applications that reflect the diversity of the communities we work in. All employment decisions at Siemens are based on qualifications, merit and business need. Bring your curiosity and imagination and help us shape tomorrow.
+
+Find out more about Siemens careers at: www.siemens.com/careers & more about mobility at https://new.siemens.com/global/en/products/mobility.html
+---
+VOIS
+DevOps & Cloud Engineering Specialist - VOIS
+
+About the job
+Who We Are
+
+VOIS (Vodafone Intelligent Solutions) is a strategic arm of Vodafone Group Plc, creating value for customers by delivering intelligent solutions through Talent, Technology & Transformation.
+
+As the largest shared services organisation in the global telco industry with 30,000 FTE, our portfolio of next-generation solutions and services are designed in partnership with customers across Vodafone Group, local markets, and partner markets to simplify and drive growth. With our strategic partner Accenture, we work alongside our Vodafone customers, other Telco and tech companies to drive transformation, meet the challenges of our industry and ensure we stay relevant and resilient. This partnership is a unique, industry-first model which brings together the best of in-house and 3rd party capability.
+
+We work with customers across 28 countries from 10 VOIS locations: Albania, Egypt, Hungary, India, Romania, Spain, Turkey, UK, Germany, Ireland, and with a network of teams in Czech Republic, Italy, Greece, and Portugal.
+
+#VOIS #BeUnrivalled #CreateTheFuture
+
+About This Role
+
+We are seeking a skilled DevOps & Cloud Engineering Specialist to drive agile delivery, improve automation, and enhance cloud infrastructure across dynamic, cross‑functional teams. The individual will contribute hands-on expertise in AWS, CI/CD, and application development technologies while enabling continuous delivery, scalability, and operational efficiency. This role is ideal for someone with strong technical capabilities, leadership experience, and a passion for guiding teams towards modern engineering excellence.
+
+What You Will Do
+
+Maintain and continuously enhance the integration, build and testing infrastructure, ensuring reliable development environments and virtual machines.
+Set up and manage clusters on Microsoft AKS or AWS EKS, including networking, DNS, security and associated cloud services.
+Support development teams by applying expertise across both development and operations, particularly in areas relating to scalability, automation, and system security.
+Establish and manage continuous delivery toolsets and procedures, including configuration management, automated deployments and build pipelines.Script, configure and optimise cloud environments while ensuring stability, performance and compliance.
+Oversee the complete lifecycle of cloud infrastructure and implement robust monitoring frameworks for proactive system insights. 
+
+Who You Are
+
+Deep knowledge and extensive experience working within agile teams.
+Strong capability in creating burndown charts, backlog maps and agile delivery artefacts.
+Proven expertise in continuous delivery processes, tools and automation.
+Excellent communication, problem‑solving and innovation skills.
+Ability to coach developers, testers and DevOps engineers to uplift engineering practices.
+Solid technical foundation in React.js, Node.js and C# or Java.
+Hands-on experience with AWS Cloud services.Skilled in Jenkins, Maven and GitHub/GitLab toolsets.
+
+Good To Have
+
+Knowledge of Microsoft Azure.Broader understanding of AWS concepts.
+Self‑starter attitude with the ability to learn quickly and work independently.
+Knowledge of DevOps methodologies.
+Strong understanding of SDLC, ITIL, and process improvement.
+Experience as a Scrum Master with agile delivery methodologies.
+
+Not a Perfect Fit?
+
+Concerned you may not meet every requirement? Vodafone is committed to creating an inclusive workplace where everyone can thrive. If you are excited about this role but your experience does not align exactly with every aspect of the job description, you are encouraged to apply. You may be the right candidate for this or another opportunity, and the recruitment team will support you in exploring where your skills fit best.
+
+What’s In It For You
+
+Opportunity to work with modern cloud and DevOps technologies across large-scale, global environments.Exposure to multi-cloud ecosystems, automation frameworks, continuous delivery and platform engineering practices.Collaboration with experienced professionals in an agile, learning-focused environment.Ability to shape engineering standards and influence the future of delivery processes.
+
+What Skills You Will Learn
+
+Advanced cloud automation and container‑orchestration capabilities, especially on AWS and Kubernetes services.Enhanced skills in CI/CD, DevOps toolchains, engineering leadership and agile delivery.End‑to‑end cloud environment management, monitoring strategies and modern infrastructure-as-code approaches.Strengthened communication, coaching and technical leadership abilities.
+
+VOIS Equal Opportunity Employer Commitment
+
+Vodafone recognises and celebrates the value of diversity in building a workforce that reflects the customers and communities it serves. No form of discrimination is tolerated. This includes, but is not limited to, discrimination based on race, colour, age, veteran status, gender identity, gender expression, sexual orientation, pregnancy, maternity or parental status, ethnicity, disability, religion or belief, political affiliation, trade union membership, nationality, citizenship, indigenous status, medical condition, HIV status, neurodiversity, social origin, cultural background, marital or civil partnership status, or socio-economic background.
+
+Join Us
+
+At Vodafone, we’re working hard to build a better future. A more connected, inclusive and sustainable world. As a dynamic global community, it's our human spirit, together with technology, that empowers us to achieve this.
+
+We challenge and innovate in order to connect people, businesses, and communities across the world. Delighting our customers and earning their loyalty drive us, and we experiment, learn fast and get it done, together.
+
+With us, you can be truly be yourself and belong, share inspiration, embrace new opportunities, thrive, and make a real difference.
+
+Alert
+
+Apply for Vodafone jobs only through the official Vodafone Careers website to avoid job scams and fraud.
+
+#JDEnhancedByTARA
+
+Follow us on social media and #StayConnected
+
+LinkedIn: https://www.linkedin.com/company/vois/Facebook: https://www.facebook.com/voisglobalInstagram: https://www.instagram.com/voisglobal/Chat with our employees: https://lnkd.in/dpkrcvR2
+----
+GlobalLogic
+Senior DevOps Engineer IRC292315
+About the job
+Description
+
+Must Have (Core Requirements)
+
+
+ 8–10 years of software engineering experience with a strong DevOps focus
+ Expert-level experience with AWS (especially EKS) (only long-term experience with AWS, 5+ years with EKS and more with AWS overall)
+ Strong scripting skills (Python, Shell/Bash)
+ Experience building and automating CI/CD pipelines
+ Hands-on with Jenkins
+ Experience with Containers & Kubernetes (Expert)
+ Strong knowledge of Git and Git workflows
+ Experience with GitLab (beyond basic Git)
+ Experience with SQL and NoSQL databases (at minimum, hosting and maintaining MySQL, PostgreSQL, ElastiCache (Redis/Memcached), including AWS managed databases like DynamoDB, RDS)
+ Experience working with microservices at scale
+ Knowledge of configuration management & release engineering (branching, versioning, tagging)
+ Experience with application performance monitoring tools
+
+
+Requirements
+
+Must Have (Core Requirements)
+
+
+ 8–10 years of software engineering experience with a strong DevOps focus
+ Expert-level experience with AWS (especially EKS) (only long-term experience with AWS, 5+ years with EKS and more with AWS overall)
+ Strong scripting skills (Python, Shell/Bash)
+ Experience building and automating CI/CD pipelines
+ Hands-on with Jenkins
+ Experience with Containers & Kubernetes (Expert)
+ Strong knowledge of Git and Git workflows
+ Experience with GitLab (beyond basic Git)
+ Experience with SQL and NoSQL databases (at minimum, hosting and maintaining MySQL, PostgreSQL, ElastiCache (Redis/Memcached), including AWS managed databases like DynamoDB, RDS)
+ Experience working with microservices at scale
+ Knowledge of configuration management & release engineering (branching, versioning, tagging)
+ Experience with application performance monitoring tools
+
+
+Job responsibilities
+
+
+Design, implement, and manage scalable, secure, and highly available infrastructure on Amazon Web Services, with a strong focus on Amazon EKS.
+Lead the deployment, management, and optimization of containerized applications using Kubernetes and container technologies.
+Develop, maintain, and enhance CI/CD pipelines using Jenkins and GitLab to ensure efficient and reliable software delivery.
+Write and maintain robust automation scripts using Python and Shell/Bash to streamline operational processes.
+Manage and enforce best practices for source control using Git, including branching strategies, versioning, and release management.
+Architect and support microservices-based applications, ensuring scalability, reliability, and performance at scale.
+Administer and optimize databases, including MySQL, PostgreSQL, and AWS-managed services such as DynamoDB, RDS, and ElastiCache (Redis/Memcached).
+Implement and maintain infrastructure as code and configuration management practices to ensure consistency across environments.
+Monitor system health and application performance using industry-standard monitoring and observability tools, proactively identifying and resolving issues.
+Collaborate with development, QA, and operations teams to ensure seamless integration and delivery of applications.
+Drive continuous improvement initiatives in DevOps practices, automation, and system reliability.
+Troubleshoot complex infrastructure and application issues in distributed environments.
+
+
+What we offer
+
+Culture of caring. At GlobalLogic, we prioritize a culture of caring. Across every region and department, at every level, we consistently put people first. From day one, you’ll experience an inclusive culture of acceptance and belonging, where you’ll have the chance to build meaningful connections with collaborative teammates, supportive managers, and compassionate leaders.
+
+Learning and development. We are committed to your continuous learning and development. You’ll learn and grow daily in an environment with many opportunities to try new things, sharpen your skills, and advance your career at GlobalLogic. With our Career Navigator tool as just one example, GlobalLogic offers a rich array of programs, training curricula, and hands-on opportunities to grow personally and professionally.
+
+Interesting & meaningful work. GlobalLogic is known for engineering impact for and with clients around the world. As part of our team, you’ll have the chance to work on projects that matter. Each is a unique opportunity to engage your curiosity and creative problem-solving skills as you help clients reimagine what’s possible and bring new solutions to market. In the process, you’ll have the privilege of working on some of the most cutting-edge and impactful solutions shaping the world today.
+
+Balance and flexibility. We believe in the importance of balance and flexibility. With many functional career areas, roles, and work arrangements, you can explore ways of achieving the perfect balance between your work and life. Your life extends beyond the office, and we always do our best to help you integrate and balance the best of work and life, having fun along the way!
+
+High-trust organization. We are a high-trust organization where integrity is key. By joining GlobalLogic, you’re placing your trust in a safe, reliable, and ethical global company. Integrity and trust are a cornerstone of our value proposition to our employees and clients. You will find truthfulness, candor, and integrity in everything we do.
+
+About GlobalLogic
+
+GlobalLogic, a Hitachi Group Company, is a trusted digital engineering partner to the world’s largest and most forward-thinking companies. Since 2000, we’ve been at the forefront of the digital revolution – helping create some of the most innovative and widely used digital products and experiences. Today we continue to collaborate with clients in transforming businesses and redefining industries through intelligent products, platforms, and services.
+---
+BairesDev
+Semi Senior DevOps - Remote Work 
+
+About the job
+At BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.
+
+
+Our diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.
+
+
+When you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.
+
+
+Semi Senior DevOps at BairesDev
+
+
+In the Semi Senior DevOps position, use your skills to manage CI/CD workflows, automate deployment processes, and optimize cloud infrastructure. You'll contribute significantly to improving system scalability and reliability, playing a key role in our DevOps strategy and implementation.
+
+
+What you will do
+
+
+- Lead the development and refinement of CI/CD pipelines, integrating best practices and new technologies.
+- Oversee the operation and scaling of cloud infrastructure, focusing on high availability and fault tolerance.
+- Manage complex container orchestration setups, optimizing for performance and scalability.
+- Design and implement comprehensive monitoring and alerting systems.
+- Enforce and enhance security practices and compliance across cloud and infrastructure environments.
+- Automate infrastructure provisioning and management processes using tools like Terraform or Ansible.
+
+
+What we are looking for
+
+
+- 3+ years of experience with DevOps.
+- Proven experience with APIs and Web Services.
+- Experience with database technologies
+- Advanced knowledge of algorithms and data structures.
+- Basic IT infrastructure knowledge.
+- Experience in designing and implementing software modules for real-world applications.
+- Familiarity with CI/CD pipelines.
+- Advanced level of English.
+
+
+How we do make your work (and your life) easier:
+
+
+- 100% remote work (from anywhere).
+- Excellent compensation in USD or your local currency if preferred
+- Hardware and software setup for you to work from home.
+- Flexible hours: create your own schedule.
+- Paid parental leaves, vacations, and national holidays.
+- Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.
+- Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.
+
+
+Apply now and become part of a global team where your unique talents can truly thrive!
+----
+Wolters Kluwer
+Share
+Show more options
+Senior DevOps Engineer 
+
+
+About the job
+Job Description:
+
+Role Summary
+
+The Senior DevOps Engineer will design, implement, and maintain robust DevOps practices across cloud and on-prem environments. This role focuses on Azure cloud services, CI/CD automation, security compliance, scalable infrastructure, and AI-driven automation to enable high-performing software delivery. You will collaborate with development teams, lead automation initiatives, and ensure operational excellence.
+
+Total years of Experience: 6 to 10 years
+
+Key Responsibilities
+
+Architect and maintain CI/CD pipelines, infrastructure automation, and cloud deployments.
+Implement Azure services for compute, networking, storage, and container orchestration.
+Ensure security and compliance across DevOps workflows.
+Drive AI-powered monitoring, predictive scaling, and intelligent automation.
+Collaborate with cross-functional teams to optimize performance and reliability.
+
+
+Must-Have Skills
+
+Azure Fundamentals: Resource Groups, Subscriptions, RBAC.
+Networking Basics: VNets, Subnets, NSGs, Load Balancers.
+Storage: Blob, File, Queue, Table.
+Compute & Deployment:
+Azure VMs, Scale Sets.
+Azure App Services (Web Apps, Functions).
+Containers: Azure Container Instances, AKS.
+CI/CD & Automation:
+Azure DevOps (Pipelines – YAML & Classic, Repos, Artifacts, Boards).
+Infrastructure as Code: ARM Templates, Bicep, Terraform.
+Scripting: Azure CLI, PowerShell.
+Monitoring & Logging:
+Azure Monitor, Log Analytics, Application Insights.
+Alerts and dashboards.
+Security & Compliance:
+Managed Identities, Key Vault.
+Policies and Blueprints.
+Secure pipeline practices.
+Scaling & Reliability:
+Autoscaling rules.
+Load balancing (Azure Front Door, Traffic Manager).
+
+
+Good-to-Have Skills
+
+Integration with GitHub Actions or Jenkins for hybrid CI/CD.
+Basic software development (C#, Java)
+Knowledge of multi-cloud deployments.
+Familiarity with Kafka, Apache Ignite, and distributed systems.
+AI & Intelligent Automation:
+AI-driven monitoring and anomaly detection.
+Familiarity with Azure Cognitive Services and Azure Machine Learning.
+Predictive scaling and self-healing infrastructure.
+Exposure to AI-based log analysis and incident prediction.
+Experience with data analytics dashboards for operational intelligence.
+
+Qualifications
+
+Bachelor’s degree in computer science or related field.
+5–8 years of experience in DevOps with strong Azure expertise.
+Strong scripting and automation skills.
+Excellent problem-solving and collaboration abilities.
+
+
+Our Interview Practices
+
+To maintain a fair and genuine hiring process, we kindly ask that all candidates participate in interviews without the assistance of AI tools or external prompts. Our interview process is designed to assess your individual skills, experiences, and communication style. We value authenticity and want to ensure we’re getting to know you—not a digital assistant. To help maintain this integrity, we ask to remove virtual backgrounds and include in-person interviews in our hiring process. Please note that use of AI-generated responses or third-party support during interviews will be grounds for disqualification from the recruitment process.
+
+Applicants may be required to appear onsite at a Wolters Kluwer office as part of the recruitment process.
+----
+
+Porch Group
+Senior DevOps Cloud Engineer- AI 
+
+About the job
+Porch Group is a leading vertical software and insurance platform and is positioned to be the best partner to help homebuyers move, maintain, and fully protect their homes. We offer differentiated products and services, with homeowners insurance at the center of this relationship. We differentiate and look to win in the massive and growing homeowners insurance opportunity by
+
+ providing the best services for homebuyers
+ led by advantaged underwriting in insurance
+ to protect the whole home
+
+As a leader in the home services software-as-a-service (“SaaS”) space, we’ve built deep relationships with approximately 30 thousand companies that are key to the home-buying transaction, such as home inspectors, mortgage companies, and title companies.
+
+In 2020, Porch Group rang the Nasdaq bell and began trading under the ticker symbol PRCH. We are looking to build a truly great company and are JUST GETTING STARTED.
+
+Job Title: Senior DevOps Cloud Engineer- AI 
+
+Location: India
+
+Workplace Type: Remote 
+
+Job Summary
+
+The future is bright for the Porch Group, and we’d love for you to be a part of it as our Senior DevOps Cloud Engineer.
+
+Help us build world class infrastructure in public cloud mainly GCP. We are seeking a Senior DevOps Cloud Engineer with a strong focus on AI-enabled platforms and automation to design, build, and operate highly scalable, secure, and intelligent cloud infrastructure.
+
+As a Senior DevOps Cloud Engineer, you will be responsible to design, build, and operate highly scalable, secure, and intelligent cloud infrastructure. maintaining and improving the reliability and performance of our company’s technology stack.
+
+You will work closely with development teams to design scalable and highly reliable software systems. You will play a critical role in optimizing CI/CD pipelines using AI insights, and leveraging automation to improve reliability, performance, and cost efficiency across cloud environments.
+
+Your role will involve identifying and resolving complex issues before they impact customers, implementing automation to streamline our operations, and advocating for best practices in reliability, scalability, and maintainability.
+
+Additionally, you will lead efforts to improve monitoring and alerting processes to ensure proactive response to potential issues. As a senior member of the team, you will mentor junior engineers, drive technical initiatives, and collaborate across departments to achieve our reliability goals.
+
+What You Will Do As A Senior DevOps Cloud Engineer
+
+Build infrastructure/systems that balance operational excellence, security, reliability, performance efficiency and cost optimization. 
+Improve the observability of our systems to anticipate and address issues before they become critical, leveraging strategies like infrastructure as code, system operational and health metrics, CICD pipelines and infrastructure automation. 
+Contribute to DevOps roadmaps, helping balance priorities like modernizing past infrastructure, supporting new projects and deployments, and improving/hardening systems where it is needed most. 
+Integrate AI-powered tools into DevOps workflows for Predictive monitoring, Anomaly detection, Intelligent alerting and Auto-remediation
+Leverage AI/ML insights to optimize: CI/CD pipelines, Deployment strategies, Infrastructure performance and cost
+Build and maintain self-healing systems using AI-based observability platforms
+Support our initiatives for modernizing/centralizing our cloud footprint in partnership with business, analytics, software, InfoSec, and data science teams. 
+Design and enforce SDLC & Infosec & Compliance requirements. 
+Assist with root cause analysis/remediation for system incidents. 
+Provide support to engineering team in basic database operations (Postgres, SQL Server) in running SQL scripts, creating database objects and troubleshooting performance and connection issues. 
+Implement Infrastructure as Code (IaC) using Terraform
+Provide 24x7x365 monitoring, incident response, and on-call support as part of the Devops team. 
+
+What You Will Bring As A Senior DevOps Cloud Engineer
+
+Bachelor's degree in Computer Science, Software or System Engineering preferred or equivalent experience. 
+8+ years of relevant experience. 
+Expertise with cloud-based systems and containerized infrastructure (Linux/OS fundamentals, Kubernetes, Database systems, Cloud networking). 
+Deep expertise with GCP required, with significant expertise with two+ (GCP and Azure) preferred. 
+Experience supporting AI/ML platforms and experience integrating AI-powered DevOps tools
+Familiarity with LLM-based systems, vector databases, or AI APIs
+Expertise building common Web/Internet platform components (e.g. proxies, caches, load balancers, firewalls, app/web server tiers, DB systems). 
+Unix scripting experience required and a willingness to learn/support those you may not presently know. 
+Conceptual and practical knowledge with modern DevOps techniques, such as CI/CD, IaC, Configuration Management, Secrets/Vault management. 
+Expertise in troubleshooting that spans systems, network, and applications in a distributed/microservice environment. 
+Experience with databases like Postgres and SQL Server. 
+Exposure to Azure technologies like ADF, ADF Linked Services, Azure Key Vault, Azure managed identities and Azure DevOps. 
+Proven experience working with US based business teams 
+Excellent written and communication skills in English language.
+Ability to work within core US business hours / time zone expectations - Eastern Standard Time (EST) overlap 
+Working Hours: 8 Hours (Excluding breaks)
+
+4 Core US Hours Overlap (7:30pm- 11:30pm IST)
+
+4 flexible hours (IST)
+
+Workspace: A quiet space to work, an internet connection of at least 30 Mbps download | 10 Mbps upload 
+
+The application window for this position is anticipated to close in 2 weeks (10 business days) from Feb 16, 2026. Please know this may change based on business and interviewing needs.
+
+What You Will Get As A Porch Group Team Member
+
+Pay Range*: 2,475,000 INR- 3,465,000 INR Annually
+
+Please know your actual pay at Porch will reflect a number of factors among which are your work experience and skillsets, job-related knowledge, alignment with market and our Porch employees, as well as your geographic location.
+Our benefits package will provide you with comprehensive coverage for your health, life, and financial well-being. 
+Our benefits include medical insurance, accident insurance and retiral benefits. 
+Our wellness programs include 12 company-paid holidays, 2 flexible holidays, privilege/earned leave, casual/sick leave, paid maternity and paternity Leaves, and weekly wellness events.
+
+What’s next?
+
+Submit your application below and our Talent Acquisition team will be reviewing your application shortly! If your resume gets us intrigued, we will look to connect with you for a chat to learn more about your background, and then possibly invite you to have virtual interviews. What's important to call out is that we want to make sure not only that you're the right person for us, but also that we're the right next step for you, so come prepared with all the questions you have!
+
+Porch is committed to building an inclusive culture of belonging that not only embraces the diversity of our people but also reflects the diversity of the communities in which we work and the customers we serve. We know that the happiest and highest performing teams include people with diverse perspectives that encourage new ways of solving problems, so we strive to attract and develop talent from all backgrounds and create workplaces where everyone feels seen, heard and empowered to bring their full, authentic selves to work.
+
+Porch is an Equal Opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex including sexual orientation and gender identity, national origin, disability, protected veteran status, or any other characteristic protected by applicable laws, regulations, and ordinances.
+----
+Ensono
+Senior DevOps Engineer
+
+About the job
+About Us
+
+Ensono is a hybrid IT services provider that sees a world in transformation. We understand the world of business has become more complex, layered, and interdependent because we’re enabling the IT infrastructure for that transformation. Our clients are some of the most innovative and forward-thinking companies in the world and we help keep their businesses thriving. With nearly 50 years of experience, we optimize and modernize IT infrastructure by amplifying the power of mainframes and mid-range servers with the agility of cloud. Check us out at www.ensono.com.
+
+Job Summary
+
+This role supports a mission‑critical Azure PaaS environment for the client as part of a dedicated Ensono support team. The position combines senior-level Azure engineering with operational responsibility, including request-based work, incident response, networking configuration, and change governance.
+
+The successful candidate will work closely with the client’s application teams, network teams, and operations stakeholders to deploy, support, and maintain secure, highly available Azure PaaS platforms. This is a client-facing role requiring strong communication skills, operational discipline, and the ability to work across L1–L3 support activities within a single team model.
+
+Job Responsibilities
+
+Azure PaaS & Platform Operations
+
+
+Act as a lead engineer within a dedicated client support pod providing Azure PaaS and networking support.
+Provide day‑to‑day operational support for Azure PaaS environments across development, test, staging, and production subscriptions.
+Handle a request‑driven workload using ServiceNow, including standard changes, minor changes, and connectivity requests.
+Deploy, configure, and support Azure PaaS services including:
+Azure App Service (ASE v3, App Service Plans, Web Apps, Function Apps, App Slots)
+Azure Front Door, Application Gateway (v2), Web Application Firewall (WAF)
+Azure Service Bus, Event Hub, Logic Apps
+Supporting platform services such as Key Vault, Azure Monitor, Application Insights, Log Analytics, and Workbooks
+
+
+Networking, Security & Connectivity
+
+
+Design, implement, and troubleshoot Azure networking components, including:
+Network Security Groups (NSGs) as a primary operational responsibility
+Virtual Networks, subnets, custom DNS, and VNet peering
+User Defined Routes (UDRs) for specialized connectivity scenarios
+Application Gateway, Load Balancers, Azure Front Door, and Traffic Manager
+Connectivity between Azure PaaS services, on‑premises systems, and external services via ExpressRoute
+Support TLS/HTTPS configurations, redirect rules, and secure ingress patterns in coordination with Mayo network and security teams.
+Troubleshoot complex connectivity issues involving Azure PaaS, on‑premises networks, and approved external services.
+
+SQL Connectivity (Reduced Platform Ownership)
+
+
+Serve as a contributor for SQL connectivity enablement, including:
+NSG rule design and validation for Azure SQL Database and Azure SQL Managed Instance
+Updating Azure SQL firewall rules when required
+Supporting provisioning and decommissioning requests for Azure SQL Managed Instances
+Note: Core SQL platform administration and operations are supported internally by the client; this role focuses on networking, access, and integration enablement rather than database administration.
+
+Operations, Governance & Support
+
+
+Participate in incident response and on‑call rotation aligned to business‑critical production systems.
+Troubleshoot and resolve incidents across L1, L2, and L3 infrastructure and platform support layers.
+Participate in Change Advisory Board (CAB) meetings, including standard and major change reviews.
+Ensure adherence to the client's policies, security controls, architectural standards, and governance processes.
+Work with CI/CD pipelines and Infrastructure‑as‑Code (Terraform, Azure DevOps) to deploy and maintain standardized environments.
+Contribute to operational documentation, knowledge articles, and continuous improvement initiatives.
+Support audits, reviews, and compliance‑related requests when required.
+Mentor junior engineers and actively contribute to team knowledge sharing.
+
+
+Mandatory Skills And Experience
+
+
+5+ years’ experience supporting highly available, mission‑critical environments.
+2+ years’ hands‑on experience engineering and supporting Azure platforms, with a strong focus on PaaS.
+Strong experience with Azure PaaS services (App Service, Functions, Front Door, Application Gateway, monitoring services).
+Solid understanding of Azure networking, including NSGs, TCP/IP, routing, ExpressRoute, and secure connectivity patterns.
+Experience working in a ticket‑driven operational environment (ServiceNow or equivalent).
+Experience supporting production systems with strict access controls and formal change management.
+Ability to work effectively across a blended L1–L3 support model.
+Experience with automation and IaC tools such as Terraform and Azure DevOps.
+Scripting experience in PowerShell, Python, or Bash.
+Familiarity with ITIL processes (incident, problem, and change management).
+Excellent written and verbal communication skills with a strong customer‑service mindset.
+
+
+Preferred / Beneficial Experience
+
+
+Experience supporting regulated or healthcare environments.
+Exposure to containers, AKS, or modern CI/CD practices.
+Azure Associate or Professional certifications (current or in progress).
+Prior participation in CABs and formal governance forums.
+
+
+Personal Attributes
+
+
+Independent, accountable, and self‑
+Comfortable balancing operational support and engineering work.
+Strong sense of ownership and customer focus.
+Desire to continually improve systems, processes, and personal
+
+
+Shift timings
+
+1:30 PM to 10:30 PM
+
+We are an equal opportunity employer. All qualified applicants will be considered for employment without regard to caste, colour, creed, religion, gender, gender identity, sexual orientation, age, disability, HIV status, or any other status protected by law. Candidates with disabilities who require accommodations during the recruitment process are encouraged to contact our Talent Acquisition team to place a request.
+---
+Teradata
+Senior DevOps Engineer 
+About the job
+Our Company
+
+At Teradata, we believe that people thrive when empowered with better information. That’s why we built the most complete cloud analytics and data platform for AI. By delivering harmonized data, trusted AI, and faster innovation, we uplift and empower our customers—and our customers’ customers—to make better, more confident decisions. The world’s top companies across every major industry trust Teradata to improve business performance, enrich customer experiences, and fully integrate data across the enterprise. 
+
+Our Team
+
+This role is for a Senior DevOps Engineer within the Platform Engineering organization. We provide stable, secure, and efficient DevOps platforms that enable engineering teams to build, test, and release software reliably across cloud environments. 
+
+What You’ll Do
+
+Build and maintain CI/CD pipelines using GitHub Actions and Jenkins 
+Implement automation using Ansible or similar tools 
+Support platform upgrades, dependency updates, and environment changes 
+Integrate security and quality checks into CI/CD workflows 
+Troubleshoot pipeline, deployment, and runtime issues 
+Apply good coding practices when writing automation and scripts 
+Work on one primary cloud platform with exposure to others 
+
+What We’re Looking For
+
+Experience implementing and maintaining CI/CD pipelines using GitHub Actions and Jenkins 
+Strong experience with automation and configuration management 
+Hands‑on experience with at least one cloud platform 
+Willingness to learn and work across additional cloud platforms 
+Good understanding of coding, OOPS concepts, and problem‑solving 
+Familiarity with DevSecOps practices and secure delivery workflows 
+Strong operational debugging and troubleshooting skills 
+
+Nice to Have
+
+Exposure to distributed or platform‑scale systems 
+Experience with major platform upgrades or migrations 
+
+Minimum Education
+
+Bachelor’s degree with 5–8 years of industry experience, or 
+Advanced degree with 4–6 years of experience 
+
+
+
+Why We Think You’ll Love Teradata
+
+We prioritize a people-first culture because we know our people are at the very heart of our success. We embrace a flexible work model because we trust our people to make decisions about how, when, and where they work. We focus on well-being because we care about our people and their ability to thrive both personally and professionally. We are an anti-racist company because our dedication to Diversity, Equity, and Inclusion is more than a statement. It is a deep commitment to doing the work to foster an equitable environment that celebrates people for all of who they are.
+
+Teradata invites all identities and backgrounds in the workplace. We work with deliberation and intent to ensure we are cultivating collaboration and inclusivity across our global organization. We are proud to be an equal opportunity and affirmative action employer. We do not discriminate based upon race, color, ancestry, religion, creed, sex (including pregnancy, childbirth, breastfeeding, or related conditions), national origin, sexual orientation, age, citizenship, marital status, disability, medical condition, genetic information, gender identity or expression, military and veteran status, or any other legally protected status.
+----
+
+Semtech
+Senior Staff Engineer, DevOps 
+
+About the job
+Responsibilities
+
+Infrastructure Architecture & Strategy (30%)
+
+
+Design and evolve scalable, highly available cloud infrastructure spanning multiple regions and cloud providers (AWS, Azure, GCP)
+Lead infrastructure-as-code (IaC) initiatives using CloudFormation, Terraform, and other tooling; establish patterns and standards for infrastructure management
+Architect and implement disaster recovery, business continuity, and infrastructure resilience strategies
+Drive cloud cost optimization initiatives, implementing governance, monitoring, and rightsizing strategies to achieve operational efficiency
+Establish and maintain security baselines, compliance requirements (SOC 2, ISO 27001, etc.), and infrastructure hardening standards
+
+CI/CD Platform & Automation (15%)
+
+
+Design and manage enterprise CI/CD pipelines using GitHub Actions, Jenkins, or equivalent platforms
+Build and maintain self-service deployment platforms that enable developers to ship code with confidence
+Lead testing shift left initiatives, including static code analysis, security scanning, and automated deployment validation.
+Establish release engineering practices, version control strategies, and deployment orchestration across environments
+
+Observability, Monitoring & Incident Response (15%)
+
+
+Design comprehensive monitoring, logging, metrics, and tracing infrastructure using tools like Prometheus, Grafana, Elasticsearch, or equivalent
+Establish SLI/SLO frameworks and error budgeting practices; define meaningful alerting and on-call procedures
+Lead incident response and post-mortem processes; drive reliability improvements through systematic root cause analysis
+Implement security monitoring, threat detection, and DevSecOps practices integrated with CI/CD workflows
+
+Container Orchestration & Kubernetes (10%)
+
+
+Architect, deploy, and manage Kubernetes clusters in production environments; optimize resource utilization and cost
+Design containerization strategies, container image management, and registry solutions
+Implement service mesh, networking policies, and security controls within container platforms
+Drive adoption of Helm, operators, tooling (ArgoCD, Flux) for declarative infrastructure management
+
+Technical Leadership & Collaboration (20%)
+
+
+Mentor and guide junior and mid-level DevOps engineers; establish technical standards, code reviews, and best practices
+Collaborate with software engineering, security, database, and network teams to align on infrastructure requirements
+Drive technical documentation, architecture decision records (ADRs), and knowledge sharing initiatives
+Participate in architectural reviews, capacity planning, and technology evaluation for infrastructure modernization
+Advocate for operational excellence, automation-first mindset, and continuous improvement culture
+
+Network & Security Infrastructure (10%)
+
+
+Design and implement cloud networking architecture including VPC, subnets, routing, and security group policies
+Manage firewalls, WAF, DDoS protection, VPN, and ingress/egress patterns
+Implement zero-trust security principles, identity and access management (IAM), and secrets management solutions
+
+Minimum Qualifications
+
+
+Bachelor's degree in Computer Science, Engineering, or related field (Master's degree preferred)
+15+ years of overall experience in software engineering, systems engineering, or infrastructure operations
+5-10+ years of hands-on DevOps, Site Reliability Engineering (SRE), or platform engineering experience
+Proven expertise with cloud platforms (AWS, Azure, GCP) in production environments at scale
+Proficiency with Infrastructure as Code tools (Terraform, CloudFormation, or equivalent)
+Deep experience with Kubernetes in production; strong understanding of container technologies (Docker, containerd)
+Expert-level proficiency with Linux/Unix system administration, networking, and security fundamentals
+Strong scripting and programming skills in Python, Bash, Go, or similar languages
+Extensive experience designing and maintaining CI/CD pipelines at enterprise scale
+Demonstrated expertise with monitoring, logging, and observability solutions (Prometheus, ELK, Datadog, etc.)
+Exceptional problem-solving, troubleshooting, and diagnostic skills
+Strong verbal and written communication skills; ability to document processes and architect complex systems
+Ability to lead and mentor engineers; demonstrated experience mentoring junior and mid-level staff
+Experience working in fast-paced, collaborative environments with cross-functional teams
+
+Desired Qualifications
+
+
+AWS Certified Solutions Architect, AWS Certified DevOps Engineer, or Certified Kubernetes Administrator (CKA)
+Knowledge of service mesh technologies (Istio, Linkerd, Consul)
+Experience with advanced configuration management (Helm, Kustomize) and templating solutions
+Exposure to distributed systems, microservices architecture, and event-driven design
+Experience with multi-cloud or hybrid cloud strategies
+Knowledge of advanced security practices (DevSecOps, supply chain security, secrets management)
+Experience with backup strategies, and infrastructure disaster recovery
+Familiarity with software defined networking (SDN) and advanced networking concepts
+Experience with observability and cost management tools (Prometheus, Grafana, CloudHealth, etc.)
+Track record of implementing cost optimization initiatives resulting in measurable savings
+Open source contributions or involvement in DevOps/infrastructure communities
+---
+3Pillar
+Senior DevOps Engineer
+
+About the job
+We build breakthrough software products that power digital businesses. We are an innovative product development partner whose solutions drive rapid revenue, market share, and customer growth for industry leaders in Software and SaaS, Media and Publishing, Information Services, and Retail. Our key differentiator is our Product Mindset. Our development teams focus on building for outcomes and all of our team members around the globe are trained on the Product Mindset’s core values – Minimize Time to Value, Solve For Need, and Excel at Change. Our teams apply this mindset to build digital products that are customer-facing and revenue-generating. Our business-minded approach to agile development ensures that we align to client goals from the earliest conceptual stages through market launch and beyond.
+
+In 2025, 3Pillar Global India was named as a “Great Place to Work” for the fifth year in a row based on how our employees feel about our company, collaborative culture, and work/life balance - come join our growing team
+
+Key Responsibilities
+
+Leadership in Automation and CI/CD: Lead the design and enhancement of automation frameworks and CI/CD pipelines, setting standards for excellence. Containerization technologies such as Docker or Kubernetes Deployment tools such as Jenkins, GitLab, or TeamCity
+Advanced Cloud Strategy: Architect and manage complex cloud environments, focusing on performance, security, and scalability. Cloud platforms such as AWS, Azure, or GCP. Configuration management tools such as Terraform, CloudFormation, or SaltStack 
+Mentorship and Collaboration: Serve as a mentor to DevOps Engineers, fostering a culture of continuous improvement and best practices. 
+Strategic Problem-Solving: Tackle complex system performance issues, employing advanced analytical skills to maintain reliability and efficiency. 
+
+Minimum Qualifications :
+
+Bachelor’s degree in Computer Science, Engineering, IT, or a related field; or equivalent practical experience.
+A minimum of 5+ years of dedicated DevOps experience with a strong focus on Kubernetes, automated testing, and observability in a telecommunications or high-performance environment. 
+Proficiency in the specified technologies: 
+CI/CD, C++, Java, any major cloud platforms (AWS, Azure, GCP) 
+CI/CD and Quality Automation 
+Mandatory CI/CD Pipeline: Designing, implementing, and managing the core pipeline to enforce quality from a "Continuous Confident Change" perspective, running on every Pull Request. 
+Advanced Test Automation: Implementing automated Unit, Integration, and Characterization Testing (Golden Master Testing) to guarantee functional parity between C++ and new Java logic. 
+Quality Gate Enforcement: Configuring the pipeline to enforce strict gates, including a 100% golden master match and a constraint of less than 10% performance regression. 
+Configuration Management (CM): Delivering a streamlined, automated CM process & system to support accelerated timelines and a consistent "deploy anywhere" capability. 
+Cloud-Native Deployment & Scaling 
+Kubernetes Implementation: Hands-on experience with defining and managing key Kubernetes resources: Deployment (ntr-deployment) and Service (ntr-service). 
+Horizontal Scaling Setup: Configuring and managing the Auto-Scaling Configuration based on traffic thresholds to support the CNF architecture. 
+Lifecycle Management: Implementing Health Probes (Liveness/Readiness) and defining the Graceful Shutdown Sequence to ensure high availability and minimal service disruption. 
+Observability and Monitoring 
+Full Observability Stack: Deep experience implementing all three pillars: Metrics Export, Distributed Tracing, and Structured Logging. 
+Monitoring Tools: Implementing tools (e.g., Prometheus/Grafana or similar) to ensure the new platform is reliable and performant. 
+Security and Infrastructure 
+Security Integration: Implementing cloud-native security measures, specifically Secrets Management and Network Policies. 
+Distributed Cache Infrastructure: Managing and configuring Redis-compatible services (e.g., AWS ElastiCache, Azure Cache, GCP Memorystore) to support the two-tier cache architecture. 
+Infrastructure as Code (IaC): Proficiency in Terraform, CloudFormation, or similar tools for automating the provisioning of all cloud infrastructure and dependencies. 
+
+Additional Experience Desired:
+
+Advanced certifications related to DevOps, cloud platforms (AWS, Azure, Google Cloud), and Kubernetes, validating specialized skills and knowledge.
+Demonstrated ability to prioritize efforts based on business impact, highlighting strategic planning and project management skills. 
+Proven experience in providing accurate status tracking and reporting, ensuring transparency and effective communication within and across teams. 
+Capability to estimate testing and deployment efforts accurately, showcasing an understanding of project scope and timelines. 
+
+Benefits
+
+A competitive annual salary based on experience and market demands 
+Flexi-timings 
+Work From Anywhere
+Medical insurance with the option to purchase a premium plan or HSA option for your entire family 
+Regular Health check-up camps arranged by the company 
+Recreational activities (Pool, TT, Wii, PS2) 
+Business casual atmosphere
+---
+Regnology
+Senior DevOps Engineer (CI/CD & AI-Enabled Platform)
+
+About the job
+What you'll do
+
+As a Senior CI/CD & AI-Enabled DevOps Engineer, you will take ownership of our developer platform and CI/CD ecosystem, driving its evolution toward a highly automated, AI-augmented engineering environment. You will act as a technical leader, shaping architecture, best practices, and the adoption of modern technologies.
+
+Your Key Accountabilities Are
+
+Own the design, evolution, and reliability of our CI/CD and developer platform architecture
+Evaluate and introduce new CI/CD, platform engineering, and AI-driven technologies, setting technical direction and standards
+Lead the implementation of AI-powered developer productivity solutions, including:
+Internal AI agents for CI/CD pipelines, incident resolution, and operational automation
+Intelligent assistants to improve developer workflows and reduce cognitive load
+Define and implement patterns for integrating AI using Model Context Protocol (MCP) or similar frameworks, ensuring secure and scalable interactions between LLMs and internal systems
+Drive the development of a self-service internal developer platform, enabling teams to deploy, test, and operate services independently
+Provide technical leadership and mentorship to engineers, promoting best practices in DevOps, platform engineering, and AI adoption
+Lead troubleshooting and resolution of complex system and infrastructure issues, acting as an escalation point
+Collaborate cross-functionally with engineering, security, and product teams to improve developer experience, system reliability, and delivery speed
+Define and enforce observability, reliability, and cost optimization strategies
+Ensure secure adoption of AI technologies, including governance, compliance, and data protection
+Drive documentation, knowledge sharing, and continuous improvement initiatives across the platform
+Why we should decide on you
+
+Bachelor’s degree in a technical field (Computer Science, Information Systems, or similar)
+5+ years of experience in DevOps, CI/CD, or Platform Engineering, with demonstrated ownership of production systems
+Strong expertise in CI/CD systems (Jenkins or similar), Linux, and GCP
+Deep experience with Infrastructure as Code (Terraform) and container orchestration (Kubernetes, GKE, Docker, Helm)
+Proven experience designing and operating scalable, reliable distributed systems
+Strong experience with observability stacks (Prometheus, Grafana, Elastic) and performance tuning
+Solid understanding of security best practices (IAM, secrets management, encryption, zero-trust principles)
+Strong programming/scripting skills (Python, Bash, or similar)
+
+AI & Platform Leadership
+
+Hands-on experience or strong ownership in integrating AI/LLMs into engineering workflows
+Experience designing or implementing agent-based systems or advanced automation solutions
+Understanding of Model Context Protocol (MCP) or similar tool integration patterns
+Experience building or evolving internal developer platforms (IDPs) and improving developer experience at scale
+Ability to evaluate, adopt, and operationalize emerging technologies, balancing innovation with stability
+
+Leadership & Mindset
+
+Proven ability to lead technical initiatives end-to-end, from design to production
+Strong mentoring skills and experience guiding other engineers
+Excellent problem-solving skills in complex, ambiguous environments
+Strong communication and stakeholder management skills
+High ownership, proactive mindset, and passion for continuous improvement
+
+Nice to have
+
+GCP certifications
+Experience with ITIL or service management practices
+Familiarity with policy-as-code, governance frameworks, or compliance in AI systems
+Experience in DevEx or platform engineering organizations at scale
+Exposure to FinOps practices and cost optimization in cloud environments
+
+Why you should decide on us
+
+Let’s grow together, join a market leading SaaS company – our agile character and culture of innovation enables you to design our future.
+We provide you with the opportunity to take on responsibility and participate in international projects. 
+In addition to our buddy-program, we offer numerous individual and wide-ranging training opportunities during which you can explore technical and functional areas. 
+Our internal mobility initiative encourages colleagues to transfer cross functionally to gain experience and promotes knowledge sharing.
+We are proud of our positive working atmosphere characterized by a supportive team across various locations and countries and transparent communication across all levels. 
+Together we're better - meet your colleagues at our numerous team events.
+
+Apply for this job now
+
+About Us
+
+Regnology is a leading international provider of innovative regulatory, risk, and supervisory technology solutions (RegTech, RiskTech, and SupTech), of AEOI and tax reporting products, as well as of services along the Regulatory Value Chain for financial services. Regnology has been a partner for banks and regulators for 25 years. Until the end of 2020, the company was part of BearingPoint group and operated under the name BearingPoint RegTech. Since the sale of the RegTech business to private equity firm Nordic Capital, the company has been independent. In June 2021, the company joined forces with Vizor Software and recently changed its name to Regnology. In total, Regnology serves more than 7,000 financial services firms with reporting solutions. At the same time, the company enables more than 50 regulators and tax authorities on five continents to collect data from 34,000 firms in 60 countries. Regnology has a total workforce of over 770 employees at 17 office locations in 12 countries.
+
+Any questions? Feel free to get in touch:
+
+recruiting@regnology.net
+---
+r3 Consultant
+Senior Devops Engineer
+
+About the job
+We are looking for a Senior DevOps Engineer who has operated production systems at scale, takes strong ownership, and can mentor junior engineers across distributed teams (US and global). This is a hands-on senior individual contributor role with technical leadership responsibilities — not a management position. We’re looking for someone who takes accountability for uptime and reliability, raises the technical bar for the team, and thrives in a fast-moving, high-growth environment.
+
+WHAT YOU WILL DO:
+
+Build, manage, and scale AWS infrastructure (ECS, EC2, VPC, IAM, networking)
+Maintain and improve containerized services using Docker (EKS/Kubernetes exposure is a plus)
+Implement and manage Infrastructure as Code using CloudFormation
+Design and optimize CI/CD pipelines using GitHub & GitHub Actions
+Improve system reliability, high availability, and deployment practices
+Implement monitoring and observability using Datadog
+Support data systems including Databricks and streaming services like Kinesis
+Participate in and lead production incident response and root cause analysis
+Support and maintain SOC 2 compliance controls
+Drive automation, cost optimization, and performance improvements
+Mentor and guide junior DevOps engineers across US and international teams
+Partnership & Low-Ego Collaboration: You work closely with engineering, product, and cross-functional teams, sharing ownership of outcomes. You welcome feedback, prioritize team success over individual credit, and build trust across distributed teams.
+Ownership with a Bias for Action: You take responsibility for systems end-to-end. You make pragmatic decisions, move with urgency, and deliver reliable solutions in a fast-paced startup environment without waiting to be told what to do.
+Adaptability & Problem-Solving Mindset: You stay calm under pressure, especially during production incidents. You learn quickly, think in systems, and balance reliability, scalability, and cost while working constructively with others.
+
+REQUIRED SKILLS & QUALIFICATIONS:
+
+6+ years managing large-scale production systems
+Proven experience taking ownership of infrastructure in live production environments
+Strong AWS and containerization expertise
+Experience working in SOC 2 or compliance-driven environments
+Solid understanding of distributed systems, networking, IAM, and security best practices
+Strong CI/CD and automation mindset
+Scripting skills (Bash, Python, etc.)
+Ability to mentor, review architecture decisions, and elevate junior engineers
+High ownership, curiosity, and self-starter mentality
+
+REPORTING: This position will report to the Director Of Engineering
+
+EMPLOYMENT TYPE: Full-Time
+
+LOCATION: Remote
+
+SHIFT TIMINGS: 11:30 AM to 8:30 PM IST
+----
+
+
